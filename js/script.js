@@ -1,12 +1,10 @@
 $(document).ready(function(){
-   // Add minus icon for collapse element which is open by default
    $(".collapse.show").each(function(){
-   $(this).prev(".card-header").find(".fa").addClass("fa-chevron-circle-up").removeClass("fa-chevron-circle-down");
+   $(this).prev(".card-header").find(".unactive").addClass("accordion__up-icon").removeClass("accordion__down-icon");
    });
-   // Toggle plus minus icon on show hide of collapse element
    $(".collapse").on('show.bs.collapse', function(){
-   $(this).prev(".card-header").find(".fa").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+   $(this).prev(".card-header").find(".unactive").removeClass("accordion__down-icon").addClass("accordion__up-icon");
    }).on('hide.bs.collapse', function(){
-   $(this).prev(".card-header").find(".fa").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+   $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
    });
 });
