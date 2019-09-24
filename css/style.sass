@@ -117,21 +117,24 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 .dropdown:hover .dropbtn
    background-color: #3e8e41
 
-//Header
-
-
 //Footer
 .footer-section
    font-family: 'Montserrat', sans-serif
    font-size: 1.4vw
    min-height: 217px
-   padding: 0 0 2vw 0
+   padding: 0 2vw
    background: #EAEDF0
    color: #000000
 
 .footer-section__title
    font-family: 'Open Sans', sans-serif
    font-size: 2.5vw
+   text-decoration: none
+   color: #000000
+
+.footer-section__title:hover
+   text-decoration: none
+   color: #000000
 
 .footer-section__title-accent
    color: #005EAA
@@ -144,6 +147,9 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 .footer-section__soc-items
    list-style: none
    display: flex
+
+.footer-section__soc-img
+   height: 5vw
 
 .footer-section__links-items
    list-style: none
@@ -159,7 +165,14 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
    color: #000000
    text-decoration: none
 
-// @media only screen and (max-width: 600px)
-// .footer-section__title
-//    font-size: 32px
+@media (max-width: 767px)
+   .footer-section__title
+      font-size: 5vw
+   .footer-section__links-title
+      font-size: 3vw
+   .footer-section
+      font-size: 3vw
+   .footer-section__soc-img
+      height: 8vw
+
 //Footer
