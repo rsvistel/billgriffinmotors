@@ -13,13 +13,20 @@
 
 .title-address h4 {
   text-transform: uppercase;
-  font-size: 1.25vw; }
+  font-size: 1.25vw;
+  margin-bottom: 0; }
 
-.title-address img, .title-contact img {
-  width: 10%; }
-
-.title-contact img {
+.title-address embed, .title-contact embed {
   margin-right: 10px; }
+
+.title-address embed {
+  width: 8%; }
+
+.title-contact embed {
+  width: 11%; }
+
+.number-phone h4 {
+  margin-bottom: 0; }
 
 .title-address, .title-contact {
   display: flex;
@@ -35,9 +42,10 @@
 .sales-text {
   font-weight: 400; }
 
-.social-icon img {
-  width: 7%;
-  margin-right: 5px; }
+.social-icon embed {
+  margin-right: 15px;
+  pointer-events: none;
+  cursor: pointer; }
 
 .social-icon {
   display: flex;
