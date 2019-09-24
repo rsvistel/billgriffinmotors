@@ -5,44 +5,6 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   margin: 0;
   padding: 0; }
 
-.footer-section {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.4vw;
-  min-height: 217px;
-  padding: 0 0 2vw 0;
-  background: #EAEDF0;
-  color: #000000; }
-
-.footer-section__title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5vw; }
-
-.footer-section__title-accent {
-  color: #005EAA; }
-
-.footer-section__links-title {
-  font-size: 2.1vw;
-  font-weight: 600;
-  padding-bottom: 0.6vw; }
-
-.footer-section__soc-items {
-  list-style: none;
-  display: flex; }
-
-.footer-section__links-items {
-  list-style: none; }
-
-.footer-section__links-item {
-  padding-bottom: 0.5vw; }
-
-.footer-section__link {
-  color: #000000;
-  text-decoration: none; }
-
-.footer-section__link:hover {
-  color: #000000;
-  text-decoration: none; }
-
 .upper-half-header {
   padding: 0 5%;
   display: flex;
@@ -144,5 +106,43 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41; }
+
+.footer-section {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4vw;
+  min-height: 217px;
+  padding: 0 0 2vw 0;
+  background: #EAEDF0;
+  color: #000000; }
+
+.footer-section__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5vw; }
+
+.footer-section__title-accent {
+  color: #005EAA; }
+
+.footer-section__links-title {
+  font-size: 2.1vw;
+  font-weight: 600;
+  padding-bottom: 0.6vw; }
+
+.footer-section__soc-items {
+  list-style: none;
+  display: flex; }
+
+.footer-section__links-items {
+  list-style: none; }
+
+.footer-section__links-item {
+  padding-bottom: 0.5vw; }
+
+.footer-section__link {
+  color: #000000;
+  text-decoration: none; }
+
+.footer-section__link:hover {
+  color: #000000;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
