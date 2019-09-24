@@ -111,19 +111,25 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4vw;
   min-height: 217px;
-  padding: 0 0 2vw 0;
+  padding: 3vw;
   background: #EAEDF0;
   color: #000000; }
 
 .footer-section__title {
   font-family: "Open Sans", sans-serif;
-  font-size: 2.5vw; }
+  font-size: 2.5vw;
+  text-decoration: none;
+  color: #000000; }
+
+.footer-section__title:hover {
+  text-decoration: none;
+  color: #000000; }
 
 .footer-section__title-accent {
   color: #005EAA; }
 
 .footer-section__links-title {
-  font-size: 2.1vw;
+  font-size: 1.6vw;
   font-weight: 600;
   padding-bottom: 0.6vw; }
 
@@ -131,11 +137,14 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   list-style: none;
   display: flex; }
 
+.footer-section__soc-img {
+  height: 5vw; }
+
 .footer-section__links-items {
   list-style: none; }
 
 .footer-section__links-item {
-  padding-bottom: 0.5vw; }
+  padding-bottom: 0.8vw; }
 
 .footer-section__link {
   color: #000000;
@@ -144,5 +153,33 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 .footer-section__link:hover {
   color: #000000;
   text-decoration: none; }
+
+.footer-section__description {
+  font-size: 1.3vw;
+  line-height: 1.7; }
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding-top: 2vw 2vw; }
+
+  .footer-section__title {
+    font-size: 5vw; }
+
+  .footer-section__links-title {
+    font-size: 2.5vw;
+    padding-top: 2vw; }
+
+  .footer-section__link {
+    font-size: 2vw; }
+
+  .footer-section {
+    font-size: 3vw; }
+
+  .footer-section__soc-img {
+    height: 8vw; }
+
+  .footer-section__description {
+    padding-top: 3vw;
+    font-size: 2vw; } }
 
 /*# sourceMappingURL=style.css.map */
