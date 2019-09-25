@@ -1,0 +1,79 @@
+$primary-font: 'Montserrat', sans-serif
+$secondary-font: 'Open Sans', sans-serif
+$dark-blue: #005EAA
+$light-blue: #00C4FC
+@media (max-width: 767px)
+  .title-address, .title-contact, .social-icon
+    display: none
+
+  .title-logo
+    font-size: 19px
+    line-height: 21px
+
+  .title-logo-bottom
+    margin: 0
+    font-size: 14px
+
+  .bottom-half-header
+    height: auto
+    display: none
+    background: #ffffff
+    padding: 3% 7% 3% 7%
+    ul
+      display: block
+      li
+        height: 30px
+        a
+          h6
+            font-size: 15px
+            text-transform: capitalize
+            color: #363636
+            font-weight: 500
+            font-family: $secondary-font
+
+  .upper-half-header
+    padding: 2% 4% 1% 4%
+
+  .mobile-open
+    display: block
+    object
+      pointer-events: none
+      cursor: pointer
+      &:last-child
+        width: 30px
+        display: none
+
+  .mobile-section-under-header
+    display: flex
+    align-items: center
+    background: black
+    height: 60px
+    .contact-text
+      font-size: 17px
+      line-height: 22px
+      font-weight: 300
+      font-family: $secondary-font
+    .sales-number, .contact-text
+      color: #ffffff
+      margin-left: 8px
+    embed
+      width: 10%
+
+
+
+@media (min-width: 767px)
+  .hamburger-icon
+    display: none
+
+
+@media (min-width: 450px) and (max-width: 767px)
+  .mobile-section-under-header embed
+    width: 6%
+
+
+@media (min-width: 768px) and (max-width: 1000px)
+  .title-logo
+    font-size: 1.5vw
+
+  .title-logo-bottom
+    margin: 0

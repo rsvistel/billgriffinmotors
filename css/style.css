@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -14,22 +16,33 @@ body {
   min-height: 100vh; }
 
 .upper-half-header {
-  padding: 0 5%;
+  padding: 0.5% 4% 1% 4%;
   display: flex;
   justify-content: space-between; }
 
 .title-logo {
   text-transform: uppercase;
-  font-size: 1.7vw;
-  font-weight: 600; }
+  font-size: 1.8vw;
+  line-height: 2vw;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif; }
+
+.titles-logo {
+  padding-left: 0; }
+
+.social-icon {
+  padding-right: 0; }
 
 .motors-title-logo {
-  color: darkblue; }
+  color: #005EAA; }
 
-.title-address h4 {
+.title-address .text-title-address {
   text-transform: uppercase;
-  font-size: 1.25vw;
-  margin-bottom: 0; }
+  font-size: 1.1vw;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif; }
 
 .title-address embed, .title-contact embed {
   margin-right: 10px; }
@@ -48,17 +61,27 @@ body {
   align-items: center; }
 
 .title-logo-bottom {
-  text-align: center; }
+  margin: 0 1.6vw;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.35vw;
+  font-weight: 600; }
 
 .number-phone {
   display: flex;
   flex-direction: column; }
 
 .sales-text {
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 1.1vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 0.8vw; }
+
+.sales-number {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600; }
 
 .social-icon embed {
-  margin-right: 15px;
   pointer-events: none;
   cursor: pointer; }
 
@@ -66,54 +89,53 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: flex-end; }
+  .social-icon ul {
+    display: flex;
+    list-style-type: none; }
+    .social-icon ul a {
+      margin-right: 15px; }
+      .social-icon ul a:last-child {
+        margin-right: 0px; }
 
 .bottom-half-header {
   background-color: #ebedf0;
-  height: 40px; }
+  height: 3vw;
+  padding: 0 2.7%; }
+  .bottom-half-header ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0; }
+    .bottom-half-header ul li {
+      padding: 0 1.3%;
+      height: 3vw;
+      display: flex;
+      align-items: center;
+      transition: 0.5s; }
+      .bottom-half-header ul li:hover {
+        background-color: #005EAA;
+        cursor: pointer; }
+        .bottom-half-header ul li:hover h6 {
+          color: #ffffff; }
+      .bottom-half-header ul li.active {
+        background-color: #005EAA; }
+        .bottom-half-header ul li.active h6 {
+          color: #ffffff; }
+      .bottom-half-header ul li a {
+        text-decoration: none;
+        color: #000000; }
+        .bottom-half-header ul li a h6 {
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          font-size: 1vw; }
 
-.bottom-half-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
-  margin-bottom: 0; }
-  .bottom-half-header ul li {
-    text-transform: uppercase; }
+.mobile-open {
+  display: none; }
 
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none; }
-
-.dropdown {
-  position: relative;
-  display: inline-block; }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block; }
-
-.dropdown-content a:hover {
-  background-color: #ddd; }
-
-.dropdown:hover .dropdown-content {
-  display: block; }
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41; }
+.mobile-section-under-header {
+  display: none; }
 
 .footer-section {
   font-family: "Montserrat", sans-serif;
@@ -121,7 +143,8 @@ body {
   width: 100%;
   padding: 30px 15px;
   background: #EAEDF0;
-  color: #000000; }
+  color: #000000;
+  margin-top: 150px; }
 
 .footer-section .container {
   max-width: 1305px;
