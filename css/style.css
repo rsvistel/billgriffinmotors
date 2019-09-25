@@ -45,7 +45,7 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .title-address embed, .title-contact embed {
-  margin-right: 10px; }
+  margin-right: 8px; }
 
 .title-address embed {
   width: 8%; }
@@ -89,12 +89,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: center; }
   .social-icon ul {
     display: flex;
     list-style-type: none; }
     .social-icon ul a {
-      margin-right: 15px; }
+      margin-right: 17px; }
       .social-icon ul a:last-child {
         margin-right: 0px; }
 
@@ -231,7 +231,7 @@ body {
   .card-header {
     padding: 27px 18px; } }
 .section__title-blue {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   min-height: 128px;
   width: 100%;
   background: #005EAA;
@@ -248,7 +248,7 @@ body {
   font-size: 12px; }
 
 .accordion__wrapper {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   max-width: 1172px;
   margin: 30px auto;
   margin-top: 21px; }
