@@ -6,6 +6,14 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
    margin: 0
    padding: 0
 
+html
+   font-size: 16px
+
+body
+   padding: 0
+   margin: 0
+   min-height: 100vh
+
 //Header
 .upper-half-header
    padding: 0 5%
@@ -120,15 +128,23 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 //Footer
 .footer-section
    font-family: 'Montserrat', sans-serif
-   font-size: 1.4vw
    min-height: 217px
-   padding:  3vw
+   width: 100%
+   padding: 30px 15px
    background: #EAEDF0
    color: #000000
 
+.footer-section .container
+   max-width: 1305px
+   width: 100%
+
+.footer-section__row
+   padding-left: 0
+   padding-right: 0
+
 .footer-section__title
    font-family: 'Open Sans', sans-serif
-   font-size: 2.5vw
+   font-size: 2.4rem
    text-decoration: none
    color: #000000
 
@@ -140,57 +156,61 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
    color: #005EAA
 
 .footer-section__links-title
-   font-size: 1.6vw
+   font-size: 1.35rem
    font-weight: 600
-   padding-bottom: 0.6vw
+   padding-bottom: 20px
 
 .footer-section__soc-items
    list-style: none
    display: flex
 
 .footer-section__soc-img
-   height: 5vw
+   height: 70px
 
 .footer-section__links-items
    list-style: none
 
 .footer-section__links-item
-   padding-bottom: 0.8vw
+   padding-bottom: 15px
+
+.footer-section__links-item:last-child
+   padding-bottom: 0
 
 .footer-section__link
    color: #000000
    text-decoration: none
+   font-size: 1.31rem
 
 .footer-section__link:hover
    color: #000000
    text-decoration: none
 .footer-section__description
-   font-size: 1.3vw
+   font-size: 1rem
    line-height: 1.7
 
 @media (max-width: 768px)
    .footer-section
-      padding-top: 2vw 2vw
+      padding-top: 34px
+      padding-left: 20px
+      padding-right: 20px
 
    .footer-section__title
-      font-size: 5vw
+      font-size: 32px
+      padding-bottom: 18px
 
    .footer-section__links-title
-      font-size: 2.5vw
-      padding-top: 2vw
+      font-size: 22px
+      padding-bottom: 22px
 
-   .footer-section__link
-      font-size: 2vw
-
-   .footer-section
-      font-size: 3vw
+   .footer-section__soc-items
+      padding-top: 18px
 
    .footer-section__soc-img
-      height: 8vw
+      height: 62px
 
    .footer-section__description
-      padding-top: 3vw
-      font-size: 2vw
+      padding-top: 40px
+      padding-bottom: 60px
 
 //FAQ-page
 
