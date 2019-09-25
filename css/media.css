@@ -1,0 +1,69 @@
+@media (max-width: 767px) {
+  .title-address, .title-contact, .social-icon {
+    display: none; }
+
+  .title-logo {
+    font-size: 19px;
+    line-height: 21px; }
+
+  .title-logo-bottom {
+    margin: 0;
+    font-size: 14px; }
+
+  .bottom-half-header {
+    height: auto;
+    display: none;
+    background: #ffffff;
+    padding: 3% 7% 3% 7%; }
+    .bottom-half-header ul {
+      display: block; }
+      .bottom-half-header ul li {
+        height: 30px; }
+        .bottom-half-header ul li a h6 {
+          font-size: 15px;
+          text-transform: capitalize;
+          color: #363636;
+          font-weight: 500;
+          font-family: "Open Sans", sans-serif; }
+
+  .upper-half-header {
+    padding: 2% 4% 1% 4%; }
+
+  .mobile-open {
+    display: block; }
+    .mobile-open object {
+      pointer-events: none;
+      cursor: pointer; }
+      .mobile-open object:last-child {
+        width: 30px;
+        display: none; }
+
+  .mobile-section-under-header {
+    display: flex;
+    align-items: center;
+    background: black;
+    height: 60px; }
+    .mobile-section-under-header .contact-text {
+      font-size: 17px;
+      line-height: 22px;
+      font-weight: 300;
+      font-family: "Open Sans", sans-serif; }
+    .mobile-section-under-header .sales-number, .mobile-section-under-header .contact-text {
+      color: #ffffff;
+      margin-left: 8px; }
+    .mobile-section-under-header embed {
+      width: 10%; } }
+@media (min-width: 767px) {
+  .hamburger-icon {
+    display: none; } }
+@media (min-width: 450px) and (max-width: 767px) {
+  .mobile-section-under-header embed {
+    width: 6%; } }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .title-logo {
+    font-size: 1.5vw; }
+
+  .title-logo-bottom {
+    margin: 0; } }
+
+/*# sourceMappingURL=media.css.map */

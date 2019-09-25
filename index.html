@@ -8,76 +8,137 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<section class="header">
+<section class="header topnav" id="myTopnav">
     <div class="container-fluid">
         <div class="row">
-            <div class="upper-half-header">
+            <div class="col-md-12 upper-half-header">
 
                 <div class="titles-logo col-md-3">
                   <h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>
                   <h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>
                 </div>
 
+                    <div class="mobile-open">
+                        <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
+                        <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
+                    </div>
+
                 <div class="title-address col-md-4">
                     <embed src="img/header/location.svg">
-                    <h4>frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw</h4>
+                    <h4 class="text-title-address">frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw</h4>
                 </div>
 
                 <div class="title-contact col-md-3">
                     <embed src="img/header/phone.svg">
                     <div class="number-phone">
                         <h4 class="sales-text">sales:</h4>
-                        <h4>01-4569562</h4>
+                        <h6 class="sales-number">01-4569562</h6>
                     </div>
                 </div>
 
                 <div class="social-icon col-md-2">
                     <ul>
-                        <li>
-                            <a>
+
+                        <a href="#">
+                            <li>
                               <embed src="img/header/social-icons/facebook.svg">
-                            </a>
-                        </li>
+                            </li>
+                        </a>
 
-                        <li>
-                            <a>
+                        <a href="#">
+                            <li>
                               <embed src="img/header/social-icons/instagram.svg">
-                            </a>
-                        </li>
+                            </li>
+                        </a>
 
-                        <li>
-                            <a>
+                        <a href="#">
+                            <li>
                                 <embed src="img/header/social-icons/mail.svg">
-                            </a>
-                        </li>
+                            </li>
+                        </a>
+
                     </ul>
                 </div>
             </div>
 
             <div class="col-md-12 bottom-half-header">
                <ul>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
-                   <li>menu</li>
+                   <li>
+                       <a href="#">
+                             <h6>home</h6>
+                       </a>
+                   </li>
 
+                   <li>
+                       <a href="#">
+                            <h6>about</h6>
+                       </a>
+                   </li>
+
+                   <li>
+                       <a href="#">
+                           <h6>used cars</h6>
+                       </a>
+                   </li>
+
+                   <li>
+                       <a href="#">
+                           <h6>apply for finance</h6>
+                       </a>
+                   </li>
+
+
+                   <li>
+                       <a href="#">
+                           <h6>cash for cars</h6>
+                       </a>
+                   </li>
+
+
+                   <li>
+                       <a href="#">
+                           <h6>our reviews</h6>
+                       </a>
+                   </li>
+
+                   <li>
+                       <a href="#">
+                            <h6>my shortlist</h6>
+                       </a>
+                   </li>
+
+                   <li class="active">
+                       <a href="#">
+                            <h6>FAQ</h6>
+                       </a>
+                   </li>
+
+                   <li>
+                       <a href="#">
+                          <h6>contact us</h6>
+                       </a>
+                   </li>
 
                </ul>
             </div>
+
+            <div class="mobile-section-under-header col-xs-12 col-md-12">
+                <embed src="img/header/white-phone.svg">
+                <div class="number-phone">
+                    <h4 class="contact-text">Contact Us:</h4>
+                    <h6 class="sales-number">01-4569562</h6>
+                </div>
+            </div>
         </div>
+
+
     </div>
-
 </section>
-
 
 <footer class="footer-section">
     <div class="container-fluid">
@@ -110,5 +171,6 @@
         </div>
     </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
