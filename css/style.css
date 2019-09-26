@@ -398,6 +398,9 @@ body {
     font-size: 0.7rem; }
 
   .accordion__button {
+    font-size: 12px; }
+
+  .accordion .card-body {
     font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
