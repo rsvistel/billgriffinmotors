@@ -238,6 +238,20 @@ body {
 
   .card-header {
     padding: 27px 18px; } }
+.used-car-section {
+  width: 100%;
+  margin-top: 100px; }
+
+.used-car-section .container {
+  max-width: 1305px;
+  width: 100%; }
+
+.carousel-inner {
+  max-width: 890px; }
+
+.carousel-indicators {
+  position: inherit; }
+
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
