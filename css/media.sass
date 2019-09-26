@@ -6,8 +6,11 @@ $light-blue: #00C4FC
   .title-address, .title-contact, .social-icon
     display: none
 
+  .titles-logo
+    padding-right: 0
+
   .title-logo
-    font-size: 19px
+    font-size: 20px
     line-height: 21px
 
   .title-logo-bottom
@@ -18,21 +21,38 @@ $light-blue: #00C4FC
     height: auto
     display: none
     background: #ffffff
-    padding: 3% 7% 3% 7%
-    ul
-      display: block
-      li
-        height: 30px
-        a
-          h6
-            font-size: 15px
-            text-transform: capitalize
-            color: #363636
-            font-weight: 500
-            font-family: $secondary-font
+    padding: 3% 5% 3% 5%
+    .container
+      ul
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        li
+          height: auto
+          padding: 7px
+          &:first-child
+            margin-left: 0
+          a
+            h6
+              font-size: 20px
+              text-transform: capitalize
+              color: #363636
+              font-weight: 500
+              font-family: $secondary-font
+
+  .bottom-half-header .container ul
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    li:first-child
+      margin-left: 0
+
 
   .upper-half-header
     padding: 2% 4% 1% 4%
+    display: flex
+    justify-content: space-between
+    align-items: center
 
   .mobile-open
     display: block
@@ -47,17 +67,23 @@ $light-blue: #00C4FC
     display: flex
     align-items: center
     background: black
-    height: 60px
+    height: 65px
     .contact-text
-      font-size: 17px
-      line-height: 22px
+      font-size: 18px
+      line-height: 28px
       font-weight: 300
       font-family: $secondary-font
     .sales-number, .contact-text
       color: #ffffff
       margin-left: 8px
+    .sales-number
+      font-size: 1.1rem
     embed
-      width: 10%
+      width: 9%
+
+  .mobile-open object:last-child
+    width: 41px
+    height: 36px
 
 
 
@@ -77,3 +103,60 @@ $light-blue: #00C4FC
 
   .title-logo-bottom
     margin: 0
+
+
+
+@media (min-width: 1000px) and (max-width: 1112px)
+  .bottom-half-header .container ul li a h6, .title-address .text-title-address, .number-phone h4
+    font-size: 0.75rem
+
+@media (min-width: 1000px) and (max-width: 1250px)
+  .upper-half-header
+    padding: 10px 15px
+
+  .title-logo
+    font-size: 1.3rem
+
+  .titles-logo
+    padding-right: 5%
+    width: 52%
+
+  .title-logo-bottom
+    font-size: 1rem
+
+  .title-logo-bottom
+    margin: 0 1rem
+
+  .title-address, .title-contact
+    max-width: 32%
+
+
+@media (min-width: 768px) and (max-width: 1000px)
+  .bottom-half-header .container ul li a h6
+    font-size: 1.2vw
+
+  .title-address .text-title-address, .number-phone h4
+    font-size: 0.7rem
+
+  .upper-half-header
+    padding: 10px
+
+  .title-logo
+    font-size: 0.8rem
+
+  .titles-logo
+    padding-right: 2%
+    width: 50%
+
+  .title-logo-bottom
+    font-size: 0.7rem
+
+  .title-logo-bottom
+    margin: 0 0.3rem
+
+  .title-address, .title-contact
+    max-width: 32%
+
+
+
+
