@@ -180,7 +180,7 @@ body {
   padding-top: 1rem; }
 
 .footer-section__soc-item {
-  padding-right: 30px; }
+  padding-right: 25px; }
 
 .footer-section__soc-item:last-child {
   padding-right: 0; }
@@ -192,7 +192,7 @@ body {
   list-style: none; }
 
 .footer-section__links-item {
-  padding-bottom: 10px; }
+  padding-bottom: 6px; }
 
 .footer-section__links-item:last-child {
   padding-bottom: 0; }
@@ -200,7 +200,8 @@ body {
 .footer-section__link {
   color: #000000;
   text-decoration: none;
-  font-size: 1.31rem; }
+  font-size: 21px;
+  font-weight: 400; }
 
 .footer-section__link:hover {
   color: #000000;
@@ -320,14 +321,15 @@ body {
 
 .accordion > .card {
   cursor: pointer;
-  background: #F5F5F5;
   border: 1px solid #CCCCCC;
   border-radius: 0; }
 
 .accordion .card-body {
   font-family: "Open Sans", sans-serif;
+  background: #FFFFFF;
   font-size: 15px;
-  padding: 20px 32px; }
+  padding: 20px 32px;
+  border-top: 1px solid #CCCCCC; }
 
 .accordion__card-items {
   padding-left: 0;
@@ -341,7 +343,8 @@ body {
   padding-bottom: 0; }
 
 .card-header {
-  padding-right: 21px; }
+  padding-right: 21px;
+  background: #F5F5F5; }
 
 @media only screen and (max-width: 767px) {
   .section__title-blue {
