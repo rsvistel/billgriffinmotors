@@ -156,10 +156,6 @@ body {
   padding-left: 0;
   padding-right: 0; }
 
-.card-header {
-  padding-left: 25px;
-  padding-right: 21px; }
-
 .footer-section__title {
   font-family: "Open Sans", sans-serif;
   font-size: 2.4rem;
@@ -176,21 +172,27 @@ body {
 .footer-section__links-title {
   font-size: 1.35rem;
   font-weight: 600;
-  padding-bottom: 20px; }
+  padding-bottom: 13px; }
 
 .footer-section__soc-items {
   list-style: none;
   display: flex;
   padding-top: 1rem; }
 
+.footer-section__soc-item {
+  padding-right: 30px; }
+
+.footer-section__soc-item:last-child {
+  padding-right: 0; }
+
 .footer-section__soc-img {
-  height: 70px; }
+  height: 100%; }
 
 .footer-section__links-items {
   list-style: none; }
 
 .footer-section__links-item {
-  padding-bottom: 15px; }
+  padding-bottom: 10px; }
 
 .footer-section__links-item:last-child {
   padding-bottom: 0; }
@@ -208,14 +210,19 @@ body {
   font-size: 1rem;
   line-height: 1.7; }
 
-.footer-section__soc-items li a img {
-  transition: 0.4s; }
-  .footer-section__soc-items li a img:hover {
-    transform: scale(1.3); }
+@media screen and (max-width: 1099px) and (min-width: 992px) {
+  .footer-section__title {
+    font-size: 2.1rem; }
 
+  .footer-section__soc-item {
+    padding-right: 25px; } }
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  .footer-section__description {
+    padding-top: 24px;
+    padding-bottom: 44px; } }
 @media (max-width: 768px) {
   .footer-section {
-    padding-top: 34px;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px; }
 
@@ -228,14 +235,46 @@ body {
     padding-bottom: 22px; }
 
   .footer-section__soc-items {
-    padding-top: 18px; }
+    padding-top: 11px; }
+
+  .footer-section__soc-item {
+    padding-right: 24px; }
 
   .footer-section__soc-img {
-    height: 62px; }
+    height: 59px; }
 
   .footer-section__description {
-    padding-top: 40px;
-    padding-bottom: 60px; } }
+    padding-top: 24px;
+    padding-bottom: 44px; } }
+@media only screen and (max-width: 410px) {
+  .footer-section__title {
+    font-size: 25px; }
+
+  .footer-section__soc-img {
+    height: 64%; }
+
+  .footer-section__description {
+    padding-top: 0;
+    padding-bottom: 24px; }
+
+  .footer-section__links-title {
+    font-size: 20px; }
+
+  .footer-section__link {
+    font-size: 1.2rem; } }
+@media only screen and (max-width: 320px) {
+  .footer-section__title {
+    font-size: 24px; }
+
+  .footer-section__soc-img {
+    height: 70%; }
+
+  .footer-section__soc-item {
+    padding-right: 14px; }
+
+  .footer-section__description {
+    padding-top: 0;
+    padding-bottom: 34px; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
@@ -288,7 +327,7 @@ body {
 .accordion .card-body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  padding: 20px 38px; }
+  padding: 20px 32px; }
 
 .accordion__card-items {
   padding-left: 0;
@@ -300,6 +339,9 @@ body {
 
 .accordion__card-items li:last-child {
   padding-bottom: 0; }
+
+.card-header {
+  padding-right: 21px; }
 
 @media only screen and (max-width: 767px) {
   .section__title-blue {
@@ -340,7 +382,7 @@ body {
     font-size: 0.8rem; }
 
   .accordion__button {
-    font-size: 17px; }
+    font-size: 15px; }
 
   .accordion__title img {
     height: 21px;
@@ -356,6 +398,6 @@ body {
     font-size: 0.7rem; }
 
   .accordion__button {
-    font-size: 14px; } }
+    font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
