@@ -299,7 +299,12 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
     width: 80%; }
 
 #statistics {
-  text-align: center; }
+  text-align: center;
+  color: #fff;
+  background: url("../img/home/bmw.png");
+  padding: 5% 0; }
+  #statistics span {
+    color: blue; }
 
 .footer-section {
   font-family: "Montserrat", sans-serif;
