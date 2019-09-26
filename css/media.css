@@ -72,7 +72,11 @@
     .mobile-section-under-header .sales-number {
       font-size: 1.1rem; }
     .mobile-section-under-header embed {
-      width: 9%; } }
+      width: 9%; }
+
+  .mobile-open object:last-child {
+    width: 41px;
+    height: 36px; } }
 @media (min-width: 767px) {
   .hamburger-icon {
     display: none; } }
