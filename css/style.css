@@ -157,7 +157,8 @@ body {
   padding-right: 0; }
 
 .card-header {
-  padding: 24px 40px; }
+  padding-left: 25px;
+  padding-right: 21px; }
 
 .footer-section__title {
   font-family: "Open Sans", sans-serif;
@@ -234,26 +235,29 @@ body {
 
   .footer-section__description {
     padding-top: 40px;
-    padding-bottom: 60px; }
-
-  .card-header {
-    padding: 27px 18px; } }
+    padding-bottom: 60px; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
   width: 100%;
   background: #005EAA;
   color: #FFFFFF;
-  padding: 18px 0 0 16px;
+  padding: 5px 0 0 16px;
   margin-top: 18px; }
+
+.section__title-blue-container {
+  padding-left: 8px; }
 
 .title-blue {
   font-weight: bold;
-  font-size: 26px;
-  padding-bottom: 13px; }
+  font-size: 1.625rem;
+  padding-bottom: 8px; }
 
 .descripton-blue {
-  font-size: 12px; }
+  font-size: 0.75rem; }
+
+.descripton-blue {
+  font-size: 0.75rem; }
 
 .accordion__wrapper {
   font-family: "Montserrat", sans-serif;
@@ -284,12 +288,18 @@ body {
 .accordion .card-body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  padding: 20px 54px; }
+  padding: 20px 38px; }
 
 .accordion__card-items {
   padding-left: 0;
   list-style-type: none;
   margin-bottom: 0; }
+
+.accordion__card-items li {
+  padding-bottom: 6px; }
+
+.accordion__card-items li:last-child {
+  padding-bottom: 0; }
 
 @media only screen and (max-width: 767px) {
   .section__title-blue {
@@ -302,6 +312,9 @@ body {
   .title-blue {
     font-size: 26px; }
 
+  .section__title-blue-container {
+    padding-left: 0; }
+
   .descripton-blue {
     font-size: 14px; }
 
@@ -310,10 +323,39 @@ body {
 
   .accordion__button {
     padding-left: 0;
-    font-size: 18px; }
+    font-size: 18px;
+    text-align: left; }
 
   .accordion .card-body {
     font-size: 15px;
-    padding: 22px 18px; } }
+    padding-left: 18px; }
+
+  .card-header {
+    padding: 11px 18px; } }
+@media only screen and (max-width: 390px) {
+  .title-blue {
+    font-size: 1.35rem; }
+
+  .descripton-blue {
+    font-size: 0.8rem; }
+
+  .accordion__button {
+    font-size: 17px; }
+
+  .accordion__title img {
+    height: 21px;
+    margin-top: 8px; }
+
+  .accordion .card-body {
+    font-size: 14px; } }
+@media only screen and (max-width: 320px) {
+  .title-blue {
+    font-size: 1.2rem; }
+
+  .descripton-blue {
+    font-size: 0.7rem; }
+
+  .accordion__button {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
