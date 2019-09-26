@@ -87,7 +87,7 @@
     margin: 0; } }
 @media (min-width: 1000px) and (max-width: 1112px) {
   .bottom-half-header .container ul li a h6, .title-address .text-title-address, .number-phone h4 {
-    font-size: 0.8rem; } }
+    font-size: 0.75rem; } }
 @media (min-width: 1000px) and (max-width: 1250px) {
   .upper-half-header {
     padding: 10px 15px; }
@@ -108,24 +108,27 @@
   .title-address, .title-contact {
     max-width: 32%; } }
 @media (min-width: 768px) and (max-width: 1000px) {
-  .bottom-half-header .container ul li a h6, .title-address .text-title-address, .number-phone h4 {
-    font-size: 0.8rem; }
+  .bottom-half-header .container ul li a h6 {
+    font-size: 1.2vw; }
+
+  .title-address .text-title-address, .number-phone h4 {
+    font-size: 0.7rem; }
 
   .upper-half-header {
-    padding: 10px 15px; }
+    padding: 10px; }
 
   .title-logo {
-    font-size: 1.3rem; }
+    font-size: 0.8rem; }
 
   .titles-logo {
-    padding-right: 5%;
-    width: 52%; }
+    padding-right: 2%;
+    width: 50%; }
 
   .title-logo-bottom {
-    font-size: 1rem; }
+    font-size: 0.7rem; }
 
   .title-logo-bottom {
-    margin: 0 1rem; }
+    margin: 0 0.3rem; }
 
   .title-address, .title-contact {
     max-width: 32%; } }
