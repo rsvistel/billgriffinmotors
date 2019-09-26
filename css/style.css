@@ -234,7 +234,8 @@ body {
 
   .footer-section__links-title {
     font-size: 22px;
-    padding-bottom: 22px; }
+    padding-bottom: 22px;
+    padding-top: 0; }
 
   .footer-section__soc-items {
     padding-top: 11px; }
