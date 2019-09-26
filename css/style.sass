@@ -19,16 +19,24 @@ body
    margin: 0
    min-height: 100vh
 
-//Header
-.upper-half-header
-   padding: 0.5% 4% 1% 4%
-   display: flex
-   justify-content: space-between
+.container
+   max-width: 1305px
+   width: 100%
+   padding-right: 15px
+   padding-left: 15px
 
+//Header
+//.header.topnav .row
+//   padding: 0px 15px
+.upper-half-header
+   padding: 0.5% 0 1% 0
+   display: flex
+   //justify-content: flex-start
+   align-items: center
 .title-logo
    text-transform: uppercase
-   font-size: 1.8vw
-   line-height: 2vw
+   font-size: 1.625rem
+   //line-height: 2vw
    letter-spacing: 1px
    font-weight: 700
    font-family: $secondary-font
@@ -36,29 +44,28 @@ body
 
 .titles-logo
    padding-left: 0
-
-.social-icon
-   padding-right: 0
+   padding-right: 7%
+   float: left
+   width: auto
 
 .motors-title-logo
    color: $dark-blue
 
 .title-address
+   margin-right: 2.5%
    .text-title-address
       text-transform: uppercase
-      font-size: 1.1vw
+      font-size: 1rem
       font-weight: 400
       margin-bottom: 0
       font-family: $primary-font
+      line-height: 1.1rem
 
 .title-address embed, .title-contact embed
    margin-right: 8px
 
-.title-address embed
-   width: 8%
-
-.title-contact embed
-   width: 11%
+.title-contact embed, .title-address embed
+   width: 9%
 
 .number-phone
    h4
@@ -67,11 +74,13 @@ body
 .title-address, .title-contact
    display: flex
    align-items: center
+   float: left
+   max-width: 28%
 
 .title-logo-bottom
-   margin: 0 1.6vw
+   margin: 0 1.5rem
    font-family: $secondary-font
-   font-size: 1.35vw
+   font-size: 1.188rem
    font-weight: 600
 
 .number-phone
@@ -80,14 +89,14 @@ body
 
 .sales-text
    font-weight: 400
-   font-size: 1.1vw
+   font-size: 0.95rem
    font-family: $primary-font
    text-transform: uppercase
-   line-height: 0.8vw
+   line-height: 0.7rem
 
 .sales-number
    font-family: $secondary-font
-   font-weight: 600
+   font-weight: 700
 
 .social-icon embed
    pointer-events: none
@@ -105,42 +114,48 @@ body
       a
          margin-right: 17px
          transition: 0.4s
-         &:hover
-            transform: scale(1.3)
+         //&:hover
+         //   transform: scale(1.3)
          &:last-child
             margin-right: 0px
 .bottom-half-header
    background-color: #ebedf0
-   height: 3vw
+   height: 45px
    padding: 0 2.7%
-   ul
-      display: flex
-      align-items: center
-      list-style-type: none
-      margin-bottom: 0
-      li
-         padding: 0 1.3%
-         height: 3vw
+   .container
+      padding-left: 0
+      ul
          display: flex
          align-items: center
-         transition: 0.5s
-         &:hover
-            background-color: $dark-blue
-            cursor: pointer
-            h6
-               color: #ffffff
-         &.active
-            background-color: $dark-blue
-            h6
-               color: #ffffff
-         a
-            text-decoration: none
-            color: #000000
-            h6
-               text-transform: uppercase
-               font-family: 'Montserrat', sans-serif
-               font-weight: 600
-               font-size: 1vw
+         list-style-type: none
+         margin-bottom: 0
+         li
+            padding: 0 1.3%
+            height: 45px
+            display: flex
+            align-items: center
+            transition: 0.5s
+            &:hover
+               background-color: $dark-blue
+               cursor: pointer
+               h6
+                  color: #ffffff
+            &.active
+               background-color: $dark-blue
+               h6
+                  color: #ffffff
+            a
+               text-decoration: none
+               color: #000000
+               h6
+                  text-transform: uppercase
+                  font-family: 'Montserrat', sans-serif
+                  font-weight: 600
+                  font-size: 0.9rem
+
+
+.bottom-half-header .container ul li:first-child
+   margin-left: -7px
 
 .mobile-open
    display: none
@@ -232,6 +247,11 @@ body
    .footer-section__description
       padding-top: 24px
       padding-bottom: 44px
+
+//.footer-section__soc-items li a img
+//   transition: 0.4s
+//   &:hover
+//      transform: scale(1.3)
 
 @media (max-width: 768px)
    .footer-section
