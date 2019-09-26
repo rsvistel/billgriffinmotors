@@ -172,7 +172,8 @@ body {
 .footer-section__links-title {
   font-size: 1.35rem;
   font-weight: 600;
-  padding-bottom: 13px; }
+  padding-bottom: 13px;
+  padding-top: 7px; }
 
 .footer-section__soc-items {
   list-style: none;
