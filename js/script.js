@@ -17,11 +17,6 @@ $(document).ready(function(){
    }).on('hide.bs.collapse', function(){
    $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
    });
-
-   // MDB Lightbox Init
-    $(function () {
-    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-    });
 });
 
 
