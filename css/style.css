@@ -107,6 +107,200 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41; }
 
+#banner {
+  position: relative;
+  text-align: center; }
+  #banner #banner-image {
+    text-align: center; }
+    #banner #banner-image img {
+      width: 100%;
+      max-width: 1800px; }
+  #banner #search-box {
+    width: 100%;
+    max-width: 1800px;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); }
+    #banner #search-box h3 {
+      color: #fff;
+      text-align: left; }
+      #banner #search-box h3 object {
+        height: 20px; }
+    #banner #search-box .col-md-3 {
+      text-align: center;
+      padding: 0 1%; }
+      #banner #search-box .col-md-3 select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url(../img/home/arrow-down.svg);
+        background-position: center right 10px;
+        background-size: 5%;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        padding-left: 10px; }
+      #banner #search-box .col-md-3 button {
+        background: blue;
+        border: none;
+        border-radius: 5px;
+        color: white; }
+        #banner #search-box .col-md-3 button object {
+          width: 15px;
+          position: relative;
+          top: 1px; }
+      #banner #search-box .col-md-3 button, #banner #search-box .col-md-3 select {
+        width: 100%;
+        height: 40px; }
+
+@media only screen and (max-width: 768px) {
+  #banner #banner-image {
+    display: flex;
+    justify-content: center; }
+    #banner #banner-image img {
+      height: 200px;
+      width: auto; }
+  #banner #search-box {
+    position: static;
+    background: black;
+    padding: 5% 5% 10%; } }
+#special-offers {
+  margin-bottom: 2%; }
+  #special-offers h2 {
+    margin: 2% 0;
+    text-align: center; }
+  #special-offers .owl-carousel {
+    padding: 0 3%; }
+    #special-offers .owl-carousel .owl-nav.disabled {
+      display: flex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      justify-content: space-between;
+      pointer-events: none; }
+      #special-offers .owl-carousel .owl-nav.disabled button {
+        pointer-events: auto; }
+        #special-offers .owl-carousel .owl-nav.disabled button object {
+          pointer-events: none; }
+
+.car-tile {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 0; }
+  .car-tile .car-title h2, .car-tile .car-title p {
+    font-size: 22px; }
+  .car-tile .car-title h2 {
+    font-weight: bold; }
+  .car-tile .car-image {
+    position: relative; }
+    .car-tile .car-image img {
+      width: 100%; }
+    .car-tile .car-image .car-like, .car-tile .car-image .car-image-counter {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .car-tile .car-image .car-like {
+      text-align: center;
+      right: 0;
+      bottom: -22.5px;
+      z-index: 101; }
+    .car-tile .car-image .car-image-counter {
+      color: #fff; }
+  .car-tile .car-price {
+    font-size: 22px; }
+    .car-tile .car-price .row {
+      margin: 0; }
+    .car-tile .car-price .col-6 {
+      background: #ECEBE9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 5% 0; }
+      .car-tile .car-price .col-6:first-child {
+        border-right: 1px solid #fff; }
+      .car-tile .car-price .col-6:last-child {
+        border-left: 1px solid #fff;
+        color: blue; }
+        .car-tile .car-price .col-6:last-child p {
+          font-size: 9px; }
+  .car-tile .car-desc {
+    padding: 2% 0; }
+    .car-tile .car-desc .row {
+      margin: 0; }
+    .car-tile .car-desc .col-6 {
+      margin: 2% 0;
+      padding: 0 8%; }
+
+#feedback {
+  background-image: url("../img/home/Untitled-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7% 0 0;
+  text-align: center; }
+  #feedback .feedback-item {
+    background: #fff;
+    text-align: left; }
+  #feedback button {
+    color: white;
+    background: blue;
+    border: none;
+    text-transform: uppercase;
+    margin: 5% 0; }
+
+#youtube-video {
+  padding: 3% 0;
+  text-align: center; }
+
+#office {
+  padding: 3% 0;
+  background: lightgrey; }
+  #office .card {
+    padding: 0;
+    flex: 0 0 31%;
+    max-width: 31%; }
+    #office .card:nth-child(2) {
+      margin: 0 3.5%; }
+    #office .card .card-title {
+      border-bottom: 1px solid grey;
+      padding: 3%;
+      margin: 0; }
+    #office .card .card-body {
+      padding: 0;
+      position: relative; }
+      #office .card .card-body #map {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%; }
+      #office .card .card-body ul {
+        list-style: none; }
+        #office .card .card-body ul .highlighted {
+          color: blue; }
+        #office .card .card-body ul .row {
+          margin: 0; }
+          #office .card .card-body ul .row .col-6:last-child {
+            text-align: right; }
+      #office .card .card-body img {
+        width: 100%; }
+
+#cars-popup {
+  text-align: center;
+  padding: 3% 0; }
+  #cars-popup img {
+    width: 80%; }
+
+#statistics {
+  text-align: center; }
+
 .footer-section {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4vw;
@@ -144,5 +338,3 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 .footer-section__link:hover {
   color: #000000;
   text-decoration: none; }
-
-/*# sourceMappingURL=style.css.map */
