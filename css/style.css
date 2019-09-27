@@ -432,7 +432,7 @@ body {
     #accordion.cards-serch-results .card:first-child {
       border-top: 1px solid #CCCCCC; }
     #accordion.cards-serch-results .card .card-header {
-      padding: 8px 10px;
+      padding: 7px 10px;
       background-color: #fff;
       display: flex;
       justify-content: space-between; }
@@ -446,5 +446,8 @@ body {
           text-decoration: none; }
     #accordion.cards-serch-results .card .card-body {
       border-bottom: 1px solid #CCCCCC; }
+
+.title-block-used-cars {
+  font-weight: 500; }
 
 /*# sourceMappingURL=style.css.map */
