@@ -17,18 +17,18 @@
     height: auto;
     display: none;
     background: #ffffff;
-    padding: 3% 5% 3% 5%; }
+    padding: 3% 5% 4% 5%; }
     .bottom-half-header .container ul {
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
       .bottom-half-header .container ul li {
         height: auto;
-        padding: 7px; }
+        padding: 6px; }
         .bottom-half-header .container ul li:first-child {
           margin-left: 0; }
         .bottom-half-header .container ul li a h6 {
-          font-size: 20px;
+          font-size: 21px;
           text-transform: capitalize;
           color: #363636;
           font-weight: 500;
@@ -112,8 +112,15 @@
   .title-address, .title-contact {
     max-width: 32%; } }
 @media (min-width: 768px) and (max-width: 1000px) {
+  .container {
+    padding: 0; }
+
   .bottom-half-header .container ul li a h6 {
-    font-size: 1.1vw; }
+    font-size: 1.1vw;
+    text-align: center; }
+
+  .bottom-half-header .container ul li .dropdown-content h6 {
+    text-align: start; }
 
   .title-address .text-title-address, .number-phone h4 {
     font-size: 0.6rem; }
@@ -122,11 +129,11 @@
     padding: 10px 0; }
 
   .title-logo {
-    font-size: 0.9rem; }
+    font-size: 1.2rem; }
 
   .titles-logo {
     padding-right: 2%;
-    max-width: 27%; }
+    max-width: 33%; }
 
   .title-logo-bottom, .sales-number {
     font-size: 0.7rem; }
@@ -134,10 +141,16 @@
   .title-logo-bottom {
     margin: 0 0.3rem; }
 
+  .title-address {
+    margin: 0; }
+
   .social-icon {
     justify-content: flex-start;
-    padding-left: 7%; }
+    padding-left: 2%; }
     .social-icon ul a {
       margin-right: 5px; } }
+@media (min-width: 900px) and (max-width: 1000px) {
+  .bottom-half-header .container ul li a h6 {
+    font-size: 1vw; } }
 
 /*# sourceMappingURL=media.css.map */
