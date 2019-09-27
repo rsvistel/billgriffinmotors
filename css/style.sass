@@ -141,16 +141,16 @@ body
             &:hover
                background-color: $dark-blue
                cursor: pointer
-               h6, .fa-chevron-down
+               .bottom-half-header__link, .fa-chevron-down
                   color: #ffffff
             &.active
                background-color: $dark-blue
-               h6
+               .bottom-half-header__link
                   color: #ffffff
             a
                text-decoration: none
                color: #000000
-               h6
+               .bottom-half-header__link
                   text-transform: uppercase
                   font-family: 'Montserrat', sans-serif
                   font-weight: 600
@@ -184,7 +184,7 @@ body
    display: flex
 
 
-.flex-dropdown h6
+.flex-dropdown .bottom-half-header__link
    display: flex
    margin-right: 5px
 
@@ -226,7 +226,7 @@ body
    background-color: #ddd
 
 .bottom-half-header .container ul li
-   .dropdown-content h6
+   .dropdown-content .bottom-half-header__link
       color: #000000
    &:hover .dropdown-content
       display: block
