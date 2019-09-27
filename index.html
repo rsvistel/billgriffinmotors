@@ -5,6 +5,7 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,121 +14,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<section class="header topnav" id="myTopnav">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 upper-half-header">
-
-                <div class="titles-logo col-md-4">
-                  <h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>
-                  <h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>
-                </div>
-
-                    <div class="mobile-open">
-                        <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
-                        <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
+        <header class="header topnav" id="myTopnav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="upper-half-header">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="titles-logo">
+                                            <h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>
+                                            <h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 pt-2">
+                                        <div class="title-address">
+                                            <embed src="img/header/location.svg">
+                                            <h4 class="text-title-address">frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 pt-2">
+                                        <div class="title-contact">
+                                            <embed src="img/header/phone.svg">
+                                            <div class="number-phone">
+                                                <h4 class="sales-text">sales:</h4>
+                                                <h6 class="sales-number">01-4569562</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-open">
+                                        <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
+                                        <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
+                                    </div>
+                                    <div class="col-2 pt-2">
+                                        <div class="social-icon">
+                                            <ul class="social-icon__items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="img-fluid" src="img/header/social-icons/facebook.svg" alt="facebook bill griffin motors">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="img-fluid" src="img/header/social-icons/instagram.svg" alt="instagtam bill griffin motors">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="img-fluid" src="img/header/social-icons/mail.svg" alt="email bill griffin motors">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                <div class="title-address col-md-4">
-                    <embed src="img/header/location.svg">
-                    <h4 class="text-title-address">frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw</h4>
                 </div>
-
-                <div class="title-contact col-md-3">
-                    <embed src="img/header/phone.svg">
-                    <div class="number-phone">
-                        <h4 class="sales-text">sales:</h4>
-                        <h6 class="sales-number">01-4569562</h6>
+            </header>
+            <nav class="nav bottom-half-header__color">
+                <div class="container">
+                    <!-- <nav class="navbar navbar-expand-md primary-color">
+                    
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                   
+                        <div class="collapse navbar-collapse bottom-half-header" id="basicExampleNav">
+                         
+                            <ul class="navbar-nav mr-auto bottom-half-header__items">
+                                <li class="nav-item bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">About</a>
+                                </li>
+                                <li class="nav-item bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Used cars</a>
+                                </li>
+                                <li class="nav-item active bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Finance
+                                    </a>
+                                </li>
+                                <li class="nav-item bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Cash for cars</a>
+                                </li>
+                                <li class="nav-item bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Reviews</a>
+                                </li>
+                                <li class="nav-item bottom-half-header__item">
+                                        <a class="nav-link bottom-half-header__link" href="#">Workshop</a>
+                                    </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle bottom-half-header__link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                                    <i class="fas fa-chevron-down flex-dropdown__chevron-dow"></i>
+                                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item bottom-half-header__link" href="#">Valeting</a>
+                                        <a class="dropdown-item bottom-half-header__link" href="#">Value my car</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Shortlist
+                                    </a>
+                                </li>
+                                <li class="nav-item bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Faq</a>
+                                </li>
+                                <li class="nav-item bottom-half-header__item">
+                                    <a class="nav-link bottom-half-header__link" href="#">Contact</a>
+                                </li>
+                            </ul> -->
+                    <div class="row">
+                                            <div class="col-12">
+                                                    <div class="bottom-half-header">
+                                                        <ul class="bottom-half-header__items">
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="#">Home</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">About</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Used cars</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Finance</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Cash for cars</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Reviews</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Workshop</a></li>
+                                                            <li class="bottom-half-header__item">
+                                                                <a class="bottom-half-header__link submenu-link" href="">More</a>
+                                                                <i class="fas fa-chevron-down flex-dropdown__chevron-dow"></i>
+                                                                <ul class="bottom-half-header__submenu">
+                                                                    <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Valeting</a></li>
+                                                                    <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Value my car</a></li>
+                                                                </ul>
+                                                                </li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Shortlist</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Faq</a></li>
+                                                            <li class="bottom-half-header__item"><a class="bottom-half-header__link" href="">Contact</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                        </div>
                     </div>
-                </div>
-
-                <div class="social-icon col-md-1">
-                    <ul>
-
-                        <a href="#">
-                            <li>
-                              <embed src="img/header/social-icons/facebook.svg">
-                            </li>
-                        </a>
-
-                        <a href="#">
-                            <li>
-                              <embed src="img/header/social-icons/instagram.svg">
-                            </li>
-                        </a>
-
-                        <a href="#">
-                            <li>
-                                <embed src="img/header/social-icons/mail.svg">
-                            </li>
-                        </a>
-
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-12 bottom-half-header">
-               <ul>
-                   <li>
-                       <a href="#">
-                             <h6>home</h6>
-                       </a>
-                   </li>
-
-                   <li>
-                       <a href="#">
-                            <h6>about</h6>
-                       </a>
-                   </li>
-
-                   <li>
-                       <a href="#">
-                           <h6>used cars</h6>
-                       </a>
-                   </li>
-
-                   <li>
-                       <a href="#">
-                           <h6>apply for finance</h6>
-                       </a>
-                   </li>
-
-
-                   <li>
-                       <a href="#">
-                           <h6>cash for cars</h6>
-                       </a>
-                   </li>
-
-
-                   <li>
-                       <a href="#">
-                           <h6>our reviews</h6>
-                       </a>
-                   </li>
-
-                   <li>
-                       <a href="#">
-                            <h6>my shortlist</h6>
-                       </a>
-                   </li>
-
-                   <li class="active">
-                       <a href="#">
-                            <h6>FAQ</h6>
-                       </a>
-                   </li>
-
-                   <li>
-                       <a href="#">
-                          <h6>contact us</h6>
-                       </a>
-                   </li>
-
-               </ul>
-            </div>
-
+            </nav>
+            
             <div class="mobile-section-under-header col-xs-12 col-md-12">
                 <embed src="img/header/white-phone.svg">
                 <div class="number-phone">
@@ -135,65 +161,66 @@
                     <h6 class="sales-number">01-4569562</h6>
                 </div>
             </div>
-        </div>
-
-    </div>
-</section>
-
+            <!-- <main class="contant">
+                            <div class="container">
+                                    <div class="row">
+                                    swectiom
+                                </div>
+                            </div>
+                    </main> -->
 
 <footer class="footer-section">
-    <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-lg-4  order-1 order-sm-1  order-lg-1 footer-section__padding-top">
-                    <h2 class="text-sm-left text-uppercase font-weight-bold"><a class="footer-section__title" href="#">Bill Griffin
-                        <span class="footer-section__title-accent">Motors</span></a>
-                    </h2>
-                    <ul class="footer-section__soc-items">
-                        <li class=" pr-3">
-                            <a href="#">
-                                <img class="footer-section__soc-img" src="./img/footer/facebook.svg" alt="Bill Griffin Motors">
-                            </a>
-                        </li>
-                        <li class="footer-section__soc-item  pr-3 pr-sm-3">
-                            <a href="#">
-                                <img class="footer-section__soc-img" src="./img/footer/twitter.svg" alt="Bill Griffin Motors">
-                            </a>
-                        </li>
-                        <li class="footer-section__soc-item  pr-3 pr-sm-3">
-                            <a href="#">
-                            <img class="footer-section__soc-img" src="./img/footer/youtube.svg" alt="Bill Griffin Motors">
-                            </a>
-                        </li>
-                        <li class="footer-section__soc-item">
-                            <a href="#">
-                                <img class="footer-section__soc-img" src="./img/footer/instagram.svg" alt="Bill Griffin Motors">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-lg-2 order-3 order-sm-3 order-lg-2">
-                    <h6 class="footer-section__links-title">Links</h6>
-                    <ul class="footer-section__links-items">
-                        <li class="footer-section__links-item">
-                            <a class="footer-section__link" href="#">Used Cars</a>
-                        </li>
-                        <li class="footer-section__links-item">
-                            <a class="footer-section__link" href="#">Apply for Finance</a>
-                        </li>
-                        <li class="footer-section__links-item">
-                            <a class="footer-section__link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-9 col-lg-6  order-2 order-xs-2 order-sm-2 order-lg-3">
-                    <p class="footer-section__description">
-                        We pride ourselves on being family run for over thirty years and being one of Ireland's largest used car dealers with over 20,000 cars sold in that time, all from our three floor Naas road showroom. Each of our 300+ cars are in stock today and come fully inspected, history checked and warrantied.
-                    </p>
+        <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-5  order-1 order-sm-1  order-lg-1 footer-section__padding-top footer-section__row">
+                        <h2 class="text-sm-left text-uppercase font-weight-bold"><a class="footer-section__title" href="#">Bill Griffin
+                            <span class="footer-section__title-accent">Motors</span></a>
+                        </h2>
+                        <ul class="footer-section__soc-items">
+                            <li class="footer-section__soc-item">
+                                <a href="#">
+                                    <img class="footer-section__soc-img img-fluid" src="./img/footer/facebook.svg" alt="Bill Griffin Motors">
+                                </a>
+                            </li>
+                            <li class="footer-section__soc-item">
+                                <a href="#">
+                                    <img class="footer-section__soc-img img-fluid" src="./img/footer/twitter.svg" alt="Bill Griffin Motors">
+                                </a>
+                            </li>
+                            <li class="footer-section__soc-item">
+                                <a href="#">
+                                <img class="footer-section__soc-img img-fluid" src="./img/footer/youtube.svg" alt="Bill Griffin Motors">
+                                </a>
+                            </li>
+                            <li class="footer-section__soc-item">
+                                <a href="#">
+                                    <img class="footer-section__soc-img img-fluid" src="./img/footer/instagram.svg" alt="Bill Griffin Motors">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 order-3 order-sm-3 order-lg-2 footer-section__row justify-content-start">
+                        <h6 class="footer-section__links-title">Links</h6>
+                        <ul class="footer-section__links-items">
+                            <li class="footer-section__links-item">
+                                <a class="footer-section__link" href="#">Used Cars</a>
+                            </li>
+                            <li class="footer-section__links-item">
+                                <a class="footer-section__link" href="#">Apply for Finance</a>
+                            </li>
+                            <li class="footer-section__links-item">
+                                <a class="footer-section__link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-9 col-lg-4  order-2 order-xs-2 order-sm-2 order-lg-3 footer-section__row">
+                        <p class="footer-section__description">
+                            We pride ourselves on being family run for over thirty years and being one of Ireland's largest used car dealers with over 20,000 cars sold in that time, all from our three floor Naas road showroom. Each of our 300+ cars are in stock today and come fully inspected, history checked and warrantied.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 <script src="js/script.js"></script>
 
 </body>
