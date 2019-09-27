@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -118,7 +120,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   #banner #banner-image {
     text-align: center; }
     #banner #banner-image img {
-      width: 100%;
+      width: 120%;
       max-width: 1800px; }
   #banner #search-box {
     width: 100%;
@@ -132,7 +134,10 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
     background: rgba(0, 0, 0, 0.7); }
     #banner #search-box h3 {
       color: #fff;
-      text-align: left; }
+      text-align: left;
+      margin: 13px 0 7px 0;
+      font-size: 1.5rem;
+      font-family: "Open Sans", sans-serif; }
       #banner #search-box h3 object {
         height: 20px; }
     #banner #search-box .col-md-3 {
@@ -148,12 +153,14 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
         background-repeat: no-repeat;
         border-radius: 0;
         padding-left: 10px;
-        color: #555555; }
+        color: #555555;
+        font-family: "Open Sans", sans-serif; }
       #banner #search-box .col-md-3 button {
         background: #005EAA;
         border: none;
-        border-radius: 5px;
-        color: white; }
+        border-radius: 4px;
+        color: white;
+        font-family: "Montserrat", sans-serif; }
         #banner #search-box .col-md-3 button object {
           width: 15px;
           position: relative;
@@ -178,8 +185,13 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   order: 3;
   margin-bottom: 2%; }
   #special-offers h2 {
-    margin: 2% 0;
-    text-align: center; }
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem; }
+  #special-offers .title-special-offer {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1.5% 0; }
   #special-offers .owl-carousel {
     padding: 0 3%; }
     #special-offers .owl-carousel .owl-nav.disabled {
@@ -201,10 +213,18 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   border-radius: 5px;
   box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.1);
   padding: 0; }
-  .car-tile .car-title h2, .car-tile .car-title p {
-    font-size: 22px; }
-  .car-tile .car-title h2 {
-    font-weight: bold; }
+  .car-tile .car-title {
+    margin: 8px 3px; }
+    .car-tile .car-title .titles-car-card {
+      padding: 0 7px; }
+    .car-tile .car-title h2, .car-tile .car-title p {
+      font-size: 16px; }
+    .car-tile .car-title h2 {
+      font-weight: bold;
+      text-align: start; }
+    .car-tile .car-title p {
+      font-family: "Open Sans", sans-serif;
+      line-height: 21px; }
   .car-tile .car-image {
     position: relative; }
     .car-tile .car-image img {
@@ -219,7 +239,8 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
       bottom: -22.5px;
       z-index: 101; }
     .car-tile .car-image .car-image-counter {
-      color: #fff; }
+      color: #fff;
+      padding: 7px 12px; }
   .car-tile .car-price {
     font-size: 22px; }
     .car-tile .car-price .row {
@@ -235,7 +256,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
         border-right: 1px solid #fff; }
       .car-tile .car-price .col-6:last-child {
         border-left: 1px solid #fff;
-        color: blue; }
+        color: #00C4FC; }
         .car-tile .car-price .col-6:last-child p {
           font-size: 9px; }
   .car-tile .car-desc {
