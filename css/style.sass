@@ -173,10 +173,6 @@ body
    background: #EAEDF0
    color: #000000
 
-.footer-section .container
-   max-width: 1305px
-   width: 100%
-
 .footer-section__row
    padding-left: 0
    padding-right: 0
@@ -326,11 +322,7 @@ body
    margin-top: 18px
 
 .section__title-blue-container
-   padding-left: 8px
-
-.section__title-blue .container
-   max-width: 1172px
-   width: 100%
+   padding-left: 60px
 
 .title-blue
    font-weight: bold
@@ -345,9 +337,15 @@ body
 
 .accordion__wrapper
    font-family: $primary-font
-   max-width: 1172px
    margin: 30px auto
    margin-top: 21px
+
+.accordion
+   padding: 0 3.1rem
+   margin-bottom: 5rem
+
+.accordion>.card .card-header
+   padding: 0 0
 
 .accordion__button
    font-size: 18px
@@ -356,6 +354,7 @@ body
    color: #000000
    display: flex
    justify-content: space-between
+   padding: .75rem 1.25rem
 
 .accordion__down-icon
    transform: rotate(0deg)
@@ -393,6 +392,7 @@ body
 @media only screen and (max-width: 767px)
    .section__title-blue
       padding-bottom: 31px
+      margin-top: 0
 
    .section__title-blue .container, .accordion__wrapper .container
       padding: 0
@@ -409,6 +409,9 @@ body
 
    .accordion__wrapper
       margin-top: 10px
+   .accordion
+      padding: 0
+      margin-bottom: 0
 
    .accordion__button
       padding-left: 0
