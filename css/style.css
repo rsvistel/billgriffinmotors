@@ -147,9 +147,10 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
         background-size: 5%;
         background-repeat: no-repeat;
         border-radius: 0;
-        padding-left: 10px; }
+        padding-left: 10px;
+        color: #555555; }
       #banner #search-box .col-md-3 button {
-        background: blue;
+        background: #005EAA;
         border: none;
         border-radius: 5px;
         color: white; }
@@ -159,7 +160,8 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
           top: 1px; }
       #banner #search-box .col-md-3 button, #banner #search-box .col-md-3 select {
         width: 100%;
-        height: 40px; }
+        height: 40px;
+        border: 0; }
 
 @media only screen and (max-width: 768px) {
   #banner #banner-image {
@@ -428,3 +430,5 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 .footer-section__link:hover {
   color: #000000;
   text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
