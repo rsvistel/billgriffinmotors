@@ -141,7 +141,7 @@ body
             &:hover
                background-color: $dark-blue
                cursor: pointer
-               h6
+               h6, .fa-chevron-down
                   color: #ffffff
             &.active
                background-color: $dark-blue
@@ -177,6 +177,10 @@ body
    text-align: center
    padding: 14px 16px
    text-decoration: none
+
+.flex-dropdown
+   display: flex
+
 
 .flex-dropdown h6
    display: flex
@@ -224,6 +228,9 @@ body
       color: #000000
    &:hover .dropdown-content
       display: block
+@media (max-width: 768px)
+   .flex-dropdown__chevron-dow
+      padding-top: 6px
 
 //Header
 

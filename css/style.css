@@ -126,7 +126,7 @@ body {
         .bottom-half-header .container ul li:hover {
           background-color: #005EAA;
           cursor: pointer; }
-          .bottom-half-header .container ul li:hover h6 {
+          .bottom-half-header .container ul li:hover h6, .bottom-half-header .container ul li:hover .fa-chevron-down {
             color: #ffffff; }
         .bottom-half-header .container ul li.active {
           background-color: #005EAA; }
@@ -161,6 +161,9 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none; }
+
+.flex-dropdown {
+  display: flex; }
 
 .flex-dropdown h6 {
   display: flex;
@@ -206,6 +209,9 @@ body {
 .bottom-half-header .container ul li:hover .dropdown-content {
   display: block; }
 
+@media (max-width: 768px) {
+  .flex-dropdown__chevron-dow {
+    padding-top: 6px; } }
 .footer-section {
   font-family: "Montserrat", sans-serif;
   min-height: 217px;
