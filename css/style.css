@@ -16,7 +16,6 @@ body {
   min-height: 100vh; }
 
 .container {
-  max-width: 1305px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px; }
@@ -35,9 +34,7 @@ body {
 
 .titles-logo {
   padding-left: 0;
-  padding-right: 7%;
-  float: left;
-  width: auto; }
+  padding-right: 6%; }
 
 .motors-title-logo {
   color: #005EAA; }
@@ -55,8 +52,11 @@ body {
 .title-address embed, .title-contact embed {
   margin-right: 8px; }
 
-.title-contact embed, .title-address embed {
+.title-address embed {
   width: 9%; }
+
+.title-contact embed {
+  width: 19%; }
 
 .number-phone h4 {
   margin-bottom: 0; }
@@ -65,7 +65,7 @@ body {
   display: flex;
   align-items: center;
   float: left;
-  max-width: 28%; }
+  padding-left: 0; }
 
 .title-logo-bottom {
   margin: 0 1.5rem;
@@ -159,7 +159,6 @@ body {
   color: #000000; }
 
 .footer-section .container {
-  max-width: 1305px;
   width: 100%; }
 
 .footer-section__row {
