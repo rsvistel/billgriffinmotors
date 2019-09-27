@@ -152,8 +152,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial; }
+  background-color: #333; }
 
 .navbar a {
   float: left;
@@ -163,10 +162,9 @@ body {
   padding: 14px 16px;
   text-decoration: none; }
 
-.flex-dropdown {
-  display: flex; }
-  .flex-dropdown embed {
-    margin-left: 6px; }
+.flex-dropdown h6 {
+  display: flex;
+  margin-right: 5px; }
 
 .dropdown {
   float: left;
