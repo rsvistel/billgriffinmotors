@@ -421,5 +421,30 @@ body {
 
   .accordion .card-body {
     font-size: 12px; } }
+#accordion.cards-serch-results {
+  width: 22%;
+  margin-top: 30px; }
+  #accordion.cards-serch-results .card {
+    border: 1px solid #CCCCCC;
+    border-radius: 0rem;
+    border-bottom: 0;
+    border-top: 0; }
+    #accordion.cards-serch-results .card:first-child {
+      border-top: 1px solid #CCCCCC; }
+    #accordion.cards-serch-results .card .card-header {
+      padding: 8px 10px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between; }
+      #accordion.cards-serch-results .card .card-header h5 .btn {
+        font-family: "Open Sans", sans-serif;
+        color: #232323;
+        font-weight: 600;
+        padding: 0;
+        font-size: 0.9rem; }
+        #accordion.cards-serch-results .card .card-header h5 .btn:hover {
+          text-decoration: none; }
+    #accordion.cards-serch-results .card .card-body {
+      border-bottom: 1px solid #CCCCCC; }
 
 /*# sourceMappingURL=style.css.map */
