@@ -119,9 +119,14 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 //Header
 
 //Homepage
+@media only screen and (max-width: 768px)
+   #homepage
+      display: flex
+      flex-direction: column
 
 //Banner&Search
 #banner
+   order: 1
    position: relative
    text-align: center
    #banner-image
@@ -186,6 +191,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 
 //Special Offers
 #special-offers
+   order: 3
    margin-bottom: 2%
    h2
       margin: 2% 0
@@ -258,15 +264,32 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
       .col-6
          margin: 2% 0
          padding: 0 8%
+@media only screen and (max-width: 768px)
+   .owl-nav
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      display: flex
+      justify-content: space-between
+      pointer-events: none
+      button
+         pointer-events: auto
+         object
+            pointer-events: none
 //Car Tile
 
 //Feedback
 #feedback
+   order: 2
    background-image: url("../img/home/Untitled-2.png")
    background-size: cover
    background-repeat: no-repeat
    padding: 7% 0 0
    text-align: center
+   h3.feedback-rating, h4.feedback-title
+      display: none
    .feedback-item
       background: #fff
       text-align: left
@@ -276,23 +299,51 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
       border: none
       text-transform: uppercase
       margin: 5% 0
+@media only screen and (max-width: 768px)
+   #feedback
+      background: none
+      h3.feedback-rating, h4.feedback-title
+         display: block
+      h4.feedback-title
+         border: 1px solid lightgrey
+         text-align: left
+         padding-left: 3%
+      h3.feedback-rating
+         border-right: 1px solid lightgrey
+         border-left: 1px solid lightgrey
+      .owl-feedback
+         border: 1px solid lightgrey
+         border-top: none
+         padding:  0 3% 3%
+         display: block
+         .feedback-item
+            border-top: 1px solid lightgrey
+      button
+         display: none
 //Feedback
 
 //Youtube
 #youtube-video
    padding: 3% 0
    text-align: center
+@media only screen and (max-width: 768px)
+   #youtube-video
+      display: none
 //Youtube
 
 //Office
 #office
+   order: 4
    padding: 3% 0
    background: lightgrey
    .card
       padding: 0
       flex: 0 0 31%
       max-width: 31%
+      &:nth-child(1)
+         order: 2
       &:nth-child(2)
+         order: 1
          margin: 0 3.5%
       .card-title
          border-bottom: 1px solid grey
@@ -319,14 +370,46 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
                      text-align: right
          img
             width: 100%
+@media only screen and (max-width: 768px)
+   #office
+      background: none
+      .card
+         flex: 0 0 100%
+         max-width: calc(100% - 30px)
+         margin: 0 15px
+         &:first-child
+            margin-top: 2%
+            .card-title
+               display: none
+            .card-body
+               &:after
+                  content: ""
+                  display: block
+                  padding-bottom: 100%
+            #map
+               position: absolute
+               top: 0
+               bottom: 0
+               left: 0
+               right: 0
+         &:nth-child(2)
+            margin: 0 15px
+         &:last-child
+            display: none
 //Office
 
 //Cars PopUp
 #cars-popup
+   order: 5
    text-align: center
    padding: 3% 0
    img
       width: 80%
+@media only screen and (max-width: 768px)
+   #cars-popup
+      padding: 5% 0
+      img
+         width: 100%
 //Cars PopUp
 
 //Statistics
@@ -335,8 +418,12 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
    color: #fff
    background: url("../img/home/bmw.png")
    padding: 5% 0
-   span
-      color: blue
+   p
+      span
+         color: blue
+@media only screen and (max-width: 768px)
+   #statistics
+      display: none
 //Statistics
 
 //Homepage
