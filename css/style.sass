@@ -4,6 +4,7 @@ $primary-font: 'Montserrat', sans-serif
 $secondary-font: 'Open Sans', sans-serif
 $dark-blue: #005EAA
 $light-blue: #00C4FC
+$gray: #EAEDF0
 *
    box-sizing: border-box
 
@@ -20,7 +21,6 @@ body
    min-height: 100vh
 
 .container
-   max-width: 1305px
    width: 100%
    padding-right: 15px
    padding-left: 15px
@@ -44,9 +44,9 @@ body
 
 .titles-logo
    padding-left: 0
-   padding-right: 7%
-   float: left
-   width: auto
+   padding-right: 6%
+   //float: left
+   //width: auto
 
 .motors-title-logo
    color: $dark-blue
@@ -64,8 +64,11 @@ body
 .title-address embed, .title-contact embed
    margin-right: 8px
 
-.title-contact embed, .title-address embed
+.title-address embed
    width: 9%
+
+.title-contact embed
+   width: 19%
 
 .number-phone
    h4
@@ -75,7 +78,7 @@ body
    display: flex
    align-items: center
    float: left
-   max-width: 28%
+   padding-left: 0
 
 .title-logo-bottom
    margin: 0 1.5rem
@@ -138,7 +141,7 @@ body
             &:hover
                background-color: $dark-blue
                cursor: pointer
-               h6
+               h6, .fa-chevron-down
                   color: #ffffff
             &.active
                background-color: $dark-blue
@@ -163,6 +166,73 @@ body
 .mobile-section-under-header
    display: none
 
+.navbar
+   overflow: hidden
+   background-color: #333
+
+.navbar a
+   float: left
+   font-size: 16px
+   color: white
+   text-align: center
+   padding: 14px 16px
+   text-decoration: none
+
+.flex-dropdown
+   display: flex
+
+
+.flex-dropdown h6
+   display: flex
+   margin-right: 5px
+
+.dropdown
+   float: left
+   overflow: initial
+
+.dropdown .dropbtn
+   font-size: 16px
+   border: none
+   outline: none
+   color: white
+   padding: 10px 0
+   background-color: inherit
+   font-family: inherit
+   margin: 0
+
+.dropdown-content
+   display: none
+   position: absolute
+   background-color: #ebedf0
+   min-width: 160px
+   z-index: 1
+   border: 1px solid $dark-blue
+   margin-top: 4px
+   margin-left: -14.5px
+
+
+.dropdown-content a
+   float: none
+   color: black
+   padding: 14px 16px
+   text-decoration: none
+   display: block
+   text-align: left
+
+
+.dropdown-content a:hover
+   background-color: #ddd
+
+.bottom-half-header .container ul li
+   .dropdown-content h6
+      color: #000000
+   &:hover .dropdown-content
+      display: block
+@media (max-width: 768px)
+   .flex-dropdown__chevron-dow
+      padding-top: 6px
+
+//Header
 
 //Footer
 .footer-section
