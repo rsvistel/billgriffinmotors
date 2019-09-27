@@ -101,7 +101,6 @@ body {
     display: flex;
     list-style-type: none; }
     .social-icon ul a {
-      margin-right: 17px;
       transition: 0.4s; }
       .social-icon ul a:last-child {
         margin-right: 0px; }
@@ -140,6 +139,9 @@ body {
             font-family: "Montserrat", sans-serif;
             font-weight: 600;
             font-size: 0.9rem; }
+
+.social-icon ul li {
+  padding: 0.6rem; }
 
 .bottom-half-header .container ul li:first-child {
   margin-left: -7px; }
@@ -211,7 +213,10 @@ body {
 
 @media (max-width: 768px) {
   .flex-dropdown__chevron-dow {
-    padding-top: 6px; } }
+    padding-top: 6px; }
+
+  .dropdown .dropbtn {
+    padding: 0px; } }
 .footer-section {
   font-family: "Montserrat", sans-serif;
   min-height: 217px;
