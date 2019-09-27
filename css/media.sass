@@ -33,7 +33,7 @@ $light-blue: #00C4FC
           &:first-child
             margin-left: 0
           a
-            .bottom-half-header__link
+            h6
               font-size: 21px
               text-transform: capitalize
               color: #363636
@@ -107,7 +107,7 @@ $light-blue: #00C4FC
 
 
 @media (min-width: 1000px) and (max-width: 1112px)
-  .bottom-half-header .container ul li a .bottom-half-header__link, .title-address .text-title-address, .number-phone h4
+  .bottom-half-header .container ul li a h6, .title-address .text-title-address, .number-phone h4
     font-size: 0.75rem
 
 @media (min-width: 1000px) and (max-width: 1250px)
@@ -129,17 +129,19 @@ $light-blue: #00C4FC
 
   .title-address, .title-contact
     max-width: 32%
+  .flex-dropdown__chevron-dow
+    padding-top: 6px
 
 
 @media (min-width: 768px) and (max-width: 1000px)
   .container
     padding: 0
 
-  .bottom-half-header .container ul li a .bottom-half-header__link
+  .bottom-half-header .container ul li a h6
     font-size: 1.1vw
     text-align: center
 
-  .bottom-half-header .container ul li .dropdown-content .bottom-half-header__link
+  .bottom-half-header .container ul li .dropdown-content h6
     text-align: start
 
   .title-address .text-title-address, .number-phone h4
@@ -169,9 +171,11 @@ $light-blue: #00C4FC
     padding-left: 2%
     ul a
       margin-right: 5px
+    .flex-dropdown__chevron-dow
+      padding-top: 6px
 
 
 @media (min-width: 900px) and (max-width: 1000px)
-  .bottom-half-header .container ul li a .bottom-half-header__link
+  .bottom-half-header .container ul li a h6
     font-size: 1vw
 

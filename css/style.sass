@@ -101,7 +101,7 @@ body
    font-family: $secondary-font
    font-weight: 700
 
-.social-icon embed
+.social-icon img
    pointer-events: none
    cursor: pointer
 
@@ -141,16 +141,16 @@ body
             &:hover
                background-color: $dark-blue
                cursor: pointer
-               .bottom-half-header__link, .fa-chevron-down
+               h6, .fa-chevron-down
                   color: #ffffff
             &.active
                background-color: $dark-blue
-               .bottom-half-header__link
+               h6
                   color: #ffffff
             a
                text-decoration: none
                color: #000000
-               .bottom-half-header__link
+               h6
                   text-transform: uppercase
                   font-family: 'Montserrat', sans-serif
                   font-weight: 600
@@ -184,7 +184,7 @@ body
    display: flex
 
 
-.flex-dropdown .bottom-half-header__link
+.flex-dropdown h6
    display: flex
    margin-right: 5px
 
@@ -197,7 +197,7 @@ body
    border: none
    outline: none
    color: white
-   padding: 10px 0
+   //padding: 10px 0
    background-color: inherit
    font-family: inherit
    margin: 0
@@ -226,10 +226,13 @@ body
    background-color: #ddd
 
 .bottom-half-header .container ul li
-   .dropdown-content .bottom-half-header__link
+   .dropdown-content h6
       color: #000000
    &:hover .dropdown-content
       display: block
+.flex-dropdown__chevron-dow
+   line-height: 1.1
+
 @media (max-width: 768px)
    .flex-dropdown__chevron-dow
       padding-top: 6px
