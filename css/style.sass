@@ -30,9 +30,6 @@ body
 .title-contact, .title-address
    display: flex
 
-.title-contact
-
-
 .social-icon__items
    display: flex
    justify-content: space-around
@@ -116,7 +113,10 @@ body
 
 .bottom-half-header__item
    display: flex
-   padding: 0.6%
+   padding: 1% 1.5%
+
+.bottom-half-header-menu-color
+   padding: 0 8px
 
 .bottom-half-header__item:hover
    background-color: $dark-blue
@@ -149,17 +149,30 @@ body
 
 .bottom-half-header__link
    display: flex
-   display: flex
    justify-content: center
+   align-items: center
    text-align: center
    width: 100%
    text-decoration: none
    color: #000000
 
-// .dropdown:hover .dropdown-content
-//    display: block
-.bottom-half-header__dropdown-menu
+.fa-chevron-down.flex-dropdown__chevron-dow
+   margin-left: 5px
+
+.dropdown.bottom-half-header__item:hover .bottom-half-header__dropdown-menu
+   display: block
+.dropdown.bottom-half-header__item .bottom-half-header__dropdown-menu
    background: #EAEDF0
+   margin-top: -2px
+   border: 1px solid $dark-blue
+   border-radius: 0
+
+.dropdown-item:focus, .dropdown-item:hover
+   background-color: $dark-blue
+   color: #ffffff
+
+.dropdown-menu a
+   font-weight: 600
 
 // .bottom-half-header__link:hover
 //    text-decoration: none
@@ -339,6 +352,9 @@ body
       padding-left: 0.4rem
    .mobile-section-under-header embed
       width: 11%
+
+@media (min-width: 768px) and  (max-width: 1000px)
+
 
 //Header
 //.header.topnav .row
