@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -209,7 +211,10 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
         #special-offers .owl-carousel .owl-nav.disabled button object {
           pointer-events: none; }
 
-.owl-carousel .owl-stage-outer {
+.fas.fa-star {
+  color: #FFC207; }
+
+#special-offers .owl-carousel .owl-stage-outer {
   height: 420px;
   width: 102%;
   padding: 0 1%; }
@@ -315,13 +320,44 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
     display: none; }
   #feedback .feedback-item {
     background: #fff;
-    text-align: left; }
-  #feedback button {
+    text-align: left;
+    padding: 15px; }
+    #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
+      font-family: "Poppins", sans-serif;
+      color: #333333;
+      font-weight: 400;
+      font-size: 20px; }
+    #feedback .feedback-item .feedback-date, #feedback .feedback-item .feedback-body, #feedback .feedback-item .feedback-company {
+      color: #777777;
+      font-family: "Source Sans Pro", sans-serif; }
+    #feedback .feedback-item .feedback-body {
+      font-size: 14px;
+      margin-top: 10px;
+      padding-left: 5px; }
+    #feedback .feedback-item .fas.fa-quote-left, #feedback .feedback-item .fas.fa-quote-right {
+      color: #D2D5DA;
+      font-size: 28px; }
+    #feedback .feedback-item .feedback-stars {
+      display: flex;
+      margin-top: 5px; }
+    #feedback .feedback-item .fas.fa-quote-right {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      width: 90%;
+      margin-top: -17px; }
+    #feedback .feedback-item .fas.fa-quote-left {
+      margin-right: 5px; }
+    #feedback .feedback-item .feedback-author {
+      margin-top: 15px; }
+  #feedback .button-feedback {
     color: white;
-    background: blue;
     border: none;
     text-transform: uppercase;
-    margin: 5% 0; }
+    margin: 5% 0 4% 0;
+    background: #005EAA;
+    padding: 1% 5%;
+    font-family: "Source Sans Pro", sans-serif; }
 
 @media only screen and (max-width: 768px) {
   #feedback {

@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap')
 $primary-font: 'Montserrat', sans-serif
 $secondary-font: 'Open Sans', sans-serif
 $dark-blue: #005EAA
 $light-blue: #00C4FC
+$dark-gray: #333333
+$light-gray: #777777
 *
    box-sizing: border-box
 
@@ -236,7 +240,9 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 //Special Offers
 
 //Car Tile
-.owl-carousel .owl-stage-outer
+.fas.fa-star
+   color: #FFC207
+#special-offers .owl-carousel .owl-stage-outer
    height: 420px
    width: 102%
    padding: 0 1%
@@ -313,7 +319,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
             margin-left: 8px
             font-size: 11px
             font-family: Arial, sans-serif
-            color: #777777
+            color: $light-gray
             text-transform: capitalize
 @media only screen and (max-width: 768px)
    .owl-nav
@@ -344,12 +350,46 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
    .feedback-item
       background: #fff
       text-align: left
-   button
+      padding: 15px
+      .feedback-title h3, .feedback-author h3
+         font-family: 'Poppins', sans-serif
+         color: $dark-gray
+         font-weight: 400
+         font-size: 20px
+      .feedback-date, .feedback-body, .feedback-company
+         color: $light-gray
+         font-family: 'Source Sans Pro', sans-serif
+      .feedback-body
+         font-size: 14px
+         margin-top: 10px
+         padding-left: 5px
+      .fas.fa-quote-left, .fas.fa-quote-right
+         color: #D2D5DA
+         font-size: 28px
+      .feedback-stars
+         display: flex
+         margin-top: 5px
+      .fas.fa-quote-right
+         display: flex
+         justify-content: flex-end
+         position: absolute
+         width: 90%
+         margin-top: -17px
+      .fas.fa-quote-left
+         margin-right: 5px
+      .feedback-author
+         margin-top: 15px
+   .button-feedback
       color: white
-      background: blue
       border: none
       text-transform: uppercase
-      margin: 5% 0
+      margin: 5% 0 4% 0
+      background: $dark-blue
+      padding: 1% 5%
+      font-family: "Source Sans Pro", sans-serif
+
+
+
 @media only screen and (max-width: 768px)
    #feedback
       background: none
@@ -371,6 +411,8 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
             border-top: 1px solid lightgrey
       button
          display: none
+
+
 //Feedback
 
 //Youtube
