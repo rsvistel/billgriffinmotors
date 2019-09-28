@@ -130,7 +130,7 @@ body {
         .bottom-half-header .container ul li a {
           text-decoration: none;
           color: #000000; }
-          .bottom-half-header .container ul li a h6 {
+          .bottom-half-header .container ul li a .h6-title {
             text-transform: uppercase;
             font-family: "Montserrat", sans-serif;
             font-weight: 600;
