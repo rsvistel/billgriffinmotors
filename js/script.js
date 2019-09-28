@@ -17,6 +17,20 @@ $(document).ready(function(){
    }).on('hide.bs.collapse', function(){
    $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
    });
+
+    $(".more").click(function() {
+        var elem = $(".more").text();
+        if (elem == "more...") {
+            $(".more").text("less...");
+            $(".complete").show();
+            $(".fa").addClass('fa-angle-up').removeClass('fa-angle-down');
+
+        } else {
+            $(".more").text("more...");
+            $(".complete").hide();
+            $(".fa").addClass('fa-angle-down').removeClass('fa-angle-up');
+        }
+    });
 });
 
 

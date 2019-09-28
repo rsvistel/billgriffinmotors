@@ -167,7 +167,9 @@ body
    padding-left: 0
    padding-right: 0
 
-.card-header
+   //change in faq
+
+.card-header  
    padding: 24px  40px
 
 .footer-section__title
@@ -244,7 +246,9 @@ body
    .footer-section__description
       padding-top: 40px
       padding-bottom: 60px
-   .card-header
+
+      //change in faq add class
+   .card-header 
       padding: 27px 18px
 
 
@@ -254,10 +258,6 @@ body
       width: 100%
       margin-top: 40px
       margin-bottom: 40px
-
-.used-car-section .container
-      max-width: 1305px
-      width: 100%
 
 .used-car__title
       display: flex
@@ -325,46 +325,55 @@ body
 .description-used-car__sub-title
       padding-bottom: 2rem
 
-// .detailse-used-car__star img
-//       max-height: 60%
+.accordion-used-car__card-header
+      padding: 1rem
 
-//  .detailse-used-car__left, .detailse-used-car__right
-//       display: flex
-//       justify-content: space-between
+.gallery__img
+      max-width: 100%
 
-// .detailse-used-car__left-column, .detailse-used-car__right-column
-//       display: flex
-//       flex-direction: column
+.complete
+      display: inline-block
 
-.carousel-inner
-      max-width: 890px
+.more
+      display: none
 
-// .carousel-thumbnails .carousel-indicators img
-//       max-width: 220px
-//       min-height: 165px
-//       width: 100%
-//       overflow: hidden
-//       display: block
+.rowall
+   display: flex
+   flex-flow: wrap
 
-// .carousel-thumbnails .carousel-indicators li
-//       //height: auto
-//       max-height: 165px
-//       max-width: 220px
-//       width: 100%
-//       border: none
-//       box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75)
+.col1, .col2, .col3, .col4
+   width: 100%
+.col1
+   order: 3
+.col2
+   order: 2
+.col3
+   order: 1
+.col4
+   order: 0
 
-.carousel-indicators
-      position: inherit
+@media (max-width: 768px)
+   .description-used-car, .detailse-used-car
+      margin-bottom: 1rem
+      border: 1px solid #CCCCCC
+      box-shadow: 0 0 3px #000000
+      border-radius: 5px
+      padding: 0.5rem
 
-.accordion-used-car__title
-   font-size: 28px
-   font-weight: bold
-   //font-family:
-.accordion-used-car__reviews
-   background: #FFFFFF
-   height: 1015px
-   border: 1px solid #CCCCCC
+   .complete
+      display: none
+
+   .more
+      display: inline-block
+      color: $dark-blue
+      font-size: 13px
+      cursor: pointer
+
+   .accordion-used-car__reviews
+      display: none
+      
+   .option-used-car
+      display: none
 
 
 //FAQ-page

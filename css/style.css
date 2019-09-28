@@ -244,10 +244,6 @@ body {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-.used-car-section .container {
-  max-width: 1305px;
-  width: 100%; }
-
 .used-car__title {
   display: flex;
   justify-content: space-between; }
@@ -314,21 +310,59 @@ body {
 .description-used-car__sub-title {
   padding-bottom: 2rem; }
 
-.carousel-inner {
-  max-width: 890px; }
+.accordion-used-car__card-header {
+  padding: 1rem; }
 
-.carousel-indicators {
-  position: inherit; }
+.gallery__img {
+  max-width: 100%; }
 
-.accordion-used-car__title {
-  font-size: 28px;
-  font-weight: bold; }
+.complete {
+  display: inline-block; }
 
-.accordion-used-car__reviews {
-  background: #FFFFFF;
-  height: 1015px;
-  border: 1px solid #CCCCCC; }
+.more {
+  display: none; }
 
+.rowall {
+  display: flex;
+  flex-flow: wrap; }
+
+.col1, .col2, .col3, .col4 {
+  width: 100%; }
+
+.col1 {
+  order: 3; }
+
+.col2 {
+  order: 2; }
+
+.col3 {
+  order: 1; }
+
+.col4 {
+  order: 0; }
+
+@media (max-width: 768px) {
+  .description-used-car, .detailse-used-car {
+    margin-bottom: 1rem;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 3px #000000;
+    border-radius: 5px;
+    padding: 0.5rem; }
+
+  .complete {
+    display: none; }
+
+  .more {
+    display: inline-block;
+    color: #005EAA;
+    font-size: 13px;
+    cursor: pointer; }
+
+  .accordion-used-car__reviews {
+    display: none; }
+
+  .option-used-car {
+    display: none; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
