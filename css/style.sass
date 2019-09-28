@@ -20,16 +20,11 @@ body
    margin: 0
    min-height: 100vh
 
-.contant
-   height: 100vh
-   background: beige
-
 .header
-   min-height: 71px
+   background: #ffffff
 
 .upper-half-header
    padding: 0.5% 0 1% 0
-   //background: aqua
 
 .title-contact, .title-address
    display: flex
@@ -45,9 +40,6 @@ body
 .bottom-half-header__color
    background: #EAEDF0
 
-.bottom-half-header
-   //background: blueviolet
-
 .title-logo
    text-transform: uppercase
    font-size: 1.625rem
@@ -59,7 +51,7 @@ body
 .motors-title-logo
    color: $dark-blue
 
-.title-address
+//.title-address
    //margin-right: 2.5%
 
 .text-title-address
@@ -106,9 +98,9 @@ body
    font-family: $secondary-font
    font-weight: 700
 
-.nav
-   // min-height: 43px
-   margin-bottom: 2rem
+// .nav
+//    // min-height: 43px
+//    margin-bottom: 2rem
 
 .navbar
    padding: 0
@@ -127,7 +119,8 @@ body
 
 .bottom-half-header__item
    display: flex
-   padding: 0.5rem
+   //padding: 0.5rem
+   padding: 0.6%
 
 .bottom-half-header__item:hover
    background-color: $dark-blue
@@ -164,28 +157,7 @@ body
    // align-items: center
    // transition: 0.5s
 // .bottom-half-header__item:last-child
-
 //    padding-right: 0
-
-// &:hover
-//          background-color: $dark-blue
-//          cursor: pointer
-//          h6, .fa-chevron-down
-//             color: #ffffff
-//       &.active
-//          background-color: $dark-blue
-//          h6
-//             color: #ffffff
-//       a
-//          text-decoration: none
-//          color: #000000
-//          h6
-//             text-transform: uppercase
-//             font-family: 'Montserrat', sans-serif
-//             font-weight: 600
-//             font-size: 0.9rem
-
-
 
 .bottom-half-header__link:hover
    text-decoration: none
@@ -208,6 +180,98 @@ body
 
 .mobile-section-under-header
    display: none
+
+@media (max-width: 768px)
+   .upper-half-header
+      padding: 0
+      padding-top: 2%
+      // display: flex
+      // justify-content: space-between
+      // align-items: center
+
+   .title-address, .title-contact, .social-icon
+      display: none
+
+   .titles-logo
+      padding-right: 0
+      white-space: nowrap
+
+   .title-logo
+      font-size: 27px
+      line-height: 21px
+
+   .title-logo-bottom
+      margin: 0
+      font-size: 19px
+   .mobile-open
+      display: block
+      padding-top: 0.4rem
+      object
+         pointer-events: none
+         cursor: pointer
+         &:last-child
+            width: 30px
+            display: none
+   .mobile-section-under-header
+      display: flex
+      align-items: center
+      background: black
+      min-height: 65px
+      .contact-text
+         font-size: 18px
+         line-height: 28px
+         font-weight: 300
+         font-family: $secondary-font
+      .sales-number, .contact-text
+         color: #ffffff
+         margin-left: 8px
+      .sales-number
+         font-size: 1.1rem
+      embed
+         width: 9%
+
+   // .mobile-open object:last-child
+   //    width: 41px
+   //    height: 36px
+
+
+   .bottom-half-header
+      height: auto
+      display: none
+      background: #ffffff
+      //padding: 3% 5% 4% 5%
+
+   .bottom-half-header-menu-color
+      background: #ffffff
+
+   .bottom-half-header__items
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+   .bottom-half-header__item
+      height: auto
+      padding: 6px
+      &:first-child
+         margin-left: 0
+   .bottom-half-header__link
+      font-size: 21px
+      text-transform: capitalize
+      color: #363636
+      font-weight: 500
+      font-family: $secondary-font
+
+   .bottom-half-header__item:last-child
+      margin-bottom: 0.5rem
+
+@media only screen and  (max-width: 320px)
+   .upper-half-header
+      padding: 0
+      padding-top: 4%
+
+// @media (min-width: 768px)
+//       .bottom-half-header
+//          display: flex
+
 // .container
 //    width: 100%
 //    padding-right: 15px
