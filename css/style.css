@@ -139,8 +139,8 @@ body {
   text-decoration: none;
   color: #000000; }
 
-.bottom-half-header__submenu {
-  display: none; }
+.bottom-half-header__dropdown-menu {
+  background: #EAEDF0; }
 
 .mobile-section-under-header {
   display: none; }
@@ -166,7 +166,8 @@ body {
     max-width: 32%; }
 
   .flex-dropdown__chevron-dow {
-    padding-top: 6px; } }
+    padding-top: 0.2rem;
+    padding-left: 0.2rem; } }
 @media (min-width: 768px) and (max-width: 1000px) {
   .bottom-half-header__link {
     font-size: 1.1vw;
