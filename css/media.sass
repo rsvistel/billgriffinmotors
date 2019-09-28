@@ -178,3 +178,140 @@
 //   .bottom-half-header .container ul li a h6
 //     font-size: 1vw
 
+
+$primary-font: 'Montserrat', sans-serif
+$secondary-font: 'Open Sans', sans-serif
+$dark-blue: #005EAA
+$light-blue: #00C4FC
+@media (max-width: 767px)
+  .title-address, .title-contact, .social-icon
+    display: none
+  .titles-logo
+    padding-right: 0
+  .title-logo
+    font-size: 20px
+    line-height: 21px
+  .title-logo-bottom
+    margin: 0
+    font-size: 14px
+  .bottom-half-header
+    height: auto
+    display: none
+    background: #ffffff
+    padding: 3% 5% 4% 5%
+    .container
+      ul
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        li
+          height: auto
+          padding: 6px
+          &:first-child
+            margin-left: 0
+          a
+            h6
+              font-size: 21px
+              text-transform: capitalize
+              color: #363636
+              font-weight: 500
+              font-family: $secondary-font
+  .bottom-half-header .container ul
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    li:first-child
+      margin-left: 0
+  .upper-half-header
+    padding: 2% 4% 1% 4%
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .mobile-open
+    display: block
+    object
+      pointer-events: none
+      cursor: pointer
+      &:last-child
+        width: 30px
+        display: none
+  .mobile-section-under-header
+    display: flex
+    align-items: center
+    background: black
+    height: 65px
+    .contact-text
+      font-size: 18px
+      line-height: 28px
+      font-weight: 300
+      font-family: $secondary-font
+    .sales-number, .contact-text
+      color: #ffffff
+      margin-left: 8px
+    .sales-number
+      font-size: 1.1rem
+    embed
+      width: 9%
+  .mobile-open object:last-child
+    width: 41px
+    height: 36px
+@media (min-width: 767px)
+  .hamburger-icon
+    display: none
+@media (min-width: 450px) and (max-width: 767px)
+  .mobile-section-under-header embed
+    width: 6%
+@media (min-width: 768px) and (max-width: 1000px)
+  .title-logo
+    font-size: 1.5vw
+  .title-logo-bottom
+    margin: 0
+@media (min-width: 1000px) and (max-width: 1112px)
+  .bottom-half-header .container ul li a h6, .title-address .text-title-address, .number-phone h4
+    font-size: 0.75rem
+@media (min-width: 1000px) and (max-width: 1250px)
+  .upper-half-header
+    padding: 10px 15px
+  .title-logo
+    font-size: 1.3rem
+  .titles-logo
+    padding-right: 5%
+    width: 52%
+  .title-logo-bottom
+    font-size: 1rem
+  .title-logo-bottom
+    margin: 0 1rem
+  .title-address, .title-contact
+    max-width: 32%
+@media (min-width: 768px) and (max-width: 1000px)
+  .container
+    padding: 0
+  .bottom-half-header .container ul li a h6
+    font-size: 1.1vw
+    text-align: center
+  .bottom-half-header .container ul li .dropdown-content h6
+    text-align: start
+  .title-address .text-title-address, .number-phone h4
+    font-size: 0.6rem
+  .upper-half-header, .footer-section
+    padding: 10px 0
+  .title-logo
+    font-size: 1.2rem
+  .titles-logo
+    padding-right: 2%
+    max-width: 33%
+  .title-logo-bottom, .sales-number
+    font-size: 0.7rem
+  .title-logo-bottom
+    margin: 0 0.3rem
+  .title-address
+    margin: 0
+  .social-icon
+    justify-content: flex-start
+    padding-left: 2%
+    ul a
+      margin-right: 5px
+@media (min-width: 900px) and (max-width: 1000px)
+  .bottom-half-header .container ul li a h6
+    font-size: 1vw
+
