@@ -18,29 +18,29 @@ $(document).ready(function(){
    $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
    });
 
-    $('.carousel-mobile').magnificPopup({
-      delegate: 'a',
-      type: 'image',
-      mainClass: 'mfp-with-zoom mfp-img-mobile',
-      image: {
-        verticalFit: true,
-      },
-      gallery: {
-        enabled: true
-      },
-      zoom: {
-        enabled: true,
-        duration: 230,
-        opener: function(element) {
-          return element.find('img');
-        }
-      }
-    });
-  });
-    var totalItems = $('.carousel-item').length;
-    var currentIndex = $('div.active').index() + 1;
+//     $('.carousel-mobile').magnificPopup({
+//       delegate: 'a',
+//       type: 'image',
+//       mainClass: 'mfp-with-zoom mfp-img-mobile',
+//       image: {
+//         verticalFit: true,
+//       },
+//       gallery: {
+//         enabled: true
+//       },
+//       zoom: {
+//         enabled: true,
+//         duration: 230,
+//         opener: function(element) {
+//           return element.find('img');
+//         }
+//       }
+//     });
+//   });
+    // var totalItems = $('.carousel-item').length;
+    // var currentIndex = $('div.active').index() + 1;
 
-    $('#carouselUsedCar').carousel({
+    $('#carouselExampleControls').carousel({
         interval: false
     });
     
@@ -49,10 +49,10 @@ $(document).ready(function(){
     //    $('.num').html(''+currentIndex+'/'+totalItems+'');
     //    console.log( $('.num').html(''+currentIndex+'/'+totalItems+''))
     // });
-    $('#carouselUsedCar').on('slid.bs.carousel', function() {
-        currentIndex = $('div.active').index() + 1;
-       $('.num').html(''+currentIndex+'/'+totalItems+'');
-    });
+    // $('#carouselUsedCar').on('slid.bs.carousel', function() {
+    //     currentIndex = $('div.active').index() + 1;
+    //    $('.num').html(''+currentIndex+'/'+totalItems+'');
+    // });
     // var totalItems = $('.carousel-item').length;
     //     var currentIndex = $('.carousel-item.active').index() + 1;
 
