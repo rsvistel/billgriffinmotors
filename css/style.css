@@ -390,23 +390,30 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 #office {
   order: 4;
   padding: 3% 0;
-  background: lightgrey; }
+  background: #EAEDF0; }
   #office .card {
     padding: 0;
     flex: 0 0 31%;
-    max-width: 31%; }
+    max-width: 31%;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 0; }
     #office .card:nth-child(1) {
       order: 2; }
     #office .card:nth-child(2) {
       order: 1;
       margin: 0 3.5%; }
     #office .card .card-title {
-      border-bottom: 1px solid grey;
-      padding: 3%;
-      margin: 0; }
+      border-bottom: 1px solid #CCCCCC;
+      padding: 3% 4%;
+      margin: 0;
+      color: #525252;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif; }
     #office .card .card-body {
       padding: 0;
-      position: relative; }
+      position: relative;
+      border: 0; }
       #office .card .card-body #map {
         position: absolute;
         overflow: hidden;
@@ -415,15 +422,22 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
         width: 100%;
         height: 100%; }
       #office .card .card-body ul {
-        list-style: none; }
+        list-style: none;
+        font-family: "Montserrat", sans-serif;
+        color: #525252; }
         #office .card .card-body ul .highlighted {
-          color: blue; }
+          color: #00C4FC; }
+        #office .card .card-body ul li {
+          margin-bottom: 7px;
+          font-size: 18px; }
         #office .card .card-body ul .row {
           margin: 0; }
           #office .card .card-body ul .row .col-6:last-child {
             text-align: right; }
       #office .card .card-body img {
         width: 100%; }
+    #office .card .card-body-opening-hours {
+      padding: 17px 0; }
 
 @media only screen and (max-width: 768px) {
   #office {
@@ -467,12 +481,32 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   color: #fff;
   background: url("../img/home/bmw.png");
   padding: 5% 0; }
-  #statistics p span {
-    color: blue; }
+  #statistics .statistic-block object {
+    width: auto;
+    max-height: 51px; }
+  #statistics .statistic-block .img-statistic {
+    height: 56px; }
+  #statistics .statistic-block .counter-value {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 35px; }
+  #statistics .statistic-block-earth object {
+    max-height: 56px;
+    margin-top: -5px; }
+  #statistics p {
+    font-family: "Poppins", sans-serif;
+    font-style: oblique;
+    font-size: 18px;
+    margin-top: 5px; }
+    #statistics p span {
+      color: #00C4FC; }
 
 @media only screen and (max-width: 768px) {
   #statistics {
     display: none; } }
+#homepage {
+  overflow: hidden; }
+
 .footer-section {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4vw;

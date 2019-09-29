@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
       display: flex
       flex-direction: column
 
+
 //Banner&Search
 #banner
    order: 1
@@ -428,23 +429,30 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 #office
    order: 4
    padding: 3% 0
-   background: lightgrey
+   background: #EAEDF0
    .card
       padding: 0
       flex: 0 0 31%
       max-width: 31%
+      box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35)
+      border-radius: 0
       &:nth-child(1)
          order: 2
       &:nth-child(2)
          order: 1
          margin: 0 3.5%
       .card-title
-         border-bottom: 1px solid grey
-         padding: 3%
+         border-bottom: 1px solid #CCCCCC
+         padding: 3% 4%
          margin: 0
+         color: #525252
+         font-weight: 400
+         font-size: 18px
+         font-family: $primary-font
       .card-body
          padding: 0
          position: relative
+         border: 0
          #map
             position: absolute
             overflow: hidden
@@ -454,8 +462,13 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
             height: 100%
          ul
             list-style: none
+            font-family: $primary-font
+            color: #525252
             .highlighted
-               color: blue
+               color: $light-blue
+            li
+               margin-bottom: 7px
+               font-size: 18px
             .row
                margin: 0
                .col-6
@@ -463,6 +476,9 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
                      text-align: right
          img
             width: 100%
+      .card-body-opening-hours
+         padding: 17px 0
+
 @media only screen and (max-width: 768px)
    #office
       background: none
@@ -511,14 +527,32 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
    color: #fff
    background: url("../img/home/bmw.png")
    padding: 5% 0
+   .statistic-block
+      object
+         width: auto
+         max-height: 51px
+      .img-statistic
+         height: 56px
+      .counter-value
+         font-family: "Source Sans Pro", sans-serif
+         font-weight: 700
+         font-size: 35px
+   .statistic-block-earth object
+      max-height: 56px
+      margin-top: -5px
    p
+      font-family: 'Poppins', sans-serif
+      font-style: oblique
+      font-size: 18px
+      margin-top: 5px
       span
-         color: blue
+         color: $light-blue
 @media only screen and (max-width: 768px)
    #statistics
       display: none
 //Statistics
-
+#homepage
+   overflow: hidden
 //Homepage
 
 //Footer
