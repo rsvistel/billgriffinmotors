@@ -206,16 +206,21 @@ $light-blue: #00C4FC
         align-items: flex-start
         li
           height: auto
-          padding: 6px
+          padding: 4px 6px
           &:first-child
             margin-left: 0
           a
             .h6-title
-              font-size: 21px
+              font-size: 5.5vw
               text-transform: capitalize
               color: #363636
-              font-weight: 500
+              font-weight: 400
               font-family: $secondary-font
+  .dropdown .dropbtn
+    padding: 0
+
+  .bottom-half-header .container ul li .dropdown-content
+    min-width: 200px
   .bottom-half-header .container ul
     display: flex
     flex-direction: column
@@ -255,6 +260,8 @@ $light-blue: #00C4FC
   .mobile-open object:last-child
     width: 41px
     height: 36px
+  .dropdown-content
+    margin-top: 0
 @media (min-width: 767px)
   .hamburger-icon
     display: none
@@ -267,7 +274,7 @@ $light-blue: #00C4FC
   .title-logo-bottom
     margin: 0
 @media (min-width: 1000px) and (max-width: 1112px)
-  .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4
+  .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4, .dropdown .dropbtn
     font-size: 0.75rem
 @media (min-width: 1000px) and (max-width: 1250px)
   .upper-half-header
@@ -286,8 +293,8 @@ $light-blue: #00C4FC
 @media (min-width: 768px) and (max-width: 1000px)
   .container
     padding: 0
-  .bottom-half-header .container ul li a .h6-title
-    font-size: 1.1vw
+  .bottom-half-header .container ul li a .h6-title, .dropdown .dropbtn
+    font-size: 1vw
     text-align: center
   .bottom-half-header .container ul li .dropdown-content .h6-title
     text-align: start
@@ -309,9 +316,16 @@ $light-blue: #00C4FC
   .social-icon
     justify-content: flex-start
     padding-left: 2%
-    ul a
+    ul li
       margin-right: 5px
 @media (min-width: 900px) and (max-width: 1000px)
   .bottom-half-header .container ul li a .h6-title
     font-size: 1vw
+
+@media (min-width: 1113px) and (max-width: 1200px)
+  .title-address .text-title-address
+    font-size: 0.8rem
+
+  .bottom-half-header .container ul li a .h6-title, .bottom-half-header .container ul li .fa-chevron-down
+    font-size: 0.7rem
 
