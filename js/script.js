@@ -18,30 +18,22 @@ $(document).ready(function(){
    $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
    });
 
-//     $('.carousel-mobile').magnificPopup({
-//       delegate: 'a',
-//       type: 'image',
-//       mainClass: 'mfp-with-zoom mfp-img-mobile',
-//       image: {
-//         verticalFit: true,
-//       },
-//       gallery: {
-//         enabled: true
-//       },
-//       zoom: {
-//         enabled: true,
-//         duration: 230,
-//         opener: function(element) {
-//           return element.find('img');
-//         }
-//       }
-//     });
-//   });
-    // var totalItems = $('.carousel-item').length;
-    // var currentIndex = $('div.active').index() + 1;
-
     $('#carouselExampleControls').carousel({
         interval: false
+    });
+
+    $(".more").click(function() {
+        var elem = $(".more").text();
+        if (elem == "more...") {
+            $(".more").text("less...");
+            $(".complete").show();
+            $(".fa").addClass('fa-angle-up').removeClass('fa-angle-down');
+
+        } else {
+            $(".more").text("more...");
+            $(".complete").hide();
+            $(".fa").addClass('fa-angle-down').removeClass('fa-angle-up');
+        }
     });
     
     // $('#carouselUsedCar').bind('slid', function() {
@@ -90,19 +82,6 @@ $(document).ready(function(){
     //             }
     //         });
 
-    $(".more").click(function() {
-        var elem = $(".more").text();
-        if (elem == "more...") {
-            $(".more").text("less...");
-            $(".complete").show();
-            $(".fa").addClass('fa-angle-up').removeClass('fa-angle-down');
-
-        } else {
-            $(".more").text("more...");
-            $(".complete").hide();
-            $(".fa").addClass('fa-angle-down').removeClass('fa-angle-up');
-        }
-    });
 });
 
 
