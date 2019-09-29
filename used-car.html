@@ -5,11 +5,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>FAQ</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3561/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
@@ -160,23 +162,77 @@
                         </div> -->
                         <!-- div class="container container--gallery"> -->
                     <div class="row">
-                        <div class="col-12 col-md-12 col-lg-12">
-                            <a class="photo-zoom" href="Moscow_025.jpg">
-                                <img class="gallery__img" src="img/used-car-page/used-car-one.png" alt="" />
-                            </a>
+                        <div class="col-12 col-md-12 col-lg-12 d-block d-xl-none d-lg-none">
+                            <div id="carouselUsedCar" class="carousel-mobile slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <a href="img/used-car-page/used-car-one.png">
+                                    <img class="d-block w-100" src="img/used-car-page/used-car-one.png" alt="2012 FORD FIESTA">
+                                    <div class="carousel-caption d-block">
+                                            <div class="mobile-counter__block">
+                                                    <object class="mobile-counter__icon">
+                                                        <img src="img/used-car-page/gallery/counter-icon.svg">
+                                                    </object>
+                                                    <div class="num mobile-counter__value">
+                                                        1 of 16
+                                                    </div>
+                                                  </div>
+                                          </div>
+                                        </a>
+                                  </div>
+                                  
+                                  <!-- <div class="carousel-item">
+                                        <a href="img/used-car-page/used-car-two.png">
+                                    <img class="d-block w-100" src="img/used-car-page/used-car-two.png" alt="2012 FORD FIESTA">
+                                        </a>
+                                </div>
+
+                                  <div class="carousel-item">
+                                      <a href="img/used-car-page/used-car-three.png">
+                                    <img class="d-block w-100" src="img/used-car-page/used-car-three.png" alt="2012 FORD FIESTA">
+                                        </a>
+                                </div>
+                                  <div class="carousel-item">
+                                      <a href="img/used-car-page/used-car-four.png">
+                                    <img class="d-block w-100" src="img/used-car-page/used-car-four.png" alt="2012 FORD FIESTA">
+                                </a>
+                                </div>
+                                  <div class="carousel-item">
+                                      <a href="img/used-car-page/used-car-five.png">
+                                    <img class="d-block w-100" src="img/used-car-page/used-car-five.png" alt="2012 FORD FIESTA">
+                                </a>
+                                </div> -->
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                              <div class="mobile-counter__block">
+                                <object>
+                                    <img src="img/used-car-page/gallery/counter-icon.svg">
+                                </object>
+                                <div class="num">
+                                </div>
+                              </div>
+                             
                         </div>
                         <div class="col-12 col-sm-12 d-block d-xl-none d-lg-none">
                             <div id="accordion" class="accordion-used-car">
                                     <div class="card">
-                                        <div class="card-header accordion-used-car__card-header" id="headingOne">
-                                        <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <div class="card-header accordion-used-car__card-header" id="headingMessage">
+                                        <h5 class="mb-0" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
                                             <img class="img-fluid" src="./img/used-car-page/form-icon.svg" alt="form">
-                                            <button class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            <button class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
                                                 Make an enquiry
                                             </button>
                                         </h5>
                                         </div>
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div id="collapseMessage" class="collapse show" aria-labelledby="headingMessage" data-parent="#accordion">
                                         <div class="card-body">
                                             <div class="form-container">
                                                 <form action="" class="form">
