@@ -264,8 +264,8 @@ body
 
 .used-car-section
       width: 100%
-      margin-top: 40px
-      margin-bottom: 40px
+      margin-top: 1rem
+      margin-bottom: 1rem
 
 .used-car__title
       display: flex
@@ -288,6 +288,7 @@ body
       display: flex
       flex-direction: column
       text-align: right
+      padding-right: 8px
 
 .used-car__price-top
       font-size: 35px
@@ -329,9 +330,11 @@ body
 .accordion-used-car__title
       width: 100%
       text-align: justify
+      //font-size: 2vw
       font-size: 28px
       white-space: nowrap
       font-weight: bold
+      padding: 1.11rem 1.11rem 1.11rem 5.5rem
 
 .accordion-used-car__title img
       padding-right: 0.5em
@@ -353,10 +356,19 @@ body
       padding: 0.4rem
 
 .accordion-used-car__card-header
-      padding: 1rem
+      padding: 0
       border-bottom: 0
       background: #EEEEEC
-      line-height: 1
+
+.form-icon
+      background-image: url("/img/used-car-page/form-icon.svg")
+.finance-icon
+      background-image: url("/img/used-car-page/finance-icon.svg")
+.reserve-icon
+      background-image: url("/img/used-car-page/reserve.svg")
+.form-icon, .reserve-icon, .finance-icon
+      background-repeat: no-repeat
+      background-position: 1.6rem center
 
 .accordion-used-car__card-header:first-child
       border-radius: 0
@@ -445,6 +457,7 @@ body
    padding-bottom: 1.7rem
    padding-top: 0.5rem
    outline: 0
+   width: 48px
 button:focus
    outline: 0
 
@@ -472,10 +485,6 @@ button:focus
    left: 3%
    font-size: 26px
 
-.used-car__modal.show .used-car__modal-dialog
-   max-width: 1920px
-   margin: 0
-
 .accordion-used-car__h5
    display: flex
 
@@ -484,6 +493,60 @@ button:focus
 
 .carousel-control-next, .carousel-control-prev
    width: 11%
+
+// .modal
+//    position: fixed
+//    top: 0
+//    right: 0
+//    bottom: 0
+//    left: 0
+//    overflow: hidden
+
+// .modal-dialog
+//    position: fixed
+//    margin: 0
+//    width: 100%
+//    height: 100%
+//    padding: 0
+
+// .modal-content
+//    position: absolute
+//    top: 0
+//    right: 0
+//    bottom: 0
+//    left: 0
+//    border-radius: 0
+//    box-shadow: none
+
+// // .modal-header
+// //    position: absolute
+// //    top: 0
+// //    right: 0
+// //    left: 0
+// //    height: 50px
+// //    padding: 10px
+// //    border: 0
+
+// .modal-title
+//    font-weight: 300
+//    font-size: 2em
+//    line-height: 30px
+
+// .modal-body
+//    position: absolute
+//    top: 50px
+//    bottom: 60px
+//    width: 100%
+//    font-weight: 300
+//    overflow: auto
+
+// .modal-footer
+//    position: absolute
+//    right: 0
+//    bottom: 0
+//    left: 0
+//    height: 60px
+//    padding: 10px
 
 @media (min-width: 992px)
    .used-car__modal-name-top
@@ -498,11 +561,6 @@ button:focus
       position: absolute
       right: 0
       top: 0
-   // .accordion-used-car__title
-   //    padding: .375rem .75rem
-   .accordion-used-car__card-header
-      padding: 0.7rem
-      padding-left: 1.3rem
    .used-car__block
       position: relative
    .used-car__modal
@@ -531,18 +589,18 @@ button:focus
       background: none
    .used-car__modal-footer
       justify-content: space-around
-      background: #898989
+      //background-color: rgba(0, 0, 0, 0.4)
       padding-bottom: 3rem
    .carousel-control-prev-icon,.carousel-control-next-icon
       display: none
    .used-car__modal__control-prev
       background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
       background-repeat: no-repeat
-      background-position: center 170px
+      background-position: center center
    .used-car__modal__control-next
       background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
       background-repeat: no-repeat
-      background-position: center 170px
+      background-position: center center
    .used-car__modal-title,.used-car__modal-header
       width: 75%
    .carousel-card-items

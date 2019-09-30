@@ -7,6 +7,13 @@
         });
     });
 
+    // $(function() {
+    //     $(".modal").mousewheel(function(event, delta) {
+    //         this.scrollLeft -= (delta * 30);
+    //         event.preventDefault();
+    //     });
+    // });
+
 
 $(document).ready(function(){
    $(".collapse.show").each(function(){

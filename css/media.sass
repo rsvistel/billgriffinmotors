@@ -82,8 +82,12 @@ $light-blue: #00C4FC
   .detailse-used-car__name,.detailse-used-car__data
     font-size: 15px
 
+@media (min-width: 1024px) and (max-width: 1024px)
+  .accordion-used-car__title
+    font-size: 24px
 
-@media (max-width: 992px)
+
+@media (max-width: 991px)
   .carousel-mobile
     margin-bottom: 1rem
   // .accordion-used-car__title
@@ -186,11 +190,28 @@ $light-blue: #00C4FC
     justify-content: center
     margin: auto
 
+  .modal-header button .close
+    position: absolute
+    right: 8px
+    padding: 8px
+    margin: 0
+
+  .modal-header .close
+    margin: 0
+    padding: 0
+
   .used-car__modal-close
     opacity: 1
-    padding-bottom: 5.7rem
+    padding-bottom: 3.7rem
     padding-top: 1rem
     padding-right: 0.5rem
+
+  .used-car__modal-title
+    margin-top: 4rem
+
+  .used-car__modal-price
+    padding-right: 0
+
 
   .used-car__modal-dialog
     margin: auto
@@ -242,6 +263,8 @@ $light-blue: #00C4FC
     font-size: 18px
   .detailse-used-car__data
     font-size: 18px
+  .used-car-no-gutters__mobile
+    padding: 0 0
 
 @media (max-width: 400px)
   .used-car__name-top, .used-car__price-top
@@ -261,6 +284,6 @@ $light-blue: #00C4FC
   .detailse-used-car__name, .detailse-used-car__data, .description-used-car
     font-size: 13px
   .accordion-used-car__title
-    font-size: 5vw
+    font-size: 7vw
   .more
     font-size: 19px
