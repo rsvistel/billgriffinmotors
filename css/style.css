@@ -312,8 +312,14 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .accordion-used-car__title {
-  font-size: 26px;
-  white-space: nowrap; }
+  width: 100%;
+  text-align: justify;
+  font-size: 28px;
+  white-space: nowrap;
+  font-weight: bold; }
+
+.accordion-used-car__title img {
+  padding-right: 0.5em; }
 
 .accordion-used-car > .card {
   border: none;
@@ -477,9 +483,6 @@ button:focus {
     position: absolute;
     right: 0;
     top: 0; }
-
-  .accordion-used-car__title {
-    padding: 0.375rem 0.75rem; }
 
   .accordion-used-car__card-header {
     padding: 0.7rem;

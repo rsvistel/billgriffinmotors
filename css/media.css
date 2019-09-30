@@ -72,9 +72,6 @@
   .carousel-mobile {
     margin-bottom: 1rem; }
 
-  .accordion-used-car__title {
-    font-size: 15px; }
-
   .used-car__name-top, .used-car__price-top {
     font-size: 20px; }
 
@@ -82,7 +79,7 @@
     font-size: 18px; }
 
   .detailse-used-car__name, .detailse-used-car__data, .description-used-car {
-    font-size: 13px; }
+    font-size: 20px; }
 
   .carousel-control-next, .carousel-control-prev {
     bottom: -20px;
@@ -132,14 +129,21 @@
   .complete {
     display: none; }
 
+  .btn-more-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #005EAA;
+    padding-right: 1rem; }
+
   .more {
     display: inline-block;
-    color: #005EAA;
-    font-size: 13px;
-    cursor: pointer; }
+    font-size: 24px;
+    padding-right: 0.5rem; }
 
   .more-icon {
-    display: inline-block; }
+    display: inline-block;
+    font-size: 1.5em; }
 
   .accordion-used-car__mobile-padding {
     padding: 0; }
@@ -196,7 +200,7 @@
     padding: 0; }
 
   .description-used-car__sub-title {
-    padding-bottom: 0.5rem; }
+    padding-bottom: 0.9rem; }
 
   .used-car__name-modal {
     display: none; }
@@ -221,20 +225,20 @@
     display: none; } }
 @media (max-width: 800px) {
   .detailse-used-car__title-header, .description-used-car__title {
-    padding: 0.5rem 0;
-    font-size: 14px; }
+    padding: 0.8rem 0;
+    font-size: 24px; }
 
-  .detailse-used-car__name, .detailse-used-car__data {
-    font-size: 11px; } }
+  .detailse-used-car__name {
+    font-size: 18px; }
+
+  .detailse-used-car__data {
+    font-size: 18px; } }
 @media (max-width: 400px) {
   .used-car__name-top, .used-car__price-top {
     font-size: 18px; }
 
   .used-car__name-bottom, .used-car__price-bottom {
-    font-size: 16px; }
-
-  .accordion-used-car__title {
-    font-size: 5vw; } }
+    font-size: 16px; } }
 @media (max-width: 320px) {
   .used-car__name-top, .used-car__price-top {
     font-size: 15px; }
@@ -242,13 +246,13 @@
   .used-car__name-bottom, .used-car__price-bottom {
     font-size: 12px; }
 
-  .accordion-used-car__title {
-    font-size: 18px; }
-
   .detailse-used-car__name, .detailse-used-car__data, .description-used-car {
     font-size: 13px; }
 
   .accordion-used-car__title {
-    font-size: 5vw; } }
+    font-size: 5vw; }
+
+  .more {
+    font-size: 19px; } }
 
 /*# sourceMappingURL=media.css.map */
