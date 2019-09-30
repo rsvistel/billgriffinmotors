@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap");
+
 * {
   box-sizing: border-box; }
 
@@ -214,9 +217,409 @@ body {
 .bottom-half-header .container ul li:hover .dropdown-content {
   display: block; }
 
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41; }
+
+@media only screen and (max-width: 768px) {
+  #homepage {
+    display: flex;
+    flex-direction: column; } }
+#banner {
+  order: 1;
+  position: relative;
+  text-align: center; }
+  #banner #banner-image {
+    text-align: center; }
+    #banner #banner-image img {
+      width: 120%;
+      max-width: 1800px; }
+  #banner #search-box {
+    width: 100%;
+    max-width: 1800px;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); }
+    #banner #search-box h3 {
+      color: #fff;
+      text-align: left;
+      margin: 13px 0 7px 0;
+      font-size: 1.5rem;
+      font-family: "Open Sans", sans-serif; }
+      #banner #search-box h3 object {
+        height: 20px; }
+    #banner #search-box .col-md-3 {
+      text-align: center;
+      padding: 0 1%; }
+      #banner #search-box .col-md-3 select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url(../img/home/arrow-down.svg);
+        background-position: center right 10px;
+        background-size: 5%;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        padding-left: 10px;
+        color: #555555;
+        font-family: "Open Sans", sans-serif; }
+      #banner #search-box .col-md-3 button {
+        background: #005EAA;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-family: "Montserrat", sans-serif; }
+        #banner #search-box .col-md-3 button object {
+          width: 15px;
+          position: relative;
+          top: 1px; }
+      #banner #search-box .col-md-3 button, #banner #search-box .col-md-3 select {
+        width: 100%;
+        height: 40px;
+        border: 0; }
+
+@media only screen and (max-width: 768px) {
+  #banner #banner-image {
+    display: flex;
+    justify-content: center; }
+    #banner #banner-image img {
+      height: 200px;
+      width: auto; }
+  #banner #search-box {
+    position: static;
+    background: black;
+    padding: 5% 5% 10%; } }
+#special-offers {
+  order: 3;
+  margin-bottom: 2%; }
+  #special-offers h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem; }
+  #special-offers .title-special-offer {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1.5% 0; }
+  #special-offers .owl-carousel {
+    padding: 0 3%; }
+    #special-offers .owl-carousel .owl-nav.disabled {
+      display: flex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      justify-content: space-between;
+      pointer-events: none; }
+      #special-offers .owl-carousel .owl-nav.disabled button {
+        pointer-events: auto;
+        margin-left: 2%; }
+        #special-offers .owl-carousel .owl-nav.disabled button object {
+          pointer-events: none; }
+
+.fas.fa-star {
+  color: #FFC207; }
+
+#special-offers .owl-carousel .owl-stage-outer {
+  height: 420px;
+  width: 102%;
+  padding: 0 1%; }
+
+.car-tile {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.1);
+  padding: 0; }
+  .car-tile .car-title {
+    margin: 8px 3px; }
+    .car-tile .car-title .titles-car-card {
+      padding: 0 7px; }
+    .car-tile .car-title h2, .car-tile .car-title p {
+      font-size: 16px; }
+    .car-tile .car-title h2 {
+      font-weight: bold;
+      text-align: start; }
+    .car-tile .car-title p {
+      font-family: "Open Sans", sans-serif;
+      line-height: 21px; }
+  .car-tile .car-image {
+    position: relative; }
+    .car-tile .car-image img {
+      width: 100%; }
+    .car-tile .car-image .car-like, .car-tile .car-image .car-image-counter {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .car-tile .car-image .car-like {
+      text-align: center;
+      right: 0;
+      bottom: -22.5px;
+      z-index: 101; }
+    .car-tile .car-image .car-image-counter {
+      color: #fff;
+      padding: 7px 12px; }
+  .car-tile .car-price {
+    font-size: 22px; }
+    .car-tile .car-price .row {
+      margin: 0; }
+    .car-tile .car-price .col-6 {
+      background: #ECEBE9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 8% 0; }
+      .car-tile .car-price .col-6:first-child {
+        border-right: 1px solid #fff;
+        font-weight: 600;
+        font-family: Arial Rounded MT, sans-serif; }
+      .car-tile .car-price .col-6:last-child {
+        border-left: 1px solid #fff;
+        color: #00C4FC;
+        font-weight: 600;
+        font-family: Arial Rounded MT, sans-serif;
+        line-height: 15px; }
+        .car-tile .car-price .col-6:last-child p {
+          font-size: 9px;
+          font-weight: 500; }
+  .car-tile .car-desc {
+    padding: 6% 0; }
+    .car-tile .car-desc .row {
+      margin: 0; }
+    .car-tile .car-desc .col-6 {
+      margin: 3% 0;
+      padding: 0 8%;
+      display: flex;
+      align-items: center; }
+      .car-tile .car-desc .col-6 object {
+        width: 21%;
+        max-height: 18px; }
+      .car-tile .car-desc .col-6 h6 {
+        margin-left: 8px;
+        font-size: 11px;
+        font-family: Arial, sans-serif;
+        color: #777777;
+        text-transform: capitalize; }
+
+@media only screen and (max-width: 768px) {
+  .owl-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; }
+    .owl-nav button {
+      pointer-events: auto; }
+      .owl-nav button object {
+        pointer-events: none; } }
+#feedback {
+  order: 2;
+  background-image: url("../img/home/Untitled-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7% 0 0;
+  text-align: center; }
+  #feedback h3.feedback-rating, #feedback h4.feedback-title {
+    display: none; }
+  #feedback .feedback-item {
+    background: #fff;
+    text-align: left;
+    padding: 15px; }
+    #feedback .feedback-item .feedback-title h3, #feedback .feedback-item .feedback-author h3 {
+      font-family: "Poppins", sans-serif;
+      color: #333333;
+      font-weight: 400;
+      font-size: 20px; }
+    #feedback .feedback-item .feedback-date, #feedback .feedback-item .feedback-body, #feedback .feedback-item .feedback-company {
+      color: #777777;
+      font-family: "Source Sans Pro", sans-serif; }
+    #feedback .feedback-item .feedback-body {
+      font-size: 14px;
+      margin-top: 10px;
+      padding-left: 5px; }
+    #feedback .feedback-item .fas.fa-quote-left, #feedback .feedback-item .fas.fa-quote-right {
+      color: #D2D5DA;
+      font-size: 28px; }
+    #feedback .feedback-item .feedback-stars {
+      display: flex;
+      margin-top: 5px; }
+    #feedback .feedback-item .fas.fa-quote-right {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      width: 90%;
+      margin-top: -17px; }
+    #feedback .feedback-item .fas.fa-quote-left {
+      margin-right: 5px; }
+    #feedback .feedback-item .feedback-author {
+      margin-top: 15px; }
+  #feedback .button-feedback {
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin: 5% 0 4% 0;
+    background: #005EAA;
+    padding: 1% 5%;
+    font-family: "Source Sans Pro", sans-serif; }
+
+@media only screen and (max-width: 768px) {
+  #feedback {
+    background: none; }
+    #feedback h3.feedback-rating, #feedback h4.feedback-title {
+      display: block; }
+    #feedback h4.feedback-title {
+      border: 1px solid lightgrey;
+      text-align: left;
+      padding-left: 3%; }
+    #feedback h3.feedback-rating {
+      border-right: 1px solid lightgrey;
+      border-left: 1px solid lightgrey; }
+    #feedback .owl-feedback {
+      border: 1px solid lightgrey;
+      border-top: none;
+      padding: 0 3% 3%;
+      display: block; }
+      #feedback .owl-feedback .feedback-item {
+        border-top: 1px solid lightgrey; }
+    #feedback button {
+      display: none; } }
+#youtube-video {
+  padding: 3% 0;
+  text-align: center; }
+
+@media only screen and (max-width: 768px) {
+  #youtube-video {
+    display: none; } }
+#office {
+  order: 4;
+  padding: 3% 0;
+  background: #EAEDF0; }
+  #office .card {
+    padding: 0;
+    flex: 0 0 31%;
+    max-width: 31%;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 0; }
+    #office .card:nth-child(1) {
+      order: 2; }
+    #office .card:nth-child(2) {
+      order: 1;
+      margin: 0 3.5%; }
+    #office .card .card-title {
+      border-bottom: 1px solid #CCCCCC;
+      padding: 3% 4%;
+      margin: 0;
+      color: #525252;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif; }
+    #office .card .card-body {
+      padding: 0;
+      position: relative;
+      border: 0; }
+      #office .card .card-body #map {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%; }
+      #office .card .card-body ul {
+        list-style: none;
+        font-family: "Montserrat", sans-serif;
+        color: #525252; }
+        #office .card .card-body ul .highlighted {
+          color: #00C4FC; }
+        #office .card .card-body ul li {
+          margin-bottom: 7px;
+          font-size: 18px; }
+        #office .card .card-body ul .row {
+          margin: 0; }
+          #office .card .card-body ul .row .col-6:last-child {
+            text-align: right; }
+      #office .card .card-body img {
+        width: 100%; }
+    #office .card .card-body-opening-hours {
+      padding: 17px 0; }
+
+@media only screen and (max-width: 768px) {
+  #office {
+    background: none; }
+    #office .card {
+      flex: 0 0 100%;
+      max-width: calc(100% - 30px);
+      margin: 0 15px; }
+      #office .card:first-child {
+        margin-top: 2%; }
+        #office .card:first-child .card-title {
+          display: none; }
+        #office .card:first-child .card-body:after {
+          content: "";
+          display: block;
+          padding-bottom: 100%; }
+        #office .card:first-child #map {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+      #office .card:nth-child(2) {
+        margin: 0 15px; }
+      #office .card:last-child {
+        display: none; } }
+#cars-popup {
+  order: 5;
+  text-align: center;
+  padding: 3% 0; }
+  #cars-popup img {
+    width: 80%; }
+
+@media only screen and (max-width: 768px) {
+  #cars-popup {
+    padding: 5% 0; }
+    #cars-popup img {
+      width: 100%; } }
+#statistics {
+  text-align: center;
+  color: #fff;
+  background: url("../img/home/bmw.png");
+  padding: 5% 0; }
+  #statistics .statistic-block object {
+    width: auto;
+    max-height: 51px; }
+  #statistics .statistic-block .img-statistic {
+    height: 56px; }
+  #statistics .statistic-block .counter-value {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 35px; }
+  #statistics .statistic-block-earth object {
+    max-height: 56px;
+    margin-top: -5px; }
+  #statistics p {
+    font-family: "Poppins", sans-serif;
+    font-style: oblique;
+    font-size: 18px;
+    margin-top: 5px; }
+    #statistics p span {
+      color: #00C4FC; }
+
+@media only screen and (max-width: 768px) {
+  #statistics {
+    display: none; } }
+#homepage {
+  overflow: hidden; }
+
 @media (max-width: 768px) {
   .flex-dropdown__chevron-dow {
     padding-top: 6px; } }
+
 .footer-section {
   font-family: "Montserrat", sans-serif;
   min-height: 217px;

@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap')
 $primary-font: 'Montserrat', sans-serif
 $secondary-font: 'Open Sans', sans-serif
 $dark-blue: #005EAA
 $light-blue: #00C4FC
+$dark-gray: #333333
+$light-gray: #777777
 $gray: #EAEDF0
 *
    box-sizing: border-box
@@ -680,6 +684,434 @@ body
 // .mobile-open
 //    display: none
 
+
+//Homepage
+@media only screen and (max-width: 768px)
+   #homepage
+      display: flex
+      flex-direction: column
+
+
+//Banner&Search
+#banner
+   order: 1
+   position: relative
+   text-align: center
+   #banner-image
+      text-align: center
+      img
+         width: 120%
+         max-width: 1800px
+   #search-box
+      width: 100%
+      max-width: 1800px
+      height: 50%
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: 0 auto
+      background: rgba(0,0,0,0.7)
+      h3
+         color: #fff
+         text-align: left
+         margin: 13px 0 7px 0
+         font-size: 1.5rem
+         font-family: $secondary-font
+         object
+            height: 20px
+      .col-md-3
+         text-align: center
+         padding: 0 1%
+         select
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            background-image: url(../img/home/arrow-down.svg)
+            background-position: center right 10px
+            background-size: 5%
+            background-repeat: no-repeat
+            border-radius: 0
+            padding-left: 10px
+            color: #555555
+            font-family: $secondary-font
+         button
+            background: $dark-blue
+            border: none
+            border-radius: 4px
+            color: white
+            font-family: $primary-font
+            object
+               width: 15px
+               position: relative
+               top: 1px
+         button, select
+            width: 100%
+            height: 40px
+            border: 0
+
+
+@media only screen and (max-width: 768px)
+   #banner
+      #banner-image
+         display: flex
+         justify-content: center
+         img
+            height: 200px
+            width: auto
+      #search-box
+         position: static
+         background: rgba(0,0,0,1)
+         padding: 5% 5% 10%
+//Banner&Search
+
+//Special Offers
+#special-offers
+   order: 3
+   margin-bottom: 2%
+   h2
+      font-family: $primary-font
+      font-weight: 700
+      font-size: 1.1rem
+   .title-special-offer
+      font-size: 1.6rem
+      text-align: center
+      margin: 1.5% 0
+   .owl-carousel
+      padding: 0 3%
+      .owl-nav.disabled
+         display: flex
+         position: absolute
+         top: 0
+         bottom: 0
+         right: 0
+         left: 0
+         justify-content: space-between
+         pointer-events: none
+         button
+            pointer-events: auto
+            margin-left: 2%
+            object
+               pointer-events: none
+
+
+//Special Offers
+
+//Car Tile
+.fas.fa-star
+   color: #FFC207
+#special-offers .owl-carousel .owl-stage-outer
+   height: 420px
+   width: 102%
+   padding: 0 1%
+.car-tile
+   border: 1px solid #CCCCCC
+   border-radius: 5px
+   box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.1)
+   padding: 0
+   .car-title
+      margin: 8px 3px
+      .titles-car-card
+         padding: 0 7px
+      h2, p
+         font-size: 16px
+      h2
+         font-weight: bold
+         text-align: start
+      p
+         font-family: $secondary-font
+         line-height: 21px
+   .car-image
+      position: relative
+      img
+         width: 100%
+      .car-like, .car-image-counter
+         position: absolute
+         bottom: 0
+         left: 0
+      .car-like
+         text-align: center
+         right: 0
+         bottom: -22.5px
+         z-index: 101
+      .car-image-counter
+         color: #fff
+         padding: 7px 12px
+   .car-price
+      font-size: 22px
+      .row
+         margin: 0
+      .col-6
+         background: #ECEBE9
+         display: flex
+         justify-content: center
+         align-items: center
+         flex-direction: column
+         padding: 8% 0
+         &:first-child
+            border-right: 1px solid #fff
+            font-weight: 600
+            font-family: Arial Rounded MT, sans-serif
+         &:last-child
+            border-left: 1px solid #fff
+            color: $light-blue
+            font-weight: 600
+            font-family: Arial Rounded MT, sans-serif
+            line-height: 15px
+            p
+               font-size: 9px
+               font-weight: 500
+   .car-desc
+      padding: 6% 0
+      .row
+         margin: 0
+      .col-6
+         margin: 3% 0
+         padding: 0 8%
+         display: flex
+         align-items: center
+         object
+            width: 21%
+            max-height: 18px
+         h6
+            margin-left: 8px
+            font-size: 11px
+            font-family: Arial, sans-serif
+            color: $light-gray
+            text-transform: capitalize
+@media only screen and (max-width: 768px)
+   .owl-nav
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      display: flex
+      justify-content: space-between
+      pointer-events: none
+      button
+         pointer-events: auto
+         object
+            pointer-events: none
+//Car Tile
+
+//Feedback
+#feedback
+   order: 2
+   background-image: url("../img/home/Untitled-2.png")
+   background-size: cover
+   background-repeat: no-repeat
+   padding: 7% 0 0
+   text-align: center
+   h3.feedback-rating, h4.feedback-title
+      display: none
+   .feedback-item
+      background: #fff
+      text-align: left
+      padding: 15px
+      .feedback-title h3, .feedback-author h3
+         font-family: 'Poppins', sans-serif
+         color: $dark-gray
+         font-weight: 400
+         font-size: 20px
+      .feedback-date, .feedback-body, .feedback-company
+         color: $light-gray
+         font-family: 'Source Sans Pro', sans-serif
+      .feedback-body
+         font-size: 14px
+         margin-top: 10px
+         padding-left: 5px
+      .fas.fa-quote-left, .fas.fa-quote-right
+         color: #D2D5DA
+         font-size: 28px
+      .feedback-stars
+         display: flex
+         margin-top: 5px
+      .fas.fa-quote-right
+         display: flex
+         justify-content: flex-end
+         position: absolute
+         width: 90%
+         margin-top: -17px
+      .fas.fa-quote-left
+         margin-right: 5px
+      .feedback-author
+         margin-top: 15px
+   .button-feedback
+      color: white
+      border: none
+      text-transform: uppercase
+      margin: 5% 0 4% 0
+      background: $dark-blue
+      padding: 1% 5%
+      font-family: "Source Sans Pro", sans-serif
+
+
+
+@media only screen and (max-width: 768px)
+   #feedback
+      background: none
+      h3.feedback-rating, h4.feedback-title
+         display: block
+      h4.feedback-title
+         border: 1px solid lightgrey
+         text-align: left
+         padding-left: 3%
+      h3.feedback-rating
+         border-right: 1px solid lightgrey
+         border-left: 1px solid lightgrey
+      .owl-feedback
+         border: 1px solid lightgrey
+         border-top: none
+         padding:  0 3% 3%
+         display: block
+         .feedback-item
+            border-top: 1px solid lightgrey
+      button
+         display: none
+
+
+//Feedback
+
+//Youtube
+#youtube-video
+   padding: 3% 0
+   text-align: center
+@media only screen and (max-width: 768px)
+   #youtube-video
+      display: none
+//Youtube
+
+//Office
+#office
+   order: 4
+   padding: 3% 0
+   background: #EAEDF0
+   .card
+      padding: 0
+      flex: 0 0 31%
+      max-width: 31%
+      box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35)
+      border-radius: 0
+      &:nth-child(1)
+         order: 2
+      &:nth-child(2)
+         order: 1
+         margin: 0 3.5%
+      .card-title
+         border-bottom: 1px solid #CCCCCC
+         padding: 3% 4%
+         margin: 0
+         color: #525252
+         font-weight: 400
+         font-size: 18px
+         font-family: $primary-font
+      .card-body
+         padding: 0
+         position: relative
+         border: 0
+         #map
+            position: absolute
+            overflow: hidden
+            top: 0
+            bottom: 0
+            width: 100%
+            height: 100%
+         ul
+            list-style: none
+            font-family: $primary-font
+            color: #525252
+            .highlighted
+               color: $light-blue
+            li
+               margin-bottom: 7px
+               font-size: 18px
+            .row
+               margin: 0
+               .col-6
+                  &:last-child
+                     text-align: right
+         img
+            width: 100%
+      .card-body-opening-hours
+         padding: 17px 0
+
+@media only screen and (max-width: 768px)
+   #office
+      background: none
+      .card
+         flex: 0 0 100%
+         max-width: calc(100% - 30px)
+         margin: 0 15px
+         &:first-child
+            margin-top: 2%
+            .card-title
+               display: none
+            .card-body
+               &:after
+                  content: ""
+                  display: block
+                  padding-bottom: 100%
+            #map
+               position: absolute
+               top: 0
+               bottom: 0
+               left: 0
+               right: 0
+         &:nth-child(2)
+            margin: 0 15px
+         &:last-child
+            display: none
+//Office
+
+//Cars PopUp
+#cars-popup
+   order: 5
+   text-align: center
+   padding: 3% 0
+   img
+      width: 80%
+@media only screen and (max-width: 768px)
+   #cars-popup
+      padding: 5% 0
+      img
+         width: 100%
+//Cars PopUp
+
+//Statistics
+#statistics
+   text-align: center
+   color: #fff
+   background: url("../img/home/bmw.png")
+   padding: 5% 0
+   .statistic-block
+      object
+         width: auto
+         max-height: 51px
+      .img-statistic
+         height: 56px
+      .counter-value
+         font-family: "Source Sans Pro", sans-serif
+         font-weight: 700
+         font-size: 35px
+   .statistic-block-earth object
+      max-height: 56px
+      margin-top: -5px
+   p
+      font-family: 'Poppins', sans-serif
+      font-style: oblique
+      font-size: 18px
+      margin-top: 5px
+      span
+         color: $light-blue
+@media only screen and (max-width: 768px)
+   #statistics
+      display: none
+//Statistics
+#homepage
+   overflow: hidden
+//Homepage
+
 // .mobile-section-under-header
 //    display: none
 
@@ -755,6 +1187,7 @@ body
 //       padding: 0px
 
 //Header
+
 
 //Footer
 .footer-section
