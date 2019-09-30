@@ -312,7 +312,8 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .accordion-used-car__title {
-  font-size: 26px; }
+  font-size: 26px;
+  white-space: nowrap; }
 
 .accordion-used-car > .card {
   border: none;
@@ -337,15 +338,6 @@ body {
 
 .accordion-used-car__card-header:first-child {
   border-radius: 0; }
-
-.accordion-used-car__card-icon {
-  margin-right: 0.7rem; }
-
-.accordion-used-car__message {
-  margin-right: 0.5rem; }
-
-.accordion-used-car__reserve {
-  margin-right: 0.3rem; }
 
 .description-used-car__title {
   font-size: 20px;
@@ -453,13 +445,19 @@ button:focus {
   text-align: right;
   max-width: 300px;
   left: 3%;
-  padding: 1px;
   font-size: 26px; }
 
 .used-car__modal.show .used-car__modal-dialog {
-  max-width: 1920px; }
+  max-width: 1920px;
+  margin: 0; }
 
-@media (min-width: 769px) {
+.accordion-used-car__h5 {
+  display: flex; }
+
+.used-car__modal-footer {
+  padding: 0; }
+
+@media (min-width: 992px) {
   .accordion-used-car__mobile-padding {
     position: absolute;
     right: 0;
@@ -492,9 +490,9 @@ button:focus {
     top: 100%;
     left: 20%; }
 
-  .used-car__carousel-caption {
+  .used-car__modal-carousel-caption {
     position: absolute;
-    top: 100%; }
+    top: 101%; }
 
   .used-car__modal-close {
     outline: 0;
@@ -514,12 +512,15 @@ button:focus {
   .used-car__modal__control-prev {
     background-image: url("../img/used-car-page/gallery/arrow-prev-lg.svg");
     background-repeat: no-repeat;
-    top: 20%; }
+    background-position: center 170px; }
 
   .used-car__modal__control-next {
     background-image: url("../img/used-car-page/gallery/arrow-next-lg.svg");
     background-repeat: no-repeat;
-    top: 20%; }
+    background-position: center 170px; }
+
+  .used-car__modal-title, .used-car__modal-header {
+    width: 75%; }
 
   .carousel-card-items {
     margin-bottom: 0.7rem;
@@ -532,7 +533,17 @@ button:focus {
     padding-left: 3px; }
 
   .used-car__modal-footer {
-    background: #898989; } }
+    background: #898989; }
+
+  .mobile-counter__icon-modal {
+    display: none; }
+
+  .used-car__carousel-caption {
+    bottom: -17px; }
+
+  .counter__value {
+    font-size: 60px;
+    vertical-align: bottom; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
