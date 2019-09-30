@@ -143,7 +143,7 @@
 
     </div>
 </section> -->
-    <section class="used-car-section rowall">
+    <section class="used-car-section">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-12 used-car__title">
@@ -156,22 +156,22 @@
                         <div class="used-car__price-bottom">From €160pm</div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12">
+                <div class="col-12 col-sm-12 col-md-12 used-car__block">
                     <div class="gellery__cars">
-                        <div class="row">
-                            <div class="col-12 col-md-12 col-lg-12 d-block">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-8 col-lg-8 d-block">
                                 <div id="carouselUsedCar" class="carousel-mobile slide" data-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <a href="img/used-car-page/used-car-one.png" data-toggle="modal" data-target="#modalUsedCar">
                                         <img class="d-block w-100" src="img/used-car-page/used-car-one.png" alt="2012 FORD FIESTA">
-                                        <div class="carousel-caption d-block">
+                                        <div class="carousel-caption used-car__carousel-caption  d-block">
                                             <div class="mobile-counter__block">
                                                     <object class="mobile-counter__icon" data="img/used-car-page/gallery/counter-icon.svg">
                                                     </object>
-                                                    <div class="num mobile-counter__value">
+                                                    <span class="num mobile-counter__value">
                                                         1 of 16
-                                                    </div>
+                                                    </span>
                                                   </div>
                                           </div>
                                         </a>
@@ -185,50 +185,44 @@
                                                 <span class="sr-only">Next</span>
                                         </a>
                                     </div>
-                                    <div class="mobile-counter__block">
-                                        <object  data="img/used-car-page/gallery/counter-icon.svg">
-                                        </object>
-                                        <div class="num">
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-3 d-none d-sm-none d-md-none d-lg-block">
+                                <div class="row carousel-card-items">
+                                    <div class="col-3 d-none d-sm-none d-md-block d-lg-block carousel-card-item">
                                             <a href="img/used-car-page/used-car-two.png" data-toggle="modal" data-target="#modalUsedCar">
                                                 <img class="d-block w-100" src="img/used-car-page/used-car-two.png" alt="2012 FORD FIESTA">
                                              </a>
                                     </div>
-                                    <div class="col-3 d-none d-sm-none d-md-none d-lg-block">
+                                    <div class="col-3 d-none d-sm-none d-md-block d-lg-block carousel-card-item">
                                         <a href="img/used-car-page/used-car-three.png" data-toggle="modal" data-target="#modalUsedCar">
                                         <img class="d-block w-100" src="img/used-car-page/used-car-three.png" alt="2012 FORD FIESTA">
                                     </a>
                                     </div>
-                                    <div class="col-3 d-none d-sm-none d-md-none d-lg-block">
+                                    <div class="col-3 d-none d-sm-none d-md-block d-lg-block carousel-card-item">
                                             <a href="img/used-car-page/used-car-four.png" data-toggle="modal" data-target="#modalUsedCar">
                                                 <img class="d-block w-100" src="img/used-car-page/used-car-four.png" alt="2012 FORD FIESTA">
                                             </a>
                                     </div>
-                                    <div class="col-3 d-none d-sm-none d-md-none d-lg-block">
+                                    <div class="col-3 d-none d-sm-none d-md-block d-lg-block carousel-card-item">
                                             <a href="img/used-car-page/used-car-five.png" data-toggle="modal" data-target="#modalUsedCar">
                                                 <img class="d-block w-100" src="img/used-car-page/used-car-five.png" alt="2012 FORD FIESTA">
                                             </a>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-12 accordion-used-car__mobile-padding">
+                            </div>
+                                <div class="col-12 col-sm-12 col-md-4 accordion-used-car__mobile-padding">
                                     <div id="accordion-used-car" class="accordion-used-car">
                                         <div class="card">
                                             <div class="card-header accordion-used-car__card-header" id="headingMessage">
                                                 <h5 class="mb-0" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
-                                                        <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
-                                                    <img class="img-fluid" src="./img/used-car-page/form-icon.png" alt="form">
-                                                Make an enquiry
+                                                    <img class="img-fluid accordion-used-car__card-icon accordion-used-car__message" src="./img/used-car-page/form-icon.png" alt="form">
+                                                    <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">Make an enquiry
                                             </a>
                                                 </h5>
                                             </div>
                                             <div id="collapseMessage" class="collapse accordion-used-car__collapse" aria-labelledby="headingMessage" data-parent="#accordion-used-car">
                                                 <div class="card-body accordion-used-car__card-body">
                                                     <div class="form-container">
-                                                        <form action="#" method="post" clacss="accordion-used-car__form">
+                                                        <form action="#" method="post" class="accordion-used-car__form">
                                                             <div class="form-group">
                                                                 <input type="email" class="form-control accordion-used-car__form-control" id="InputEmail" aria-describedby="email" placeholder="Name">
                                                             </div>
@@ -239,13 +233,13 @@
                                                                 <input type="email" class="form-control accordion-used-car__form-control" id="InputEmail" placeholder="Email Address">
                                                             </div>
                                                             <div class="form-group">
-                                                            <textarea class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"  id="FormControlTextarea" rows="3" placeholder="Your message"></textarea>
+                                                            <textarea class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"  id="FormControlTextarea" rows="5" placeholder="Your message"></textarea>
                                                             </div>
                                                             <div class="form-check">
                                                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                                                 <label class="form-check-label accordion-used-car__form-check" for="exampleCheck1">I consent to Bill Griffin Motors storing my submitted information to allow them to reply to my enquiry</label>
                                                             </div>
-                                                                <button type="submit" class="btn btn-primary accordion-used-car__form-button">Submit</button>
+                                                                <button type="submit" class="btn btn-primary accordion-used-car__form-button">Send Enquiry</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -254,18 +248,17 @@
                                         <div class="card accordion-used-car__card">
                                             <div class="card-header accordion-used-car__card-header" id="headingFinance">
                                                 <h5 class="mb-0">
-                                                    <a  href="/index.html" class=" btn shadow-none collapsed accordion-used-car__title">
-                                                        <img class="img-fluid" src="./img/used-car-page/finance-icon.png" alt="finance">
-                                                    Finance Option</a>
+                                                        <img class="img-fluid accordion-used-car__card-icon" src="./img/used-car-page/finance-icon.png" alt="finance">
+                                                        <a  href="/index.html" class=" btn shadow-none collapsed accordion-used-car__title">
+                                                            Finance Option</a>
                                                 </h5>
                                             </div>
                                         </div>
                                         <div class="card">
                                             <div class="card-header accordion-used-car__card-header" id="headingReserve">
                                                 <h5 class="mb-0">
-                                                    <a href="#" href="/index.html" class=" btn shadow-none collapsed accordion-used-car__title">
-                                                    <img class="img-fluid" src="./img/used-car-page/reserve.png" alt="reserve">
-                                                    Reserve This Car</a>
+                                                    <img class="img-fluid accordion-used-car__card-icon accordion-used-car__reserve" src="./img/used-car-page/reserve.png" alt="reserve">
+                                                    <a href="#" href="/index.html" class=" btn shadow-none collapsed accordion-used-car__title">Reserve This Car</a>
                                                 </h5>
                                             </div>
                                         </div>
@@ -274,13 +267,12 @@
                                         <h4>Reviews</h4>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-12 d-block">
+                            <div class="col-12 col-md-8 d-none d-sm-block d-md-block d-lg-block d-xl-block">
                                 <div class="option-used-car">
                                         <img class="img-fluid" src="./img/used-car-page/option-car.svg" alt="">
                                  </div>
                             </div>
-                            <div class="col-lg-12 d-block">
+                            <div class="col-12 col-md-8 d-block">
                             <div class="detailse-used-car">
                                 <div>
                                     <h3 class="detailse-used-car__title-header">Ford Fiesta</h3>
@@ -389,7 +381,7 @@
                                 </div>
                             </div>
                           </div>
-                          <div class="col-lg-12 d-block">
+                          <div class="col-12 col-md-8 d-block">
                             <div class="description-used-car">
                                 <div>
                                     <h4 class="description-used-car__title">Description</h4>
@@ -414,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4  col1 d-none d-sm-none d-lg-block d-xl-block">
+                <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-4  col1 d-none d-sm-none d-lg-block d-xl-block"> -->
                     <!-- <div id="accordionMobile" class="accordion-used-car">
                         <div class="card">
                             <div class="card-header accordion-used-car__card-header" id="headingOne">
@@ -472,7 +464,7 @@
                     <div class="accordion-used-car__reviews">
                         <h4>Reviews</h4>
                     </div> -->
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </section>
@@ -569,11 +561,11 @@
                                 <img class="d-block w-100" src="img/used-car-page/used-car-five.png" alt="2012 FORD FIESTA">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <a class="carousel-control-prev used-car__modal__control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Previous</span>
                                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <a class="carousel-control-next used-car__modal__control-next" href="#carouselExampleControls" role="button" data-slide="next">
                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Next</span>
                                         </a>
@@ -582,25 +574,23 @@
 
                 <!-- Modal footer -->
                 <div class="modal-footer used-car__modal-footer">
-                    <div class="mobile-counter__block">
-                        <object class="mobile-counter__icon" data="img/used-car-page/gallery/counter-icon.svg">
-                                    </object>
-                        <div class="num mobile-counter__value">
-                            1 of 16
+                        <div class="carousel-caption used-car__carousel-caption  d-block">
+                                <div class="mobile-counter__block">
+                                <object class="mobile-counter__icon" data="img/used-car-page/gallery/counter-icon.svg">
+                                </object>
+                                <span class="num mobile-counter__value">
+                                    1 of 16
+                                </span>
                         </div>
                     </div>
-                    <div class="used-car__name-modal">
-                    <div class="used-car__title used-car__modal-title">
-                            <div class="used-car__name used-car__modal-name">
-                                <div class="used-car__name-top used-car__modal-name-top">2012 FORD FIESTA</div>
-                                <div class="used-car__name-bottom used-car__modal-name-bottom">1.4 ZETEC 3DR</div>
-                            </div>
-                            <div class="used-car__price  used-car__modal-price">
-                                <div class="used-car__price-top used-car__modal-price-top">€6,900</div>
-                                <div class="used-car__price-bottom used-car__modal-price-bottom">From €160pm</div>
-                            </div>
+                    <!-- <div class="used-car__name used-car__modal-name">
+                            <div class="used-car__name-top used-car__modal-name-top">2012 FORD FIESTA</div>
+                            <div class="used-car__name-bottom used-car__modal-name-bottom">1.4 ZETEC 3DR</div>
                         </div>
-                    </div>
+                    <div class="used-car__price  used-car__modal-price">
+                            <div class="used-car__price-top used-car__modal-price-top">€6,900</div>
+                            <div class="used-car__price-bottom used-car__modal-price-bottom">From €160pm</div>
+                    </div> -->
                 </div>
 
             </div>

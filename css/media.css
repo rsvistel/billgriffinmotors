@@ -75,9 +75,6 @@
   .detailse-used-car__name, .detailse-used-car__data, .description-used-car {
     font-size: 13px; }
 
-  ::-webkit-input-placeholder {
-    font-size: 12px; }
-
   .carousel-control-next, .carousel-control-prev {
     bottom: -20px;
     opacity: 1; }

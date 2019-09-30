@@ -255,12 +255,12 @@ body
 //USED CAR-page
 
 .no-gutters
-   margin-right: 5px
-   margin-left: 5px
+   margin-right: 3px
+   margin-left: 3px
    > .col,
    > [class*="col-"]
-      padding-right: 5px
-      padding-left: 5px
+      padding-right: 3px
+      padding-left: 3px
 
 .used-car-section
       width: 100%
@@ -327,7 +327,8 @@ body
       font-family: $primary-font
 
 .accordion-used-car__title
-      font-size: 28px
+      font-size: 26px
+      //font-weight: bold
 
 .accordion-used-car>.card
       //background: #EEEEEC
@@ -336,6 +337,7 @@ body
       -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
       -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
       box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      cursor: pointer
 
 .accordion-used-car>.card:first-child
       margin: 0
@@ -348,9 +350,19 @@ body
       padding: 1rem
       border-bottom: 0
       background: #EEEEEC
+      line-height: 1
 
 .accordion-used-car__card-header:first-child
       border-radius: 0
+
+.accordion-used-car__card-icon
+      margin-right: 0.7rem
+
+.accordion-used-car__message
+      margin-right: 0.5rem
+
+.accordion-used-car__reserve
+      margin-right: 0.3rem
 
 .description-used-car__title
       font-size: 20px
@@ -375,13 +387,21 @@ body
    display: none
 
 //form USED CAR-page
+.accordion-used-car__form
+   padding-top: 1rem
 
-#InputEmail, #InputPhone, #InputEmail, #FormControlTextarea
-   padding: 1.1rem .75rem
+#InputEmail, #InputPhone, #InputEmail
+   //padding: 1.1rem .75rem
+   height: calc(1.5em + 1.7rem + 2px)
    border-radius: 0
+   box-shadow: none
 
-// .custom-checkbox .custom-control-indicator
-//    border-radius: 0
+#FormControlTextarea
+   box-shadow: none
+
+::-webkit-input-placeholder
+   font-size: 12px
+   color: #525252
 
 .accordion-used-car__textarea
    resize: none
@@ -389,11 +409,13 @@ body
 .accordion-used-car__form-check
    font-size: 12px
    padding-bottom: 1rem
+   line-height: 1.2
 
 .accordion-used-car__form-button
    width: 100%
    border-radius: 0
-   padding: 0.5rem
+   padding: 0.7rem
+   margin-bottom: 0.5rem
    background: $dark-blue
 
 //MODAL USED CAR-page
@@ -405,15 +427,9 @@ body
 #modalUsedCar .used-car__modal
    padding-right: 0
 
-// .used-car__modal-dialog
-//    max-width: 100%
-
 .used-car__modal-header
    padding: 0
    border-bottom: 0
-   //position: absolute
-   // z-index: 10
-   // display: none
 
 .used-car__modal-content
    border: none
@@ -423,14 +439,15 @@ body
 
 .used-car__modal-footer
    border: none
+   //background: #898989
+   border-bottom-right-radius: 0
+   border-bottom-left-radius: 0
 
 .used-car__modal-close
    opacity: 1
    padding-bottom: 1.7rem
    padding-top: 0.5rem
    outline: 0
-   // position: absolute
-   // z-index: 10
 button:focus
    outline: 0
 
@@ -451,9 +468,36 @@ button:focus
 .used-car__modal-modal-body
    padding: 0
 
-@media (min-width: 768px)
+.used-car__carousel-caption
+   right: auto
+   text-align: right
+   max-width: 300px
+   left: 3%
+   padding: 1px
+   font-size: 26px
+
+.used-car__modal.show .used-car__modal-dialog
+   max-width: 1920px
+
+// .mobile-counter__value
+//    vertical-align: text-bottom
+
+@media (min-width: 769px)
+   .accordion-used-car__mobile-padding
+      position: absolute
+      right: 0
+      top: 0
+   .accordion-used-car__title
+      padding: .375rem .75rem
+   .accordion-used-car__card-header
+      padding: 0.7rem
+      padding-left: 1.3rem
+      //cursor: pointer
+   .used-car__block
+      position: relative
    .used-car__modal
       padding-right: 0!important
+      background: #898989
    .used-car__modal-dialog
       max-width: 100%
    .used-car__modal-close
@@ -462,22 +506,42 @@ button:focus
    .used-car__modal-header
       position: absolute
       z-index: 10
-      display: none
-   .mobile-counter__block
-      display: flex
+      top: 100%
+      left: 20%
+   .used-car__carousel-caption
+      position: absolute
+      top: 100%
    .used-car__modal-close
       outline: 0
       height: 30%
       top: 10px
       left: 90%
+   .used-car__modal-content
+      background: none
    .used-car__modal-footer
       justify-content: space-around
-   .carousel-control-prev-icon
+   .carousel-control-prev-icon,.carousel-control-next-icon
+      display: none
+   .used-car__modal__control-prev
       background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
-
-   .carousel-control-next-icon
+      background-repeat: no-repeat
+      top: 20%
+   .used-car__modal__control-next
       background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
-
+      background-repeat: no-repeat
+      top: 20%
+      //right: -5%
+   .carousel-card-items
+      margin-bottom: 0.7rem
+      margin-top: 5px
+      padding-left: 12px
+      padding-right: 12px
+   .carousel-card-item
+      padding-right: 3px
+      padding-left: 3px
+   .used-car__modal-footer
+      background: #898989
+      
 //FAQ-page
 .section__title-blue
    font-family: $primary-font
