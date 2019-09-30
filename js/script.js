@@ -22,8 +22,6 @@ $(document).ready(function(){
         interval: false
     });
 
-    $(".used-car__modal").mousewheel(function(event, delta)
-
     $(".more").click(function() {
         var elem = $(".more").text();
         if (elem == "more...") {

@@ -457,7 +457,22 @@ button:focus {
 .used-car__modal-footer {
   padding: 0; }
 
+.carousel-control-next, .carousel-control-prev {
+  width: 11%; }
+
 @media (min-width: 992px) {
+  .used-car__modal-name-top {
+    font-size: 30px; }
+
+  .used-car__modal-price-top {
+    font-size: 48px; }
+
+  .used-car__modal-name-bottom {
+    font-size: 25px; }
+
+  .used-car__modal-price-bottom {
+    font-size: 35px; }
+
   .accordion-used-car__mobile-padding {
     position: absolute;
     right: 0;
@@ -488,7 +503,8 @@ button:focus {
     position: absolute;
     z-index: 10;
     top: 100%;
-    left: 20%; }
+    left: 20%;
+    margin-left: 2rem; }
 
   .used-car__modal-carousel-caption {
     position: absolute;
@@ -504,7 +520,9 @@ button:focus {
     background: none; }
 
   .used-car__modal-footer {
-    justify-content: space-around; }
+    justify-content: space-around;
+    background: #898989;
+    padding-bottom: 3rem; }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
     display: none; }
@@ -532,9 +550,6 @@ button:focus {
     padding-right: 3px;
     padding-left: 3px; }
 
-  .used-car__modal-footer {
-    background: #898989; }
-
   .mobile-counter__icon-modal {
     display: none; }
 
@@ -543,7 +558,10 @@ button:focus {
 
   .counter__value {
     font-size: 60px;
-    vertical-align: bottom; } }
+    vertical-align: bottom; }
+
+  .counter__block {
+    padding-bottom: 1rem; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
