@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap");
-
 * {
   box-sizing: border-box; }
 
@@ -217,9 +216,9 @@ body {
 .bottom-half-header .container ul li:hover .dropdown-content {
   display: block; }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41; }
-
+@media (max-width: 768px) {
+  .flex-dropdown__chevron-dow {
+    padding-top: 6px; } }
 @media only screen and (max-width: 768px) {
   #homepage {
     display: flex;
@@ -248,7 +247,7 @@ body {
       text-align: left;
       margin: 13px 0 7px 0;
       font-size: 1.5rem;
-      font-family: "Open Sans", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
       #banner #search-box h3 object {
         height: 20px; }
     #banner #search-box .col-md-3 {
@@ -280,6 +279,8 @@ body {
         width: 100%;
         height: 40px;
         border: 0; }
+        #banner #search-box .col-md-3 button .mobile-word, #banner #search-box .col-md-3 select .mobile-word {
+          display: none; }
 
 @media only screen and (max-width: 768px) {
   #banner #banner-image {
@@ -291,7 +292,34 @@ body {
   #banner #search-box {
     position: static;
     background: black;
-    padding: 5% 5% 10%; } }
+    padding: 2% 5% 2%; }
+    #banner #search-box .container {
+      padding: 0; }
+      #banner #search-box .container h3 {
+        font-weight: 400;
+        font-size: 22px;
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center; }
+        #banner #search-box .container h3 object {
+          margin-right: 9px; }
+      #banner #search-box .container form {
+        padding: 0 7px; }
+      #banner #search-box .container .col-md-3 {
+        margin-bottom: 16px; }
+        #banner #search-box .container .col-md-3 select {
+          font-size: 12.5px;
+          height: 43px; }
+        #banner #search-box .container .col-md-3 button {
+          display: flex;
+          justify-content: center;
+          text-transform: uppercase;
+          font-weight: 600; }
+          #banner #search-box .container .col-md-3 button .mobile-word {
+            display: block;
+            margin-left: 5px; }
+          #banner #search-box .container .col-md-3 button object {
+            display: none; } }
 #special-offers {
   order: 3;
   margin-bottom: 2%; }
@@ -325,8 +353,7 @@ body {
 
 #special-offers .owl-carousel .owl-stage-outer {
   height: 420px;
-  width: 102%;
-  padding: 0 1%; }
+  width: 102%; }
 
 .car-tile {
   border: 1px solid #CCCCCC;
@@ -417,7 +444,17 @@ body {
     .owl-nav button {
       pointer-events: auto; }
       .owl-nav button object {
-        pointer-events: none; } }
+        pointer-events: none; }
+
+  #special-offers {
+    padding: 0 7px; }
+    #special-offers .owl-carousel .owl-stage-outer {
+      height: auto; }
+    #special-offers .title-special-offer {
+      font-weight: 500;
+      text-align: start;
+      font-size: 23px;
+      margin: 5% 15px; } }
 #feedback {
   order: 2;
   background-image: url("../img/home/Untitled-2.png");
@@ -436,6 +473,8 @@ body {
       color: #333333;
       font-weight: 400;
       font-size: 20px; }
+    #feedback .feedback-item .feedback-author h3 {
+      font-style: italic; }
     #feedback .feedback-item .feedback-date, #feedback .feedback-item .feedback-body, #feedback .feedback-item .feedback-company {
       color: #777777;
       font-family: "Source Sans Pro", sans-serif; }
@@ -467,28 +506,54 @@ body {
     background: #005EAA;
     padding: 1% 5%;
     font-family: "Source Sans Pro", sans-serif; }
+  #feedback .feedback-rating {
+    font-family: "Open Sans", sans-serif; }
 
 @media only screen and (max-width: 768px) {
   #feedback {
-    background: none; }
+    background: none;
+    padding: 2% 0 0 0; }
+    #feedback .container {
+      padding: 0 5px; }
     #feedback h3.feedback-rating, #feedback h4.feedback-title {
       display: block; }
     #feedback h4.feedback-title {
       border: 1px solid lightgrey;
       text-align: left;
-      padding-left: 3%; }
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      padding: 10px 5px 10px 3%; }
     #feedback h3.feedback-rating {
       border-right: 1px solid lightgrey;
-      border-left: 1px solid lightgrey; }
+      border-left: 1px solid lightgrey;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     #feedback .owl-feedback {
       border: 1px solid lightgrey;
       border-top: none;
-      padding: 0 3% 3%;
+      padding: 0 3.5% 3% 3.5%;
       display: block; }
       #feedback .owl-feedback .feedback-item {
-        border-top: 1px solid lightgrey; }
+        border-top: 1px solid lightgrey;
+        padding: 10px 0; }
+        #feedback .owl-feedback .feedback-item .fas.fa-star {
+          font-size: 1rem; }
+        #feedback .owl-feedback .feedback-item .feedback-title h3 {
+          font-size: 22px; }
+        #feedback .owl-feedback .feedback-item .feedback-author h3 {
+          font-size: 17px; }
     #feedback button {
-      display: none; } }
+      display: none; }
+    #feedback .five-stars {
+      margin: 0 15px 0 10px;
+      font-size: 35px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: italic; }
+    #feedback .fas.fa-star {
+      font-size: 1.5rem; } }
 #youtube-video {
   padding: 3% 0;
   text-align: center; }
@@ -505,7 +570,8 @@ body {
     flex: 0 0 31%;
     max-width: 31%;
     box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35);
-    border-radius: 0; }
+    border-radius: 0;
+    border: 0; }
     #office .card:nth-child(1) {
       order: 2; }
     #office .card:nth-child(2) {
@@ -551,27 +617,35 @@ body {
 @media only screen and (max-width: 768px) {
   #office {
     background: none; }
-    #office .card {
-      flex: 0 0 100%;
-      max-width: calc(100% - 30px);
-      margin: 0 15px; }
-      #office .card:first-child {
-        margin-top: 2%; }
-        #office .card:first-child .card-title {
-          display: none; }
-        #office .card:first-child .card-body:after {
-          content: "";
-          display: block;
-          padding-bottom: 100%; }
-        #office .card:first-child #map {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0; }
-      #office .card:nth-child(2) {
-        margin: 0 15px; }
-      #office .card:last-child {
+    #office .container {
+      padding: 0 5px; }
+      #office .container .row {
+        display: flex;
+        justify-content: center; }
+      #office .container .owl-carousel .owl-stage {
+        display: flex;
+        flex-direction: column; }
+      #office .container .card {
+        flex: 0 0 100%;
+        max-width: calc(100% - 30px);
+        margin: 0 5px; }
+        #office .container .card:first-child {
+          margin-top: 2%; }
+          #office .container .card:first-child .card-title {
+            display: none; }
+          #office .container .card:first-child .card-body:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%; }
+          #office .container .card:first-child #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; }
+        #office .container .card:nth-child(2) {
+          margin: 0 5px; }
+      #office .container .card-finance {
         display: none; } }
 #cars-popup {
   order: 5;
@@ -583,8 +657,10 @@ body {
 @media only screen and (max-width: 768px) {
   #cars-popup {
     padding: 5% 0; }
-    #cars-popup img {
-      width: 100%; } }
+    #cars-popup .container {
+      padding: 0; }
+      #cars-popup .container img {
+        width: 100%; } }
 #statistics {
   text-align: center;
   color: #fff;
@@ -615,10 +691,6 @@ body {
     display: none; } }
 #homepage {
   overflow: hidden; }
-
-@media (max-width: 768px) {
-  .flex-dropdown__chevron-dow {
-    padding-top: 6px; } }
 
 .footer-section {
   font-family: "Montserrat", sans-serif;

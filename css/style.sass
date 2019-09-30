@@ -717,7 +717,7 @@ body
          text-align: left
          margin: 13px 0 7px 0
          font-size: 1.5rem
-         font-family: $secondary-font
+         font-family: $primary-font
          object
             height: 20px
       .col-md-3
@@ -749,6 +749,8 @@ body
             width: 100%
             height: 40px
             border: 0
+            .mobile-word
+               display: none
 
 
 @media only screen and (max-width: 768px)
@@ -762,7 +764,34 @@ body
       #search-box
          position: static
          background: rgba(0,0,0,1)
-         padding: 5% 5% 10%
+         padding: 2% 5% 2%
+         .container
+            padding: 0
+            h3
+               font-weight: 400
+               font-size: 22px
+               margin-bottom: 13px
+               display: flex
+               align-items: center
+               object
+                  margin-right: 9px
+            form
+               padding: 0 7px
+            .col-md-3
+               margin-bottom: 16px
+               select
+                  font-size: 12.5px
+                  height: 43px
+               button
+                  display: flex
+                  justify-content: center
+                  text-transform: uppercase
+                  font-weight: 600
+                  .mobile-word
+                     display: block
+                     margin-left: 5px
+                  object
+                     display: none
 //Banner&Search
 
 //Special Offers
@@ -795,6 +824,7 @@ body
                pointer-events: none
 
 
+
 //Special Offers
 
 //Car Tile
@@ -803,7 +833,6 @@ body
 #special-offers .owl-carousel .owl-stage-outer
    height: 420px
    width: 102%
-   padding: 0 1%
 .car-tile
    border: 1px solid #CCCCCC
    border-radius: 5px
@@ -893,6 +922,17 @@ body
          pointer-events: auto
          object
             pointer-events: none
+
+   #special-offers
+      padding: 0 7px
+      .owl-carousel .owl-stage-outer
+         height: auto
+      .title-special-offer
+         font-weight: 500
+         text-align: start
+         font-size: 23px
+         margin: 5% 15px
+
 //Car Tile
 
 //Feedback
@@ -914,6 +954,8 @@ body
          color: $dark-gray
          font-weight: 400
          font-size: 20px
+      .feedback-author h3
+         font-style: italic
       .feedback-date, .feedback-body, .feedback-company
          color: $light-gray
          font-family: 'Source Sans Pro', sans-serif
@@ -937,6 +979,7 @@ body
          margin-right: 5px
       .feedback-author
          margin-top: 15px
+
    .button-feedback
       color: white
       border: none
@@ -945,30 +988,56 @@ body
       background: $dark-blue
       padding: 1% 5%
       font-family: "Source Sans Pro", sans-serif
-
+   .feedback-rating
+      font-family: "Open Sans", sans-serif
 
 
 @media only screen and (max-width: 768px)
    #feedback
       background: none
+      padding: 2% 0 0 0
+      .container
+         padding: 0 5px
       h3.feedback-rating, h4.feedback-title
          display: block
       h4.feedback-title
          border: 1px solid lightgrey
          text-align: left
-         padding-left: 3%
+         font-family: $primary-font
+         font-size: 18px
+         padding: 10px 5px 10px 3%
       h3.feedback-rating
          border-right: 1px solid lightgrey
          border-left: 1px solid lightgrey
+         padding: 20px 0
+         display: flex
+         justify-content: center
+         align-items: center
       .owl-feedback
          border: 1px solid lightgrey
          border-top: none
-         padding:  0 3% 3%
+         padding:  0 3.5% 3% 3.5%
          display: block
          .feedback-item
             border-top: 1px solid lightgrey
+            padding: 10px 0
+            .fas.fa-star
+               font-size: 1rem
+            .feedback-title h3
+               font-size: 22px
+            .feedback-author h3
+               font-size: 17px
       button
          display: none
+      .five-stars
+         margin: 0 15px 0 10px
+         font-size: 35px
+         font-family: "Poppins", sans-serif
+         font-weight: 400
+         font-style: italic
+      .fas.fa-star
+         font-size: 1.5rem
+
 
 
 //Feedback
@@ -993,6 +1062,7 @@ body
       max-width: 31%
       box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35)
       border-radius: 0
+      border: 0
       &:nth-child(1)
          order: 2
       &:nth-child(2)
@@ -1039,29 +1109,38 @@ body
 @media only screen and (max-width: 768px)
    #office
       background: none
-      .card
-         flex: 0 0 100%
-         max-width: calc(100% - 30px)
-         margin: 0 15px
-         &:first-child
-            margin-top: 2%
-            .card-title
-               display: none
-            .card-body
-               &:after
-                  content: ""
-                  display: block
-                  padding-bottom: 100%
-            #map
-               position: absolute
-               top: 0
-               bottom: 0
-               left: 0
-               right: 0
-         &:nth-child(2)
-            margin: 0 15px
-         &:last-child
+      .container
+         padding: 0 5px
+         .row
+            display: flex
+            justify-content: center
+         .owl-carousel .owl-stage
+            display: flex
+            flex-direction: column
+         .card
+            flex: 0 0 100%
+            max-width: calc(100% - 30px)
+            margin: 0 5px
+            &:first-child
+               margin-top: 2%
+               .card-title
+                  display: none
+               .card-body
+                  &:after
+                     content: ""
+                     display: block
+                     padding-bottom: 100%
+               #map
+                  position: absolute
+                  top: 0
+                  bottom: 0
+                  left: 0
+                  right: 0
+            &:nth-child(2)
+               margin: 0 5px
+         .card-finance
             display: none
+
 //Office
 
 //Cars PopUp
@@ -1074,8 +1153,10 @@ body
 @media only screen and (max-width: 768px)
    #cars-popup
       padding: 5% 0
-      img
-         width: 100%
+      .container
+         padding: 0
+         img
+            width: 100%
 //Cars PopUp
 
 //Statistics
