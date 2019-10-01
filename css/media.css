@@ -87,8 +87,42 @@
   .dropdown-content {
     margin-top: 0; }
 
+  .contact-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .contact-section-header embed {
+      width: 13%; }
+
+  .mobile-section-under-header-search-results {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
   .accordion-tumbler, #mobile-filter {
-    display: block; } }
+    display: block;
+    cursor: pointer; }
+
+  .accordion-tumbler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif; }
+    .accordion-tumbler object {
+      pointer-events: none; }
+
+  .mobile-accordion-filter {
+    margin-bottom: 10px;
+    padding: 0 10px; }
+    .mobile-accordion-filter p {
+      color: #005EAA;
+      font-family: "Open Sans", sans-serif; }
+
+  #accordion.cards-serch-results {
+    padding-left: 0;
+    padding-right: 0; } }
 @media (min-width: 767px) {
   .hamburger-icon {
     display: none; } }
@@ -170,5 +204,8 @@
 
   .bottom-half-header .container ul li a .h6-title, .bottom-half-header .container ul li .fa-chevron-down {
     font-size: 0.7rem; } }
+@media (max-width: 320px) {
+  #accordion.cards-serch-results .card .card-header h5 .btn, #accordion.cards-serch-results .card .card-header:after {
+    font-size: 0.75rem; } }
 
 /*# sourceMappingURL=media.css.map */

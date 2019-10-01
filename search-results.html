@@ -14,14 +14,146 @@
     <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
 <body>
+
+<section class="header topnav" id="myTopnav">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 upper-half-header">
+                <div class="titles-logo col-md-4">
+                    <h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>
+                    <h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>
+                </div>
+                <div class="mobile-open">
+                    <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
+                    <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="title-address col-md-4">
+                    <embed src="img/header/location.svg">
+                    <h4 class="text-title-address">frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw</h4>
+                </div>
+                <div class="title-contact col-md-2">
+                    <embed src="img/header/phone.svg">
+                    <div class="number-phone">
+                        <h4 class="sales-text">sales:</h4>
+                        <h6 class="sales-number">01-4569562</h6>
+                    </div>
+                </div>
+                <div class="social-icon col-md-2">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <object data="img/header/social-icons/facebook.svg"></object>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <object data="img/header/social-icons/instagram.svg"></object>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <object data="img/header/social-icons/mail.svg"></object>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 bottom-half-header">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">about</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">used cars</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">finance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">cash for cars</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">workshop</span>
+                    </a>
+                </li>
+                <li class="bottom-half-header__dropdown-link">
+                    <div class="dropdown">
+                        <a href="#" class="flex-dropdown">
+                            <div class="dropbtn">
+                                <span class="h6-title">more</span>
+                                <i class="fas fa-chevron-down flex-dropdown__chevron-dow"></i>
+                            </div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#"><span class="h6-title h6-title-dropdown">valeting</span></a>
+                            <a href="#"><span class="h6-title h6-title-dropdown">value my car</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">shortlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">faq</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="h6-title">contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-section-under-header mobile-section-under-header-search-results col-xs-12 col-md-12">
+        <div class="accordion-tumbler"><object data="img/search-results/refine.svg"></object> Refine</div>
+        <div class="contact-section-header">
+           <embed src="img/header/white-phone.svg">
+           <div class="number-phone">
+               <h4 class="contact-text">Contact Us:</h4>
+               <h6 class="sales-number">01-4569562</h6>
+           </div>
+        </div>
+    </div>
+</section>
+
+
 <div class="block-search-results">
     <div class="container">
         <div class="row">
-            <button class="accordion-tumbler">Open/Close</button>
             <div id="accordion" class="col-8 col-md-3 cards-serch-results">
                 <div class="mobile-accordion-filter">
                     <p>Refine</p>
-                    <div class="accordion-tumbler"><object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object></div>
+                    <div class="accordion-tumbler"><object type="image/svg+xml" data="img/search-results/cross-icon.svg"></object></div>
                 </div>
                 <div class="accordion-filters">
                     <div class="card">
@@ -44,7 +176,7 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="make-model">Select Model</label>
+                                    <label for="make-model" class="m-top-10">Select Model</label>
                                     <select id="make-model">
                                         <option value="">Select a Model</option>
                                         <option value="">Model 1</option>
@@ -111,7 +243,7 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="price-to-model">To</label>
+                                        <label for="price-to-model" class="m-top-10">To</label>
                                         <select id="price-to-model">
                                             <option value="">(any)</option>
                                             <option value="">Option 1</option>
@@ -136,7 +268,7 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="price-to-monthly-select">To</label>
+                                        <label for="price-to-monthly-select" class="m-top-10">To</label>
                                         <select id="price-to-monthly-select">
                                             <option value="">(any)</option>
                                             <option value="">Option 1</option>
@@ -179,22 +311,22 @@
                         <div id="collapse-body-type" class="collapse" aria-labelledby="heading-body-type">
                             <div class="card-body">
                                 <div id="body-type-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Body Type<br>
-                                    <input type="checkbox" value=""> 7 Seater<br>
-                                    <input type="checkbox" value=""> 8+ Seater<br>
-                                    <input type="checkbox" value=""> Convertible<br>
-                                    <input type="checkbox" value=""> Coupe<br>
-                                    <input type="checkbox" value=""> Estate<br>
-                                    <input type="checkbox" value=""> 7 Seater<br>
-                                    <input type="checkbox" value=""> 8+ Seater<br>
-                                    <input type="checkbox" value=""> Convertible<br>
-                                    <input type="checkbox" value=""> Coupe<br>
-                                    <input type="checkbox" value=""> 7 Seater<br>
-                                    <input type="checkbox" value=""> 8+ Seater<br>
-                                    <input type="checkbox" value=""> Convertible<br>
-                                    <input type="checkbox" value=""> Coupe<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Body Type<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 7 Seater<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 8+ Seater<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Convertible<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Coupe<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Estate<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 7 Seater<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 8+ Seater<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Convertible<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Coupe<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 7 Seater<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 8+ Seater<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Convertible<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Coupe<br></div>
                                 </div>
-                                <button>Show all Body Types</button>
+                                <button>Show all Body Types <i class="fas fa-arrow-down"></i></button>
                             </div>
                         </div>
                     </div>
@@ -209,19 +341,19 @@
                         <div id="collapse-fuel-type" class="collapse" aria-labelledby="heading-fuel-type">
                             <div class="card-body">
                                 <div id="fuel-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Fuel Type<br>
-                                    <input type="checkbox" value=""> Petrol<br>
-                                    <input type="checkbox" value=""> Diesel<br>
-                                    <input type="checkbox" value=""> Hybrid<br>
-                                    <input type="checkbox" value=""> Electric<br>
-                                    <input type="checkbox" value=""> LPG<br>
-                                    <input type="checkbox" value=""> Petrol<br>
-                                    <input type="checkbox" value=""> Diesel<br>
-                                    <input type="checkbox" value=""> Hybrid<br>
-                                    <input type="checkbox" value=""> Electric<br>
-                                    <input type="checkbox" value=""> LPG<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Fuel Type<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Petrol<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Diesel<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Hybrid<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Electric<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> LPG<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Petrol<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Diesel<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Hybrid<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Electric<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> LPG<br></div>
                                 </div>
-                                <button>Show all Fuel Types</button>
+                                <button>Show all Fuel Types<i class="fas fa-arrow-down"></i></button>
                             </div>
                         </div>
                     </div>
@@ -246,7 +378,7 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="capacity-to-model">To</label>
+                                    <label for="capacity-to-model" class="m-top-10">To</label>
                                     <select id="capacity-to-model">
                                         <option value="">4+ Litres</option>
                                         <option value="">Option 1</option>
@@ -276,7 +408,7 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="mpg-to-model">To</label>
+                                    <label for="mpg-to-model" class="m-top-10">To</label>
                                     <select id="mpg-to-model">
                                         <option value="">70+ Litres</option>
                                         <option value="">Option 1</option>
@@ -297,17 +429,17 @@
                         <div id="collapse-Gearbox" class="collapse" aria-labelledby="heading-Gearbox">
                             <div class="card-body">
                                 <div id="gear-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Gearbox Type<br>
-                                    <input type="checkbox" value=""> Manual<br>
-                                    <input type="checkbox" value=""> Automatic<br>
-                                    <input type="checkbox" value=""> CVT<br>
-                                    <input type="checkbox" value=""> Semi-Auto<br>
-                                    <input type="checkbox" value=""> Other<br>
-                                    <input type="checkbox" value=""> Manual<br>
-                                    <input type="checkbox" value=""> Automatic<br>
-                                    <input type="checkbox" value=""> CVT<br>
-                                    <input type="checkbox" value=""> Semi-Auto<br>
-                                    <input type="checkbox" value=""> Other<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Gearbox Type<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Manual<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Automatic<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> CVT<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Semi-Auto<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Other<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Manual<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Automatic<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> CVT<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Semi-Auto<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Other<br></div>
                                 </div>
                             </div>
                         </div>
@@ -325,19 +457,19 @@
                         <div id="collapse-colour" class="collapse" aria-labelledby="heading-colour">
                             <div class="card-body">
                                 <div id="colour-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Colour<br>
-                                    <input type="checkbox" value=""> Black<br>
-                                    <input type="checkbox" value=""> Blue<br>
-                                    <input type="checkbox" value=""> Brown<br>
-                                    <input type="checkbox" value=""> Green<br>
-                                    <input type="checkbox" value=""> Orange<br>
-                                    <input type="checkbox" value=""> Black<br>
-                                    <input type="checkbox" value=""> Blue<br>
-                                    <input type="checkbox" value=""> Brown<br>
-                                    <input type="checkbox" value=""> Green<br>
-                                    <input type="checkbox" value=""> Orange<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Colour<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Black<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Blue<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Brown<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Green<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Orange<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Black<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Blue<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Brown<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Green<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Orange<br></div>
                                 </div>
-                                <button>Show all Colours</button>
+                                <button>Show all Colours<i class="fas fa-arrow-down"></i></button>
                             </div>
                         </div>
                     </div>
@@ -353,18 +485,18 @@
                         <div id="collapse-doors" class="collapse" aria-labelledby="heading-doors">
                             <div class="card-body">
                                 <div id="doors-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Doors<br>
-                                    <input type="checkbox" value=""> 2<br>
-                                    <input type="checkbox" value=""> 3<br>
-                                    <input type="checkbox" value=""> 4<br>
-                                    <input type="checkbox" value=""> 5<br>
-                                    <input type="checkbox" value=""> 6<br>
-                                    <input type="checkbox" value=""> 7<br>
-                                    <input type="checkbox" value=""> 8<br>
-                                    <input type="checkbox" value=""> 9<br>
-                                    <input type="checkbox" value=""> 10<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Doors<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 2<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 3<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 4<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 5<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 6<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 7<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 8<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 9<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 10<br></div>
                                 </div>
-                                <button>Show all Doors</button>
+                                <button>Show all Doors<i class="fas fa-arrow-down"></i></button>
                             </div>
                         </div>
                     </div>
@@ -379,18 +511,18 @@
                         <div id="collapseSeats" class="collapse" aria-labelledby="headingSeats">
                             <div class="card-body">
                                 <div id="seats-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Doors<br>
-                                    <input type="checkbox" value=""> 2<br>
-                                    <input type="checkbox" value=""> 3<br>
-                                    <input type="checkbox" value=""> 4<br>
-                                    <input type="checkbox" value=""> 5<br>
-                                    <input type="checkbox" value=""> 6<br>
-                                    <input type="checkbox" value=""> 7<br>
-                                    <input type="checkbox" value=""> 8<br>
-                                    <input type="checkbox" value=""> 9<br>
-                                    <input type="checkbox" value=""> 10<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Doors<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 2<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 3<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 4<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 5<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 6<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 7<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 8<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 9<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 10<br></div>
                                 </div>
-                                <button>Show all Seats</button>
+                                <button>Show all Seats<i class="fas fa-arrow-down"></i></button>
                             </div>
                         </div>
                     </div>
@@ -407,17 +539,17 @@
                         <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety">
                             <div class="card-body">
                                 <div id="safety-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Safety Rating<br>
-                                    <input type="checkbox" value=""> 1 Star or More<br>
-                                    <input type="checkbox" value=""> 2 Stars or More<br>
-                                    <input type="checkbox" value=""> 3 Stars or More<br>
-                                    <input type="checkbox" value=""> 4 Stars or More<br>
-                                    <input type="checkbox" value=""> 5 Stars<br>
-                                    <input type="checkbox" value=""> 1 Star or More<br>
-                                    <input type="checkbox" value=""> 2 Stars or More<br>
-                                    <input type="checkbox" value=""> 3 Stars or More<br>
-                                    <input type="checkbox" value=""> 4 Stars or More<br>
-                                    <input type="checkbox" value=""> 5 Stars<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Safety Rating<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
                                 </div>
                             </div>
                         </div>
@@ -434,14 +566,14 @@
                         <div id="collapseAcceleration" class="collapse" aria-labelledby="headingAcceleration">
                             <div class="card-body">
                                 <div id="acceleration-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Acceleration<br>
-                                    <input type="checkbox" value=""> 0-5s (0-60mph)<br>
-                                    <input type="checkbox" value=""> 5-8s (0-60mph)<br>
-                                    <input type="checkbox" value=""> 8-12s (0-60mph)<br>
-                                    <input type="checkbox" value=""> 12+s (0-60mph)<br>
-                                    <input type="checkbox" value=""> 16+s (0-60mph)<br>
-                                    <input type="checkbox" value=""> 20+s (0-60mph)<br>
-                                    <input type="checkbox" value=""> 25+s (0-60mph)<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Acceleration<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 0-5s (0-60mph)<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 5-8s (0-60mph)<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 8-12s (0-60mph)<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 12+s (0-60mph)<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 16+s (0-60mph)<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 20+s (0-60mph)<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 25+s (0-60mph)<br></div>
                                 </div>
                             </div>
                         </div>
@@ -457,16 +589,16 @@
                         <div id="collapseEngine" class="collapse" aria-labelledby="headingEngine">
                             <div class="card-body">
                                 <div id="engine-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any BHP<br>
-                                    <input type="checkbox" value=""> 0-70 BHP<br>
-                                    <input type="checkbox" value=""> 71-100 BHP<br>
-                                    <input type="checkbox" value=""> 101-150 BHP<br>
-                                    <input type="checkbox" value=""> 151-200 BHP<br>
-                                    <input type="checkbox" value=""> 201-250 BHP<br>
-                                    <input type="checkbox" value=""> 251-300 BHP<br>
-                                    <input type="checkbox" value=""> 301+ BHP<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any BHP<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 0-70 BHP<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 71-100 BHP<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 101-150 BHP<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 151-200 BHP<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 201-250 BHP<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 251-300 BHP<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 301+ BHP<br></div>
                                 </div>
-                                <button>Show all Powers</button>
+                                <button>Show all Powers<i class="fas fa-arrow-down"></i></button>
                             </div>
                         </div>
                     </div>
@@ -482,25 +614,32 @@
                         <div id="collapseEnvironmental" class="collapse" aria-labelledby="headingEnvironmental">
                             <div class="card-body">
                                 <div id="enviroment-checkboxes" class="checkbox-container">
-                                    <input type="checkbox" value=""> Any Rating<br>
-                                    <input type="checkbox" value=""> 1 Star or More<br>
-                                    <input type="checkbox" value=""> 2 Stars or More<br>
-                                    <input type="checkbox" value=""> 3 Stars or More<br>
-                                    <input type="checkbox" value=""> 4 Stars or More<br>
-                                    <input type="checkbox" value=""> 5 Stars<br>
-                                    <input type="checkbox" value=""> 1 Star or More<br>
-                                    <input type="checkbox" value=""> 2 Stars or More<br>
-                                    <input type="checkbox" value=""> 3 Stars or More<br>
-                                    <input type="checkbox" value=""> 4 Stars or More<br>
-                                    <input type="checkbox" value=""> 5 Stars<br>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> Any Rating<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 1 Star or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 2 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 3 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 4 Stars or More<br></div>
+                                    <div class="text-checkbox"><input type="checkbox" value=""> 5 Stars<br></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="mobile-accordion-filter">
-                    <p>Reset</p>
-                    <button>Done</button>
+                    <div class="reset-block">
+                       <object data="img/search-results/reset.svg"></object>
+                       <p>Reset</p>
+                    </div>
+
+                    <div class="button-reset-block">
+                        Done
+                       <object data="img/search-results/arrow-blue-right.svg"></object>
+                    </div>
                 </div>
             </div>
 
@@ -543,7 +682,7 @@
                         </div>
                     </div>
                     <div class="row filters-mobile">
-                        <div>
+                        <div class="cards-show">
                             20 - 40 of 217 shown
                         </div>
                         <div id="mobile-filter">

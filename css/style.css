@@ -17,6 +17,9 @@ body {
   margin: 0;
   min-height: 100vh; }
 
+.m-top-10 {
+  margin-top: 10px; }
+
 .upper-half-header {
   padding: 0.5% 0 1% 0;
   display: flex;
@@ -901,12 +904,11 @@ body {
     #accordion.cards-serch-results .mobile-accordion-filter object {
       pointer-events: none; }
   #accordion.cards-serch-results .accordion-filters {
-    height: calc(100vh - 85px);
+    height: auto;
     overflow: scroll; }
   #accordion.cards-serch-results .card {
     border: 1px solid #CCCCCC;
     border-radius: 0;
-    border-bottom: 0;
     border-top: 0; }
     #accordion.cards-serch-results .card:first-child {
       border-top: 1px solid #CCCCCC; }
@@ -924,7 +926,7 @@ body {
       #accordion.cards-serch-results .card .card-header h5 {
         width: 100%; }
         #accordion.cards-serch-results .card .card-header h5 .btn {
-          padding: 7px 10px;
+          padding: 13px 10px;
           font-family: "Open Sans", sans-serif;
           color: #232323;
           font-weight: 600;
@@ -935,7 +937,7 @@ body {
             text-decoration: none; }
     #accordion.cards-serch-results .card .card-body {
       border-bottom: 1px solid #CCCCCC;
-      padding: 1rem 0.5rem 1.5rem 0.5rem; }
+      padding: 1rem 4% 1.5rem 4%; }
       #accordion.cards-serch-results .card .card-body .switcher {
         font-size: 12px;
         display: flex;
@@ -945,6 +947,36 @@ body {
         margin-bottom: 5%; }
   #accordion.cards-serch-results .monthly-price {
     display: none; }
+
+#collapse-body-type, #collapse-fuel-type, #collapse-Gearbox, #collapse-colour, #collapse-doors, #collapseSeats, #collapseSafety, #collapseAcceleration, #collapseEngine, #collapseEnvironmental {
+  text-align: right; }
+  #collapse-body-type .checkbox-container, #collapse-fuel-type .checkbox-container, #collapse-Gearbox .checkbox-container, #collapse-colour .checkbox-container, #collapse-doors .checkbox-container, #collapseSeats .checkbox-container, #collapseSafety .checkbox-container, #collapseAcceleration .checkbox-container, #collapseEngine .checkbox-container, #collapseEnvironmental .checkbox-container {
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #CCCCCC;
+    padding: 5px 15px;
+    overflow: auto; }
+    #collapse-body-type .checkbox-container .text-checkbox, #collapse-fuel-type .checkbox-container .text-checkbox, #collapse-Gearbox .checkbox-container .text-checkbox, #collapse-colour .checkbox-container .text-checkbox, #collapse-doors .checkbox-container .text-checkbox, #collapseSeats .checkbox-container .text-checkbox, #collapseSafety .checkbox-container .text-checkbox, #collapseAcceleration .checkbox-container .text-checkbox, #collapseEngine .checkbox-container .text-checkbox, #collapseEnvironmental .checkbox-container .text-checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400; }
+      #collapse-body-type .checkbox-container .text-checkbox input, #collapse-fuel-type .checkbox-container .text-checkbox input, #collapse-Gearbox .checkbox-container .text-checkbox input, #collapse-colour .checkbox-container .text-checkbox input, #collapse-doors .checkbox-container .text-checkbox input, #collapseSeats .checkbox-container .text-checkbox input, #collapseSafety .checkbox-container .text-checkbox input, #collapseAcceleration .checkbox-container .text-checkbox input, #collapseEngine .checkbox-container .text-checkbox input, #collapseEnvironmental .checkbox-container .text-checkbox input {
+        font-size: 9px;
+        margin-right: 7px; }
+  #collapse-body-type button, #collapse-fuel-type button, #collapse-Gearbox button, #collapse-colour button, #collapse-doors button, #collapseSeats button, #collapseSafety button, #collapseAcceleration button, #collapseEngine button, #collapseEnvironmental button {
+    background: none;
+    border: 0;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 5px; }
+  #collapse-body-type .checkbox-container::-webkit-scrollbar, #collapse-fuel-type .checkbox-container::-webkit-scrollbar, #collapse-Gearbox .checkbox-container::-webkit-scrollbar, #collapse-colour .checkbox-container::-webkit-scrollbar, #collapse-doors .checkbox-container::-webkit-scrollbar, #collapseSeats .checkbox-container::-webkit-scrollbar, #collapseSafety .checkbox-container::-webkit-scrollbar, #collapseAcceleration .checkbox-container::-webkit-scrollbar, #collapseEngine .checkbox-container::-webkit-scrollbar, #collapseEnvironmental .checkbox-container::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    width: 6%; }
+  #collapse-body-type .checkbox-container::-webkit-scrollbar-thumb, #collapse-fuel-type .checkbox-container::-webkit-scrollbar-thumb, #collapse-Gearbox .checkbox-container::-webkit-scrollbar-thumb, #collapse-colour .checkbox-container::-webkit-scrollbar-thumb, #collapse-doors .checkbox-container::-webkit-scrollbar-thumb, #collapseSeats .checkbox-container::-webkit-scrollbar-thumb, #collapseSafety .checkbox-container::-webkit-scrollbar-thumb, #collapseAcceleration .checkbox-container::-webkit-scrollbar-thumb, #collapseEngine .checkbox-container::-webkit-scrollbar-thumb, #collapseEnvironmental .checkbox-container::-webkit-scrollbar-thumb {
+    background: #a9a9a9;
+    margin: 5px 0; }
+  #collapse-body-type .fas.fa-arrow-down, #collapse-fuel-type .fas.fa-arrow-down, #collapse-Gearbox .fas.fa-arrow-down, #collapse-colour .fas.fa-arrow-down, #collapse-doors .fas.fa-arrow-down, #collapseSeats .fas.fa-arrow-down, #collapseSafety .fas.fa-arrow-down, #collapseAcceleration .fas.fa-arrow-down, #collapseEngine .fas.fa-arrow-down, #collapseEnvironmental .fas.fa-arrow-down {
+    margin-left: 5px; }
 
 .checkbox-container {
   height: 150px;
@@ -971,7 +1003,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #2196F3;
+  background-color: #00C4FC;
   -webkit-transition: 0.4s;
   transition: 0.4s; }
 
@@ -985,7 +1017,7 @@ body {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 1px solid #2196F3; }
+  border: 1px solid #00C4FC; }
 
 input:checked + .slider {
   background-color: #2196F3; }
@@ -1026,15 +1058,15 @@ input:checked + .slider:before {
     background: transparent; }
   to {
     background: rgba(0, 0, 0, 0.3); } }
-  .block-search-results .accordion-tumbler, .block-search-results #mobile-filter {
+  .block-search-results .block-search-results .accordion-tumbler, .block-search-results .block-search-results #mobile-filter {
     display: none; }
-  .block-search-results .accordion-filters .card-body label {
+  .block-search-results .accordion-filters .card-body label, .block-search-results #accordion.cards-serch-results .card .card-body .switcher {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     color: #333333;
     margin-bottom: 3px; }
 
-#make-select, #make-model, #year-from-select, #year-to-model {
+#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model {
   width: 100%;
   height: 35px;
   -webkit-appearance: none;
@@ -1042,7 +1074,7 @@ input:checked + .slider:before {
   appearance: none;
   background-image: url(../img/home/arrow-down.svg);
   background-position: center right 10px;
-  background-size: 5%;
+  background-size: 6.5%;
   background-repeat: no-repeat;
   border-radius: 5px;
   padding-left: 10px;
@@ -1050,85 +1082,103 @@ input:checked + .slider:before {
   color: #d6d6d6;
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
-  #make-select #make-model, #make-model #make-model, #year-from-select #make-model, #year-to-model #make-model {
-    margin-top: 10px; }
 
-.block-used-cars .search-results-container .car-tile {
-  margin-bottom: 2%;
-  max-width: 32%; }
-  .block-used-cars .search-results-container .car-tile:nth-child(3n + 2) {
-    margin: 0 2% 2% 2%; }
-.block-used-cars .title-block-used-cars {
-  font-weight: 500; }
-.block-used-cars .filter-navigation-menu {
-  margin-bottom: 2%; }
-  .block-used-cars .filter-navigation-menu .pagination .more-pages, .block-used-cars .filter-navigation-menu .filters .more-pages {
-    display: none; }
-  .block-used-cars .filter-navigation-menu .pagination .col-md-6, .block-used-cars .filter-navigation-menu .filters .col-md-6 {
-    padding: 0; }
-    .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child, .block-used-cars .filter-navigation-menu .filters .col-md-6:last-child {
-      text-align: right; }
-    .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li, .block-used-cars .filter-navigation-menu .filters .col-md-6 ul li {
-      display: inline-block;
-      padding: 0;
-      margin: 0; }
-  .block-used-cars .filter-navigation-menu .filters {
-    padding: 1% 0;
-    border: 1px solid #C0C0C0; }
-    .block-used-cars .filter-navigation-menu .filters .col-md-6 {
-      padding: 0 15px; }
-      .block-used-cars .filter-navigation-menu .filters .col-md-6 ul li {
-        margin-left: 4%; }
-  .block-used-cars .filter-navigation-menu .pagination {
-    align-items: center;
-    margin: 1% 0; }
-    .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child {
-      height: 26px;
+#collapseThree .total-price div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 22px; }
+  #collapseThree .total-price div label {
+    float: left;
+    width: 18%; }
+
+.block-search-results #accordion.cards-serch-results .card .card-body .switcher {
+  font-size: 13px; }
+.block-search-results #accordion.cards-serch-results .card .card-body #price-from-select, .block-search-results #accordion.cards-serch-results .card .card-body #price-to-model {
+  width: 70%; }
+
+.block-used-cars {
+  margin-top: 23px; }
+  .block-used-cars .search-results-container .car-tile {
+    margin-bottom: 2%;
+    max-width: 32%; }
+    .block-used-cars .search-results-container .car-tile:nth-child(3n + 2) {
+      margin: 0 2% 2% 2%; }
+  .block-used-cars .title-block-used-cars {
+    font-weight: 700; }
+  .block-used-cars .filter-navigation-menu {
+    margin-bottom: 2%; }
+    .block-used-cars .filter-navigation-menu .pagination .more-pages, .block-used-cars .filter-navigation-menu .filters .more-pages {
+      display: none; }
+    .block-used-cars .filter-navigation-menu .pagination .col-md-6, .block-used-cars .filter-navigation-menu .filters .col-md-6 {
+      padding: 0; }
+      .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child, .block-used-cars .filter-navigation-menu .filters .col-md-6:last-child {
+        text-align: right; }
+      .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li, .block-used-cars .filter-navigation-menu .filters .col-md-6 ul li {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        font-family: "Open Sans", sans-serif; }
+    .block-used-cars .filter-navigation-menu .filters {
+      padding: 1% 0;
+      border: 1px solid #C0C0C0; }
+      .block-used-cars .filter-navigation-menu .filters .col-md-6 {
+        padding: 0 15px; }
+        .block-used-cars .filter-navigation-menu .filters .col-md-6 ul li {
+          margin-left: 4%; }
+    .block-used-cars .filter-navigation-menu .pagination {
+      align-items: center;
+      margin: 1% 0; }
+      .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child {
+        height: 26px;
+        display: flex;
+        justify-content: flex-end; }
+      .block-used-cars .filter-navigation-menu .pagination .col-md-6 object {
+        height: 26px; }
+      .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul {
+        display: flex;
+        justify-content: flex-end; }
+        .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li {
+          border: 1px solid #C0C0C0;
+          padding: 0 5px; }
+          .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li:first-child {
+            border-left: none; }
+          .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li:last-child {
+            border-right: none; }
+    .block-used-cars .filter-navigation-menu .filters-mobile {
       display: flex;
-      justify-content: flex-end; }
-    .block-used-cars .filter-navigation-menu .pagination .col-md-6 object {
-      height: 26px; }
-    .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul {
-      display: flex;
-      justify-content: flex-end; }
-      .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li {
-        border: 1px solid #C0C0C0;
-        padding: 0 5px; }
-        .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li:first-child {
-          border-left: none; }
-        .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul li:last-child {
-          border-right: none; }
-  .block-used-cars .filter-navigation-menu .filters-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 15px; }
-    .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter {
-      border: 1px solid grey;
-      padding: 1%;
-      width: 30%;
-      text-align: left;
-      position: relative;
-      background-image: url(../img/home/arrow-down.svg);
-      background-position: center right 10px;
-      background-size: 15%;
-      background-repeat: no-repeat; }
-      .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter ul {
-        visibility: hidden;
-        display: block;
-        z-index: 101;
-        position: absolute;
-        top: -1px;
-        left: -1px;
-        right: -1px;
-        width: calc(100% + 2px);
-        list-style: none;
-        background: white;
-        border: 1px solid grey; }
-        .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter ul li {
-          padding: 1%; }
-        .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter ul.opened {
-          visibility: visible; }
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 15px;
+      font-size: 13px; }
+      .block-used-cars .filter-navigation-menu .filters-mobile .cards-show {
+        font-style: italic; }
+      .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter {
+        border: 1px solid grey;
+        padding: 3% 2%;
+        width: 35%;
+        text-align: left;
+        position: relative;
+        background-image: url(../img/home/arrow-down.svg);
+        background-position: center right 10px;
+        background-size: 13%;
+        background-repeat: no-repeat; }
+        .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter ul {
+          visibility: hidden;
+          display: block;
+          z-index: 101;
+          position: absolute;
+          top: -1px;
+          left: -1px;
+          right: -1px;
+          width: calc(100% + 2px);
+          list-style: none;
+          background: white;
+          border: 1px solid grey; }
+          .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter ul li {
+            padding: 7% 4%; }
+          .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter ul.opened {
+            visibility: visible; }
 
 @media only screen and (max-width: 768px) {
   .block-used-cars {
@@ -1153,8 +1203,8 @@ input:checked + .slider:before {
         padding: 0 15px; }
         .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li {
           display: none;
-          color: blue;
-          border: 1px solid blue;
+          color: #005EAA;
+          border: 1px solid #005EAA;
           margin-right: 1px;
           width: 10%;
           text-align: center;
@@ -1162,9 +1212,9 @@ input:checked + .slider:before {
           .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:nth-child(-n+4), .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:nth-last-child(-n+3) {
             display: block; }
           .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:first-child, .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:last-child {
-            background: blue;
+            background: #005EAA;
             color: white;
-            border: 1px solid blue;
+            border: 1px solid #005EAA;
             width: 25%; }
           .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:last-child {
             margin-right: 0; }
@@ -1181,7 +1231,8 @@ input:checked + .slider:before {
     top: 0;
     bottom: 0;
     left: -66%;
-    animation: slideOut 0.5s; }
+    animation: slideOut 0.5s;
+    overflow: auto; }
   @keyframes slideOut {
     from {
       left: 0; }
@@ -1196,7 +1247,8 @@ input:checked + .slider:before {
     to {
       left: 0; } }
     #accordion.cards-serch-results .mobile-accordion-filter {
-      display: flex; }
+      display: flex;
+      margin-top: 10px; }
     #accordion.cards-serch-results .card .card-header {
       background-position: center left 10px; }
       #accordion.cards-serch-results .card .card-header h5 .btn {
@@ -1205,8 +1257,26 @@ input:checked + .slider:before {
         content: "Any";
         position: absolute;
         right: 10px;
-        top: 7px;
+        top: 13px;
         display: flex;
-        align-items: center; } }
+        align-items: center;
+        color: #BBBBBB;
+        font-family: "Montserrat", sans-serif; }
+
+  .col-md-9.col-12.block-used-cars .search-results-container .row {
+    padding: 0 5px; }
+
+  .reset-block {
+    display: flex;
+    align-items: center; }
+    .reset-block object {
+      margin-right: 5px; }
+
+  .button-reset-block {
+    background: #005EAA;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    border: 0;
+    padding: 6px 23px; } }
 
 /*# sourceMappingURL=style.css.map */
