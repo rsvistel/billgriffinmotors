@@ -85,7 +85,10 @@
     height: 36px; }
 
   .dropdown-content {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .accordion-tumbler, #mobile-filter {
+    display: block; } }
 @media (min-width: 767px) {
   .hamburger-icon {
     display: none; } }
