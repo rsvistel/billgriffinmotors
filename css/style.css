@@ -231,11 +231,9 @@ body {
   #banner #banner-image {
     text-align: center; }
     #banner #banner-image img {
-      width: 120%;
-      max-width: 1800px; }
+      width: 120%; }
   #banner #search-box {
     width: 100%;
-    max-width: 1800px;
     height: 50%;
     position: absolute;
     bottom: 0;
@@ -665,6 +663,8 @@ body {
   text-align: center;
   color: #fff;
   background: url("../img/home/bmw.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 5% 0; }
   #statistics .statistic-block object {
     width: auto;
@@ -703,6 +703,9 @@ body {
 .footer-section__row {
   padding-left: 0;
   padding-right: 0; }
+
+.card-header {
+  padding: 24px 40px; }
 
 .footer-section__title {
   font-family: "Open Sans", sans-serif;
@@ -795,13 +798,42 @@ body {
     height: 59px; }
 
   .footer-section__description {
+    padding-top: 40px;
+    padding-bottom: 60px; }
+
+  .card-header {
+    padding: 27px 18px;
     padding-top: 24px;
     padding-bottom: 44px; } }
 @media only screen and (max-width: 410px) {
   .footer-section__title {
     font-size: 25px; }
-  .card-header {
-    padding: 27px 18px; } }
+
+  .footer-section__soc-img {
+    height: 64%; }
+
+  .footer-section__description {
+    padding-top: 0;
+    padding-bottom: 24px; }
+
+  .footer-section__links-title {
+    font-size: 20px; }
+
+  .footer-section__link {
+    font-size: 1.2rem; } }
+@media only screen and (max-width: 320px) {
+  .footer-section__title {
+    font-size: 24px; }
+
+  .footer-section__soc-img {
+    height: 70%; }
+
+  .footer-section__soc-item {
+    padding-right: 14px; }
+
+  .footer-section__description {
+    padding-top: 0;
+    padding-bottom: 34px; } }
 .no-gutters {
   margin-right: 3px;
   margin-left: 3px; }
@@ -1151,31 +1183,6 @@ button:focus {
   .carousel-item-modal-lg {
     width: 70% !important;
     margin: auto; } }
-  .footer-section__soc-img {
-    height: 64%; }
-
-  .footer-section__description {
-    padding-top: 0;
-    padding-bottom: 24px; }
-
-  .footer-section__links-title {
-    font-size: 20px; }
-
-  .footer-section__link {
-    font-size: 1.2rem; } }
-@media only screen and (max-width: 320px) {
-  .footer-section__title {
-    font-size: 24px; }
-
-  .footer-section__soc-img {
-    height: 70%; }
-
-  .footer-section__soc-item {
-    padding-right: 14px; }
-
-  .footer-section__description {
-    padding-top: 0;
-    padding-bottom: 34px; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
@@ -1345,5 +1352,3 @@ button:focus {
 
 .title-block-used-cars {
   font-weight: 500; }
-
-/*# sourceMappingURL=style.css.map */
