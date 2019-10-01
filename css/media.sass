@@ -296,27 +296,30 @@ $light-blue: #00C4FC
   .title-logo-bottom
     margin: 0
 
+@media (min-width: 1000px) and (max-width: 1200px)
+  .accordion-used-car__title
+    font-size: 20px
+
 //MODAL-window USED CAR-page
 
 @media (min-width: 768px) and (max-width: 1024px)
-  .detailse-used-car__name,.detailse-used-car__data
+  .detailse-used-car__name
+    font-size: 14px
+  .detailse-used-car__data
     font-size: 15px
 
 @media (min-width: 1024px) and (max-width: 1024px)
   .accordion-used-car__title
     font-size: 22px
 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)
+  .carousel-item-modal-lg
+    width: 100%!important
+    height: 70vh
 
 @media (max-width: 991px)
-  .no-gutters-mobile
-    margin-right: 0px
-    margin-left: 0px
-    > .col,
-    > [class*="col-"]
-        padding-right: 0px
-        padding-left: 0px
   .carousel-mobile
-    margin-bottom: 1rem
+    margin-bottom: 0.5rem
   .used-car__name-top, .used-car__price-top
     font-size: 20px
   .used-car__name-bottom, .used-car__price-bottom
@@ -351,7 +354,7 @@ $light-blue: #00C4FC
   .mobile-counter__value
     padding-top: 8px
     padding-left: 6px
-    font-size: 1rem
+    font-size: 26px
   .carousel-caption
     bottom: 0
     left: 3%
@@ -359,6 +362,7 @@ $light-blue: #00C4FC
     display: flex
     background: transparent
     color: #fff
+    padding-bottom: 0.6rem
   .description-used-car
     border: 1px solid #CCCCCC
     margin-bottom: 0.5rem
@@ -446,7 +450,7 @@ $light-blue: #00C4FC
   .mobile-counter__icon
     display: block
     padding: 1px
-    width: 28px
+    width: 40px
   .mobile-counter__block-modal
     padding-top: 2rem
   .used-car__modal-close-col-lg
@@ -454,15 +458,34 @@ $light-blue: #00C4FC
     right: 0
 
 @media (max-width: 768px)
-    .detailse-used-car__block
+    .detailse-used-car__block,.detailse-used-car__name-chnge
       display: none
-    .detailse-used-car__none
+    .detailse-used-car__none, .detailse-used-car__name-first, .detailse-used-car__name-adult
       display: block
+    .detailse-used-car__name-first
+      font-weight: bold
+    .detailse-used-car__name-adult
+      padding: 0 1rem
+    .no-gutters-mobile
+      margin-right: 0px
+      margin-left: 0px
+      > .col,
+      > [class*="col-"]
+        padding-right: 0px
+        padding-left: 0px
 @media (min-width: 769px)
-    .detailse-used-car__block
+    .detailse-used-car__block, .detailse-used-car__name-chnge
       display: block
-    .detailse-used-car__none
+    .detailse-used-car__none, .detailse-used-car__name-first, .detailse-used-car__name-adult
       display: none
+
+@media (max-width: 768px)
+  .mobile-counter__block
+    padding-bottom: 0
+  .mobile-counter__value
+    font-size: 18px
+  .mobile-counter__icon
+    width: 30px
 
 @media (max-width: 800px)
   .detailse-used-car__title-header,.description-used-car__title
@@ -473,16 +496,12 @@ $light-blue: #00C4FC
     font-size: 19px
   .detailse-used-car__data
     font-size: 19px
-  .used-car-no-gutters__mobile
-    padding: 0 0
 
 @media (max-width: 400px)
   .used-car__name-top, .used-car__price-top
     font-size: 18px
   .used-car__name-bottom, .used-car__price-bottom
     font-size: 16px
-  .used-car-no-gutters__mobile
-    padding: 0 0
 
 @media (max-width: 320px)
   .used-car__name-top, .used-car__price-top
@@ -497,9 +516,13 @@ $light-blue: #00C4FC
     font-size: 19px
   .used-car-no-gutters__mobile
     padding: 0 0
-    margin: 0 1rem
   .title-address, .title-contact
     max-width: 32%
+  .mobile-counter__block
+    padding-bottom: 0
+
+//MODAL-window USED CAR-page
+
 @media (min-width: 768px) and (max-width: 1000px)
   .container
     padding: 0

@@ -11,14 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3561/jquery.magnific-popup.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
 
 <body>
 
-    <section class="header topnav" id="myTopnav">
+    <!-- <section class="header topnav" id="myTopnav">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 upper-half-header">
@@ -142,7 +142,7 @@
         </div>
 
     </div>
-</section>
+</section> -->
     <section class="used-car-section">
         <div class="container used-car-no-gutters__mobile">
             <div class="row no-gutters">
@@ -156,7 +156,7 @@
                         <div class="used-car__price-bottom">From €160pm</div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 used-car__block">
+                <div class="col-12 col-sm-12 col-md-12 used-car__block no-gutters-mobile">
                     <div class="gellery__cars">
                         <div class="row no-gutters no-gutters-mobile">
                             <div class="col-12 col-md-12 col-lg-8 d-block">
@@ -181,16 +181,16 @@
                                         <span class="carousel-control-prev-icon carousel-control-prev-mobile d-block d-sm-block d-md-block d-lg-none" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
                                       </a>
-                                <a class="carousel-control-next" href="#carouselUsedCar" role="button" data-slide="next" data-toggle="modal" data-target="#modalUsedCar">
+                                    <a class="carousel-control-next" href="#carouselUsedCar" role="button" data-slide="next" data-toggle="modal" data-target="#modalUsedCar">
                                         <span class="carousel-control-next-icon carousel-control-next-mobile d-block d-sm-block d-md-block d-lg-none" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
-                                </a>
+                                    </a>
                                 </div>
                                 <div class="row carousel-card-items">
                                     <div class="col-3 d-none d-sm-none d-md-none d-lg-block carousel-card-item">
                                             <a href="img/used-car-page/used-car-two.png" data-toggle="modal" data-target="#modalUsedCar">
                                                 <img class="d-block w-100" src="img/used-car-page/used-car-two.png" alt="2012 FORD FIESTA">
-                                             </a>
+                                            </a>
                                     </div>
                                     <div class="col-3 d-none d-sm-none d-md-none d-lg-block carousel-card-item">
                                         <a href="img/used-car-page/used-car-three.png" data-toggle="modal" data-target="#modalUsedCar">
@@ -209,13 +209,13 @@
                                     </div>
                                 </div>
                             </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-4 accordion-used-car__mobile-padding used-car-no-gutters__mobile">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-4 accordion-used-car__mobile-padding">
                                     <div id="accordion-used-car" class="accordion-used-car">
                                         <div class="card">
                                             <div class="card-header accordion-used-car__card-header form-icon" id="headingMessage">
-                                                    <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage" role="button">
-                                                            Make an enquiry
-                                                    </a>
+                                                <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage" role="button">
+                                                    Make an enquiry
+                                                </a>
                                             </div>
                                             <div id="collapseMessage" class="collapse accordion-used-car__collapse" aria-labelledby="headingMessage" data-parent="#accordion-used-car">
                                                 <div class="card-body accordion-used-car__card-body">
@@ -252,19 +252,87 @@
                                         </div>
                                         <div class="card">
                                             <div class="card-header accordion-used-car__card-header reserve-icon" id="headingReserve">
-                                                    <a href="#" class=" btn shadow-none collapsed accordion-used-car__title">
-                                                        Reserve This Car
-                                                    </a>
+                                                <a href="#" class=" btn shadow-none collapsed accordion-used-car__title">
+                                                    Reserve This Car
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-used-car__reviews">
-                                        <h4>Reviews</h4>
+                                        <div id="feedback">
+                                            <div class="container">
+                                                <h4 class="feedback-title">Reviews</h4>
+                                                <h3 class="feedback-rating">
+                                                    <span class="five-stars">5 Stars</span>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </h3>
+                                                <div class="owl-carousel owl-feedback">
+                                                    <div class="feedback-item">
+                                                        <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                                                        <div class="feedback-date">05/04/2019</div>
+                                                        <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                                                            <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                                                        </div>
+                                                        <i class="fas fa-quote-right"></i>
+                                                        <div class="feedback-author"><h3>Jane Dennehy</h3></div>
+                                                        <div class="feedback-company">Co.Wicklow</div>
+                                                        <div class="feedback-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                
+                                                    <div class="feedback-item">
+                                                        <div class="feedback-title"><h3>Michael Reilly says</h3></div>
+                                                        <div class="feedback-date">05/04/2019</div>
+                                                        <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                                                            <span class="title-feedback-body">I’ve got 3 cars now from the guys and every time they’ve been 1st class with everything. If there was ever an issue they were always very helpful. Great service.</span>
+                                                        </div>
+                                                        <i class="fas fa-quote-right"></i>
+                                                        <div class="feedback-author"><h3>Michael Reilly</h3></div>
+                                                        <div class="feedback-company">Co. Cavan</div>
+                                                        <div class="feedback-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                
+                                                    <div class="feedback-item">
+                                                        <div class="feedback-title"><h3>Mary McCormack says</h3></div>
+                                                        <div class="feedback-date">05/04/2019</div>
+                                                        <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                                                            <span class="title-feedback-body">If you are looking for a car I would highly recommend you get it from Bill Griffin motors. Dave and Richie where excellent to deal with, very friendly and I didn’t feel pressured to buy.</span>
+                                                        </div>
+                                                        <i class="fas fa-quote-right"></i>
+                                                        <div class="feedback-author"><h3>Mary McCormack</h3></div>
+                                                        <div class="feedback-company">Co. Dublin</div>
+                                                        <div class="feedback-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="button-feedback">Read all our reviews ></button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             <div class="col-12 col-md-12 col-lg-8 d-none d-sm-block d-md-block d-lg-block d-xl-block">
                                 <div class="option-used-car">
-                                        <img class="img-fluid" src="./img/used-car-page/option-car.svg" alt="">
+                                    <img class="img-fluid" src="./img/used-car-page/option-car.svg" alt="">
                                  </div>
                             </div>
                             <div class="col-md-12 col-lg-8 d-block">
@@ -325,9 +393,13 @@
                                                 <div>0-62mph:</div>
                                                 <div>Top Speed:</div>
                                                 <div>SIMI Registered:</div>
-                                                <div>Safety Rating (Child Occupant):</div>
-                                                <div>Safety Rating (Adult Occupant):</div>
-                                                <div>Safety Rating (Overall):</div>
+                                                <div class="detailse-used-car__name-first">Safety Ratings</div>
+                                                <div class="detailse-used-car__name-chnge">Safety Rating (Child Occupant):</div>
+                                                <div class="detailse-used-car__name-adult">Child Occupant:</div>
+                                                <div class="detailse-used-car__name-chnge">Safety Rating (Adult Occupant):</div>
+                                                <div class="detailse-used-car__name-adult">Adult Occupant:</div>
+                                                <div class="detailse-used-car__name-chnge">Safety Rating (Overall):</div>
+                                                <div class="detailse-used-car__name-adult">Overall:</div>
                                                 <div>Environmental:</div>
                                                 <div>Last Updated:</div>
                                             </div>
@@ -343,32 +415,32 @@
                                                 <div>144 mph</div>
                                                 <div>Yes</div>
                                                 <div class="detailse-used-car__star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="detailse-used-car__star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="detailse-used-car__star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="detailse-used-car__star-green">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                                        <i class="fas fa-star" aria-hidden="true"></i>
                                                 </div>
                                                 <div>12/06/2019</div>
                                             </div>
@@ -396,7 +468,7 @@
                             Air Inlets in Dark Chrome, Rear Diffuser in Chrome, Keyless Go.
                             Audi Sound System, CD Player, Hands Free Kit, MMI Radio Plus, Anti Theft System, Child Locks, Electronic Stability Programme (ESP), Immobilizer, ISO Fix, Multiple Airbags, Reversing Sensors, Remote Central Locking, Xenon with LED Daytime Running Lights, Full Service History, MMI SAT Nav, Mobile Phone Preparation-Bluetooth, Auto Handbrake, Cruise Control, Servotronic Steering, Alloy Wheels, Black Styling Pack, Body Coloured Door Mirrors, High Gloss Black Grille, Metalic Paint, S-Line Body Styling, Armrest, Automatic Air Conditioning, Button Start-Stop, Door Sills with Aluminium Inlays, Drivers Information System, Electric Mirrors, Electric Windows, LED Interior Light Pack, Onboard Computer, Anti-Lock Brake System</span>
                                     <div class="btn-more-block">
-                                        <span class="more">more</span><i class="fa fa-angle-down more-icon"></i>
+                                        <span class="more">more</span><i class="fas fa-angle-down more-icon"></i>
                                     </div>
                                 </div>
                             </div>
@@ -482,7 +554,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body used-car__modal-modal-body">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel carousel__modal  slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img class="d-block w-100 carousel-item-modal-lg" src="img/used-car-page/used-car-one.png" alt="2012 FORD FIESTA">
@@ -501,13 +573,13 @@
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                          <span class="carousel-control-prev-icon used-car__modal__control-prev" aria-hidden="true"></span>
-                                          <span class="sr-only">Previous</span>
-                                        </a>
+                            <span class="carousel-control-prev-icon used-car__modal__control-prev" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
                         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                          <span class="carousel-control-next-icon used-car__modal__control-next" aria-hidden="true"></span>
-                                          <span class="sr-only">Next</span>
-                                        </a>
+                            <span class="carousel-control-next-icon used-car__modal__control-next" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                     <div class="modal-footer used-car__modal-footer">
                         <div class="used-car__carousel-caption used-car__modal-carousel-caption d-block">
@@ -521,10 +593,6 @@
                     </div>
                 </div>
                 </div>
-
-                <!-- Modal footer -->
-  
-
             </div>
         </div>
     </div>
