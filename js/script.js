@@ -1,5 +1,3 @@
-
-
     $(document).ready(function () {
         $('.mobile-open').click(function () {
             $(this).find('object').toggle();
@@ -32,5 +30,25 @@ $(document).ready(function(){
    }).on('hide.bs.collapse', function(){
    $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
    });
+
+    $('#carouselExampleControls').carousel({
+        interval: false
+    });
+
+    $(".more").click(function() {
+        var elem = $(".more").text();
+        if (elem == "more") {
+            $(".more").text("less");
+            $(".complete").show();
+            $(".more-icon").addClass('fa-angle-up').removeClass('fa-angle-down');
+
+        } else {
+            $(".more").text("more");
+            $(".complete").hide();
+            $(".more-icon").addClass('fa-angle-down').removeClass('fa-angle-up');
+        }
+    });
 });
+
+
 

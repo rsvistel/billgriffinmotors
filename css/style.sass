@@ -23,6 +23,7 @@ body
    padding: 0
    margin: 0
    min-height: 100vh
+   font-family: $primary-font
 
 //Header
 //.header.topnav .row
@@ -1282,6 +1283,11 @@ body
    padding-left: 0
    padding-right: 0
 
+   //change in faq
+
+.card-header  
+   padding: 24px  40px
+
 .footer-section__title
    font-family: $secondary-font
    font-size: 2.4rem
@@ -1379,6 +1385,12 @@ body
       height: 59px
 
    .footer-section__description
+      padding-top: 40px
+      padding-bottom: 60px
+
+      //change in faq add class
+   .card-header
+      padding: 27px 18px
       padding-top: 24px
       padding-bottom: 44px
 
@@ -1413,9 +1425,332 @@ body
       padding-top: 0
       padding-bottom: 34px
 
+//USED CAR-page
 
+.no-gutters
+   margin-right: 3px
+   margin-left: 3px
+   > .col,
+   > [class*="col-"]
+      padding-right: 3px
+      padding-left: 3px
 
+.used-car-section
+      width: 100%
+      margin-top: 1rem
+      margin-bottom: 1rem
 
+.used-car__title
+      display: flex
+      justify-content: space-between
+
+.used-car__name
+      display: flex
+      flex-direction: column
+      padding-left: 8px
+
+.used-car__name-top
+      font-size: 30px
+      font-weight: bold
+
+.used-car__name-bottom
+      font-size: 25px
+      //padding-top: 0.5rem
+
+.used-car__price
+      display: flex
+      flex-direction: column
+      text-align: right
+      padding-right: 8px
+
+.used-car__price-top
+      font-size: 35px
+      font-weight: bold
+
+.used-car__price-bottom
+      font-size: 25px
+      color: $light-blue
+
+.detailse-used-car__title-header
+      font-weight: bold
+      font-size: 28px
+      padding-top: 2rem
+      padding-bottom: 1.5rem
+
+.detailse-used-car__title
+      display: flex
+      justify-content: space-between
+      padding-left: 0
+      padding-right: 0
+
+.detailse-used-car__data
+      display: flex
+      flex-direction: column
+      font-size: 18px
+      font-weight: bold
+      text-align: right
+
+.detailse-used-car__name
+      display: flex
+      flex-direction: column
+      font-size: 18px
+      text-align: left
+
+.description-used-car
+      font-size: 18px
+      font-family: $primary-font
+
+.accordion-used-car__title
+      width: 100%
+      text-align: justify
+      font-size: 25px
+      white-space: nowrap
+      font-weight: bold
+      padding: 1.11rem 1.11rem 1.11rem 5.5rem
+
+.accordion-used-car__title img
+      padding-right: 0.5em
+
+.accordion-used-car>.card
+      border: none
+      margin: 0.5rem 0
+      -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      cursor: pointer
+
+.accordion-used-car>.card:first-child
+      margin: 0
+
+.accordion-used-car__card-body
+      background: #EEEEEC
+      padding: 0.4rem
+
+.accordion-used-car__card-header
+      padding: 0
+      border-bottom: 0
+      background: #EEEEEC
+
+.form-icon
+      background-image: url("../img/used-car-page/form-icon.svg")
+.finance-icon
+      background-image: url("../img/used-car-page/finance-icon.svg")
+.reserve-icon
+      background-image: url("../img/used-car-page/reserve.svg")
+.form-icon, .reserve-icon, .finance-icon
+      background-repeat: no-repeat
+      background-position: 1.6rem center
+
+.accordion-used-car__card-header:first-child
+      border-radius: 0
+
+.description-used-car__title
+      font-size: 20px
+      font-weight: bold
+      padding: 1.5rem 0
+
+.description-used-car__sub-title
+      padding-bottom: 2rem
+
+.detailse-used-car__star, .detailse-used-car__star-green
+      white-space: nowrap
+
+.detailse-used-car__star .fa-star
+      color: #FAE42A
+      display: inline
+
+.detailse-used-car__star-green .fa-star
+      color: #149E26
+.complete
+      display: inline-block
+
+.more
+      display: none
+
+.more-icon
+   display: none
+
+//form USED CAR-page
+.accordion-used-car__form
+   padding-top: 1rem
+
+#InputName, #InputPhone, #InputEmail
+   height: calc(1.5em + 1.7rem + 2px)
+   border-radius: 0
+   box-shadow: none
+
+#FormControlTextarea
+   box-shadow: none
+
+::-webkit-input-placeholder
+   font-size: 12px
+   color: #525252
+
+.accordion-used-car__textarea
+   resize: none
+
+.accordion-used-car__form-check
+   font-size: 12px
+   padding-bottom: 1rem
+   line-height: 1.2
+
+.accordion-used-car__form-button
+   width: 100%
+   border-radius: 0
+   padding: 0.7rem
+   margin-bottom: 0.5rem
+   background: $dark-blue
+
+//MODAL USED CAR-page
+
+.used-car__modal
+   background: #262626
+   padding-right: 0!important
+
+#modalUsedCar .used-car__modal
+   padding-right: 0
+
+.used-car__modal-header
+   padding: 0
+   border-bottom: 0
+
+.used-car__modal-content
+   border: none
+   border-radius: 0
+   background: #262626
+   color: #ffffff
+
+.used-car__modal-footer
+   border: none
+   border-bottom-right-radius: 0
+   border-bottom-left-radius: 0
+
+.used-car__modal-close
+   opacity: 1
+   padding-bottom: 1.7rem
+   padding-top: 0.5rem
+   outline: 0
+   width: 48px
+button:focus
+   outline: 0
+
+.used-car__name-top .used-car__modal-name-top
+   font-size: 1rem
+
+.used-car__modal-name
+   padding: 0
+   font-size: 1rem
+
+.used-car__modal-name-top, .used-car__modal-price-top
+   font-size: 25px
+
+.used-car__modal-name-bottom, .used-car__modal-price-bottom
+   font-size: 20px
+   color: #ffffff
+
+.used-car__modal-modal-body
+   padding: 0
+
+.used-car__carousel-caption
+   right: auto
+   text-align: right
+   max-width: 300px
+   left: 3%
+   font-size: 26px
+   padding-top: 0
+   padding-bottom: 0
+
+.accordion-used-car__h5
+   display: flex
+
+.used-car__modal-footer
+   padding: 0
+
+.arousel-control-next-mobile, .carousel-control-prev-mobile
+   width: 11%
+
+@media (min-width: 992px)
+   .used-car__modal-name-top
+      font-size: 30px
+   .used-car__modal-price-top
+      font-size: 30px
+   .used-car__modal-name-bottom
+      font-size: 20px
+   .used-car__modal-price-bottom
+      font-size: 25px
+   .accordion-used-car__mobile-padding
+      position: absolute
+      right: 0
+      top: 0
+   .used-car__block
+      position: relative
+   .used-car__modal
+      padding-right: 0!important
+      background: #898989
+   .used-car__modal-dialog
+      max-width: 100%
+      margin: auto
+   .used-car__modal-close
+      position: absolute
+      z-index: 10
+   .used-car__modal-close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover
+      opacity: 1
+   .used-car__modal-header
+      position: absolute
+      z-index: 10
+      top: 100%
+      left: 20%
+      margin-left: 2rem
+   .used-car__modal-carousel-caption
+      position: absolute
+      top: 100%
+      left: 2rem
+   .used-car__modal-close
+      outline: 0
+      right: 25px
+      padding-top: 1rem
+   .used-car__modal-content
+      background: none
+   .used-car__modal-footer
+      justify-content: space-around
+      padding-bottom: 6rem
+   .carousel-control-prev-icon,.carousel-control-next-icon
+      width: 70px
+      height: 70px
+      opacity: 1
+   .used-car__modal__control-prev
+      background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
+      background-repeat: no-repeat
+      background-position: center center
+      opacity: 1
+   .used-car__modal__control-next
+      background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
+      background-repeat: no-repeat
+      background-position: center center
+      opacity: 1
+   .used-car__modal-title,.used-car__modal-header
+      width: 75%
+   .carousel-card-items
+      margin-bottom: 0.7rem
+      margin-top: 5px
+      padding-left: 12px
+      padding-right: 12px
+   .carousel-card-item
+      padding-right: 3px
+      padding-left: 3px
+   .counter__icon-modal-lg
+      width: 60px
+      margin-right: 1rem
+   .counter__value
+      font-size: 33px
+      vertical-align: bottom
+   .counter__block
+      display: flex
+      align-items: flex-start
+      padding-top: 1.2rem
+   .carousel-item-modal-lg
+      width: 70%!important
+      margin: auto
 //FAQ-page
 .section__title-blue
    font-family: $primary-font
@@ -1502,16 +1837,12 @@ body
    .section__title-blue .container, .accordion__wrapper .container
       padding: 0
       max-width: 100%
-
    .title-blue
       font-size: 26px
-
    .section__title-blue-container
       padding-left: 0
-
    .descripton-blue
       font-size: 14px
-
    .accordion__wrapper
       margin-top: 10px
    .accordion
@@ -1522,7 +1853,6 @@ body
       padding-left: 0
       font-size: 18px
       text-align: left
-
    .accordion .card-body
       font-size: 15px
       padding-left: 18px
