@@ -2,8 +2,11 @@
   .title-address, .title-contact, .social-icon {
     display: none; }
 
+  .titles-logo {
+    padding-right: 0; }
+
   .title-logo {
-    font-size: 19px;
+    font-size: 20px;
     line-height: 21px; }
 
   .title-logo-bottom {
@@ -14,20 +17,41 @@
     height: auto;
     display: none;
     background: #ffffff;
-    padding: 3% 7% 3% 7%; }
-    .bottom-half-header ul {
-      display: block; }
-      .bottom-half-header ul li {
-        height: 30px; }
-        .bottom-half-header ul li a h6 {
-          font-size: 15px;
+    padding: 3% 5% 4% 5%; }
+    .bottom-half-header .container ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .bottom-half-header .container ul li {
+        height: auto;
+        padding: 4px 6px; }
+        .bottom-half-header .container ul li:first-child {
+          margin-left: 0; }
+        .bottom-half-header .container ul li a .h6-title {
+          font-size: 5.5vw;
           text-transform: capitalize;
           color: #363636;
-          font-weight: 500;
+          font-weight: 400;
           font-family: "Open Sans", sans-serif; }
 
+  .dropdown .dropbtn {
+    padding: 0; }
+
+  .bottom-half-header .container ul li .dropdown-content {
+    min-width: 200px; }
+
+  .bottom-half-header .container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .bottom-half-header .container ul li:first-child {
+      margin-left: 0; }
+
   .upper-half-header {
-    padding: 2% 4% 1% 4%; }
+    padding: 2% 4% 1% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
   .mobile-open {
     display: block; }
@@ -42,29 +66,42 @@
     display: flex;
     align-items: center;
     background: black;
-    height: 60px; }
+    height: 65px; }
     .mobile-section-under-header .contact-text {
-      font-size: 17px;
-      line-height: 22px;
+      font-size: 18px;
+      line-height: 28px;
       font-weight: 300;
       font-family: "Open Sans", sans-serif; }
     .mobile-section-under-header .sales-number, .mobile-section-under-header .contact-text {
       color: #ffffff;
       margin-left: 8px; }
+    .mobile-section-under-header .sales-number {
+      font-size: 1.1rem; }
     .mobile-section-under-header embed {
-      width: 10%; } }
+      width: 9%; }
+
+  .mobile-open object:last-child {
+    width: 41px;
+    height: 36px; }
+
+  .dropdown-content {
+    margin-top: 0; } }
 @media (min-width: 767px) {
   .hamburger-icon {
     display: none; } }
 @media (min-width: 450px) and (max-width: 767px) {
   .mobile-section-under-header embed {
     width: 6%; } }
+@media (min-width: 414px) and (max-width: 768px) {
+  #banner #search-box .container .col-md-3 select {
+    background-size: 3%; } }
 @media (min-width: 768px) and (max-width: 1000px) {
   .title-logo {
     font-size: 1.5vw; }
 
   .title-logo-bottom {
     margin: 0; } }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .detailse-used-car__name, .detailse-used-car__data {
     font-size: 15px; } }
@@ -307,5 +344,110 @@
 
   .used-car-no-gutters__mobile {
     padding: 0 0; } }
+
+@media (min-width: 1000px) and (max-width: 1112px) {
+  .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4, .dropdown .dropbtn {
+    font-size: 0.75rem; } }
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .upper-half-header {
+    padding: 10px 15px; }
+
+  .title-logo {
+    font-size: 1.3rem; }
+
+  .titles-logo {
+    padding-right: 5%;
+    width: 52%; }
+
+  .title-logo-bottom {
+    font-size: 1rem; }
+
+  .title-logo-bottom {
+    margin: 0 1rem; }
+
+  .title-address, .title-contact {
+    max-width: 32%; } }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .container {
+    padding: 0; }
+
+  .bottom-half-header .container ul li a .h6-title, .dropdown .dropbtn {
+    font-size: 1vw;
+    text-align: center; }
+
+  .bottom-half-header .container ul li .dropdown-content .h6-title {
+    text-align: start; }
+
+  .title-address .text-title-address, .number-phone h4 {
+    font-size: 0.6rem; }
+
+  .upper-half-header, .footer-section {
+    padding: 10px 0; }
+
+  .title-logo {
+    font-size: 1.2rem; }
+
+  .titles-logo {
+    padding-right: 2%;
+    max-width: 33%; }
+
+  .title-logo-bottom, .sales-number {
+    font-size: 0.7rem; }
+
+  .title-logo-bottom {
+    margin: 0 0.3rem; }
+
+  .title-address {
+    margin: 0; }
+
+  .social-icon {
+    justify-content: flex-start;
+    padding-left: 2%; }
+    .social-icon ul li {
+      margin-right: 5px; }
+
+  #feedback .feedback-item {
+    padding: 10px; }
+  #feedback .owl-carousel.owl-feedback.owl-loaded.owl-drag .owl-item {
+    width: 240px !important;
+    margin-right: 10px !important; }
+  #feedback .container {
+    max-width: 740px; }
+
+  #special-offers.container {
+    max-width: 740px; }
+    #special-offers.container .owl-carousel.owl-special-offers.owl-loaded.owl-drag .owl-item {
+      width: 334px !important; }
+
+  #special-offers.container .owl-carousel .owl-stage-outer {
+    height: 520px; }
+
+  #office .row.row-office {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #office .row.row-office .card {
+      max-width: 60%;
+      margin-bottom: 20px; } }
+@media (min-width: 900px) and (max-width: 1000px) {
+  .bottom-half-header .container ul li a .h6-title {
+    font-size: 1vw; } }
+@media (min-width: 1113px) and (max-width: 1200px) {
+  .title-address .text-title-address {
+    font-size: 0.8rem; }
+
+  .bottom-half-header .container ul li a .h6-title, .bottom-half-header .container ul li .fa-chevron-down {
+    font-size: 0.7rem; } }
+@media (max-width: 768px) and (orientation: landscape) {
+  #banner #search-box .col-md-3 select {
+    background-size: 2%; } }
+@media (min-width: 767px) and (max-width: 768px) {
+  #banner #search-box .container .col-md-3 select {
+    background-size: 6%; }
+
+  #special-offers.container {
+    padding: 0; }
+    #special-offers.container .title-special-offer {
+      padding: 5% 25px; } }
 
 /*# sourceMappingURL=media.css.map */

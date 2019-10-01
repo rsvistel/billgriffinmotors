@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.125" height="18.412" viewBox="0 0 13.125 18.412">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="13.125" height="18.412" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Fuel_Icon" data-name="Fuel Icon" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Path_87" data-name="Path 87" d="M6.563,0C4.649,6.87,0,7.814,0,12.329a6.335,6.335,0,0,0,6.558,6.083h0a6.332,6.332,0,0,0,6.563-6.071v-.012C13.125,7.814,8.48,6.87,6.563,0Z" fill="#6f7d89"/>
+  </g>
+</svg>
