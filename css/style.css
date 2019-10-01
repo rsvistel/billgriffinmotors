@@ -1180,6 +1180,26 @@ input:checked + .slider:before {
           .block-used-cars .filter-navigation-menu .filters-mobile #mobile-filter ul.opened {
             visibility: visible; }
 
+.show-more {
+  background: #F7F7F9;
+  color: #005EAA;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #CCCCCC;
+  text-transform: capitalize;
+  font-weight: 300; }
+
+.search-block-used-cars .car-tile .car-desc .col-6 h6 {
+  font-size: 13px; }
+
+.search-block-used-cars .car-tile .car-price {
+  font-size: 25px; }
+  .search-block-used-cars .car-tile .car-price .col-6:last-child {
+    line-height: 17px; }
+
 @media only screen and (max-width: 768px) {
   .block-used-cars {
     padding: 0; }
@@ -1223,7 +1243,6 @@ input:checked + .slider:before {
 
   #accordion.cards-serch-results {
     margin: 0;
-    padding-top: 15px;
     width: 66%;
     background: white;
     z-index: 1001;
@@ -1248,7 +1267,7 @@ input:checked + .slider:before {
       left: 0; } }
     #accordion.cards-serch-results .mobile-accordion-filter {
       display: flex;
-      margin-top: 10px; }
+      margin: 15px 0; }
     #accordion.cards-serch-results .card .card-header {
       background-position: center left 10px; }
       #accordion.cards-serch-results .card .card-header h5 .btn {
@@ -1272,11 +1291,29 @@ input:checked + .slider:before {
     .reset-block object {
       margin-right: 5px; }
 
-  .button-reset-block {
+  .button-done-block {
     background: #005EAA;
     color: white;
     font-family: "Source Sans Pro", sans-serif;
     border: 0;
-    padding: 6px 23px; } }
+    padding: 6px 27px; }
+
+  #accordion .accordion-tumbler object {
+    max-height: 14px; }
+
+  .search-block-used-cars .car-tile .car-desc .col-6 object {
+    max-height: 26px; }
+
+  .search-block-used-cars .car-tile .car-desc .col-6 h6 {
+    font-size: 15px; }
+
+  .search-block-used-cars .car-tile .car-price {
+    font-size: 32px; }
+
+  .search-block-used-cars .car-tile .car-price .col-6:last-child p {
+    font-size: 12px; }
+
+  .search-block-used-cars .car-tile .car-price .col-6:last-child {
+    line-height: 25px; } }
 
 /*# sourceMappingURL=style.css.map */

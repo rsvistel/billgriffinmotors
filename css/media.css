@@ -124,7 +124,7 @@
     padding-left: 0;
     padding-right: 0; } }
 @media (min-width: 767px) {
-  .hamburger-icon {
+  .hamburger-icon, .block-used-cars .filter-navigation-menu .filters-mobile, .show-more {
     display: none; } }
 @media (min-width: 450px) and (max-width: 767px) {
   .mobile-section-under-header embed {
@@ -134,7 +134,17 @@
     font-size: 1.5vw; }
 
   .title-logo-bottom {
-    margin: 0; } }
+    margin: 0; }
+
+  .block-search-results .container {
+    max-width: 750px; }
+    .block-search-results .container #accordion.cards-serch-results {
+      padding-left: 0; }
+      .block-search-results .container #accordion.cards-serch-results .card .card-header h5 .btn {
+        font-size: 0.8rem; }
+
+  .block-used-cars .filter-navigation-menu .filters .col-md-6 ul li {
+    font-size: 0.7rem; } }
 @media (min-width: 1000px) and (max-width: 1112px) {
   .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4, .dropdown .dropbtn {
     font-size: 0.75rem; } }
