@@ -87,6 +87,43 @@
   .dropdown-content {
     margin-top: 0; }
 
+  .contact-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .contact-section-header embed {
+      width: 13%; }
+
+  .mobile-section-under-header-search-results {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+  .accordion-tumbler, #mobile-filter {
+    display: block;
+    cursor: pointer; }
+
+  .accordion-tumbler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif; }
+    .accordion-tumbler object {
+      pointer-events: none; }
+
+  .mobile-accordion-filter {
+    margin-bottom: 10px;
+    padding: 0 10px; }
+    .mobile-accordion-filter p {
+      color: #005EAA;
+      font-family: "Open Sans", sans-serif; }
+
+  #accordion.cards-serch-results {
+    padding-left: 0;
+    padding-right: 0; } }
+
   #feedback {
     background: none;
     padding: 2% 0 0 0; }
@@ -131,8 +168,9 @@
       font-style: italic; }
     #feedback .fas.fa-star {
       font-size: 1.5rem; } }
+
 @media (min-width: 767px) {
-  .hamburger-icon {
+  .hamburger-icon, .block-used-cars .filter-navigation-menu .filters-mobile, .show-more {
     display: none; } }
 @media (min-width: 450px) and (max-width: 767px) {
   .mobile-section-under-header embed {
@@ -145,7 +183,17 @@
     font-size: 1.5vw; }
 
   .title-logo-bottom {
-    margin: 0; } }
+    margin: 0; }
+
+  .block-search-results .container {
+    max-width: 750px; }
+    .block-search-results .container #accordion.cards-serch-results {
+      padding-left: 0; }
+      .block-search-results .container #accordion.cards-serch-results .card .card-header h5 .btn {
+        font-size: 0.8rem; }
+
+  .block-used-cars .filter-navigation-menu .filters .col-md-6 ul li {
+    font-size: 0.7rem; } }
 @media (min-width: 1000px) and (max-width: 1112px) {
   .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4, .dropdown .dropbtn {
     font-size: 0.75rem; } }
@@ -504,6 +552,9 @@
 
   .bottom-half-header .container ul li a .h6-title, .bottom-half-header .container ul li .fa-chevron-down {
     font-size: 0.7rem; } }
+@media (max-width: 320px) {
+  #accordion.cards-serch-results .card .card-header h5 .btn, #accordion.cards-serch-results .card .card-header:after {
+    font-size: 0.75rem; } }
 @media (max-width: 768px) and (orientation: landscape) {
   #banner #search-box .col-md-3 select {
     background-size: 2%; } }
@@ -515,5 +566,6 @@
     padding: 0; }
     #special-offers.container .title-special-offer {
       padding: 5% 25px; } }
+
 
 /*# sourceMappingURL=media.css.map */
