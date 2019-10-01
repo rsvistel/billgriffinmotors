@@ -101,24 +101,37 @@
 
   .title-logo-bottom {
     margin: 0; } }
+@media (min-width: 1000px) and (max-width: 1112px) {
+  .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4, .dropdown .dropbtn {
+    font-size: 0.75rem; } }
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .upper-half-header {
+    padding: 10px 15px; }
 
+  .title-logo {
+    font-size: 1.3rem; }
+
+  .titles-logo {
+    padding-right: 5%;
+    width: 52%; }
+
+  .title-logo-bottom {
+    font-size: 1rem; }
+
+  .title-logo-bottom {
+    margin: 0; } }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .detailse-used-car__name, .detailse-used-car__data {
+  .detailse-used-car__name {
+    font-size: 14px; }
+
+  .detailse-used-car__data {
     font-size: 15px; } }
 @media (min-width: 1024px) and (max-width: 1024px) {
   .accordion-used-car__title {
     font-size: 22px; } }
 @media (max-width: 991px) {
-  .no-gutters-mobile {
-    margin-right: 0px;
-    margin-left: 0px; }
-    .no-gutters-mobile > .col,
-    .no-gutters-mobile > [class*="col-"] {
-      padding-right: 0px;
-      padding-left: 0px; }
-
   .carousel-mobile {
-    margin-bottom: 1rem; }
+    margin-bottom: 0.5rem; }
 
   .used-car__name-top, .used-car__price-top {
     font-size: 20px; }
@@ -161,7 +174,7 @@
   .mobile-counter__value {
     padding-top: 8px;
     padding-left: 6px;
-    font-size: 1rem; }
+    font-size: 26px; }
 
   .carousel-caption {
     bottom: 0;
@@ -170,7 +183,8 @@
   .mobile-counter__block {
     display: flex;
     background: transparent;
-    color: #fff; }
+    color: #fff;
+    padding-bottom: 0.6rem; }
 
   .description-used-car {
     border: 1px solid #CCCCCC;
@@ -283,7 +297,7 @@
   .mobile-counter__icon {
     display: block;
     padding: 1px;
-    width: 28px; }
+    width: 40px; }
 
   .mobile-counter__block-modal {
     padding-top: 2rem; }
@@ -292,17 +306,40 @@
     position: absolute;
     right: 0; } }
 @media (max-width: 768px) {
-  .detailse-used-car__block {
+  .detailse-used-car__block, .detailse-used-car__name-chnge {
     display: none; }
 
-  .detailse-used-car__none {
-    display: block; } }
-@media (min-width: 769px) {
-  .detailse-used-car__block {
+  .detailse-used-car__none, .detailse-used-car__name-first, .detailse-used-car__name-adult {
     display: block; }
 
-  .detailse-used-car__none {
+  .detailse-used-car__name-first {
+    font-weight: bold; }
+
+  .detailse-used-car__name-adult {
+    padding: 0 1rem; }
+
+  .no-gutters-mobile {
+    margin-right: 0px;
+    margin-left: 0px; }
+    .no-gutters-mobile > .col,
+    .no-gutters-mobile > [class*="col-"] {
+      padding-right: 0px;
+      padding-left: 0px; } }
+@media (min-width: 769px) {
+  .detailse-used-car__block, .detailse-used-car__name-chnge {
+    display: block; }
+
+  .detailse-used-car__none, .detailse-used-car__name-first, .detailse-used-car__name-adult {
     display: none; } }
+@media (max-width: 768px) {
+  .mobile-counter__block {
+    padding-bottom: 0; }
+
+  .mobile-counter__value {
+    font-size: 18px; }
+
+  .mobile-counter__icon {
+    width: 30px; } }
 @media (max-width: 800px) {
   .detailse-used-car__title-header, .description-used-car__title {
     padding: 0.8rem 0;
@@ -313,19 +350,13 @@
     font-size: 19px; }
 
   .detailse-used-car__data {
-    font-size: 19px; }
-
-  .used-car-no-gutters__mobile {
-    padding: 0 0; } }
+    font-size: 19px; } }
 @media (max-width: 400px) {
   .used-car__name-top, .used-car__price-top {
     font-size: 18px; }
 
   .used-car__name-bottom, .used-car__price-bottom {
-    font-size: 16px; }
-
-  .used-car-no-gutters__mobile {
-    padding: 0 0; } }
+    font-size: 16px; } }
 @media (max-width: 320px) {
   .used-car__name-top, .used-car__price-top {
     font-size: 15px; }
@@ -343,30 +374,13 @@
     font-size: 19px; }
 
   .used-car-no-gutters__mobile {
-    padding: 0 0; } }
-
-@media (min-width: 1000px) and (max-width: 1112px) {
-  .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4, .dropdown .dropbtn {
-    font-size: 0.75rem; } }
-@media (min-width: 1000px) and (max-width: 1250px) {
-  .upper-half-header {
-    padding: 10px 15px; }
-
-  .title-logo {
-    font-size: 1.3rem; }
-
-  .titles-logo {
-    padding-right: 5%;
-    width: 52%; }
-
-  .title-logo-bottom {
-    font-size: 1rem; }
-
-  .title-logo-bottom {
-    margin: 0 1rem; }
+    padding: 0 0; }
 
   .title-address, .title-contact {
-    max-width: 32%; } }
+    max-width: 32%; }
+
+  .mobile-counter__block {
+    padding-bottom: 0; } }
 @media (min-width: 768px) and (max-width: 1000px) {
   .container {
     padding: 0; }
