@@ -92,6 +92,9 @@
 @media (min-width: 450px) and (max-width: 767px) {
   .mobile-section-under-header embed {
     width: 6%; } }
+@media (min-width: 414px) and (max-width: 768px) {
+  #banner #search-box .container .col-md-3 select {
+    background-size: 3%; } }
 @media (min-width: 768px) and (max-width: 1000px) {
   .title-logo {
     font-size: 1.5vw; }
@@ -157,7 +160,31 @@
     justify-content: flex-start;
     padding-left: 2%; }
     .social-icon ul li {
-      margin-right: 5px; } }
+      margin-right: 5px; }
+
+  #feedback .feedback-item {
+    padding: 10px; }
+  #feedback .owl-carousel.owl-feedback.owl-loaded.owl-drag .owl-item {
+    width: 240px !important;
+    margin-right: 10px !important; }
+  #feedback .container {
+    max-width: 740px; }
+
+  #special-offers.container {
+    max-width: 740px; }
+    #special-offers.container .owl-carousel.owl-special-offers.owl-loaded.owl-drag .owl-item {
+      width: 334px !important; }
+
+  #special-offers.container .owl-carousel .owl-stage-outer {
+    height: 520px; }
+
+  #office .row.row-office {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #office .row.row-office .card {
+      max-width: 60%;
+      margin-bottom: 20px; } }
 @media (min-width: 900px) and (max-width: 1000px) {
   .bottom-half-header .container ul li a .h6-title {
     font-size: 1vw; } }
@@ -167,5 +194,16 @@
 
   .bottom-half-header .container ul li a .h6-title, .bottom-half-header .container ul li .fa-chevron-down {
     font-size: 0.7rem; } }
+@media (max-width: 768px) and (orientation: landscape) {
+  #banner #search-box .col-md-3 select {
+    background-size: 2%; } }
+@media (min-width: 767px) and (max-width: 768px) {
+  #banner #search-box .container .col-md-3 select {
+    background-size: 6%; }
+
+  #special-offers.container {
+    padding: 0; }
+    #special-offers.container .title-special-offer {
+      padding: 5% 25px; } }
 
 /*# sourceMappingURL=media.css.map */
