@@ -122,7 +122,7 @@
 
   #accordion.cards-serch-results {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
 
   #feedback {
     background: none;
@@ -168,7 +168,6 @@
       font-style: italic; }
     #feedback .fas.fa-star {
       font-size: 1.5rem; } }
-
 @media (min-width: 767px) {
   .hamburger-icon, .block-used-cars .filter-navigation-menu .filters-mobile, .show-more {
     display: none; } }
@@ -566,6 +565,5 @@
     padding: 0; }
     #special-offers.container .title-special-offer {
       padding: 5% 25px; } }
-
 
 /*# sourceMappingURL=media.css.map */
