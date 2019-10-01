@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search result</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,456 +14,1274 @@
     <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
 <body>
-
-<section class="header topnav" id="myTopnav">
+<div class="block-search-results">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 upper-half-header">
-
-                <div class="titles-logo">
-                    <h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>
-                    <h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>
+            <button class="accordion-tumbler">Open/Close</button>
+            <div id="accordion" class="col-8 col-md-3 cards-serch-results">
+                <div class="mobile-accordion-filter">
+                    <p>Refine</p>
+                    <div class="accordion-tumbler"><object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object></div>
                 </div>
+                <div class="accordion-filters">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Search Make & Model
+                                </button>
+                            </h5>
+                        </div>
 
-                <div class="mobile-open">
-                    <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
-                    <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                            <div class="card-body">
+                                <div>
+                                    <label for="make-select">Select Make</label>
+                                    <select id="make-select">
+                                        <option value="">Select a Make</option>
+                                        <option value="">Make 1</option>
+                                        <option value="">Make 2</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="make-model">Select Model</label>
+                                    <select id="make-model">
+                                        <option value="">Select a Model</option>
+                                        <option value="">Model 1</option>
+                                        <option value="">Model 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Year
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                            <div class="card-body">
+                                <div>
+                                    <label for="year-from-select">From</label>
+                                    <select id="year-from-select">
+                                        <option value="">Select a Year</option>
+                                        <option value="">Year 1</option>
+                                        <option value="">Year 2</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="year-to-model">To</label>
+                                    <select id="year-to-model">
+                                        <option value="">Select a Year</option>
+                                        <option value="">Year 1</option>
+                                        <option value="">Year 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Price
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                            <div class="card-body">
+                                <div class="switcher">
+                                    Total Price
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Monthly Price
+                                </div>
+                                <div class="total-price">
+                                    <div>
+                                        <label for="price-from-select">From</label>
+                                        <select id="price-from-select">
+                                            <option value="">(any)</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Option 2</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="price-to-model">To</label>
+                                        <select id="price-to-model">
+                                            <option value="">(any)</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Option 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="monthly-price">
+                                    <label for="deposit-amount-select">Deposit/Trade-In amount</label>
+                                    <select id="deposit-amount-select">
+                                        <option value="">(any)</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                    </select>
+                                    <h6>Monthly Price</h6>
+                                    <div>
+                                        <label for="price-from-monthly-select">From</label>
+                                        <select id="price-from-monthly-select">
+                                            <option value="">(any)</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Option 2</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="price-to-monthly-select">To</label>
+                                        <select id="price-to-monthly-select">
+                                            <option value="">(any)</option>
+                                            <option value="">Option 1</option>
+                                            <option value="">Option 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading-Mileage">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-Mileage" aria-expanded="true" aria-controls="collapse-Mileage">
+                                    Mileage
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-Mileage" class="collapse" aria-labelledby="heading-Mileage">
+                            <div class="card-body">
+                                <label for="mileage-select">Max Mileage</label>
+                                <select id="mileage-select">
+                                    <option value="">Select Mileage</option>
+                                    <option value="">Make 1</option>
+                                    <option value="">Make 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-body-type">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-body-type" aria-expanded="true" aria-controls="collapse-body-type">
+                                    Body Type
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse-body-type" class="collapse" aria-labelledby="heading-body-type">
+                            <div class="card-body">
+                                <div id="body-type-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Body Type<br>
+                                    <input type="checkbox" value=""> 7 Seater<br>
+                                    <input type="checkbox" value=""> 8+ Seater<br>
+                                    <input type="checkbox" value=""> Convertible<br>
+                                    <input type="checkbox" value=""> Coupe<br>
+                                    <input type="checkbox" value=""> Estate<br>
+                                    <input type="checkbox" value=""> 7 Seater<br>
+                                    <input type="checkbox" value=""> 8+ Seater<br>
+                                    <input type="checkbox" value=""> Convertible<br>
+                                    <input type="checkbox" value=""> Coupe<br>
+                                    <input type="checkbox" value=""> 7 Seater<br>
+                                    <input type="checkbox" value=""> 8+ Seater<br>
+                                    <input type="checkbox" value=""> Convertible<br>
+                                    <input type="checkbox" value=""> Coupe<br>
+                                </div>
+                                <button>Show all Body Types</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-fuel-type">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-fuel-type" aria-expanded="true" aria-controls="collapse-fuel-type">
+                                    Fuel Type
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse-fuel-type" class="collapse" aria-labelledby="heading-fuel-type">
+                            <div class="card-body">
+                                <div id="fuel-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Fuel Type<br>
+                                    <input type="checkbox" value=""> Petrol<br>
+                                    <input type="checkbox" value=""> Diesel<br>
+                                    <input type="checkbox" value=""> Hybrid<br>
+                                    <input type="checkbox" value=""> Electric<br>
+                                    <input type="checkbox" value=""> LPG<br>
+                                    <input type="checkbox" value=""> Petrol<br>
+                                    <input type="checkbox" value=""> Diesel<br>
+                                    <input type="checkbox" value=""> Hybrid<br>
+                                    <input type="checkbox" value=""> Electric<br>
+                                    <input type="checkbox" value=""> LPG<br>
+                                </div>
+                                <button>Show all Fuel Types</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading-engine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-engine" aria-expanded="true" aria-controls="collapse-engine">
+                                    Engine Size
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-engine" class="collapse" aria-labelledby="heading-engine">
+                            <div class="card-body">
+                                <div>
+                                    <label for="capacity-from-select">Capacity From</label>
+                                    <select id="capacity-from-select">
+                                        <option value="">1.2 Litres</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="capacity-to-model">To</label>
+                                    <select id="capacity-to-model">
+                                        <option value="">4+ Litres</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading-Fuel">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-Fuel" aria-expanded="true" aria-controls="collapse-Fuel">
+                                    Fuel Consumption
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse-Fuel" class="collapse" aria-labelledby="heading-Fuel">
+                            <div class="card-body">
+                                <div>
+                                    <label for="mpg-from-select">MPG From</label>
+                                    <select id="mpg-from-select">
+                                        <option value="">30 mpg</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="mpg-to-model">To</label>
+                                    <select id="mpg-to-model">
+                                        <option value="">70+ Litres</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-Gearbox">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-Gearbox" aria-expanded="true" aria-controls="collapse-Gearbox">
+                                    Gearbox
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse-Gearbox" class="collapse" aria-labelledby="heading-Gearbox">
+                            <div class="card-body">
+                                <div id="gear-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Gearbox Type<br>
+                                    <input type="checkbox" value=""> Manual<br>
+                                    <input type="checkbox" value=""> Automatic<br>
+                                    <input type="checkbox" value=""> CVT<br>
+                                    <input type="checkbox" value=""> Semi-Auto<br>
+                                    <input type="checkbox" value=""> Other<br>
+                                    <input type="checkbox" value=""> Manual<br>
+                                    <input type="checkbox" value=""> Automatic<br>
+                                    <input type="checkbox" value=""> CVT<br>
+                                    <input type="checkbox" value=""> Semi-Auto<br>
+                                    <input type="checkbox" value=""> Other<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading-colour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-colour" aria-expanded="true" aria-controls="collapse-colour">
+                                    Colour
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse-colour" class="collapse" aria-labelledby="heading-colour">
+                            <div class="card-body">
+                                <div id="colour-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Colour<br>
+                                    <input type="checkbox" value=""> Black<br>
+                                    <input type="checkbox" value=""> Blue<br>
+                                    <input type="checkbox" value=""> Brown<br>
+                                    <input type="checkbox" value=""> Green<br>
+                                    <input type="checkbox" value=""> Orange<br>
+                                    <input type="checkbox" value=""> Black<br>
+                                    <input type="checkbox" value=""> Blue<br>
+                                    <input type="checkbox" value=""> Brown<br>
+                                    <input type="checkbox" value=""> Green<br>
+                                    <input type="checkbox" value=""> Orange<br>
+                                </div>
+                                <button>Show all Colours</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading-doors">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-doors" aria-expanded="true" aria-controls="collapse-doors">
+                                    Doors
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse-doors" class="collapse" aria-labelledby="heading-doors">
+                            <div class="card-body">
+                                <div id="doors-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Doors<br>
+                                    <input type="checkbox" value=""> 2<br>
+                                    <input type="checkbox" value=""> 3<br>
+                                    <input type="checkbox" value=""> 4<br>
+                                    <input type="checkbox" value=""> 5<br>
+                                    <input type="checkbox" value=""> 6<br>
+                                    <input type="checkbox" value=""> 7<br>
+                                    <input type="checkbox" value=""> 8<br>
+                                    <input type="checkbox" value=""> 9<br>
+                                    <input type="checkbox" value=""> 10<br>
+                                </div>
+                                <button>Show all Doors</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeats">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeats" aria-expanded="true" aria-controls="collapseSeats">
+                                    Seats
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeats" class="collapse" aria-labelledby="headingSeats">
+                            <div class="card-body">
+                                <div id="seats-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Doors<br>
+                                    <input type="checkbox" value=""> 2<br>
+                                    <input type="checkbox" value=""> 3<br>
+                                    <input type="checkbox" value=""> 4<br>
+                                    <input type="checkbox" value=""> 5<br>
+                                    <input type="checkbox" value=""> 6<br>
+                                    <input type="checkbox" value=""> 7<br>
+                                    <input type="checkbox" value=""> 8<br>
+                                    <input type="checkbox" value=""> 9<br>
+                                    <input type="checkbox" value=""> 10<br>
+                                </div>
+                                <button>Show all Seats</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSafety">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSafety" aria-expanded="true" aria-controls="collapseSafety">
+                                    Safety Rating
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety">
+                            <div class="card-body">
+                                <div id="safety-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Safety Rating<br>
+                                    <input type="checkbox" value=""> 1 Star or More<br>
+                                    <input type="checkbox" value=""> 2 Stars or More<br>
+                                    <input type="checkbox" value=""> 3 Stars or More<br>
+                                    <input type="checkbox" value=""> 4 Stars or More<br>
+                                    <input type="checkbox" value=""> 5 Stars<br>
+                                    <input type="checkbox" value=""> 1 Star or More<br>
+                                    <input type="checkbox" value=""> 2 Stars or More<br>
+                                    <input type="checkbox" value=""> 3 Stars or More<br>
+                                    <input type="checkbox" value=""> 4 Stars or More<br>
+                                    <input type="checkbox" value=""> 5 Stars<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingAcceleration">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAcceleration" aria-expanded="true" aria-controls="collapseAcceleration">
+                                    Acceleration
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseAcceleration" class="collapse" aria-labelledby="headingAcceleration">
+                            <div class="card-body">
+                                <div id="acceleration-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Acceleration<br>
+                                    <input type="checkbox" value=""> 0-5s (0-60mph)<br>
+                                    <input type="checkbox" value=""> 5-8s (0-60mph)<br>
+                                    <input type="checkbox" value=""> 8-12s (0-60mph)<br>
+                                    <input type="checkbox" value=""> 12+s (0-60mph)<br>
+                                    <input type="checkbox" value=""> 16+s (0-60mph)<br>
+                                    <input type="checkbox" value=""> 20+s (0-60mph)<br>
+                                    <input type="checkbox" value=""> 25+s (0-60mph)<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEngine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEngine" aria-expanded="true" aria-controls="collapseEngine">
+                                    Engine Power
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEngine" class="collapse" aria-labelledby="headingEngine">
+                            <div class="card-body">
+                                <div id="engine-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any BHP<br>
+                                    <input type="checkbox" value=""> 0-70 BHP<br>
+                                    <input type="checkbox" value=""> 71-100 BHP<br>
+                                    <input type="checkbox" value=""> 101-150 BHP<br>
+                                    <input type="checkbox" value=""> 151-200 BHP<br>
+                                    <input type="checkbox" value=""> 201-250 BHP<br>
+                                    <input type="checkbox" value=""> 251-300 BHP<br>
+                                    <input type="checkbox" value=""> 301+ BHP<br>
+                                </div>
+                                <button>Show all Powers</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingEnvironmental">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvironmental" aria-expanded="true" aria-controls="collapseEnvironmental">
+                                    Environmental
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEnvironmental" class="collapse" aria-labelledby="headingEnvironmental">
+                            <div class="card-body">
+                                <div id="enviroment-checkboxes" class="checkbox-container">
+                                    <input type="checkbox" value=""> Any Rating<br>
+                                    <input type="checkbox" value=""> 1 Star or More<br>
+                                    <input type="checkbox" value=""> 2 Stars or More<br>
+                                    <input type="checkbox" value=""> 3 Stars or More<br>
+                                    <input type="checkbox" value=""> 4 Stars or More<br>
+                                    <input type="checkbox" value=""> 5 Stars<br>
+                                    <input type="checkbox" value=""> 1 Star or More<br>
+                                    <input type="checkbox" value=""> 2 Stars or More<br>
+                                    <input type="checkbox" value=""> 3 Stars or More<br>
+                                    <input type="checkbox" value=""> 4 Stars or More<br>
+                                    <input type="checkbox" value=""> 5 Stars<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="title-address">
-                    <embed src="img/header/location.svg">
-                    <h4 class="text-title-address">frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw</h4>
+                <div class="mobile-accordion-filter">
+                    <p>Reset</p>
+                    <button>Done</button>
                 </div>
+            </div>
 
-                <div class="title-contact">
-                    <embed src="img/header/phone.svg">
-                    <div class="number-phone">
-                        <h4 class="sales-text">sales:</h4>
-                        <h6 class="sales-number">01-4569562</h6>
+            <div class="col-md-9 col-12 block-used-cars">
+                <div class="filter-navigation-menu">
+                    <div class="row pagination">
+                        <div class="col-md-6">
+                            <h6 class="title-block-used-cars">Used Cars</h6>
+                        </div>
+                        <div class="col-md-6">
+                            <object type="image/svg+xml" data="img/search-results/prev.svg"></object>
+                            <ul>
+                                <li>Prev</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>Next</li>
+                            </ul>
+                            <object type="image/svg+xml" data="img/search-results/next.svg"></object>
+                        </div>
+                    </div>
+                    <div class="row filters">
+                        <div class="col-md-6">
+                            Displaying 1 - 15 of 60 Used Cars
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Price <i class="fas fa-caret-down"></i></li>
+                                <li>Year <i class="fas fa-caret-down"></i></li>
+                                <li>km <i class="fas fa-caret-down"></i></li>
+                                <li>Engine <i class="fas fa-caret-down"></i></li>
+                                <li>Colour <i class="fas fa-caret-down"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row filters-mobile">
+                        <div>
+                            20 - 40 of 217 shown
+                        </div>
+                        <div id="mobile-filter">
+                            <span>Sort by</span>
+                            <ul>
+                                <li>Make</li>
+                                <li>Year</li>
+                                <li>Price</li>
+                                <li>Finance</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="social-icon">
-                    <ul>
+                <div class="search-results-container">
+                    <div class="row">
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-tile col-md-4 col-12">
+                            <div class="car-title">
+                                <div class="col-md-12 titles-car-card">
+                                    <h2>2012 FORD FIESTA 1</h2>
+                                    <p>1.4 ZETEC 3DR</p>
+                                </div>
+                            </div>
+                            <div class="car-image">
+                                <img src="img/home/IMG_5627%20Frame.png">
+                                <div class="car-image-counter">
+                                    <object type="image/svg+xml" data="img/home/Path%2064.svg"></object> 16
+                                </div>
+                                <div class="car-like">
+                                    <object type="image/svg+xml" data="img/home/Group%20373.svg"></object>
+                                </div>
+                            </div>
+                            <div class="car-price">
+                                <div class="row">
+                                    <div class="col-6 сar-price-full">€6,900</div>
+                                    <div class="col-6 car-price-parts">
+                                        <p>Mounthly payment from</p>
+                                        €160
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-desc">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/engine.svg"></object>
+                                        <h6>Petrol</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/hatchback.svg"></object>
+                                        <h6>hatchback</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/transmission-icon.svg"></object>
+                                        <h6>manual</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <object type="image/svg+xml" data="img/home/4-icon/fuel-icon.svg"></object>
+                                        <h6>45,827 mls</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <a href="#">
-                            <li>
-                                <embed src="img/header/social-icons/facebook.svg">
-                            </li>
-                        </a>
-
-                        <a href="#">
-                            <li>
-                                <embed src="img/header/social-icons/instagram.svg">
-                            </li>
-                        </a>
-
-                        <a href="#">
-                            <li>
-                                <embed src="img/header/social-icons/mail.svg">
-                            </li>
-                        </a>
-
-                    </ul>
+                <div class="filter-navigation-menu">
+                    <div class="row pagination pagination-bottom">
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-6">
+                            <object type="image/svg+xml" data="img/search-results/prev.svg"></object>
+                            <ul>
+                                <li>Prev</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li class="more-pages">...</li>
+                                <li>9</li>
+                                <li>Next</li>
+                            </ul>
+                            <object type="image/svg+xml" data="img/search-results/next.svg"></object>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <div class="col-md-12 bottom-half-header">
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="#">
-                        <h6>home</h6>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <h6>about</h6>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <h6>used cars</h6>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <h6>apply for finance</h6>
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="#">
-                        <h6>cash for cars</h6>
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="#">
-                        <h6>our reviews</h6>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <h6>my shortlist</h6>
-                    </a>
-                </li>
-
-                <li class="active">
-                    <a href="#">
-                        <h6>FAQ</h6>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <h6>contact us</h6>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="mobile-section-under-header col-xs-12 col-md-12">
-        <embed src="img/header/white-phone.svg">
-        <div class="number-phone">
-            <h4 class="contact-text">Contact Us:</h4>
-            <h6 class="sales-number">01-4569562</h6>
-        </div>
-    </div>
-</section>
-
-   <div class="block-search-results">
-       <div class="container">
-                 <div id="accordion" class="cards-serch-results">
-                     <div class="card">
-                         <div class="card-header" id="headingOne">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                     Search Make & Model
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-
-                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                             <div class="card-body">
-                                 а
-                             </div>
-                         </div>
-                     </div>
-                     <div class="card">
-                         <div class="card-header" id="headingTwo">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                     Year
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-                     <div class="card">
-                         <div class="card-header" id="headingThree">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                     Price
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-
-                     <div class="card">
-                         <div class="card-header" id="heading-Mileage">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-Mileage" aria-expanded="true" aria-controls="collapse-Mileage">
-                                     Mileage
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-
-                         <div id="collapse-Mileage" class="collapse" aria-labelledby="heading-Mileage" data-parent="#accordion">
-                             <div class="card-body">
-                                 а
-                             </div>
-                         </div>
-                     </div>
-                     <div class="card">
-                         <div class="card-header" id="heading-body-type">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-body-type" aria-expanded="false" aria-controls="collapse-body-type">
-                                     Body Type
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapse-body-type" class="collapse" aria-labelledby="heading-body-type" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-                     <div class="card">
-                         <div class="card-header" id="heading-fuel-type">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-fuel-type" aria-expanded="false" aria-controls="collapse-fuel-type">
-                                     Fuel Type
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapse-fuel-type" class="collapse" aria-labelledby="heading-fuel-type" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-
-                     <div class="card">
-                         <div class="card-header" id="heading-engine">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-engine" aria-expanded="true" aria-controls="collapse-engine">
-                                     Engine Size
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-
-                         <div id="collapse-engine" class="collapse" aria-labelledby="heading-engine" data-parent="#accordion">
-                             <div class="card-body">
-                                 а
-                             </div>
-                         </div>
-                     </div>
-
-                     <div class="card">
-                         <div class="card-header" id="heading-Fuel">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-Fuel" aria-expanded="false" aria-controls="collapse-Fuel">
-                                     Fuel Consumption
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapse-Fuel" class="collapse" aria-labelledby="heading-Fuel" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-                     <div class="card">
-                         <div class="card-header" id="heading-Gearbox">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-Gearbox" aria-expanded="false" aria-controls="collapse-Gearbox">
-                                     Gearbox
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapse-Gearbox" class="collapse" aria-labelledby="heading-Gearbox" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-
-                     <div class="card">
-                         <div class="card-header" id="heading-colour">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-colour" aria-expanded="true" aria-controls="collapse-colour">
-                                     Colour
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-
-                         <div id="collapse-colour" class="collapse" aria-labelledby="heading-colour" data-parent="#accordion">
-                             <div class="card-body">
-                                 а
-                             </div>
-                         </div>
-                     </div>
-
-                     <div class="card">
-                         <div class="card-header" id="heading-doors">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-doors" aria-expanded="false" aria-controls="collapse-doors">
-                                     Doors
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapse-doors" class="collapse" aria-labelledby="heading-doors" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-                     <div class="card">
-                         <div class="card-header" id="headingSeats">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeats" aria-expanded="false" aria-controls="collapseSeats">
-                                     Seats
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapseSeats" class="collapse" aria-labelledby="headingSeats" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-
-                     <div class="card">
-                         <div class="card-header" id="headingSafety">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSafety" aria-expanded="true" aria-controls="collapseSafety">
-                                     Safety Rating
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-
-                         <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety" data-parent="#accordion">
-                             <div class="card-body">
-                                 а
-                             </div>
-                         </div>
-                     </div>
-
-                     <div class="card">
-                         <div class="card-header" id="headingAcceleration">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAcceleration" aria-expanded="false" aria-controls="collapseAcceleration">
-                                     Acceleration
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapseAcceleration" class="collapse" aria-labelledby="headingAcceleration" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-                     <div class="card">
-                         <div class="card-header" id="headingEngine">
-                             <h5 class="mb-0">
-                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEngine" aria-expanded="false" aria-controls="collapseEngine">
-                                     Engine Power
-                                 </button>
-                             </h5>
-                             <embed src="img/search-results/arrow-down-blue.svg">
-                         </div>
-                         <div id="collapseEngine" class="collapse" aria-labelledby="headingEngine" data-parent="#accordion">
-                             <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                             </div>
-                         </div>
-                     </div>
-
-                         <div class="card">
-                             <div class="card-header" id="headingEnvironmental">
-                                 <h5 class="mb-0">
-                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvironmental" aria-expanded="false" aria-controls="collapseEnvironmental">
-                                         Environmental
-                                     </button>
-                                 </h5>
-                                 <embed src="img/search-results/arrow-down-blue.svg">
-                             </div>
-                             <div id="collapseEnvironmental" class="collapse" aria-labelledby="headingEnvironmental" data-parent="#accordion">
-                                 <div class="card-body">
-                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                 </div>
-                             </div>
-                         </div>
-
-                 </div>
-
-                <div class="block-used-cars">
-                    <h3 class="title-block-used-cars">used cars</h3>
-                </div>
-       </div>
-   </div>
-
-
-
-
-
-
-<footer class="footer-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-lg-5  order-1 order-sm-1  order-lg-1 footer-section__padding-top footer-section__row">
-                <h2 class="text-sm-left text-uppercase font-weight-bold"><a class="footer-section__title" href="#">Bill Griffin
-                    <span class="footer-section__title-accent">Motors</span></a>
-                </h2>
-                <ul class="footer-section__soc-items">
-                    <li class="footer-section__soc-item">
-                        <a href="#">
-                            <img class="footer-section__soc-img" src="./img/footer/facebook.svg" alt="Bill Griffin Motors">
-                        </a>
-                    </li>
-                    <li class="footer-section__soc-item">
-                        <a href="#">
-                            <img class="footer-section__soc-img" src="./img/footer/twitter.svg" alt="Bill Griffin Motors">
-                        </a>
-                    </li>
-                    <li class="footer-section__soc-item">
-                        <a href="#">
-                            <img class="footer-section__soc-img" src="./img/footer/youtube.svg" alt="Bill Griffin Motors">
-                        </a>
-                    </li>
-                    <li class="footer-section__soc-item">
-                        <a href="#">
-                            <img class="footer-section__soc-img" src="./img/footer/instagram.svg" alt="Bill Griffin Motors">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-lg-3 order-3 order-sm-3 order-lg-2 footer-section__row justify-content-start">
-                <h6 class="footer-section__links-title">Links</h6>
-                <ul class="footer-section__links-items">
-                    <li class="footer-section__links-item">
-                        <a class="footer-section__link" href="#">Used Cars</a>
-                    </li>
-                    <li class="footer-section__links-item">
-                        <a class="footer-section__link" href="#">Apply for Finance</a>
-                    </li>
-                    <li class="footer-section__links-item">
-                        <a class="footer-section__link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-9 col-lg-4  order-2 order-xs-2 order-sm-2 order-lg-3 footer-section__row">
-                <p class="footer-section__description">
-                    We pride ourselves on being family run for over thirty years and being one of Ireland's largest used car dealers with over 20,000 cars sold in that time, all from our three floor Naas road showroom. Each of our 300+ cars are in stock today and come fully inspected, history checked and warrantied.
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
+    <div class="close-filter-trigger"></div>
+</div>
 </body>
 <script src="./js/script.js"></script>
 </html>
