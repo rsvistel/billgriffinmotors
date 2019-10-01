@@ -343,13 +343,13 @@ body {
   background: #EEEEEC; }
 
 .form-icon {
-  background-image: url("/img/used-car-page/form-icon.svg"); }
+  background-image: url("../img/used-car-page/form-icon.svg"); }
 
 .finance-icon {
-  background-image: url("/img/used-car-page/finance-icon.svg"); }
+  background-image: url("../img/used-car-page/finance-icon.svg"); }
 
 .reserve-icon {
-  background-image: url("/img/used-car-page/reserve.svg"); }
+  background-image: url("../img/used-car-page/reserve.svg"); }
 
 .form-icon, .reserve-icon, .finance-icon {
   background-repeat: no-repeat;
@@ -366,8 +366,12 @@ body {
 .description-used-car__sub-title {
   padding-bottom: 2rem; }
 
+.detailse-used-car__star, .detailse-used-car__star-green {
+  white-space: nowrap; }
+
 .detailse-used-car__star .fa-star {
-  color: #FAE42A; }
+  color: #FAE42A;
+  display: inline; }
 
 .detailse-used-car__star-green .fa-star {
   color: #149E26; }
@@ -465,7 +469,9 @@ button:focus {
   text-align: right;
   max-width: 300px;
   left: 3%;
-  font-size: 26px; }
+  font-size: 26px;
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .accordion-used-car__h5 {
   display: flex; }
@@ -473,7 +479,7 @@ button:focus {
 .used-car__modal-footer {
   padding: 0; }
 
-.carousel-control-next, .carousel-control-prev {
+.arousel-control-next-mobile, .carousel-control-prev-mobile {
   width: 11%; }
 
 @media (min-width: 992px) {
@@ -521,11 +527,12 @@ button:focus {
 
   .used-car__modal-carousel-caption {
     position: absolute;
-    top: 101%; }
+    top: 100%;
+    left: 2rem; }
 
   .used-car__modal-close {
     outline: 0;
-    right: 15px;
+    right: 25px;
     padding-top: 1rem; }
 
   .used-car__modal-content {
@@ -533,11 +540,11 @@ button:focus {
 
   .used-car__modal-footer {
     justify-content: space-around;
-    padding-bottom: 3rem; }
+    padding-bottom: 6rem; }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     opacity: 1; }
 
   .used-car__modal__control-prev {
@@ -565,27 +572,22 @@ button:focus {
     padding-right: 3px;
     padding-left: 3px; }
 
-  .mobile-counter__icon-modal {
-    display: none; }
-
-  .used-car__carousel-caption {
-    bottom: -17px; }
+  .counter__icon-modal-lg {
+    width: 60px;
+    margin-right: 1rem; }
 
   .counter__value {
-    font-size: 44px;
+    font-size: 33px;
     vertical-align: bottom; }
 
   .counter__block {
-    padding-bottom: 1rem; }
+    display: flex;
+    align-items: flex-start;
+    padding-top: 1.2rem; }
 
-  .used-car__modal-close-col-lg {
-    display: block; }
-
-  .used-car__modal-close-col-sm {
-    display: none; }
-
-  .counter__icon {
-    width: 70px; } }
+  .carousel-item-modal-lg {
+    width: 70% !important;
+    margin: auto; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;

@@ -1,19 +1,9 @@
-
-
     $(document).ready(function () {
         $('.mobile-open').click(function () {
             $(this).find('object').toggle();
             $('.bottom-half-header').toggle();
         });
     });
-
-    // $(function() {
-    //     $(".modal").mousewheel(function(event, delta) {
-    //         this.scrollLeft -= (delta * 30);
-    //         event.preventDefault();
-    //     });
-    // });
-
 
 $(document).ready(function(){
    $(".collapse.show").each(function(){

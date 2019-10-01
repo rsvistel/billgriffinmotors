@@ -72,6 +72,14 @@
   .accordion-used-car__title {
     font-size: 22px; } }
 @media (max-width: 991px) {
+  .no-gutters-mobile {
+    margin-right: 0px;
+    margin-left: 0px; }
+    .no-gutters-mobile > .col,
+    .no-gutters-mobile > [class*="col-"] {
+      padding-right: 0px;
+      padding-left: 0px; }
+
   .carousel-mobile {
     margin-bottom: 1rem; }
 
@@ -84,22 +92,30 @@
   .detailse-used-car__name, .detailse-used-car__data, .description-used-car {
     font-size: 20px; }
 
-  .carousel-control-next, .carousel-control-prev {
-    bottom: -20px;
-    opacity: 1; }
-
-  .carousel-control-prev-icon {
+  .carousel-control-prev-mobile {
     background-image: url("../img/used-car-page/gallery/arrow-prev.svg"); }
+
+  .carousel-control-next-mobile {
+    background-image: url("../img/used-car-page/gallery/arrow-next.svg"); }
+
+  .carousel-control-next-mobile, .carousel-control-prev-mobile, .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px; }
+
+  .carousel-control-next, .carousel-control-prev {
+    opacity: 1 !important; }
+
+  .carousel-control-next {
+    right: -2%; }
+
+  .carousel-control-prev {
+    left: -2%; }
 
   .carousel-control-next-icon {
     background-image: url("../img/used-car-page/gallery/arrow-next.svg"); }
 
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 40px;
-    height: 40px; }
-
-  .counter__icon {
-    display: none; }
+  .carousel-control-prev-icon {
+    background-image: url("../img/used-car-page/gallery/arrow-prev.svg"); }
 
   .used-car__modal-carousel-caption {
     bottom: -30px !important;
@@ -108,10 +124,10 @@
   .mobile-counter__value {
     padding-top: 8px;
     padding-left: 6px;
-    font-size: 20px; }
+    font-size: 1rem; }
 
   .carousel-caption {
-    bottom: -5px;
+    bottom: 0;
     left: 3%; }
 
   .mobile-counter__block {
@@ -119,7 +135,17 @@
     background: transparent;
     color: #fff; }
 
-  .description-used-car, .detailse-used-car {
+  .description-used-car {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    padding: 0.5rem; }
+
+  .detailse-used-car {
     border: 1px solid #CCCCCC;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -189,12 +215,11 @@
 
   .used-car__modal-close {
     opacity: 1;
-    padding-bottom: 3.7rem;
     padding-top: 1rem;
     padding-right: 0.5rem; }
 
   .used-car__modal-title {
-    margin-top: 4rem; }
+    margin-top: 6rem; }
 
   .used-car__modal-price {
     padding-right: 0; }
@@ -202,18 +227,11 @@
   .used-car__modal-dialog {
     margin: auto; }
 
-  .used-car__name-top .used-car__modal-name-top {
-    font-size: 1rem; }
-
-  .used-car__modal-name {
-    padding: 0;
-    font-size: 1rem; }
-
   .used-car__modal-name-top, .used-car__modal-price-top {
-    font-size: 25px; }
+    font-size: 18px; }
 
   .used-car__modal-name-bottom, .used-car__modal-price-bottom {
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff; }
 
   .used-car__modal-modal-body {
@@ -227,16 +245,15 @@
 
   .mobile-counter__icon {
     display: block;
-    padding: 1px; }
+    padding: 1px;
+    width: 28px; }
 
   .mobile-counter__block-modal {
     padding-top: 2rem; }
 
   .used-car__modal-close-col-lg {
-    display: none; }
-
-  .used-car__modal-close-col-sm {
-    display: block; } }
+    position: absolute;
+    right: 0; } }
 @media (max-width: 768px) {
   .detailse-used-car__block {
     display: none; }
@@ -268,7 +285,10 @@
     font-size: 18px; }
 
   .used-car__name-bottom, .used-car__price-bottom {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .used-car-no-gutters__mobile {
+    padding: 0 0; } }
 @media (max-width: 320px) {
   .used-car__name-top, .used-car__price-top {
     font-size: 15px; }
@@ -283,6 +303,9 @@
     font-size: 7vw; }
 
   .more {
-    font-size: 19px; } }
+    font-size: 19px; }
+
+  .used-car-no-gutters__mobile {
+    padding: 0 0; } }
 
 /*# sourceMappingURL=media.css.map */
