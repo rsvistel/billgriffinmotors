@@ -231,11 +231,9 @@ body {
   #banner #banner-image {
     text-align: center; }
     #banner #banner-image img {
-      width: 120%;
-      max-width: 1800px; }
+      width: 120%; }
   #banner #search-box {
     width: 100%;
-    max-width: 1800px;
     height: 50%;
     position: absolute;
     bottom: 0;
@@ -665,6 +663,8 @@ body {
   text-align: center;
   color: #fff;
   background: url("../img/home/bmw.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 5% 0; }
   #statistics .statistic-block object {
     width: auto;
@@ -1422,5 +1422,3 @@ button:focus {
 
 .title-block-used-cars {
   font-weight: 500; }
-
-/*# sourceMappingURL=style.css.map */
