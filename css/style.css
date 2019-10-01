@@ -989,7 +989,9 @@ body {
   display: none; }
 
 .accordion-used-car__form {
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
 
 #InputName, #InputPhone, #InputEmail {
   height: calc(1.5em + 1.7rem + 2px);
@@ -1181,8 +1183,7 @@ button:focus {
 
   .used-car__modal-carousel-caption {
     position: absolute;
-    top: 100%;
-    left: 2rem; }
+    top: 100%; }
 
   .used-car__modal-close {
     outline: 0;
@@ -1214,7 +1215,9 @@ button:focus {
     opacity: 1; }
 
   .used-car__modal-title, .used-car__modal-header {
-    width: 75%; }
+    width: 75%;
+    height: 20vh;
+    align-items: center; }
 
   .carousel-card-items {
     margin-bottom: 0.7rem;
@@ -1232,16 +1235,24 @@ button:focus {
 
   .counter__value {
     font-size: 33px;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    padding-top: 1rem; }
 
   .counter__block {
     display: flex;
-    align-items: flex-start;
-    padding-top: 1.2rem; }
+    height: 20vh;
+    align-items: center; }
 
   .carousel-item-modal-lg {
-    width: 50% !important;
-    margin: auto; } }
+    width: auto !important;
+    margin: auto;
+    height: 80vh; }
+
+  .used-car__modal-modal-body {
+    height: 80vh; }
+
+  .carousel__modal {
+    height: 80vh; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;

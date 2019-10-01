@@ -120,6 +120,9 @@
 
   .title-logo-bottom {
     margin: 0; } }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .accordion-used-car__title {
+    font-size: 20px; } }
 @media (min-width: 768px) and (max-width: 1024px) {
   .detailse-used-car__name {
     font-size: 14px; }
@@ -129,6 +132,10 @@
 @media (min-width: 1024px) and (max-width: 1024px) {
   .accordion-used-car__title {
     font-size: 22px; } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .carousel-item-modal-lg {
+    width: 100% !important;
+    height: 70vh; } }
 @media (max-width: 991px) {
   .carousel-mobile {
     margin-bottom: 0.5rem; }
