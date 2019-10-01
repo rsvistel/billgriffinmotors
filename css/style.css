@@ -845,6 +845,9 @@ body {
     padding-right: 3px;
     padding-left: 3px; }
 
+.feedback-used-car {
+  background: none; }
+
 .used-car-section {
   width: 100%;
   margin-top: 1rem;
