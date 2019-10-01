@@ -84,7 +84,7 @@ $light-blue: #00C4FC
 
 @media (min-width: 1024px) and (max-width: 1024px)
   .accordion-used-car__title
-    font-size: 24px
+    font-size: 22px
 
 
 @media (max-width: 991px)
@@ -157,6 +157,7 @@ $light-blue: #00C4FC
     display: inline-block
     font-size: 24px
     padding-right: 0.5rem
+    cursor: pointer
 
   .more-icon
     display: inline-block
@@ -243,13 +244,18 @@ $light-blue: #00C4FC
     padding: 1px
   .mobile-counter__block-modal
     padding-top: 2rem
+  .used-car__modal-close-col-lg
+    display: none
+  .used-car__modal-close-col-sm
+    display: block
+  
 
-@media (max-width: 425px)
+@media (max-width: 768px)
     .detailse-used-car__block
       display: none
     .detailse-used-car__none
       display: block
-@media (min-width: 426px)
+@media (min-width: 769px)
     .detailse-used-car__block
       display: block
     .detailse-used-car__none
@@ -258,11 +264,12 @@ $light-blue: #00C4FC
 @media (max-width: 800px)
   .detailse-used-car__title-header,.description-used-car__title
     padding: 0.8rem 0
+    padding-top: 0.2rem
     font-size: 24px
   .detailse-used-car__name
-    font-size: 18px
+    font-size: 19px
   .detailse-used-car__data
-    font-size: 18px
+    font-size: 19px
   .used-car-no-gutters__mobile
     padding: 0 0
 

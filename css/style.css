@@ -266,8 +266,7 @@ body {
   font-weight: bold; }
 
 .used-car__name-bottom {
-  font-size: 25px;
-  padding-bottom: 0.5rem; }
+  font-size: 25px; }
 
 .used-car__price {
   display: flex;
@@ -315,7 +314,7 @@ body {
 .accordion-used-car__title {
   width: 100%;
   text-align: justify;
-  font-size: 28px;
+  font-size: 25px;
   white-space: nowrap;
   font-weight: bold;
   padding: 1.11rem 1.11rem 1.11rem 5.5rem; }
@@ -385,7 +384,7 @@ body {
 .accordion-used-car__form {
   padding-top: 1rem; }
 
-#InputEmail, #InputPhone, #InputEmail {
+#InputName, #InputPhone, #InputEmail {
   height: calc(1.5em + 1.7rem + 2px);
   border-radius: 0;
   box-shadow: none; }
@@ -482,13 +481,13 @@ button:focus {
     font-size: 30px; }
 
   .used-car__modal-price-top {
-    font-size: 48px; }
+    font-size: 30px; }
 
   .used-car__modal-name-bottom {
-    font-size: 25px; }
+    font-size: 20px; }
 
   .used-car__modal-price-bottom {
-    font-size: 35px; }
+    font-size: 25px; }
 
   .accordion-used-car__mobile-padding {
     position: absolute;
@@ -503,11 +502,15 @@ button:focus {
     background: #898989; }
 
   .used-car__modal-dialog {
-    max-width: 100%; }
+    max-width: 100%;
+    margin: auto; }
 
   .used-car__modal-close {
     position: absolute;
     z-index: 10; }
+
+  .used-car__modal-close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+    opacity: 1; }
 
   .used-car__modal-header {
     position: absolute;
@@ -522,9 +525,8 @@ button:focus {
 
   .used-car__modal-close {
     outline: 0;
-    height: 30%;
-    top: 10px;
-    left: 90%; }
+    right: 15px;
+    padding-top: 1rem; }
 
   .used-car__modal-content {
     background: none; }
@@ -534,17 +536,21 @@ button:focus {
     padding-bottom: 3rem; }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
-    display: none; }
+    width: 100px;
+    height: 100px;
+    opacity: 1; }
 
   .used-car__modal__control-prev {
     background-image: url("../img/used-car-page/gallery/arrow-prev-lg.svg");
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    opacity: 1; }
 
   .used-car__modal__control-next {
     background-image: url("../img/used-car-page/gallery/arrow-next-lg.svg");
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    opacity: 1; }
 
   .used-car__modal-title, .used-car__modal-header {
     width: 75%; }
@@ -566,11 +572,20 @@ button:focus {
     bottom: -17px; }
 
   .counter__value {
-    font-size: 60px;
+    font-size: 44px;
     vertical-align: bottom; }
 
   .counter__block {
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem; }
+
+  .used-car__modal-close-col-lg {
+    display: block; }
+
+  .used-car__modal-close-col-sm {
+    display: none; }
+
+  .counter__icon {
+    width: 70px; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;

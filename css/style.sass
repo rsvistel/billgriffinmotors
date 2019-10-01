@@ -282,7 +282,7 @@ body
 
 .used-car__name-bottom
       font-size: 25px
-      padding-bottom: 0.5rem
+      //padding-top: 0.5rem
 
 .used-car__price
       display: flex
@@ -330,8 +330,7 @@ body
 .accordion-used-car__title
       width: 100%
       text-align: justify
-      //font-size: 2vw
-      font-size: 28px
+      font-size: 25px
       white-space: nowrap
       font-weight: bold
       padding: 1.11rem 1.11rem 1.11rem 5.5rem
@@ -340,7 +339,6 @@ body
       padding-right: 0.5em
 
 .accordion-used-car>.card
-      //background: #EEEEEC
       border: none
       margin: 0.5rem 0
       -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
@@ -399,8 +397,7 @@ body
 .accordion-used-car__form
    padding-top: 1rem
 
-#InputEmail, #InputPhone, #InputEmail
-   //padding: 1.1rem .75rem
+#InputName, #InputPhone, #InputEmail
    height: calc(1.5em + 1.7rem + 2px)
    border-radius: 0
    box-shadow: none
@@ -448,7 +445,6 @@ body
 
 .used-car__modal-footer
    border: none
-   //background: #898989
    border-bottom-right-radius: 0
    border-bottom-left-radius: 0
 
@@ -494,69 +490,15 @@ button:focus
 .carousel-control-next, .carousel-control-prev
    width: 11%
 
-// .modal
-//    position: fixed
-//    top: 0
-//    right: 0
-//    bottom: 0
-//    left: 0
-//    overflow: hidden
-
-// .modal-dialog
-//    position: fixed
-//    margin: 0
-//    width: 100%
-//    height: 100%
-//    padding: 0
-
-// .modal-content
-//    position: absolute
-//    top: 0
-//    right: 0
-//    bottom: 0
-//    left: 0
-//    border-radius: 0
-//    box-shadow: none
-
-// // .modal-header
-// //    position: absolute
-// //    top: 0
-// //    right: 0
-// //    left: 0
-// //    height: 50px
-// //    padding: 10px
-// //    border: 0
-
-// .modal-title
-//    font-weight: 300
-//    font-size: 2em
-//    line-height: 30px
-
-// .modal-body
-//    position: absolute
-//    top: 50px
-//    bottom: 60px
-//    width: 100%
-//    font-weight: 300
-//    overflow: auto
-
-// .modal-footer
-//    position: absolute
-//    right: 0
-//    bottom: 0
-//    left: 0
-//    height: 60px
-//    padding: 10px
-
 @media (min-width: 992px)
    .used-car__modal-name-top
       font-size: 30px
    .used-car__modal-price-top
-      font-size: 48px
+      font-size: 30px
    .used-car__modal-name-bottom
-      font-size: 25px
+      font-size: 20px
    .used-car__modal-price-bottom
-      font-size: 35px
+      font-size: 25px
    .accordion-used-car__mobile-padding
       position: absolute
       right: 0
@@ -568,9 +510,12 @@ button:focus
       background: #898989
    .used-car__modal-dialog
       max-width: 100%
+      margin: auto
    .used-car__modal-close
       position: absolute
       z-index: 10
+   .used-car__modal-close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover
+      opacity: 1
    .used-car__modal-header
       position: absolute
       z-index: 10
@@ -582,9 +527,8 @@ button:focus
       top: 101%
    .used-car__modal-close
       outline: 0
-      height: 30%
-      top: 10px
-      left: 90%
+      right: 15px
+      padding-top: 1rem
    .used-car__modal-content
       background: none
    .used-car__modal-footer
@@ -592,15 +536,19 @@ button:focus
       //background-color: rgba(0, 0, 0, 0.4)
       padding-bottom: 3rem
    .carousel-control-prev-icon,.carousel-control-next-icon
-      display: none
+      width: 100px
+      height: 100px
+      opacity: 1
    .used-car__modal__control-prev
       background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
       background-repeat: no-repeat
       background-position: center center
+      opacity: 1
    .used-car__modal__control-next
       background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
       background-repeat: no-repeat
       background-position: center center
+      opacity: 1
    .used-car__modal-title,.used-car__modal-header
       width: 75%
    .carousel-card-items
@@ -616,10 +564,17 @@ button:focus
    .used-car__carousel-caption
       bottom: -17px
    .counter__value
-      font-size: 60px
+      font-size: 44px
       vertical-align: bottom
    .counter__block
       padding-bottom: 1rem
+   .used-car__modal-close-col-lg
+      display: block
+   .used-car__modal-close-col-sm
+      display: none
+
+   .counter__icon
+      width: 70px
 //FAQ-page
 .section__title-blue
    font-family: $primary-font

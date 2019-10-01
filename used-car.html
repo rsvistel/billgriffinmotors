@@ -177,11 +177,11 @@
                                         </a>
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselUsedCar" role="button" data-slide="prev" data-toggle="modal" data-target="#modalUsedCar">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="carousel-control-prev-icon d-block d-sm-block d-md-block d-lg-none" aria-hidden="true"></span>
                                                 <span class="sr-only">Previous</span>
                                               </a>
                                         <a class="carousel-control-next" href="#carouselUsedCar" role="button" data-slide="next" data-toggle="modal" data-target="#modalUsedCar">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="carousel-control-next-icon d-block d-sm-block d-md-block d-lg-none" aria-hidden="true"></span>
                                                 <span class="sr-only">Next</span>
                                         </a>
                                     </div>
@@ -213,7 +213,7 @@
                                     <div id="accordion-used-car" class="accordion-used-car">
                                         <div class="card">
                                             <div class="card-header accordion-used-car__card-header form-icon" id="headingMessage">
-                                                    <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
+                                                    <a class="btn shadow-none accordion-used-car__title" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage" role="button">
                                                             Make an enquiry
                                                     </a>
                                             </div>
@@ -222,13 +222,13 @@
                                                     <div class="form-container">
                                                         <form action="#" method="post" class="accordion-used-car__form">
                                                             <div class="form-group">
-                                                                <input type="email" class="form-control accordion-used-car__form-control" id="InputEmail" aria-describedby="email" placeholder="Name">
+                                                                <input type="text" class="form-control accordion-used-car__form-control" id="InputName" placeholder="Name">
                                                             </div>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control accordion-used-car__form-control" id="InputPhone" placeholder="Phone Number">
                                                             </div>
                                                             <div class="form-group">
-                                                                <input type="email" class="form-control accordion-used-car__form-control" id="InputEmail" placeholder="Email Address">
+                                                                <input type="text" class="form-control accordion-used-car__form-control" id="InputEmail" placeholder="Email Address">
                                                             </div>
                                                             <div class="form-group">
                                                             <textarea class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"  id="FormControlTextarea" rows="5" placeholder="Your message"></textarea>
@@ -252,7 +252,7 @@
                                         </div>
                                         <div class="card">
                                             <div class="card-header accordion-used-car__card-header reserve-icon" id="headingReserve">
-                                                    <a href="#" href="#" class=" btn shadow-none collapsed accordion-used-car__title">
+                                                    <a href="#" class=" btn shadow-none collapsed accordion-used-car__title">
                                                         Reserve This Car
                                                     </a>
                                             </div>
@@ -465,8 +465,11 @@
         <div class="modal-dialog used-car__modal-dialog">
             <div class="modal-content used-car__modal-content">
                 <!-- Modal Header -->
+                    <button class="close used-car__modal-close used-car__modal-close-col-lg" data-dismiss="modal">
+                    <img class="close used-car__modal-close" src="img/used-car-page/gallery/close-modal.png" alt="used car"  data-dismiss="modal">
+                 </button>
                 <div class="modal-header used-car__modal-header">
-                        <button class="close used-car__modal-close" data-dismiss="modal">
+                        <button class="close used-car__modal-close used-car__modal-close-col-sm" data-dismiss="modal">
                                 <img class="close used-car__modal-close" src="img/used-car-page/gallery/close-modal.png" alt="used car"  data-dismiss="modal">
                         </button>
                     <div class="col-12 used-car__title used-car__modal-title">
@@ -500,19 +503,16 @@
                                 <img class="d-block w-100" src="img/used-car-page/used-car-five.png" alt="2012 FORD FIESTA">
                             </div>
                         </div>
-                        <a class="carousel-control-prev used-car__modal__control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                          <span class="carousel-control-prev-icon used-car__modal__control-prev" aria-hidden="true"></span>
                                           <span class="sr-only">Previous</span>
                                         </a>
-                        <a class="carousel-control-next used-car__modal__control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                          <span class="carousel-control-next-icon used-car__modal__control-next" aria-hidden="true"></span>
                                           <span class="sr-only">Next</span>
                                         </a>
                     </div>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer used-car__modal-footer">
+                    <div class="modal-footer used-car__modal-footer">
                         <div class="used-car__carousel-caption used-car__modal-carousel-caption d-block">
                              <div class="mobile-counter__block counter__block mobile-counter__block-modal">
                                 <object class="mobile-counter__icon mobile-counter__icon-modal" data="img/used-car-page/gallery/counter-icon.svg">
@@ -525,6 +525,10 @@
                         </div>
                     </div>
                 </div>
+                </div>
+
+                <!-- Modal footer -->
+  
 
             </div>
         </div>
