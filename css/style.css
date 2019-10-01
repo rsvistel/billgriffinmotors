@@ -1169,4 +1169,15 @@ input:checked + .slider:before {
     to {
       left: 0; } }
     #accordion.cards-serch-results .mobile-accordion-filter {
-      display: flex; } }
+      display: flex; }
+    #accordion.cards-serch-results .card .card-header {
+      background-position: center left 10px; }
+      #accordion.cards-serch-results .card .card-header h5 .btn {
+        padding-left: 30px; }
+      #accordion.cards-serch-results .card .card-header:after {
+        content: "Any";
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        display: flex;
+        align-items: center; } }
