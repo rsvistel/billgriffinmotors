@@ -277,6 +277,8 @@ $light-blue: #00C4FC
     font-size: 1.5vw
   .title-logo-bottom
     margin: 0
+
+
 @media (min-width: 1000px) and (max-width: 1112px)
   .bottom-half-header .container ul li a .h6-title, .title-address .text-title-address, .number-phone h4, .dropdown .dropbtn
     font-size: 0.75rem
@@ -322,6 +324,30 @@ $light-blue: #00C4FC
     padding-left: 2%
     ul li
       margin-right: 5px
+  #feedback
+    .feedback-item
+      padding: 10px
+    .owl-carousel.owl-feedback.owl-loaded.owl-drag .owl-item
+      width: 240px!important
+      margin-right: 10px!important
+    .container
+      max-width: 740px
+  #special-offers.container
+    max-width: 740px
+    .owl-carousel.owl-special-offers.owl-loaded.owl-drag .owl-item
+      width: 334px!important
+
+  #special-offers.container .owl-carousel .owl-stage-outer
+    height: 520px
+
+  #office .row.row-office
+    display: flex
+    flex-direction: column
+    align-items: center
+    .card
+      max-width: 60%
+      margin-bottom: 20px
+
 @media (min-width: 900px) and (max-width: 1000px)
   .bottom-half-header .container ul li a .h6-title
     font-size: 1vw
@@ -333,3 +359,15 @@ $light-blue: #00C4FC
   .bottom-half-header .container ul li a .h6-title, .bottom-half-header .container ul li .fa-chevron-down
     font-size: 0.7rem
 
+@media (max-width: 768px) and (orientation: landscape)
+  #banner #search-box .col-md-3 select
+    background-size: 2%
+
+@media (min-width: 767px) and (max-width: 768px)
+  #banner #search-box .container .col-md-3 select
+    background-size: 6%
+
+  #special-offers.container
+    padding: 0
+    .title-special-offer
+      padding: 5% 25px

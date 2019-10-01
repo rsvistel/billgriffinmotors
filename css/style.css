@@ -343,8 +343,7 @@ body {
       justify-content: space-between;
       pointer-events: none; }
       #special-offers .owl-carousel .owl-nav.disabled button {
-        pointer-events: auto;
-        margin-left: 2%; }
+        pointer-events: auto; }
         #special-offers .owl-carousel .owl-nav.disabled button object {
           pointer-events: none; }
 
