@@ -23,6 +23,7 @@ body
    padding: 0
    margin: 0
    min-height: 100vh
+   font-family: $primary-font
 
 
 .m-top-10
@@ -704,10 +705,8 @@ body
       text-align: center
       img
          width: 120%
-         max-width: 1800px
    #search-box
       width: 100%
-      max-width: 1800px
       height: 50%
       position: absolute
       bottom: 0
@@ -720,7 +719,7 @@ body
          text-align: left
          margin: 13px 0 7px 0
          font-size: 1.5rem
-         font-family: $secondary-font
+         font-family: $primary-font
          object
             height: 20px
       .col-md-3
@@ -752,6 +751,8 @@ body
             width: 100%
             height: 40px
             border: 0
+            .mobile-word
+               display: none
 
 
 @media only screen and (max-width: 768px)
@@ -765,7 +766,34 @@ body
       #search-box
          position: static
          background: rgba(0,0,0,1)
-         padding: 5% 5% 10%
+         padding: 2% 5% 2%
+         .container
+            padding: 0
+            h3
+               font-weight: 400
+               font-size: 22px
+               margin-bottom: 13px
+               display: flex
+               align-items: center
+               object
+                  margin-right: 9px
+            form
+               padding: 0 7px
+            .col-md-3
+               margin-bottom: 16px
+               select
+                  font-size: 12.5px
+                  height: 43px
+               button
+                  display: flex
+                  justify-content: center
+                  text-transform: uppercase
+                  font-weight: 600
+                  .mobile-word
+                     display: block
+                     margin-left: 5px
+                  object
+                     display: none
 //Banner&Search
 
 //Special Offers
@@ -793,9 +821,9 @@ body
          pointer-events: none
          button
             pointer-events: auto
-            margin-left: 2%
             object
                pointer-events: none
+
 
 
 //Special Offers
@@ -806,7 +834,6 @@ body
 #special-offers .owl-carousel .owl-stage-outer
    height: 420px
    width: 102%
-   padding: 0 1%
 .car-tile
    border: 1px solid #CCCCCC
    border-radius: 5px
@@ -896,6 +923,17 @@ body
          pointer-events: auto
          object
             pointer-events: none
+
+   #special-offers
+      padding: 0 7px
+      .owl-carousel .owl-stage-outer
+         height: auto
+      .title-special-offer
+         font-weight: 500
+         text-align: start
+         font-size: 23px
+         margin: 5% 15px
+
 //Car Tile
 
 //Feedback
@@ -917,6 +955,8 @@ body
          color: $dark-gray
          font-weight: 400
          font-size: 20px
+      .feedback-author h3
+         font-style: italic
       .feedback-date, .feedback-body, .feedback-company
          color: $light-gray
          font-family: 'Source Sans Pro', sans-serif
@@ -940,6 +980,7 @@ body
          margin-right: 5px
       .feedback-author
          margin-top: 15px
+
    .button-feedback
       color: white
       border: none
@@ -948,30 +989,56 @@ body
       background: $dark-blue
       padding: 1% 5%
       font-family: "Source Sans Pro", sans-serif
-
+   .feedback-rating
+      font-family: "Open Sans", sans-serif
 
 
 @media only screen and (max-width: 768px)
    #feedback
       background: none
+      padding: 2% 0 0 0
+      .container
+         padding: 0 5px
       h3.feedback-rating, h4.feedback-title
          display: block
       h4.feedback-title
          border: 1px solid lightgrey
          text-align: left
-         padding-left: 3%
+         font-family: $primary-font
+         font-size: 18px
+         padding: 10px 5px 10px 3%
       h3.feedback-rating
          border-right: 1px solid lightgrey
          border-left: 1px solid lightgrey
+         padding: 20px 0
+         display: flex
+         justify-content: center
+         align-items: center
       .owl-feedback
          border: 1px solid lightgrey
          border-top: none
-         padding:  0 3% 3%
+         padding:  0 3.5% 3% 3.5%
          display: block
          .feedback-item
             border-top: 1px solid lightgrey
+            padding: 10px 0
+            .fas.fa-star
+               font-size: 1rem
+            .feedback-title h3
+               font-size: 22px
+            .feedback-author h3
+               font-size: 17px
       button
          display: none
+      .five-stars
+         margin: 0 15px 0 10px
+         font-size: 35px
+         font-family: "Poppins", sans-serif
+         font-weight: 400
+         font-style: italic
+      .fas.fa-star
+         font-size: 1.5rem
+
 
 
 //Feedback
@@ -996,6 +1063,7 @@ body
       max-width: 31%
       box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35)
       border-radius: 0
+      border: 0
       &:nth-child(1)
          order: 2
       &:nth-child(2)
@@ -1042,29 +1110,38 @@ body
 @media only screen and (max-width: 768px)
    #office
       background: none
-      .card
-         flex: 0 0 100%
-         max-width: calc(100% - 30px)
-         margin: 0 15px
-         &:first-child
-            margin-top: 2%
-            .card-title
-               display: none
-            .card-body
-               &:after
-                  content: ""
-                  display: block
-                  padding-bottom: 100%
-            #map
-               position: absolute
-               top: 0
-               bottom: 0
-               left: 0
-               right: 0
-         &:nth-child(2)
-            margin: 0 15px
-         &:last-child
+      .container
+         padding: 0 5px
+         .row
+            display: flex
+            justify-content: center
+         .owl-carousel .owl-stage
+            display: flex
+            flex-direction: column
+         .card
+            flex: 0 0 100%
+            max-width: calc(100% - 30px)
+            margin: 0 5px
+            &:first-child
+               margin-top: 2%
+               .card-title
+                  display: none
+               .card-body
+                  &:after
+                     content: ""
+                     display: block
+                     padding-bottom: 100%
+               #map
+                  position: absolute
+                  top: 0
+                  bottom: 0
+                  left: 0
+                  right: 0
+            &:nth-child(2)
+               margin: 0 5px
+         .card-finance
             display: none
+
 //Office
 
 //Cars PopUp
@@ -1077,8 +1154,10 @@ body
 @media only screen and (max-width: 768px)
    #cars-popup
       padding: 5% 0
-      img
-         width: 100%
+      .container
+         padding: 0
+         img
+            width: 100%
 //Cars PopUp
 
 //Statistics
@@ -1086,6 +1165,8 @@ body
    text-align: center
    color: #fff
    background: url("../img/home/bmw.png")
+   background-size: cover
+   background-repeat: no-repeat
    padding: 5% 0
    .statistic-block
       object
@@ -1205,6 +1286,11 @@ body
    padding-left: 0
    padding-right: 0
 
+   //change in faq
+
+.card-header  
+   padding: 24px  40px
+
 .footer-section__title
    font-family: $secondary-font
    font-size: 2.4rem
@@ -1302,6 +1388,12 @@ body
       height: 59px
 
    .footer-section__description
+      padding-top: 40px
+      padding-bottom: 60px
+
+      //change in faq add class
+   .card-header
+      padding: 27px 18px
       padding-top: 24px
       padding-bottom: 44px
 
@@ -1336,9 +1428,403 @@ body
       padding-top: 0
       padding-bottom: 34px
 
+//USED CAR-page
 
+.no-gutters
+   margin-right: 3px
+   margin-left: 3px
+   > .col,
+   > [class*="col-"]
+      padding-right: 3px
+      padding-left: 3px
 
+.used-car-section
+      width: 100%
+      margin-top: 1rem
+      margin-bottom: 1rem
 
+.used-car__title
+      display: flex
+      justify-content: space-between
+
+.used-car__name
+      display: flex
+      flex-direction: column
+      padding-left: 8px
+
+.used-car__name-top
+      font-size: 30px
+      font-weight: bold
+
+.used-car__name-bottom
+      font-size: 25px
+      //padding-top: 0.5rem
+
+.used-car__price
+      display: flex
+      flex-direction: column
+      text-align: right
+      padding-right: 8px
+
+.used-car__price-top
+      font-size: 35px
+      font-weight: bold
+
+.used-car__price-bottom
+      font-size: 25px
+      color: $light-blue
+
+.detailse-used-car__title-header
+      font-weight: bold
+      font-size: 28px
+      padding-top: 2rem
+      padding-bottom: 1.5rem
+
+.detailse-used-car__title
+      display: flex
+      justify-content: space-between
+      padding-left: 0
+      padding-right: 0
+
+.detailse-used-car__data
+      display: flex
+      flex-direction: column
+      font-size: 17px
+      font-weight: bold
+      text-align: right
+
+.detailse-used-car__name
+      display: flex
+      flex-direction: column
+      font-size: 17px
+      text-align: left
+
+.description-used-car
+      font-size: 18px
+      font-family: $primary-font
+
+.accordion-used-car__title
+      width: 100%
+      text-align: justify
+      font-size: 25px
+      white-space: nowrap
+      font-weight: bold
+      padding: 1.11rem 1.11rem 1.11rem 5.5rem
+
+.accordion-used-car__title img
+      padding-right: 0.5em
+
+.accordion-used-car>.card
+      border: none
+      margin: 0.5rem 0
+      -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      cursor: pointer
+
+.accordion-used-car>.card:first-child
+      margin: 0
+
+.accordion-used-car__card-body
+      background: #EEEEEC
+      padding: 0.5rem
+
+#accordion-used-car .accordion-used-car__card-header
+      padding: 0
+      border-bottom: 0
+      background: #EEEEEC
+
+#accordion-used-car .form-icon
+      background-image: url("../img/used-car-page/form-icon.svg")
+#accordion-used-car .finance-icon
+      background-image: url("../img/used-car-page/finance-icon.svg")
+#accordion-used-car .reserve-icon
+      background-image: url("../img/used-car-page/reserve.svg")
+#accordion-used-car .form-icon, .reserve-icon, .finance-icon
+      background-repeat: no-repeat
+      background-position: 1.6rem center
+#accordion-used-car .reserve-icon, .finance-icon
+      background-repeat: no-repeat
+      background-position: 1.6rem center
+#accordion-used-car .finance-icon
+      background-repeat: no-repeat
+      background-position: 1.6rem center
+
+.accordion-used-car__card-header:first-child
+      border-radius: 0
+
+.description-used-car__title
+      font-size: 20px
+      font-weight: bold
+      padding: 1.5rem 0
+
+.description-used-car__sub-title
+      padding-bottom: 2rem
+
+.detailse-used-car__star, .detailse-used-car__star-green
+      white-space: nowrap
+
+.detailse-used-car__star .fa-star
+      color: #FAE42A
+      display: inline
+
+.detailse-used-car__star-green .fa-star
+      color: #149E26
+.complete
+      display: inline-block
+
+.more
+      display: none
+
+.more-icon
+   display: none
+//USED CAR-page
+
+//form USED CAR-page
+.accordion-used-car__form
+   padding-top: 1rem
+   padding-left: 0.25rem
+   padding-right: 0.25rem
+
+#InputName, #InputPhone, #InputEmail
+   height: calc(1.5em + 1.7rem + 2px)
+   border-radius: 0
+   box-shadow: none
+
+#FormControlTextarea
+   box-shadow: none
+
+::-webkit-input-placeholder
+   font-size: 12px
+   color: #525252
+
+.accordion-used-car__textarea
+   resize: none
+
+.accordion-used-car__form-check
+   font-size: 12px
+   padding-bottom: 1rem
+   line-height: 1.2
+
+.accordion-used-car__form-button
+   width: 100%
+   border-radius: 0
+   padding: 0.7rem
+   margin-bottom: 0.5rem
+   background: $dark-blue
+//form USED CAR-page
+
+//Feedback USED CAR-page
+.accordion-used-car
+   &__reviews
+      -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+
+//#feedback
+//   background: none
+//   padding: 2% 0 0 0
+//   .container
+//      padding: 0 1px
+//   h3.feedback-rating, h4.feedback-title
+//      display: block
+//   h4.feedback-title
+//      border: 1px solid lightgrey
+//      text-align: left
+//      font-family: $primary-font
+//      font-size: 18px
+//      padding: 10px 5px 10px 3%
+//   h3.feedback-rating
+//      border-right: 1px solid lightgrey
+//      border-left: 1px solid lightgrey
+//      padding: 20px 0
+//      display: flex
+//      justify-content: center
+//      align-items: center
+//   .owl-feedback
+//      border: 1px solid lightgrey
+//      border-top: none
+//      padding:  0 3.5% 3% 3.5%
+//      display: block
+//      .feedback-item
+//         border-top: 1px solid lightgrey
+//         padding: 10px 0
+//         .fas.fa-star
+//            font-size: 1rem
+//         .feedback-title h3
+//            font-size: 22px
+//         .feedback-author h3
+//            font-size: 17px
+//   button
+//      display: none
+//   .five-stars
+//      margin: 0 15px 0 10px
+//      font-size: 35px
+//      font-family: "Poppins", sans-serif
+//      font-weight: 400
+//      font-style: italic
+//   .fas.fa-star
+//      font-size: 1.5rem
+//Feedback USED CAR-page
+
+//MODAL USED CAR-page
+
+#modalUsedCar
+   padding-right: 0!important
+
+#modalUsedCar .used-car__modal
+   padding-right: 0
+
+.used-car__modal-header
+   padding: 0
+   border-bottom: 0
+
+.used-car__modal-content
+   border: none
+   border-radius: 0
+   background: #262626
+   color: #ffffff
+
+.used-car__modal-footer
+   border: none
+   border-bottom-right-radius: 0
+   border-bottom-left-radius: 0
+
+.used-car__modal-close
+   opacity: 1
+   padding-bottom: 1.7rem
+   padding-top: 0.5rem
+   outline: 0
+   width: 48px
+button:focus
+   outline: 0
+
+.used-car__name-top .used-car__modal-name-top
+   font-size: 1rem
+
+.used-car__modal-name
+   padding: 0
+   font-size: 1rem
+
+.used-car__modal-name-top, .used-car__modal-price-top
+   font-size: 25px
+
+.used-car__modal-name-bottom, .used-car__modal-price-bottom
+   font-size: 20px
+   color: #ffffff
+
+.used-car__modal-modal-body
+   padding: 0
+
+.used-car__carousel-caption
+   right: auto
+   text-align: right
+   max-width: 300px
+   left: 3%
+   font-size: 26px
+   padding-top: 0
+   padding-bottom: 0
+
+.accordion-used-car__h5
+   display: flex
+
+.used-car__modal-footer
+   padding: 0
+
+.arousel-control-next-mobile, .carousel-control-prev-mobile
+   width: 11%
+
+@media (min-width: 992px)
+   .used-car__modal-name-top
+      font-size: 30px
+   .used-car__modal-price-top
+      font-size: 30px
+   .used-car__modal-name-bottom
+      font-size: 20px
+   .used-car__modal-price-bottom
+      font-size: 25px
+   .accordion-used-car__mobile-padding
+      position: absolute
+      right: 0
+      top: 0
+   .used-car__block
+      position: relative
+   #modalUsedCar
+      padding-right: 0
+   .used-car__modal
+      background: #898989
+   .used-car__modal-dialog
+      max-width: 100%
+      margin: auto
+   .used-car__modal-close
+      position: absolute
+      z-index: 10
+   .used-car__modal-close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover
+      opacity: 1
+   .used-car__modal-header
+      position: absolute
+      z-index: 10
+      top: 100%
+      left: 20%
+      margin-left: 2rem
+   .used-car__modal-carousel-caption
+      position: absolute
+      top: 100%
+   .used-car__modal-close
+      outline: 0
+      right: 25px
+      padding-top: 1rem
+   .used-car__modal-content
+      background: none
+   .used-car__modal-footer
+      justify-content: space-around
+      padding-bottom: 1rem
+   .carousel-control-prev-icon,.carousel-control-next-icon
+      width: 70px
+      height: 70px
+      opacity: 1
+   .used-car__modal__control-prev
+      background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
+      background-repeat: no-repeat
+      background-position: center center
+      opacity: 1
+   .used-car__modal__control-next
+      background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
+      background-repeat: no-repeat
+      background-position: center center
+      opacity: 1
+   .used-car__modal-title,.used-car__modal-header
+      width: 75%
+      height: 20vh
+      align-items: center
+   .carousel-card-items
+      margin-bottom: 0.7rem
+      margin-top: 5px
+      padding-left: 12px
+      padding-right: 12px
+   .carousel-card-item
+      padding-right: 3px
+      padding-left: 3px
+   .counter__icon-modal-lg
+      width: 60px
+      margin-right: 1rem
+   .counter__value
+      font-size: 33px
+      vertical-align: bottom
+      padding-top: 1rem
+   .counter__block
+      display: flex
+      height: 20vh
+      align-items: center
+   .carousel-item-modal-lg
+      width: auto!important
+      margin: auto
+      height: 80vh
+   .used-car__modal-modal-body
+      height: 80vh
+   .carousel__modal
+      height: 80vh
+//MODAL USED CAR-page
 //FAQ-page
 .section__title-blue
    font-family: $primary-font
@@ -1425,16 +1911,12 @@ body
    .section__title-blue .container, .accordion__wrapper .container
       padding: 0
       max-width: 100%
-
    .title-blue
       font-size: 26px
-
    .section__title-blue-container
       padding-left: 0
-
    .descripton-blue
       font-size: 14px
-
    .accordion__wrapper
       margin-top: 10px
    .accordion
@@ -1445,7 +1927,6 @@ body
       padding-left: 0
       font-size: 18px
       text-align: left
-
    .accordion .card-body
       font-size: 15px
       padding-left: 18px
