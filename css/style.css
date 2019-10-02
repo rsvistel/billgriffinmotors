@@ -1167,7 +1167,7 @@ button:focus {
     padding-right: 0; }
 
   .used-car__modal {
-    background: #898989; }
+    background: #262626; }
 
   .used-car__modal-dialog {
     max-width: 100%;
@@ -1201,7 +1201,7 @@ button:focus {
 
   .used-car__modal-footer {
     justify-content: space-around;
-    padding-bottom: 1rem; }
+    background: rgba(0, 0, 0, 0.4); }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 70px;
@@ -1252,13 +1252,14 @@ button:focus {
   .carousel-item-modal-lg {
     width: auto !important;
     margin: auto;
-    height: 80vh; }
+    height: 100vh; }
 
   .used-car__modal-modal-body {
     height: 80vh; }
 
   .carousel__modal {
-    height: 80vh; } }
+    height: 100vh;
+    display: flex; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
