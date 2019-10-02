@@ -1994,7 +1994,6 @@ button:focus
 //Search-results
 
 //About
-
 .first-section-about
    padding: 6% 0 5% 0
    .half-first-section-about
@@ -2035,14 +2034,14 @@ hr.heading-underline
       font-family: "Source Sans Pro", sans-serif
       color: $light-gray
       margin-top: 20px
-      margin-bottom: 35px
+      margin-bottom: 25px
    .container
       padding: 0 5%
    .col-md-6
       background: white
       margin: 0 1%
       max-width: 48%
-      padding: 2.5% 2%
+      padding: 3% 2.5%
       .member-image
          display: flex
          img
@@ -2071,11 +2070,14 @@ hr.heading-underline
       font-family: 'Poppins', sans-serif
       font-style: italic
       padding-bottom: 5px
+      font-weight: 400
    h4
       font-size: 24px
-      font-weight: bold
       text-transform: uppercase
       padding-bottom: 10px
+      font-weight: 400
+      font-style: italic
+      margin-top: 5px
    p
       font-size: 16px
       font-family: "Source Sans Pro", sans-serif
@@ -2084,10 +2086,8 @@ hr.heading-underline
       text-transform: uppercase
       .fa-angle-right
          padding-left: 3px
-   .about-prefooter-img-left
-      padding-top: 2rem
-   .about-prefooter-img-right
-      padding-top: 1rem
+   .about-prefooter-img-left, .about-prefooter-img-right
+      padding-top: 3rem
 
 .our-team-prefooter-right
    padding-right: 5%
@@ -2098,12 +2098,12 @@ hr.heading-underline
 #about-prefooter
    background-image: url("../img/about/call-to-action.png")
    background-size: 100%
-   //background-position: center
+   background-position: center
    background-repeat: no-repeat
    color: white
    margin-bottom: 2rem
    .container
-      max-height: 700px
+      min-height: 500px
    .col-md-6
       &:last-child
          text-align: right
@@ -2112,7 +2112,7 @@ hr.heading-underline
    .button-prefooter
       background: $dark-blue
       color: white
-      padding: 13px 72px
+      padding: 13px 0
       border: 0
       font-family: "Source Sans Pro", sans-serif
       font-size: 14px
@@ -2126,9 +2126,19 @@ hr.heading-underline
    #brakes-image
       display: none
    #our-team
-      .col-md-6
-         max-width: 100%
+      background-color: white
+      .team-blocks
+         margin: 0
+         .title-name-our-team
+            font-size: 17px
+         .text-under-title-team
+            font-size: 16px
+         .col-md-6
+            max-width: 100%
+            border: 1px solid #E6E6E6
+            margin: 0 0 23px 0
    #about-prefooter
+      display: none
       .col-md-6
          &:first-child
             img
@@ -2139,4 +2149,20 @@ hr.heading-underline
          img
             position: relative
             width: 80%
+   .first-section-about
+      overflow: hidden
+      .half-first-section-about
+         padding: 0 30px
+         .title-about-us
+            font-size: 21px
+         .text-about-us
+            font-size: 14px
+         .title-about-us-bottom
+            text-transform: initial
+            font-weight: 400
+            font-size: 20px
+            line-height: 27px
+            margin-top: 25px
+   #our-team .container
+      padding: 0 15px
 //About
