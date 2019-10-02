@@ -25,6 +25,9 @@ body
    min-height: 100vh
    font-family: $primary-font
 
+
+.m-top-10
+   margin-top: 10px
 //Header
 //.header.topnav .row
 //   padding: 0px 15px
@@ -1044,6 +1047,9 @@ body
 #youtube-video
    padding: 3% 0
    text-align: center
+   iframe
+      width: 80%
+      border: 0
 @media only screen and (max-width: 768px)
    #youtube-video
       display: none
@@ -1439,6 +1445,89 @@ body
    > [class*="col-"]
       padding-right: 3px
       padding-left: 3px
+#feedback.feedback-used-car
+   background: none
+   padding: 0
+   .container
+      padding: 0
+   h3.feedback-rating, h4.feedback-title
+      display: block
+   h4.feedback-title
+      border: 1px solid lightgrey
+      text-align: left
+      font-family: $primary-font
+      font-size: 18px
+      padding: 10px 5px 10px 3%
+   h3.feedback-rating
+      border-right: 1px solid lightgrey
+      border-left: 1px solid lightgrey
+      padding: 20px 0
+      display: flex
+      justify-content: center
+      align-items: center
+   .owl-feedback
+      border: 1px solid lightgrey
+      border-top: none
+      padding:  0 3.5% 3% 3.5%
+      display: block
+      .feedback-item
+         border-top: 1px solid lightgrey
+         padding: 10px 0
+         .fas.fa-star
+            font-size: 1rem
+         .feedback-title h3
+            font-size: 22px
+         .feedback-author h3
+            font-size: 17px
+   button
+      display: none
+   .five-stars
+      margin: 0 15px 0 10px
+      font-size: 35px
+      font-family: "Poppins", sans-serif
+      font-weight: 400
+      font-style: italic
+   .fas.fa-star
+      font-size: 1.5rem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   //h3.feedback-rating, h4.feedback-title
+   //   display: block
+   //h4.feedback-title
+   //   text-align: left
+   //   border-bottom: 1px solid lightgrey
+   //   text-align: left
+   //   font-family: $primary-font
+   //   font-size: 18px
+   //   padding: 10px 5px 10px 3%
+   //h3.feedback-rating
+   //   border-bottom: 1px solid lightgrey
+   //   padding: 20px 0
+   //   display: flex
+   //   justify-content: center
+   //   align-items: center
+
 
 .used-car-section
       width: 100%
@@ -1619,54 +1708,54 @@ body
 //Feedback USED CAR-page
 .accordion-used-car
    &__reviews
-      -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
-      -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
-      box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+      -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
+      -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
+      box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
 
-#feedback
-   background: none
-   padding: 2% 0 0 0
-   .container
-      padding: 0 1px
-   h3.feedback-rating, h4.feedback-title
-      display: block
-   h4.feedback-title
-      border: 1px solid lightgrey
-      text-align: left
-      font-family: $primary-font
-      font-size: 18px
-      padding: 10px 5px 10px 3%
-   h3.feedback-rating
-      border-right: 1px solid lightgrey
-      border-left: 1px solid lightgrey
-      padding: 20px 0
-      display: flex
-      justify-content: center
-      align-items: center
-   .owl-feedback
-      border: 1px solid lightgrey
-      border-top: none
-      padding:  0 3.5% 3% 3.5%
-      display: block
-      .feedback-item
-         border-top: 1px solid lightgrey
-         padding: 10px 0
-         .fas.fa-star
-            font-size: 1rem
-         .feedback-title h3
-            font-size: 22px
-         .feedback-author h3
-            font-size: 17px
-   button
-      display: none
-   .five-stars
-      margin: 0 15px 0 10px
-      font-size: 35px
-      font-family: "Poppins", sans-serif
-      font-weight: 400
-      font-style: italic
-   .fas.fa-star
-      font-size: 1.5rem
+//#feedback
+//   background: none
+//   padding: 2% 0 0 0
+//   .container
+//      padding: 0 1px
+//   h3.feedback-rating, h4.feedback-title
+//      display: block
+//   h4.feedback-title
+//      border: 1px solid lightgrey
+//      text-align: left
+//      font-family: $primary-font
+//      font-size: 18px
+//      padding: 10px 5px 10px 3%
+//   h3.feedback-rating
+//      border-right: 1px solid lightgrey
+//      border-left: 1px solid lightgrey
+//      padding: 20px 0
+//      display: flex
+//      justify-content: center
+//      align-items: center
+//   .owl-feedback
+//      border: 1px solid lightgrey
+//      border-top: none
+//      padding:  0 3.5% 3% 3.5%
+//      display: block
+//      .feedback-item
+//         border-top: 1px solid lightgrey
+//         padding: 10px 0
+//         .fas.fa-star
+//            font-size: 1rem
+//         .feedback-title h3
+//            font-size: 22px
+//         .feedback-author h3
+//            font-size: 17px
+//   button
+//      display: none
+//   .five-stars
+//      margin: 0 15px 0 10px
+//      font-size: 35px
+//      font-family: "Poppins", sans-serif
+//      font-weight: 400
+//      font-style: italic
+//   .fas.fa-star
+//      font-size: 1.5rem
 //Feedback USED CAR-page
 
 //MODAL USED CAR-page
@@ -1965,29 +2054,432 @@ button:focus
 #accordion.cards-serch-results
    width: 22%
    margin-top: 30px
+   .mobile-accordion-filter
+      display: none
+      justify-content: space-between
+      *
+         cursor: pointer
+      object
+         pointer-events: none
+   .accordion-filters
+      //height: calc(100vh - 85px)
+      height: auto
+      overflow: scroll
    .card
       border: 1px solid #CCCCCC
-      border-radius: 0rem
-      border-bottom: 0
+      border-radius: 0
       border-top: 0
       &:first-child
          border-top: 1px solid #CCCCCC
       .card-header
-         padding: 7px 10px
+         padding: 0
          background-color: #fff
          display: flex
          justify-content: space-between
+         background-image: url("../img/search-results/arrow-down-blue.svg")
+         background-position: center right 10px
+         background-repeat: no-repeat
+         background-size: 13px
+         &.opened
+            background-image: url("../img/search-results/arrow-up-blue.svg")
          h5
+            width: 100%
             .btn
+               padding: 13px 10px
                font-family: $secondary-font
                color: #232323
                font-weight: 600
-               padding: 0
                font-size: 0.9rem
+               width: 100%
+               text-align: left
                &:hover
                   text-decoration: none
       .card-body
          border-bottom: 1px solid #CCCCCC
+         padding: 1rem 4% 1.5rem 4%
+         .switcher
+            font-size: 12px
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            margin-bottom: 5%
+   .monthly-price
+      display: none
+
+#collapse-body-type, #collapse-fuel-type, #collapse-Gearbox, #collapse-colour, #collapse-doors, #collapseSeats, #collapseSafety, #collapseAcceleration, #collapseEngine, #collapseEnvironmental
+   text-align: right
+   .checkbox-container
+      font-family: "Open Sans", sans-serif
+      border: 1px solid #CCCCCC
+      padding: 5px 15px
+      overflow: auto
+      .text-checkbox
+         display: flex
+         align-items: center
+         font-size: 14px
+         font-weight: 400
+         input
+            font-size: 9px
+            margin-right: 7px
+   button
+      background: none
+      border: 0
+      font-size: 14px
+      font-family: "Open Sans", sans-serif
+      margin-top: 5px
+   .checkbox-container::-webkit-scrollbar
+      background-color: #f1f1f1
+      width: 6%
+   .checkbox-container::-webkit-scrollbar-thumb
+      background: #a9a9a9
+      margin: 5px 0
+   .fas.fa-arrow-down
+      margin-left: 5px
+
+.checkbox-container
+   height: 150px
+   overflow: scroll
+   &.opened
+      height: auto
+
+//Switch
+.switch
+   position: relative
+   display: inline-block
+   width: 60px
+   height: 26px
+   margin: 0 3%
+
+.switch input
+   opacity: 0
+   width: 0
+   height: 0
+
+.slider
+   position: absolute
+   cursor: pointer
+   top: 0
+   left: 0
+   right: 0
+   bottom: 0
+   background-color: $light-blue
+   -webkit-transition: .4s
+   transition: .4s
+
+.slider:before
+   position: absolute
+   content: ""
+   height: 32px
+   width: 32px
+   left: 0
+   bottom: -3px
+   background-color: white
+   -webkit-transition: .4s
+   transition: .4s
+   border: 1px solid $light-blue
+
+input:checked + .slider
+   background-color: #2196F3
+
+input:focus + .slider
+   box-shadow: 0 0 1px #2196F3
+
+input:checked + .slider:before
+   -webkit-transform: translateX(28px)
+   -ms-transform: translateX(28px)
+   transform: translateX(28px)
+
+.slider.round
+   border-radius: 34px
+
+.slider.round:before
+   border-radius: 50%
+//Switch
+
+//Right Side
+.block-search-results
+   position: relative
+   .close-filter-trigger
+      position: absolute
+      display: none
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      z-index: 99
+      &.opened
+         display: block
+      &.accordion-opened
+         animation: dark .5s
+         display: block
+         background: rgba(0,0,0,.3)
+         z-index: 102
+         @keyframes dark
+            from
+               background: transparent
+            to
+               background: rgba(0,0,0,.3)
+   .block-search-results .accordion-tumbler, .block-search-results #mobile-filter
+      display: none
+   .accordion-filters .card-body label, #accordion.cards-serch-results .card .card-body .switcher
+      font-family: "Open Sans", sans-serif
+      font-size: 14px
+      color: $dark-gray
+      margin-bottom: 3px
+
+#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model
+   width: 100%
+   height: 35px
+   -webkit-appearance: none
+   -moz-appearance: none
+   appearance: none
+   background-image: url(../img/home/arrow-down.svg)
+   background-position: center right 10px
+   background-size: 6.5%
+   background-repeat: no-repeat
+   border-radius: 5px
+   padding-left: 10px
+   border: 1.5px solid #dedede
+   color: #d6d6d6
+   font-family: "Open Sans", sans-serif
+   font-size: 14px
+
+#collapseThree .total-price div
+   display: flex
+   align-items: center
+   justify-content: space-evenly
+   margin-top: 22px
+   label
+      float: left
+      width: 18%
+
+
+.block-search-results #accordion.cards-serch-results .card .card-body
+   .switcher
+      font-size: 13px
+   #price-from-select, #price-to-model
+      width: 70%
+
+.block-used-cars
+   margin-top: 23px
+   .search-results-container
+      .car-tile
+         margin-bottom: 2%
+         max-width: 32%
+         &:nth-child(3n + 2)
+            margin: 0 2% 2% 2%
+   .title-block-used-cars
+      font-weight: 700
+   .filter-navigation-menu
+      margin-bottom: 2%
+      .pagination, .filters
+         .more-pages
+            display: none
+         .col-md-6
+            padding: 0
+            &:last-child
+               text-align: right
+            ul
+               li
+                  display: inline-block
+                  padding: 0
+                  margin: 0
+                  font-family: "Open Sans", sans-serif
+      .filters
+         padding: 1% 0
+         border: 1px solid #C0C0C0
+         .col-md-6
+            padding: 0 15px
+            ul
+               li
+                  margin-left: 4%
+      .pagination
+         align-items: center
+         margin: 1% 0
+         .col-md-6
+            &:last-child
+               height: 26px
+               display: flex
+               justify-content: flex-end
+            object
+               height: 26px
+            ul
+               display: flex
+               justify-content: flex-end
+               li
+                  border: 1px solid #C0C0C0
+                  padding: 0 5px
+                  &:first-child
+                     border-left: none
+                  &:last-child
+                     border-right: none
+      .filters-mobile
+         display: flex
+         justify-content: space-between
+         align-items: center
+         margin: 0 15px
+         font-size: 13px
+         .cards-show
+            font-style: italic
+         #mobile-filter
+            border: 1px solid grey
+            padding: 3% 2%
+            width: 35%
+            text-align: left
+            position: relative
+            background-image: url(../img/home/arrow-down.svg)
+            background-position: center right 10px
+            background-size: 13%
+            background-repeat: no-repeat
+            ul
+               visibility: hidden
+               display: block
+               z-index: 101
+               position: absolute
+               top: -1px
+               left: -1px
+               right: -1px
+               width: calc(100% + 2px)
+               list-style: none
+               background: white
+               border: 1px solid grey
+               li
+                  padding: 7% 4%
+               &.opened
+                  visibility: visible
+.show-more
+   background: #F7F7F9
+   color: $dark-blue
+   font-family: "Open Sans", sans-serif
+   padding: 20px 10px
+   display: flex
+   justify-content: center
+   align-items: center
+   border-bottom: 1px solid #CCCCCC
+   text-transform: capitalize
+   font-weight: 300
+
+.search-block-used-cars .car-tile .car-desc .col-6 h6
+   font-size: 13px
+
+.search-block-used-cars .car-tile .car-price
+   font-size: 25px
+   .col-6:last-child
+      line-height: 17px
+//Right Side
+@media only screen and (max-width: 768px)
+   .block-used-cars
+      padding: 0
+      .search-results-container
+         .row:first-child
+            padding: 0 15px
+            margin: 0
+         .car-tile
+            max-width: 100%
+            .row
+               padding: 0
+            &:nth-child(3n + 2)
+               margin: 0 0 2%
+      .filter-navigation-menu
+         .filters, .pagination
+            display: none
+         .pagination .col-md-6:last-child
+            justify-content: center
+            object
+               display: none
+            ul
+               width: 100%
+               padding: 0 15px
+               li
+                  display: none
+                  color: $dark-blue
+                  border: 1px solid $dark-blue
+                  margin-right: 1px
+                  width: 10%
+                  text-align: center
+                  padding: 2% 0 10%
+                  &:nth-child(-n+4), &:nth-last-child(-n+3)
+                     display: block
+                  &:first-child, &:last-child
+                     background: $dark-blue
+                     color: white
+                     border: 1px solid $dark-blue
+                     width: 25%
+                  &:last-child
+                     margin-right: 0
+         .pagination-bottom
+            display: block
+   #accordion.cards-serch-results
+      margin: 0
+      width: 66%
+      background: white
+      z-index: 1001
+      position: fixed
+      top: 0
+      bottom: 0
+      left: -66%
+      animation: slideOut .5s
+      overflow: auto
+      @keyframes slideOut
+         from
+            left: 0
+         to
+            left: -66%
+      &.opened
+         left: 0
+         animation: slideIn .5s
+         @keyframes slideIn
+            from
+               left: -66%
+            to
+               left: 0
+      .mobile-accordion-filter
+         display: flex
+         margin: 15px 0
+      .card .card-header
+         background-position: center left 10px
+         h5 .btn
+            padding-left: 30px
+         &:after
+            content: "Any"
+            position: absolute
+            right: 10px
+            top: 13px
+            display: flex
+            align-items: center
+            color: #BBBBBB
+            font-family: $primary-font
+   .col-md-9.col-12.block-used-cars .search-results-container .row
+      padding: 0 5px
+   .reset-block
+      display: flex
+      align-items: center
+      object
+         margin-right: 5px
+   .button-done-block
+      background: $dark-blue
+      color: white
+      font-family: "Source Sans Pro", sans-serif
+      border: 0
+      padding: 6px 27px
+   #accordion .accordion-tumbler object
+      max-height: 14px
+
+   .search-block-used-cars .car-tile .car-desc .col-6 object
+      max-height: 26px
+
+   .search-block-used-cars .car-tile .car-desc .col-6 h6
+      font-size: 15px
+
+   .search-block-used-cars .car-tile .car-price
+      font-size: 32px
+
+   .search-block-used-cars .car-tile .car-price .col-6:last-child p
+      font-size: 12px
+
+   .search-block-used-cars .car-tile .car-price .col-6:last-child
+      line-height: 25px
 
 .title-block-used-cars
    font-weight: 500
@@ -2179,3 +2671,4 @@ hr.heading-underline
    #our-team .container
       padding: 0 15px
 //About
+
