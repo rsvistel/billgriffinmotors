@@ -98,6 +98,10 @@ $(document).ready(function(){
             $(".more-icon").addClass('fa-angle-down').removeClass('fa-angle-up');
         }
     });
+    if ($('body').hasClass('shortlist') && !$('.shortlist .car-tile').length) {
+        $('.empty-shortlist-message').show()
+    }
+
 });
 
 
