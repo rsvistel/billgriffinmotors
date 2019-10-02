@@ -1949,12 +1949,22 @@ button:focus
 
 .accordion__button
    font-size: 18px
+   padding: 1.5rem 1.67rem
+   width: 100%
+   text-align: left
 
 .accordion__title
+   position: relative
    color: #000000
    display: flex
    justify-content: space-between
-   padding: .75rem 1.25rem
+
+.accordion__icon-wrapper
+   position: absolute
+   top: 0
+   bottom: 0
+   right: 1.25rem
+   display: flex
 
 .accordion__down-icon
    transform: rotate(0deg)
@@ -2010,12 +2020,12 @@ button:focus
       margin-bottom: 0
 
    .accordion__button
-      padding-left: 0
+      //padding-left: 0
       font-size: 18px
       text-align: left
    .accordion .card-body
       font-size: 15px
-      padding-left: 18px
+      padding-left: 27px
    .card-header
       padding: 11px 18px
 
@@ -2026,10 +2036,6 @@ button:focus
       font-size: 0.8rem
    .accordion__button
       font-size: 15px
-
-   .accordion__title img
-      height: 21px
-      margin-top: 8px
    .accordion .card-body
       font-size: 14px
 
