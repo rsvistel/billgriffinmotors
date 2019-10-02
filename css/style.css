@@ -665,32 +665,38 @@ body {
       padding: 0; }
       #cars-popup .container img {
         width: 100%; } }
-#statistics {
+#statistics, #about-statistics {
   text-align: center;
-  color: #fff;
-  background: url("../img/home/bmw.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 5% 0; }
-  #statistics .statistic-block object {
+  #statistics .statistic-block object, #about-statistics .statistic-block object {
     width: auto;
     max-height: 51px; }
-  #statistics .statistic-block .img-statistic {
+  #statistics .statistic-block .img-statistic, #about-statistics .statistic-block .img-statistic {
     height: 56px; }
-  #statistics .statistic-block .counter-value {
+  #statistics .statistic-block .counter-value, #about-statistics .statistic-block .counter-value {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
     font-size: 35px; }
-  #statistics .statistic-block-earth object {
+  #statistics .statistic-block-earth object, #about-statistics .statistic-block-earth object {
     max-height: 56px;
     margin-top: -5px; }
-  #statistics p {
+  #statistics p, #about-statistics p {
     font-family: "Poppins", sans-serif;
     font-style: oblique;
     font-size: 18px;
     margin-top: 5px; }
-    #statistics p span {
+    #statistics p span, #about-statistics p span {
       color: #00C4FC; }
+
+#about-statistics {
+  position: relative;
+  padding: 5%; }
+
+#statistics {
+  background: url("../img/home/bmw.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; }
 
 @media only screen and (max-width: 768px) {
   #statistics {
@@ -849,7 +855,49 @@ body {
     padding-left: 3px; }
 
 #feedback.feedback-used-car {
-  background: none; }
+  background: none;
+  padding: 0; }
+  #feedback.feedback-used-car .container {
+    padding: 0; }
+  #feedback.feedback-used-car h3.feedback-rating, #feedback.feedback-used-car h4.feedback-title {
+    display: block; }
+  #feedback.feedback-used-car h4.feedback-title {
+    border: 1px solid lightgrey;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding: 10px 5px 10px 3%; }
+  #feedback.feedback-used-car h3.feedback-rating {
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #feedback.feedback-used-car .owl-feedback {
+    border: 1px solid lightgrey;
+    border-top: none;
+    padding: 0 3.5% 3% 3.5%;
+    display: block; }
+    #feedback.feedback-used-car .owl-feedback .feedback-item {
+      border-top: 1px solid lightgrey;
+      padding: 10px 0; }
+      #feedback.feedback-used-car .owl-feedback .feedback-item .fas.fa-star {
+        font-size: 1rem; }
+      #feedback.feedback-used-car .owl-feedback .feedback-item .feedback-title h3 {
+        font-size: 22px; }
+      #feedback.feedback-used-car .owl-feedback .feedback-item .feedback-author h3 {
+        font-size: 17px; }
+  #feedback.feedback-used-car button {
+    display: none; }
+  #feedback.feedback-used-car .five-stars {
+    margin: 0 15px 0 10px;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic; }
+  #feedback.feedback-used-car .fas.fa-star {
+    font-size: 1.5rem; }
 
 .used-car-section {
   width: 100%;
@@ -1030,9 +1078,9 @@ body {
   background: #005EAA; }
 
 .accordion-used-car__reviews {
-  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
-  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16); }
+  -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16); }
 
 #modalUsedCar {
   padding-right: 0 !important; }
@@ -1802,6 +1850,297 @@ input:checked + .slider:before {
       pointer-events: none; }
   .shortlist .car-tile:nth-child(3n + 2) {
     margin: 0 2% 2% 2%; }
+.reviews-list .reviews-card img {
+  width: 100%;
+  display: block; }
+
+#feedback.reviews-page {
+  background: #FFFFFF;
+  padding: 0;
+  margin-bottom: 2rem; }
+
+.reviews-page-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0; }
+
+#feedback.reviews-page .feedback-item {
+  padding: 14px 5px 7px 8px; }
+
+.reviews-card {
+  position: relative;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.16);
+  border: 1px solid #CCCCCC; }
+
+#feedback.reviews-page .feedback-title h3 {
+  font-size: 16px; }
+
+#feedback.reviews-page .title-feedback-body {
+  font-size: 16px; }
+
+#feedback.reviews-page .feedback-item .fas.fa-quote-left, #feedback.reviews-page .feedback-item .fas.fa-quote-right {
+  font-size: 22px; }
+
+#feedback.reviews-page .feedback-date {
+  font-size: 12px;
+  padding-left: 5px; }
+
+#feedback.reviews-page .feedback-item .fas.fa-quote-right {
+  width: 97%; }
+
+#feedback.reviews-page .feedback-date {
+  padding-left: 5px; }
+
+#feedback.reviews-page .feedback-company {
+  padding-left: 5px; }
+
+#feedback.reviews-page .feedback-stars {
+  padding-left: 5px; }
+
+.reviews-button-container {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+  justify-content: center;
+  grid-gap: 1rem; }
+
+.reviews-button {
+  background: #005EAA;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  color: white;
+  width: 234px;
+  height: 55px; }
+
+@media (min-width: 320px) {
+  .reviews-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px; } }
+@media (min-width: 640px) {
+  .reviews-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px; } }
+@media (max-width: 767px) {
+  #feedback.reviews-page .container {
+    padding: 0 7px; }
+
+  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
+    width: 90%; } }
+@media (max-width: 320px) {
+  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
+    width: 65%; } }
+@media only screen and (max-width: 768px) {
+  #feedback.reviews-page button {
+    display: grid; }
+
+  #feedback.reviews-page .feedback-item {
+    padding: 14px 5px 7px 5px; } }
+@media (min-width: 960px) {
+  .reviews-list {
+    grid-template-columns: 1fr 1fr 1fr; } }
+@media (min-width: 980px) {
+  .reviews-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; } }
+@media (min-width: 1024px) and (max-width: 1024px) {
+  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
+    width: 25%; } }
+
+.title-block-used-cars {
+  font-weight: 500; }
+
+.first-section-about {
+  padding: 6% 0 5% 0; }
+  .first-section-about .half-first-section-about {
+    padding: 0 40px;
+    z-index: 100; }
+
+.title-about-us {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.heading-underline.heading-underline_long, hr.heading-underline {
+  border-top: 1px solid #242424; }
+
+.text-about-us {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #777777;
+  margin-top: 25px; }
+
+.text-about-us-first {
+  margin-top: 40px; }
+
+hr.heading-underline {
+  width: 100px;
+  margin: 0.5rem 0; }
+  hr.heading-underline.heading-underline_long {
+    width: 120px;
+    margin-top: 1rem; }
+
+#brakes-image {
+  position: absolute;
+  top: -2%;
+  right: -15%;
+  width: 28%; }
+  #brakes-image img {
+    width: 100%; }
+
+#our-team {
+  background: #EAEDF0;
+  padding: 6% 0 5% 0; }
+  #our-team .title-about-us {
+    text-transform: capitalize; }
+  #our-team .text-about-us-our-team {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #777777;
+    margin-top: 20px;
+    margin-bottom: 25px; }
+  #our-team .container {
+    padding: 0 5%; }
+  #our-team .col-md-6 {
+    background: white;
+    margin: 0 1%;
+    max-width: 48%;
+    padding: 3% 2.5%; }
+    #our-team .col-md-6 .member-image {
+      display: flex; }
+      #our-team .col-md-6 .member-image img {
+        margin-right: 20px; }
+  #our-team .text-under-title-team {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #777777;
+    font-size: 18px; }
+
+.title-name-our-team {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-style: italic;
+  color: #323232;
+  margin-bottom: 6px;
+  margin-top: 5px; }
+
+.title-name-our-team-bottom {
+  text-transform: capitalize; }
+
+.block-description-our-team {
+  font-family: "Poppins", sans-serif;
+  padding-top: 8rem; }
+  .block-description-our-team h6 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    padding-bottom: 5px;
+    font-weight: 400; }
+  .block-description-our-team h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 5px; }
+  .block-description-our-team p {
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-bottom: 1rem; }
+  .block-description-our-team .button-prefooter {
+    text-transform: uppercase; }
+    .block-description-our-team .button-prefooter .fa-angle-right {
+      padding-left: 3px; }
+  .block-description-our-team .about-prefooter-img-left, .block-description-our-team .about-prefooter-img-right {
+    padding-top: 3rem; }
+
+.our-team-prefooter-right {
+  padding-right: 5%; }
+
+.our-team-prefooter-left {
+  padding-left: 5%; }
+
+#about-prefooter {
+  background-image: url("../img/about/call-to-action.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 2rem; }
+  #about-prefooter .container {
+    min-height: 500px; }
+  #about-prefooter .col-md-6 {
+    position: relative; }
+    #about-prefooter .col-md-6:last-child {
+      text-align: right; }
+    #about-prefooter .col-md-6 img {
+      width: 100%; }
+  #about-prefooter .button-prefooter {
+    background: #005EAA;
+    color: white;
+    padding: 13px 0;
+    border: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    width: 54%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-between; }
+
+.img-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%; }
+
+@media only screen and (max-width: 768px) {
+  #brakes-image {
+    display: none; }
+
+  #our-team {
+    background-color: white; }
+    #our-team .team-blocks {
+      margin: 0; }
+      #our-team .team-blocks .title-name-our-team {
+        font-size: 17px; }
+      #our-team .team-blocks .text-under-title-team {
+        font-size: 16px; }
+      #our-team .team-blocks .col-md-6 {
+        max-width: 100%;
+        border: 1px solid #E6E6E6;
+        margin: 0 0 23px 0; }
+
+  #about-prefooter {
+    display: none; }
+    #about-prefooter .col-md-6:first-child img {
+      left: -20%; }
+    #about-prefooter .col-md-6:last-child img {
+      right: -20%; }
+    #about-prefooter .col-md-6 img {
+      position: relative;
+      width: 80%; }
+
+  .first-section-about {
+    overflow: hidden; }
+    .first-section-about .half-first-section-about {
+      padding: 0 30px; }
+      .first-section-about .half-first-section-about .title-about-us {
+        font-size: 21px; }
+      .first-section-about .half-first-section-about .text-about-us {
+        font-size: 14px; }
+      .first-section-about .half-first-section-about .title-about-us-bottom {
+        text-transform: initial;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 25px; }
+
+  #our-team .container {
+    padding: 0 15px; } }
 
 @media only screen and (max-width: 768px) {
   .shortlist .car-tile {
