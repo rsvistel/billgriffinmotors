@@ -849,7 +849,49 @@ body {
     padding-left: 3px; }
 
 #feedback.feedback-used-car {
-  background: none; }
+  background: none;
+  padding: 0; }
+  #feedback.feedback-used-car .container {
+    padding: 0; }
+  #feedback.feedback-used-car h3.feedback-rating, #feedback.feedback-used-car h4.feedback-title {
+    display: block; }
+  #feedback.feedback-used-car h4.feedback-title {
+    border: 1px solid lightgrey;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding: 10px 5px 10px 3%; }
+  #feedback.feedback-used-car h3.feedback-rating {
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #feedback.feedback-used-car .owl-feedback {
+    border: 1px solid lightgrey;
+    border-top: none;
+    padding: 0 3.5% 3% 3.5%;
+    display: block; }
+    #feedback.feedback-used-car .owl-feedback .feedback-item {
+      border-top: 1px solid lightgrey;
+      padding: 10px 0; }
+      #feedback.feedback-used-car .owl-feedback .feedback-item .fas.fa-star {
+        font-size: 1rem; }
+      #feedback.feedback-used-car .owl-feedback .feedback-item .feedback-title h3 {
+        font-size: 22px; }
+      #feedback.feedback-used-car .owl-feedback .feedback-item .feedback-author h3 {
+        font-size: 17px; }
+  #feedback.feedback-used-car button {
+    display: none; }
+  #feedback.feedback-used-car .five-stars {
+    margin: 0 15px 0 10px;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic; }
+  #feedback.feedback-used-car .fas.fa-star {
+    font-size: 1.5rem; }
 
 .used-car-section {
   width: 100%;
