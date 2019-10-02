@@ -2063,14 +2063,47 @@ hr.heading-underline
 .title-name-our-team-bottom
    text-transform: capitalize
 
+.block-description-our-team
+   font-family: 'Poppins', sans-serif
+   padding-top: 8rem
+   h6
+      font-size: 18px
+      font-family: 'Poppins', sans-serif
+      font-style: italic
+      padding-bottom: 5px
+   h4
+      font-size: 24px
+      font-weight: bold
+      text-transform: uppercase
+      padding-bottom: 10px
+   p
+      font-size: 16px
+      font-family: "Source Sans Pro", sans-serif
+      padding-bottom: 1rem
+   .button-prefooter
+      text-transform: uppercase
+      .fa-angle-right
+         padding-left: 3px
+   .about-prefooter-img-left
+      padding-top: 2rem
+   .about-prefooter-img-right
+      padding-top: 1rem
+
+.our-team-prefooter-right
+   padding-right: 5%
+.our-team-prefooter-left
+   padding-left: 5%
+
 
 #about-prefooter
    background-image: url("../img/about/call-to-action.png")
    background-size: 100%
-   background-position: center
+   //background-position: center
+   background-repeat: no-repeat
    color: white
+   margin-bottom: 2rem
    .container
-      height: 500px
+      max-height: 700px
    .col-md-6
       &:last-child
          text-align: right
@@ -2082,8 +2115,11 @@ hr.heading-underline
       padding: 13px 72px
       border: 0
       font-family: "Source Sans Pro", sans-serif
-      width: 50%
-      display: flex
+      font-size: 14px
+      width: 54%
+      //width: 283px
+      //display: flex
+      white-space: nowrap
       align-items: center
       justify-content: space-between
 @media only screen and (max-width: 768px)
