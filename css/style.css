@@ -1429,6 +1429,19 @@ button:focus {
 .title-block-used-cars {
   font-weight: 500; }
 
+.title-about-us {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.heading-underline.heading-underline_long {
+  color: #242424; }
+
+.text-about-us {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #777777; }
+
 hr.heading-underline {
   width: 100px;
   margin: 1rem 0; }
@@ -1475,3 +1488,5 @@ hr.heading-underline {
   #about-prefooter .col-md-6 img {
     position: relative;
     width: 80%; } }
+
+/*# sourceMappingURL=style.css.map */
