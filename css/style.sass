@@ -1290,6 +1290,7 @@ body
    background: #EAEDF0
    color: #000000
 
+
 .footer-section__row
    padding-left: 0
    padding-right: 0
@@ -2485,7 +2486,19 @@ input:checked + .slider:before
 
 
 //Shortlist
+
+.heading-underlined-shortlist
+   display: flex
+   flex-direction: column
+   align-items: center
+   margin: 30px 0
+   .title-about-us
+      text-transform: capitalize
+   hr.heading-underline
+      margin: 0.2rem 0
 .shortlist
+   .footer-section
+      margin-top: 25px
    .empty-shortlist-message
       display: none
       text-align: center
@@ -2521,7 +2534,8 @@ input:checked + .slider:before
 .reviews-list .reviews-card img
    width: 100%
    display: block
-
+.reviews-title-logo
+   text-transform: lowercase
 // Reviews
 #feedback.reviews-page
    background: #FFFFFF

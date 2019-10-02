@@ -1828,6 +1828,18 @@ input:checked + .slider:before {
 
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
     line-height: 25px; } }
+.heading-underlined-shortlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0; }
+  .heading-underlined-shortlist .title-about-us {
+    text-transform: capitalize; }
+  .heading-underlined-shortlist hr.heading-underline {
+    margin: 0.2rem 0; }
+
+.shortlist .footer-section {
+  margin-top: 25px; }
 .shortlist .empty-shortlist-message {
   display: none;
   text-align: center;
@@ -1850,9 +1862,18 @@ input:checked + .slider:before {
       pointer-events: none; }
   .shortlist .car-tile:nth-child(3n + 2) {
     margin: 0 2% 2% 2%; }
+
+@media only screen and (max-width: 768px) {
+  .shortlist .car-tile {
+    max-width: 100%; }
+  .shortlist .row.shortlist-container {
+    padding: 0 15px; } }
 .reviews-list .reviews-card img {
   width: 100%;
   display: block; }
+
+.reviews-title-logo {
+  text-transform: lowercase; }
 
 #feedback.reviews-page {
   background: #FFFFFF;
@@ -1951,7 +1972,6 @@ input:checked + .slider:before {
 @media (min-width: 1024px) and (max-width: 1024px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
     width: 25%; } }
-
 .title-block-used-cars {
   font-weight: 500; }
 
@@ -2142,8 +2162,4 @@ hr.heading-underline {
   #our-team .container {
     padding: 0 15px; } }
 
-@media only screen and (max-width: 768px) {
-  .shortlist .car-tile {
-    max-width: 100%; }
-  .shortlist .row.shortlist-container {
-    padding: 0 15px; } }
+/*# sourceMappingURL=style.css.map */
