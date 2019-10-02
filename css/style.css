@@ -665,32 +665,38 @@ body {
       padding: 0; }
       #cars-popup .container img {
         width: 100%; } }
-#statistics {
+#statistics, #about-statistics {
   text-align: center;
-  color: #fff;
-  background: url("../img/home/bmw.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 5% 0; }
-  #statistics .statistic-block object {
+  #statistics .statistic-block object, #about-statistics .statistic-block object {
     width: auto;
     max-height: 51px; }
-  #statistics .statistic-block .img-statistic {
+  #statistics .statistic-block .img-statistic, #about-statistics .statistic-block .img-statistic {
     height: 56px; }
-  #statistics .statistic-block .counter-value {
+  #statistics .statistic-block .counter-value, #about-statistics .statistic-block .counter-value {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
     font-size: 35px; }
-  #statistics .statistic-block-earth object {
+  #statistics .statistic-block-earth object, #about-statistics .statistic-block-earth object {
     max-height: 56px;
     margin-top: -5px; }
-  #statistics p {
+  #statistics p, #about-statistics p {
     font-family: "Poppins", sans-serif;
     font-style: oblique;
     font-size: 18px;
     margin-top: 5px; }
-    #statistics p span {
+    #statistics p span, #about-statistics p span {
       color: #00C4FC; }
+
+#about-statistics {
+  position: relative;
+  padding: 5%; }
+
+#statistics {
+  background: url("../img/home/bmw.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; }
 
 @media only screen and (max-width: 768px) {
   #statistics {
@@ -1822,5 +1828,195 @@ input:checked + .slider:before {
 
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
     line-height: 25px; } }
+
+.title-block-used-cars {
+  font-weight: 500; }
+
+.first-section-about {
+  padding: 6% 0 5% 0; }
+  .first-section-about .half-first-section-about {
+    padding: 0 40px;
+    z-index: 100; }
+
+.title-about-us {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.heading-underline.heading-underline_long, hr.heading-underline {
+  border-top: 1px solid #242424; }
+
+.text-about-us {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #777777;
+  margin-top: 25px; }
+
+.text-about-us-first {
+  margin-top: 40px; }
+
+hr.heading-underline {
+  width: 100px;
+  margin: 0.5rem 0; }
+  hr.heading-underline.heading-underline_long {
+    width: 120px;
+    margin-top: 1rem; }
+
+#brakes-image {
+  position: absolute;
+  top: -2%;
+  right: -15%;
+  width: 28%; }
+  #brakes-image img {
+    width: 100%; }
+
+#our-team {
+  background: #EAEDF0;
+  padding: 6% 0 5% 0; }
+  #our-team .title-about-us {
+    text-transform: capitalize; }
+  #our-team .text-about-us-our-team {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #777777;
+    margin-top: 20px;
+    margin-bottom: 25px; }
+  #our-team .container {
+    padding: 0 5%; }
+  #our-team .col-md-6 {
+    background: white;
+    margin: 0 1%;
+    max-width: 48%;
+    padding: 3% 2.5%; }
+    #our-team .col-md-6 .member-image {
+      display: flex; }
+      #our-team .col-md-6 .member-image img {
+        margin-right: 20px; }
+  #our-team .text-under-title-team {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #777777;
+    font-size: 18px; }
+
+.title-name-our-team {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-style: italic;
+  color: #323232;
+  margin-bottom: 6px;
+  margin-top: 5px; }
+
+.title-name-our-team-bottom {
+  text-transform: capitalize; }
+
+.block-description-our-team {
+  font-family: "Poppins", sans-serif;
+  padding-top: 8rem; }
+  .block-description-our-team h6 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    padding-bottom: 5px;
+    font-weight: 400; }
+  .block-description-our-team h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 5px; }
+  .block-description-our-team p {
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-bottom: 1rem; }
+  .block-description-our-team .button-prefooter {
+    text-transform: uppercase; }
+    .block-description-our-team .button-prefooter .fa-angle-right {
+      padding-left: 3px; }
+  .block-description-our-team .about-prefooter-img-left, .block-description-our-team .about-prefooter-img-right {
+    padding-top: 3rem; }
+
+.our-team-prefooter-right {
+  padding-right: 5%; }
+
+.our-team-prefooter-left {
+  padding-left: 5%; }
+
+#about-prefooter {
+  background-image: url("../img/about/call-to-action.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 2rem; }
+  #about-prefooter .container {
+    min-height: 500px; }
+  #about-prefooter .col-md-6 {
+    position: relative; }
+    #about-prefooter .col-md-6:last-child {
+      text-align: right; }
+    #about-prefooter .col-md-6 img {
+      width: 100%; }
+  #about-prefooter .button-prefooter {
+    background: #005EAA;
+    color: white;
+    padding: 13px 0;
+    border: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    width: 54%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-between; }
+
+.img-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%; }
+
+@media only screen and (max-width: 768px) {
+  #brakes-image {
+    display: none; }
+
+  #our-team {
+    background-color: white; }
+    #our-team .team-blocks {
+      margin: 0; }
+      #our-team .team-blocks .title-name-our-team {
+        font-size: 17px; }
+      #our-team .team-blocks .text-under-title-team {
+        font-size: 16px; }
+      #our-team .team-blocks .col-md-6 {
+        max-width: 100%;
+        border: 1px solid #E6E6E6;
+        margin: 0 0 23px 0; }
+
+  #about-prefooter {
+    display: none; }
+    #about-prefooter .col-md-6:first-child img {
+      left: -20%; }
+    #about-prefooter .col-md-6:last-child img {
+      right: -20%; }
+    #about-prefooter .col-md-6 img {
+      position: relative;
+      width: 80%; }
+
+  .first-section-about {
+    overflow: hidden; }
+    .first-section-about .half-first-section-about {
+      padding: 0 30px; }
+      .first-section-about .half-first-section-about .title-about-us {
+        font-size: 21px; }
+      .first-section-about .half-first-section-about .text-about-us {
+        font-size: 14px; }
+      .first-section-about .half-first-section-about .title-about-us-bottom {
+        text-transform: initial;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 25px; }
+
+  #our-team .container {
+    padding: 0 15px; } }
 
 /*# sourceMappingURL=style.css.map */
