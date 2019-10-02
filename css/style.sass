@@ -2477,3 +2477,105 @@ input:checked + .slider:before
       line-height: 25px
 
 //Search-results
+
+//Reviews
+
+.reviews-list .reviews-card img
+   width: 100%
+   display: block
+
+// Reviews
+#feedback.reviews-page
+   background: #FFFFFF
+   padding: 0
+   margin-bottom: 2rem
+
+.reviews-page-title
+   display: flex
+   flex-direction: row
+   justify-content: center
+   width: 100%
+   padding: 2rem 0
+#feedback.reviews-page .feedback-item
+   padding: 14px 5px 7px 8px
+.reviews-card
+   position: relative
+   -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+   -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+   border: 1px solid #CCCCCC
+#feedback.reviews-page .feedback-title h3
+   font-size: 16px
+#feedback.reviews-page .title-feedback-body
+   font-size: 16px
+#feedback.reviews-page .feedback-item .fas.fa-quote-left, #feedback.reviews-page .feedback-item .fas.fa-quote-right
+   font-size: 22px
+#feedback.reviews-page .feedback-date
+   font-size: 12px
+   padding-left: 5px
+#feedback.reviews-page .feedback-item .fas.fa-quote-right
+   width: 97%
+#feedback.reviews-page .feedback-date
+   padding-left: 5px
+#feedback.reviews-page .feedback-company
+   padding-left: 5px
+#feedback.reviews-page .feedback-stars
+   padding-left: 5px
+
+.reviews-button-container
+   margin: 2rem auto
+   display: grid
+   grid-template-columns: repeat(auto-fit, minmax(100px, max-content))
+   justify-content: center
+   grid-gap: 1rem
+
+.reviews-button
+   background: $dark-blue
+   font-family: 'Source Sans Pro', sans-serif
+   border: none
+   color: white
+   width: 234px
+   height: 55px
+
+@media (min-width: 320px)
+   .reviews-list
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 30px
+
+@media (min-width: 640px)
+   .reviews-list
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 30px
+
+@media (max-width: 767px)
+   #feedback.reviews-page .container
+      padding: 0 7px
+   #feedback.reviews-page .feedback-item .fas.fa-quote-right
+      width: 90%
+
+@media (max-width: 320px)
+   #feedback.reviews-page .feedback-item .fas.fa-quote-right
+      width: 65%
+
+@media only screen and (max-width: 768px)
+   #feedback.reviews-page button
+      display: grid
+   #feedback.reviews-page .feedback-item
+      padding: 14px 5px 7px 5px
+
+@media (min-width: 960px)
+   .reviews-list
+      grid-template-columns: 1fr 1fr 1fr
+
+@media (min-width: 980px)
+   .reviews-list
+      grid-template-columns: repeat(3, 1fr)
+      grid-gap: 30px
+
+@media (min-width: 1024px) and (max-width: 1024px)
+   #feedback.reviews-page .feedback-item .fas.fa-quote-right
+      width: 25%
+
+//Reviews
