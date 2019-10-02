@@ -690,7 +690,8 @@ body {
 
 #about-statistics {
   position: relative;
-  padding: 5%; }
+  padding: 5%;
+  margin-top: 40px; }
 
 #statistics {
   background: url("../img/home/bmw.png");
@@ -1838,6 +1839,8 @@ input:checked + .slider:before {
   .heading-underlined-shortlist hr.heading-underline {
     margin: 0.2rem 0; }
 
+.shortlist .car-like object {
+  width: 14%; }
 .shortlist .footer-section {
   margin-top: 25px; }
 .shortlist .empty-shortlist-message {
@@ -2007,7 +2010,7 @@ hr.heading-underline {
 
 #brakes-image {
   position: absolute;
-  top: -2%;
+  top: -33%;
   right: -15%;
   width: 28%; }
   #brakes-image img {
