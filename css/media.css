@@ -470,6 +470,9 @@
 
   .block-description-our-team p {
     font-size: 15px; } }
+@media (min-width: 2000px) {
+  #about-prefooter .container {
+    min-height: 700px; } }
 @media (min-width: 900px) and (max-width: 1000px) {
   .bottom-half-header .container ul li a .h6-title {
     font-size: 1vw; } }

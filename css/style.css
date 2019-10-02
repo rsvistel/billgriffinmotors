@@ -1463,7 +1463,7 @@ hr.heading-underline {
   position: absolute;
   top: -2%;
   right: -15%;
-  width: 30%; }
+  width: 28%; }
   #brakes-image img {
     width: 100%; }
 
@@ -1547,10 +1547,12 @@ hr.heading-underline {
   margin-bottom: 2rem; }
   #about-prefooter .container {
     min-height: 500px; }
-  #about-prefooter .col-md-6:last-child {
-    text-align: right; }
-  #about-prefooter .col-md-6 img {
-    width: 100%; }
+  #about-prefooter .col-md-6 {
+    position: relative; }
+    #about-prefooter .col-md-6:last-child {
+      text-align: right; }
+    #about-prefooter .col-md-6 img {
+      width: 100%; }
   #about-prefooter .button-prefooter {
     background: #005EAA;
     color: white;
@@ -1562,6 +1564,12 @@ hr.heading-underline {
     white-space: nowrap;
     align-items: center;
     justify-content: space-between; }
+
+.img-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%; }
 
 @media only screen and (max-width: 768px) {
   #brakes-image {

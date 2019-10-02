@@ -2022,7 +2022,7 @@ hr.heading-underline
    position: absolute
    top: -2%
    right: -15%
-   width: 30%
+   width: 28%
    img
       width: 100%
 #our-team
@@ -2094,7 +2094,10 @@ hr.heading-underline
 .our-team-prefooter-left
    padding-left: 5%
 
-
+//.img-border
+//   position: absolute
+//   top: 0
+//   right: 0
 #about-prefooter
    background-image: url("../img/about/call-to-action.png")
    background-size: 100%
@@ -2105,6 +2108,7 @@ hr.heading-underline
    .container
       min-height: 500px
    .col-md-6
+      position: relative
       &:last-child
          text-align: right
       img
@@ -2122,6 +2126,15 @@ hr.heading-underline
       white-space: nowrap
       align-items: center
       justify-content: space-between
+
+//.block-our-team::after
+
+
+.img-border
+   position: absolute
+   top: 0
+   right: 0
+   width: 10%
 @media only screen and (max-width: 768px)
    #brakes-image
       display: none
