@@ -1822,5 +1822,52 @@ input:checked + .slider:before {
 
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
     line-height: 25px; } }
+#workshop-banner {
+  padding: 5% 0;
+  background-image: url("../img/workshop/car-left.png"), url("../img/workshop/service.png");
+  background-size: 50% 100%;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  position: relative; }
+  #workshop-banner .workshop-intro-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white; }
+    #workshop-banner .workshop-intro-text div {
+      width: 50%; }
+  #workshop-banner .workshop-steps-container {
+    position: relative;
+    right: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 3%; }
+    #workshop-banner .workshop-steps-container .workshop-step div {
+      display: flex;
+      justify-content: space-between; }
+  #workshop-banner .car-overlap {
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    width: 40%; }
 
-/*# sourceMappingURL=style.css.map */
+#workshop-experts {
+  padding: 10% 0; }
+  #workshop-experts .workshop-headings {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto; }
+  #workshop-experts .service-container {
+    padding: 0 5%; }
+  #workshop-experts .services-advanced .row {
+    align-items: center; }
+  #workshop-experts .services-advanced img {
+    width: 100%; }
+  #workshop-experts .service-item {
+    background: #2922a1;
+    background: linear-gradient(90deg, #2922a1 0%, #00d4ff 100%);
+    color: white;
+    max-width: 32%;
+    margin-bottom: 2%; }
+    #workshop-experts .service-item:nth-child(3n + 2) {
+      margin: 0 2% 2% 2%; }
