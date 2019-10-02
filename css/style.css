@@ -1828,6 +1828,28 @@ input:checked + .slider:before {
 
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
     line-height: 25px; } }
+.shortlist .empty-shortlist-message {
+  display: none;
+  text-align: center;
+  padding: 15% 0; }
+.shortlist .row.shortlist-container {
+  padding: 0 10%;
+  justify-content: center; }
+.shortlist .car-tile {
+  margin-bottom: 2%;
+  max-width: 32%; }
+  .shortlist .car-tile button {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 3%;
+    cursor: pointer;
+    z-index: 10; }
+    .shortlist .car-tile button object {
+      pointer-events: none; }
+  .shortlist .car-tile:nth-child(3n + 2) {
+    margin: 0 2% 2% 2%; }
 .reviews-list .reviews-card img {
   width: 100%;
   display: block; }
@@ -2120,4 +2142,8 @@ hr.heading-underline {
   #our-team .container {
     padding: 0 15px; } }
 
-/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 768px) {
+  .shortlist .car-tile {
+    max-width: 100%; }
+  .shortlist .row.shortlist-container {
+    padding: 0 15px; } }
