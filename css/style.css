@@ -2010,9 +2010,9 @@ hr.heading-underline {
 
 #brakes-image {
   position: absolute;
-  top: -33%;
-  right: -15%;
-  width: 28%; }
+  top: -30%;
+  right: -140px;
+  width: 25%; }
   #brakes-image img {
     width: 100%; }
 
