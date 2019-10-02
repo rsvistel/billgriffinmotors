@@ -1127,7 +1127,6 @@ button:focus {
 .used-car__carousel-caption {
   right: auto;
   text-align: right;
-  max-width: 300px;
   left: 3%;
   font-size: 26px;
   padding-top: 0;
@@ -1184,12 +1183,14 @@ button:focus {
     position: absolute;
     z-index: 10;
     top: 100%;
-    left: 20%;
-    margin-left: 2rem; }
+    left: 25%; }
 
   .used-car__modal-carousel-caption {
     position: absolute;
-    top: 100%; }
+    top: 100%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.55);
+    left: 0; }
 
   .used-car__modal-close {
     outline: 0;
@@ -1201,7 +1202,7 @@ button:focus {
 
   .used-car__modal-footer {
     justify-content: space-around;
-    background: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.4); }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 70px;
@@ -1223,7 +1224,9 @@ button:focus {
   .used-car__modal-title, .used-car__modal-header {
     width: 75%;
     height: 20vh;
-    align-items: center; }
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.33);
+    right: 0; }
 
   .carousel-card-items {
     margin-bottom: 0.7rem;
@@ -1247,7 +1250,9 @@ button:focus {
   .counter__block {
     display: flex;
     height: 20vh;
-    align-items: center; }
+    align-items: center;
+    left: 0;
+    padding-left: 10%; }
 
   .carousel-item-modal-lg {
     width: auto !important;
@@ -1259,7 +1264,14 @@ button:focus {
 
   .carousel__modal {
     height: 100vh;
-    display: flex; } }
+    display: flex; }
+
+  .star-detailse-chil {
+    padding-top: 21px; }
+
+  .star-detailse-adult {
+    padding-top: 21px;
+    padding-bottom: 7px; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
