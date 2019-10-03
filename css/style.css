@@ -106,6 +106,8 @@ body {
       transition: 0.4s; }
       .social-icon ul li:last-child {
         margin-right: 0px; }
+    .social-icon ul a {
+      display: flex; }
 
 .bottom-half-header {
   background-color: #ebedf0;
@@ -146,6 +148,8 @@ body {
             font-weight: 600;
             font-size: 0.9rem;
             color: #000000; }
+    .bottom-half-header .container .bottom-half-header__link-mobile {
+      display: none; }
 
 .bottom-half-header .container ul li:hover .h6-title-dropdown {
   color: #000000; }
@@ -650,7 +654,10 @@ body {
         #office .container .card:nth-child(2) {
           margin: 0 5px; }
       #office .container .card-finance {
-        display: none; } }
+        display: none; }
+
+  #office .card .card-title {
+    text-align: right; } }
 #cars-popup {
   order: 5;
   text-align: center;
@@ -944,20 +951,21 @@ body {
 .detailse-used-car__title {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding-left: 0;
   padding-right: 0; }
 
-.detailse-used-car__data {
+.detailse-used-car__value {
   display: flex;
-  flex-direction: column;
-  font-size: 17px;
+  justify-content: space-between; }
+
+.detailse-used-car__data {
+  font-size: 18px;
   font-weight: bold;
   text-align: right; }
 
 .detailse-used-car__name {
-  display: flex;
-  flex-direction: column;
-  font-size: 17px;
+  font-size: 18px;
   text-align: left; }
 
 .description-used-car {
@@ -1091,7 +1099,9 @@ body {
 
 .used-car__modal-header {
   padding: 0;
-  border-bottom: 0; }
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
 
 .used-car__modal-content {
   border: none;
@@ -1134,7 +1144,6 @@ button:focus {
 .used-car__carousel-caption {
   right: auto;
   text-align: right;
-  max-width: 300px;
   left: 3%;
   font-size: 26px;
   padding-top: 0;
@@ -1174,7 +1183,7 @@ button:focus {
     padding-right: 0; }
 
   .used-car__modal {
-    background: #898989; }
+    background: #262626; }
 
   .used-car__modal-dialog {
     max-width: 100%;
@@ -1191,12 +1200,14 @@ button:focus {
     position: absolute;
     z-index: 10;
     top: 100%;
-    left: 20%;
-    margin-left: 2rem; }
+    left: 25%; }
 
   .used-car__modal-carousel-caption {
     position: absolute;
-    top: 100%; }
+    top: 100%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.55);
+    left: 0; }
 
   .used-car__modal-close {
     outline: 0;
@@ -1208,7 +1219,7 @@ button:focus {
 
   .used-car__modal-footer {
     justify-content: space-around;
-    padding-bottom: 1rem; }
+    background-color: rgba(0, 0, 0, 0.4); }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 70px;
@@ -1218,19 +1229,19 @@ button:focus {
   .used-car__modal__control-prev {
     background-image: url("../img/used-car-page/gallery/arrow-prev-lg.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 1; }
+    background-position: center center; }
 
   .used-car__modal__control-next {
     background-image: url("../img/used-car-page/gallery/arrow-next-lg.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 1; }
+    background-position: center center; }
 
   .used-car__modal-title, .used-car__modal-header {
     width: 75%;
     height: 20vh;
-    align-items: center; }
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.33);
+    right: 0; }
 
   .carousel-card-items {
     margin-bottom: 0.7rem;
@@ -1254,18 +1265,21 @@ button:focus {
   .counter__block {
     display: flex;
     height: 20vh;
-    align-items: center; }
+    align-items: center;
+    left: 0;
+    padding-left: 10%; }
 
   .carousel-item-modal-lg {
     width: auto !important;
     margin: auto;
-    height: 80vh; }
+    height: 100vh; }
 
   .used-car__modal-modal-body {
     height: 80vh; }
 
   .carousel__modal {
-    height: 80vh; } }
+    height: 100vh;
+    display: flex; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
   min-height: 128px;
@@ -1302,13 +1316,24 @@ button:focus {
   padding: 0 0; }
 
 .accordion__button {
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 1.5rem 1.67rem;
+  width: 100%;
+  text-align: left; }
 
 .accordion__title {
+  position: relative;
   color: #000000;
   display: flex;
-  justify-content: space-between;
-  padding: 0.75rem 1.25rem; }
+  justify-content: space-between; }
+
+.accordion__icon-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1.25rem;
+  display: flex;
+  pointer-events: none; }
 
 .accordion__down-icon {
   transform: rotate(0deg); }
@@ -1369,13 +1394,12 @@ button:focus {
     margin-bottom: 0; }
 
   .accordion__button {
-    padding-left: 0;
     font-size: 18px;
     text-align: left; }
 
   .accordion .card-body {
     font-size: 15px;
-    padding-left: 18px; }
+    padding-left: 27px; }
 
   .card-header {
     padding: 11px 18px; } }
@@ -1388,10 +1412,6 @@ button:focus {
 
   .accordion__button {
     font-size: 15px; }
-
-  .accordion__title img {
-    height: 21px;
-    margin-top: 8px; }
 
   .accordion .card-body {
     font-size: 14px; } }
@@ -1418,8 +1438,7 @@ button:focus {
     #accordion.cards-serch-results .mobile-accordion-filter object {
       pointer-events: none; }
   #accordion.cards-serch-results .accordion-filters {
-    height: auto;
-    overflow: scroll; }
+    height: auto; }
   #accordion.cards-serch-results .card {
     border: 1px solid #CCCCCC;
     border-radius: 0;
@@ -1749,7 +1768,8 @@ input:checked + .slider:before {
             background: #005EAA;
             color: white;
             border: 1px solid #005EAA;
-            width: 25%; }
+            width: 25%;
+            font-size: 14px; }
           .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:last-child {
             margin-right: 0; }
     .block-used-cars .filter-navigation-menu .pagination-bottom {
@@ -1797,7 +1817,7 @@ input:checked + .slider:before {
         font-family: "Montserrat", sans-serif; }
 
   .col-md-9.col-12.block-used-cars .search-results-container .row {
-    padding: 0 5px; }
+    padding: 0 0; }
 
   .reset-block {
     display: flex;
@@ -1828,6 +1848,13 @@ input:checked + .slider:before {
     font-size: 12px; }
 
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
+    line-height: 25px; }
+
+  .block-used-cars .filter-navigation-menu {
+    margin-bottom: 10%; }
+
+  .search-results-container {
+    margin-bottom: 5%; } }
     line-height: 25px; } }
 .heading-underlined-shortlist {
   display: flex;
@@ -2164,5 +2191,6 @@ hr.heading-underline {
 
   #our-team .container {
     padding: 0 15px; } }
+
 
 /*# sourceMappingURL=style.css.map */
