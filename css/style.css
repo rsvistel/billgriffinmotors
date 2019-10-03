@@ -1899,9 +1899,13 @@ input:checked + .slider:before {
     #workshop-experts .services-advanced .title-medium-under, #workshop-experts .services-advanced .check-block {
       font-family: "Source Sans Pro", sans-serif; }
     #workshop-experts .services-advanced .title-medium-under {
-      margin-bottom: 15px; }
-    #workshop-experts .services-advanced .check-block p {
-      margin-top: 5px; }
+      margin-bottom: 15px;
+      color: #323232;
+      font-size: 15px; }
+    #workshop-experts .services-advanced .check-block {
+      margin-bottom: 40px; }
+      #workshop-experts .services-advanced .check-block p {
+        margin-top: 5px; }
     #workshop-experts .services-advanced .fas.fa-check {
       color: #00C4FC;
       margin-right: 3px; }
@@ -1945,5 +1949,17 @@ input:checked + .slider:before {
       width: 100%;
       height: 100%;
       left: 100%; }
+
+.contact-us-section {
+  background-image: url(""); }
+
+.primary-button {
+  background: #005EAA;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 2.5% 11%;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 0; }
 
 /*# sourceMappingURL=style.css.map */
