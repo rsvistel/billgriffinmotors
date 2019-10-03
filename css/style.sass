@@ -1764,6 +1764,8 @@ body
 .used-car__modal-header
    padding: 0
    border-bottom: 0
+   border-top-left-radius: 0
+   border-top-right-radius: 0
 
 .used-car__modal-content
    border: none
@@ -1835,8 +1837,6 @@ button:focus
       top: 0
    .used-car__block
       position: relative
-   // .used-car__price
-   //    padding-right: 2%
    #modalUsedCar
       padding-right: 0
    .used-car__modal
@@ -1879,12 +1879,10 @@ button:focus
       background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
       background-repeat: no-repeat
       background-position: center center
-      opacity: 1
    .used-car__modal__control-next
       background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
       background-repeat: no-repeat
       background-position: center center
-      opacity: 1
    .used-car__modal-title,.used-car__modal-header
       width: 75%
       height: 20vh
@@ -1921,11 +1919,6 @@ button:focus
    .carousel__modal
       height: 100vh
       display: flex
-   .star-detailse-chil
-      padding-top: 21px
-   .star-detailse-adult
-      padding-top: 21px
-      padding-bottom: 7px
 
 //MODAL USED CAR-page
 //FAQ-page
@@ -1982,6 +1975,7 @@ button:focus
    bottom: 0
    right: 1.25rem
    display: flex
+   pointer-events: none
 
 .accordion__down-icon
    transform: rotate(0deg)
