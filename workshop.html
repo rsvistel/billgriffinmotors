@@ -208,7 +208,7 @@
 <div id="workshop-experts">
     <div class="container">
         <div class="workshop-headings">
-            <h2 class="title-block-used-cars">Here <span class="motors-title-logo">We Are</span> Expert In</h2>
+            <h2 class="title-block-used-cars"> Services <span class="motors-title-logo">We Are</span> Expert In</h2>
 
             <p>We've been in the business of selling and servicing cars for over forty years, in that time we have become expertsin all makes and models.</p>
         </div>
@@ -282,28 +282,42 @@
 
 <div class="contact-us-section">
     <div class="container">
-        <form action="action_page.php">
 
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <div class="card-body accordion-used-car__card-body col-md-5">
+                <h6 class="title-contact-us">Contact Us About Our Workshop Services</h6>
+                <div class="form-container">
+                    <form action="#" method="post" class="accordion-used-car__form">
+                        <div class="form-group">
+                            <input type="text" class="form-control accordion-used-car__form-control" id="InputName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control accordion-used-car__form-control" id="InputPhone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control accordion-used-car__form-control" id="InputEmail" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"  id="FormControlTextarea" rows="5" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label accordion-used-car__form-check" for="exampleCheck1">I agree that Bill Griffin Motors may store the information submitted
+                                here in order for them to reply to my query.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary accordion-used-car__form-button">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-        </form>
-    </div>
+            <div class="col-md-7 side-right">
+                <div class="background-right">
+                    <p class="title-top title-top-side-right">Contact us to book a full service</p>
+                    <h3 class="title-medium title-medium-side-right">We are experts in vehicle servicing</h3>
+                    <p class="title-medium-under title-medium-under-side-right">Contact us via this form to book a service for your vehicle. We'll get back to you<br> soon to confirm. </p>
+                    <object class="wow slideInRight car-overlap car-overlap-side-right" data="img/workshop/sell.svg" type="image/svg+xml"></object>
+                </div>
+            </div>
+        </div>
 </div>
 
 

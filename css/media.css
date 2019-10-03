@@ -541,7 +541,31 @@
     align-items: center; }
     #office .row.row-office .card {
       max-width: 60%;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+
+  #workshop-banner .car-overlap {
+    width: 55%; }
+  #workshop-banner .workshop-steps-container {
+    padding: 1.5%; }
+  #workshop-banner .workshop-intro-text div {
+    width: 75%;
+    padding-right: 5%; }
+  #workshop-banner .workshop-headings {
+    width: 60%; }
+  #workshop-banner .service-container {
+    padding: 0; }
+
+  #workshop-experts .services-advanced .check-block p {
+    font-size: 12px; }
+
+  .contact-us-section .container .side-right .background-right {
+    width: 103%;
+    padding: 80px 50px 90px 50px; }
+    .contact-us-section .container .side-right .background-right .car-overlap-side-right {
+      width: 100%; }
+
+  .contact-us-section .accordion-used-car__form-check {
+    line-height: 1.5; } }
 @media (min-width: 900px) and (max-width: 1000px) {
   .bottom-half-header .container ul li a .h6-title {
     font-size: 1vw; } }
