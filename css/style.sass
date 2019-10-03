@@ -1929,7 +1929,7 @@ button:focus
    margin-top: 18px
 
 .section__title-blue-container
-   padding-left: 60px
+   padding: 0 60px
 
 .title-blue
    font-weight: bold
@@ -2825,4 +2825,66 @@ hr.heading-underline
       padding: 0 15px
 //About
 
-
+//Cash for cars
+.cash-for-cars
+   .cash-for-car-application
+      padding: 0 76px
+      .cash-for-cars-block
+         margin: 2% 0
+         text-align: right
+         padding: 3% 15%
+         background: lightgrey
+         input:not([type='checkbox']), select
+            width: 50%
+            margin-left: 3%
+            border: 1px solid gray
+         select
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            background-image: url(../img/home/arrow-down.svg)
+            background-position: center right 10px
+            background-size: 5%
+            background-repeat: no-repeat
+            border-radius: 0
+            padding-left: 10px
+            color: #555555
+            font-family: "Open Sans", sans-serif
+         input[type='file']
+            width: 0.1px
+            height: 0.1px
+            opacity: 0
+            overflow: hidden
+            position: absolute
+            z-index: -1
+         &:first-child
+            padding: 3%
+            text-align: left
+            div
+               text-align: right
+         &:last-child
+            padding: 3%
+            display: flex
+            justify-content: space-between
+         h3
+            text-align: left
+         .image-input-container
+            display: flex
+            justify-content: flex-end
+         .image-input
+            width: 50%
+            padding: 3%
+            text-align: center
+            margin-left: 4%
+            background: white
+            border: 1px solid grey
+            div
+               border: 1px dashed grey
+            object
+               display: block
+               margin: 0 auto
+         .agree
+            background: blue
+            color: white
+            padding: 1%
+//Cash for cars

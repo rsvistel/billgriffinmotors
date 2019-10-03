@@ -1276,7 +1276,7 @@ button:focus {
   margin-top: 18px; }
 
 .section__title-blue-container {
-  padding-left: 60px; }
+  padding: 0 60px; }
 
 .title-blue {
   font-weight: bold;
@@ -2164,5 +2164,63 @@ hr.heading-underline {
 
   #our-team .container {
     padding: 0 15px; } }
-
-/*# sourceMappingURL=style.css.map */
+.cash-for-cars .cash-for-car-application {
+  padding: 0 76px; }
+  .cash-for-cars .cash-for-car-application .cash-for-cars-block {
+    margin: 2% 0;
+    text-align: right;
+    padding: 3% 15%;
+    background: lightgrey; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block input:not([type='checkbox']), .cash-for-cars .cash-for-car-application .cash-for-cars-block select {
+      width: 50%;
+      margin-left: 3%;
+      border: 1px solid gray; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-image: url(../img/home/arrow-down.svg);
+      background-position: center right 10px;
+      background-size: 5%;
+      background-repeat: no-repeat;
+      border-radius: 0;
+      padding-left: 10px;
+      color: #555555;
+      font-family: "Open Sans", sans-serif; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block input[type='file'] {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block:first-child {
+      padding: 3%;
+      text-align: left; }
+      .cash-for-cars .cash-for-car-application .cash-for-cars-block:first-child div {
+        text-align: right; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block:last-child {
+      padding: 3%;
+      display: flex;
+      justify-content: space-between; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block h3 {
+      text-align: left; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block .image-input-container {
+      display: flex;
+      justify-content: flex-end; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block .image-input {
+      width: 50%;
+      padding: 3%;
+      text-align: center;
+      margin-left: 4%;
+      background: white;
+      border: 1px solid grey; }
+      .cash-for-cars .cash-for-car-application .cash-for-cars-block .image-input div {
+        border: 1px dashed grey; }
+      .cash-for-cars .cash-for-car-application .cash-for-cars-block .image-input object {
+        display: block;
+        margin: 0 auto; }
+    .cash-for-cars .cash-for-car-application .cash-for-cars-block .agree {
+      background: blue;
+      color: white;
+      padding: 1%; }
