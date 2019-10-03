@@ -33,6 +33,10 @@
           color: #363636;
           font-weight: 400;
           font-family: "Open Sans", sans-serif; }
+    .bottom-half-header .container .bottom-half-header__dropdown-link {
+      display: none; }
+    .bottom-half-header .container .bottom-half-header__link-mobile {
+      display: block; }
 
   .dropdown .dropbtn {
     padding: 0; }
@@ -212,6 +216,13 @@
 
   .title-logo-bottom {
     margin: 0; } }
+@media only screen and (max-width: 767px) {
+  #accordion.cards-serch-results.expanded #ShowMoreResults {
+    display: none; }
+  #accordion.cards-serch-results.expanded .card:nth-last-child(-n+3) {
+    display: block; }
+  #accordion.cards-serch-results .card:nth-last-child(-n+3) {
+    display: none; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .accordion-used-car__title {
     font-size: 20px; } }
@@ -412,7 +423,8 @@
     display: block; }
 
   .detailse-used-car__name-first {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 18px; }
 
   .detailse-used-car__name-adult {
     padding: 0 1rem; }
@@ -426,7 +438,8 @@
       padding-left: 0px; } }
 @media (min-width: 769px) {
   .detailse-used-car__block, .detailse-used-car__name-chnge {
-    display: block; }
+    display: block;
+    font-size: 18px; }
 
   .detailse-used-car__none, .detailse-used-car__name-first, .detailse-used-car__name-adult {
     display: none; } }
@@ -446,10 +459,13 @@
     font-size: 24px; }
 
   .detailse-used-car__name {
-    font-size: 19px; }
+    font-size: 18px; }
 
   .detailse-used-car__data {
-    font-size: 19px; } }
+    font-size: 18px; }
+
+  .used-car-no-gutters__mobile {
+    padding: 0 0; } }
 @media (max-width: 400px) {
   .used-car__name-top, .used-car__price-top {
     font-size: 18px; }
@@ -464,16 +480,16 @@
     font-size: 12px; }
 
   .detailse-used-car__name, .detailse-used-car__data, .description-used-car {
-    font-size: 13px; }
+    font-size: 15px; }
+
+  .detailse-used-car__name-first {
+    font-size: 15px; }
 
   .accordion-used-car__title {
     font-size: 7vw; }
 
   .more {
     font-size: 19px; }
-
-  .used-car-no-gutters__mobile {
-    padding: 0 0; }
 
   .title-address, .title-contact {
     max-width: 32%; }
@@ -566,6 +582,28 @@
 
   .contact-us-section .accordion-used-car__form-check {
     line-height: 1.5; } }
+  .first-section-about .half-first-section-about {
+    padding: 0 15px; }
+
+  #our-team .container {
+    padding: 0; }
+
+  #about-prefooter {
+    background-size: 140%;
+    background-position: center; }
+    #about-prefooter .col-md-6 {
+      padding: 0 5px; }
+    #about-prefooter .our-team-prefooter-left {
+      padding-left: 0; }
+
+  .block-description-our-team .first-p {
+    padding-right: 13%; }
+
+  .block-description-our-team p {
+    font-size: 15px; } }
+@media (min-width: 2000px) {
+  #about-prefooter .container {
+    min-height: 700px; } }
 @media (min-width: 900px) and (max-width: 1000px) {
   .bottom-half-header .container ul li a .h6-title {
     font-size: 1vw; } }

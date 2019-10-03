@@ -106,6 +106,8 @@ body
          transition: 0.4s
          &:last-child
             margin-right: 0px
+      a
+         display: flex
 .bottom-half-header
    background-color: #ebedf0
    height: 45px
@@ -145,6 +147,8 @@ body
                   font-weight: 600
                   font-size: 0.9rem
                   color: #000000
+      .bottom-half-header__link-mobile
+         display: none
 .bottom-half-header .container ul li:hover .h6-title-dropdown
    color: #000000
 
@@ -1145,6 +1149,9 @@ body
          .card-finance
             display: none
 
+   #office .card .card-title
+      text-align: right
+
 //Office
 
 //Cars PopUp
@@ -1164,12 +1171,8 @@ body
 //Cars PopUp
 
 //Statistics
-#statistics
+#statistics, #about-statistics
    text-align: center
-   color: #fff
-   background: url("../img/home/bmw.png")
-   background-size: cover
-   background-repeat: no-repeat
    padding: 5% 0
    .statistic-block
       object
@@ -1191,6 +1194,16 @@ body
       margin-top: 5px
       span
          color: $light-blue
+#about-statistics
+   position: relative
+   padding: 5%
+   margin-top: 40px
+#statistics
+   background: url("../img/home/bmw.png")
+   background-size: cover
+   background-repeat: no-repeat
+   color: #fff
+
 @media only screen and (max-width: 768px)
    #statistics
       display: none
@@ -1284,6 +1297,7 @@ body
    padding: 30px 15px
    background: #EAEDF0
    color: #000000
+
 
 .footer-section__row
    padding-left: 0
@@ -1569,20 +1583,21 @@ body
 .detailse-used-car__title
       display: flex
       justify-content: space-between
+      flex-direction: column
       padding-left: 0
       padding-right: 0
 
-.detailse-used-car__data
+.detailse-used-car__value
       display: flex
-      flex-direction: column
-      font-size: 17px
+      justify-content: space-between
+
+.detailse-used-car__data
+      font-size: 18px
       font-weight: bold
       text-align: right
 
 .detailse-used-car__name
-      display: flex
-      flex-direction: column
-      font-size: 17px
+      font-size: 18px
       text-align: left
 
 .description-used-car
@@ -1764,6 +1779,8 @@ body
 .used-car__modal-header
    padding: 0
    border-bottom: 0
+   border-top-left-radius: 0
+   border-top-right-radius: 0
 
 .used-car__modal-content
    border: none
@@ -1805,7 +1822,7 @@ button:focus
 .used-car__carousel-caption
    right: auto
    text-align: right
-   max-width: 300px
+   //max-width: 300px
    left: 3%
    font-size: 26px
    padding-top: 0
@@ -1838,7 +1855,7 @@ button:focus
    #modalUsedCar
       padding-right: 0
    .used-car__modal
-      background: #898989
+      background: #262626
    .used-car__modal-dialog
       max-width: 100%
       margin: auto
@@ -1851,11 +1868,13 @@ button:focus
       position: absolute
       z-index: 10
       top: 100%
-      left: 20%
-      margin-left: 2rem
+      left: 25%
    .used-car__modal-carousel-caption
       position: absolute
       top: 100%
+      width: 25%
+      background-color: rgba(0, 0, 0, 0.55)
+      left: 0
    .used-car__modal-close
       outline: 0
       right: 25px
@@ -1864,7 +1883,9 @@ button:focus
       background: none
    .used-car__modal-footer
       justify-content: space-around
-      padding-bottom: 1rem
+      //padding-bottom: 1rem
+      background-color: rgba(0, 0, 0, 0.4)
+      //height: 20vh
    .carousel-control-prev-icon,.carousel-control-next-icon
       width: 70px
       height: 70px
@@ -1873,16 +1894,16 @@ button:focus
       background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
       background-repeat: no-repeat
       background-position: center center
-      opacity: 1
    .used-car__modal__control-next
       background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
       background-repeat: no-repeat
       background-position: center center
-      opacity: 1
    .used-car__modal-title,.used-car__modal-header
       width: 75%
       height: 20vh
       align-items: center
+      background-color: rgba(0, 0, 0, 0.33)
+      right: 0
    .carousel-card-items
       margin-bottom: 0.7rem
       margin-top: 5px
@@ -1902,14 +1923,18 @@ button:focus
       display: flex
       height: 20vh
       align-items: center
+      left: 0
+      padding-left: 10%
    .carousel-item-modal-lg
       width: auto!important
       margin: auto
-      height: 80vh
+      height: 100vh
    .used-car__modal-modal-body
       height: 80vh
    .carousel__modal
-      height: 80vh
+      height: 100vh
+      display: flex
+
 //MODAL USED CAR-page
 //FAQ-page
 .section__title-blue
@@ -1949,12 +1974,23 @@ button:focus
 
 .accordion__button
    font-size: 18px
+   padding: 1.5rem 1.67rem
+   width: 100%
+   text-align: left
 
 .accordion__title
+   position: relative
    color: #000000
    display: flex
    justify-content: space-between
-   padding: .75rem 1.25rem
+
+.accordion__icon-wrapper
+   position: absolute
+   top: 0
+   bottom: 0
+   right: 1.25rem
+   display: flex
+   pointer-events: none
 
 .accordion__down-icon
    transform: rotate(0deg)
@@ -2010,12 +2046,12 @@ button:focus
       margin-bottom: 0
 
    .accordion__button
-      padding-left: 0
+      //padding-left: 0
       font-size: 18px
       text-align: left
    .accordion .card-body
       font-size: 15px
-      padding-left: 18px
+      padding-left: 27px
    .card-header
       padding: 11px 18px
 
@@ -2026,10 +2062,6 @@ button:focus
       font-size: 0.8rem
    .accordion__button
       font-size: 15px
-
-   .accordion__title img
-      height: 21px
-      margin-top: 8px
    .accordion .card-body
       font-size: 14px
 
@@ -2059,7 +2091,6 @@ button:focus
    .accordion-filters
       //height: calc(100vh - 85px)
       height: auto
-      overflow: scroll
    .card
       border: 1px solid #CCCCCC
       border-radius: 0
@@ -2401,6 +2432,7 @@ input:checked + .slider:before
                      color: white
                      border: 1px solid $dark-blue
                      width: 25%
+                     font-size: 14px
                   &:last-child
                      margin-right: 0
          .pagination-bottom
@@ -2446,7 +2478,7 @@ input:checked + .slider:before
             color: #BBBBBB
             font-family: $primary-font
    .col-md-9.col-12.block-used-cars .search-results-container .row
-      padding: 0 5px
+      padding: 0 0
    .reset-block
       display: flex
       align-items: center
@@ -2475,6 +2507,7 @@ input:checked + .slider:before
 
    .search-block-used-cars .car-tile .car-price .col-6:last-child
       line-height: 25px
+
 
 //Search-results
 
@@ -2739,3 +2772,536 @@ input:checked + .slider:before
    text-transform: uppercase
    font-size: 15px
    border: 0
+
+   .block-used-cars .filter-navigation-menu
+      margin-bottom: 10%
+   .search-results-container
+      margin-bottom: 5%
+
+//Search-results
+
+//Search-results
+
+
+//Shortlist
+
+.heading-underlined-shortlist
+   display: flex
+   flex-direction: column
+   align-items: center
+   margin: 30px 0
+   .title-about-us
+      text-transform: capitalize
+   hr.heading-underline
+      margin: 0.2rem 0
+.shortlist
+   .car-like object
+      width: 14%
+   .footer-section
+      margin-top: 25px
+   .empty-shortlist-message
+      display: none
+      text-align: center
+      padding: 15% 0
+   .row.shortlist-container
+      padding: 0 10%
+      justify-content: center
+   .car-tile
+      margin-bottom: 2%
+      max-width: 32%
+      button
+         position: absolute
+         right: 0
+         background: none
+         border: none
+         padding: 3%
+         cursor: pointer
+         z-index: 10
+         object
+            pointer-events: none
+      &:nth-child(3n + 2)
+         margin: 0 2% 2% 2%
+@media only screen and (max-width: 768px)
+   .shortlist
+      .car-tile
+         max-width: 100%
+      .row.shortlist-container
+         padding: 0 15px
+//Shortlist
+
+//Reviews
+
+.reviews-list .reviews-card img
+   width: 100%
+   display: block
+.reviews-title-logo
+   text-transform: lowercase
+// Reviews
+#feedback.reviews-page
+   background: #FFFFFF
+   padding: 0
+   margin-bottom: 2rem
+
+.reviews-page-title
+   display: flex
+   flex-direction: row
+   justify-content: center
+   width: 100%
+   padding: 2rem 0
+#feedback.reviews-page .feedback-item
+   padding: 14px 5px 7px 8px
+.reviews-card
+   position: relative
+   -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+   -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+   border: 1px solid #CCCCCC
+#feedback.reviews-page .feedback-title h3
+   font-size: 16px
+#feedback.reviews-page .title-feedback-body
+   font-size: 16px
+#feedback.reviews-page .feedback-item .fas.fa-quote-left, #feedback.reviews-page .feedback-item .fas.fa-quote-right
+   font-size: 22px
+#feedback.reviews-page .feedback-date
+   font-size: 12px
+   padding-left: 5px
+#feedback.reviews-page .feedback-item .fas.fa-quote-right
+   width: 97%
+#feedback.reviews-page .feedback-date
+   padding-left: 5px
+#feedback.reviews-page .feedback-company
+   padding-left: 5px
+#feedback.reviews-page .feedback-stars
+   padding-left: 5px
+
+.reviews-button-container
+   margin: 2rem auto
+   display: grid
+   grid-template-columns: repeat(auto-fit, minmax(100px, max-content))
+   justify-content: center
+   grid-gap: 1rem
+
+.reviews-button
+   background: $dark-blue
+   font-family: 'Source Sans Pro', sans-serif
+   border: none
+   color: white
+   width: 234px
+   height: 55px
+
+@media (min-width: 320px)
+   .reviews-list
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 30px
+
+@media (min-width: 640px)
+   .reviews-list
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 30px
+
+@media (max-width: 767px)
+   #feedback.reviews-page .container
+      padding: 0 7px
+   #feedback.reviews-page .feedback-item .fas.fa-quote-right
+      width: 90%
+
+@media (max-width: 320px)
+   #feedback.reviews-page .feedback-item .fas.fa-quote-right
+      width: 65%
+
+@media only screen and (max-width: 768px)
+   #feedback.reviews-page button
+      display: grid
+   #feedback.reviews-page .feedback-item
+      padding: 14px 5px 7px 5px
+
+@media (min-width: 960px)
+   .reviews-list
+      grid-template-columns: 1fr 1fr 1fr
+
+@media (min-width: 980px)
+   .reviews-list
+      grid-template-columns: repeat(3, 1fr)
+      grid-gap: 30px
+
+@media (min-width: 1024px) and (max-width: 1024px)
+   #feedback.reviews-page .feedback-item .fas.fa-quote-right
+      width: 25%
+
+//Reviews
+.title-block-used-cars
+   font-weight: 500
+//Search-results
+
+//About
+.first-section-about
+   padding: 6% 0 5% 0
+   .half-first-section-about
+      padding: 0 40px
+      z-index: 100
+.title-about-us
+   font-family: "Poppins", sans-serif
+   font-style: italic
+   text-transform: uppercase
+   font-weight: 400
+.heading-underline.heading-underline_long, hr.heading-underline
+   border-top: 1px solid #242424
+.text-about-us
+   font-family: "Source Sans Pro", sans-serif
+   color: $light-gray
+   margin-top: 25px
+.text-about-us-first
+   margin-top: 40px
+hr.heading-underline
+   width: 100px
+   margin: 0.5rem 0
+   &.heading-underline_long
+      width: 120px
+      margin-top: 1rem
+#brakes-image
+   position: absolute
+   top: -30%
+   right: -140px
+   width: 25%
+   img
+      width: 100%
+#our-team
+   background: $gray
+   padding: 6% 0  5% 0
+   .title-about-us
+      text-transform: capitalize
+   .text-about-us-our-team
+      font-family: "Source Sans Pro", sans-serif
+      color: $light-gray
+      margin-top: 20px
+      margin-bottom: 25px
+   .container
+      padding: 0 5%
+   .col-md-6
+      background: white
+      margin: 0 1%
+      max-width: 48%
+      padding: 3% 2.5%
+      .member-image
+         display: flex
+         img
+            margin-right: 20px
+   .text-under-title-team
+      font-family: "Source Sans Pro", sans-serif
+      color: $light-gray
+      font-size: 18px
+.title-name-our-team
+   font-family: "Poppins", sans-serif
+   text-transform: uppercase
+   font-size: 18px
+   font-style: italic
+   color: #323232
+   margin-bottom: 6px
+   margin-top: 5px
+
+.title-name-our-team-bottom
+   text-transform: capitalize
+
+.block-description-our-team
+   font-family: 'Poppins', sans-serif
+   padding-top: 8rem
+   h6
+      font-size: 18px
+      font-family: 'Poppins', sans-serif
+      font-style: italic
+      padding-bottom: 5px
+      font-weight: 400
+   h4
+      font-size: 24px
+      text-transform: uppercase
+      padding-bottom: 10px
+      font-weight: 400
+      font-style: italic
+      margin-top: 5px
+   p
+      font-size: 16px
+      font-family: "Source Sans Pro", sans-serif
+      padding-bottom: 1rem
+   .button-prefooter
+      text-transform: uppercase
+      .fa-angle-right
+         padding-left: 3px
+   .about-prefooter-img-left, .about-prefooter-img-right
+      padding-top: 3rem
+
+.our-team-prefooter-right
+   padding-right: 5%
+.our-team-prefooter-left
+   padding-left: 5%
+
+//.img-border
+//   position: absolute
+//   top: 0
+//   right: 0
+#about-prefooter
+   background-image: url("../img/about/call-to-action.png")
+   background-size: 100%
+   background-position: center
+   background-repeat: no-repeat
+   color: white
+   margin-bottom: 2rem
+   .container
+      min-height: 500px
+   .col-md-6
+      position: relative
+      &:last-child
+         text-align: right
+      img
+         width: 100%
+   .button-prefooter
+      background: $dark-blue
+      color: white
+      padding: 13px 0
+      border: 0
+      font-family: "Source Sans Pro", sans-serif
+      font-size: 14px
+      width: 54%
+      //width: 283px
+      //display: flex
+      white-space: nowrap
+      align-items: center
+      justify-content: space-between
+
+//.block-our-team::after
+
+
+.img-border
+   position: absolute
+   top: 0
+   right: 0
+   width: 10%
+@media only screen and (max-width: 768px)
+   #brakes-image
+      display: none
+   #our-team
+      background-color: white
+      .team-blocks
+         margin: 0
+         .title-name-our-team
+            font-size: 17px
+         .text-under-title-team
+            font-size: 16px
+         .col-md-6
+            max-width: 100%
+            border: 1px solid #E6E6E6
+            margin: 0 0 23px 0
+   #about-prefooter
+      display: none
+      .col-md-6
+         &:first-child
+            img
+               left: -20%
+         &:last-child
+            img
+               right: -20%
+         img
+            position: relative
+            width: 80%
+   .first-section-about
+      overflow: hidden
+      .half-first-section-about
+         padding: 0 30px
+         .title-about-us
+            font-size: 21px
+         .text-about-us
+            font-size: 14px
+         .title-about-us-bottom
+            text-transform: initial
+            font-weight: 400
+            font-size: 20px
+            line-height: 27px
+            margin-top: 25px
+   #our-team .container
+      padding: 0 15px
+//About
+
+//Reserve-vehicle- page
+
+.reserve-page
+   &__title-block
+         align-items: flex-start
+         margin: 10px 0 15px 0
+   &__title
+         font-weight: bold
+         font-style: normal
+   &__desctiption-pay
+         font-weight: 300
+   &__pay
+         font-size: 29px
+         padding: 1.1rem 0 0 0
+         display: inline-block
+   &__line
+         border-top: 1px solid #707070
+         width: 100%
+   &__card
+         border: 1px solid #707070
+         -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+         -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+         box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.16)
+         padding: 1rem
+   &__card-title
+         font-weight: bold
+         font-size: 26px
+   &__card-top-container
+         padding-bottom: 0.5rem
+   &__card-subtitle
+         font-size: 20px
+   &__card-name
+         font-size: 20px
+         font-family: $secondary-font
+         font-weight: bold
+   &__card-model
+         font-size: 16px
+         font-family: $secondary-font
+   &__card-price
+         font-size: 31px
+         font-weight: bold
+   &__card-img-container
+         padding-right: 0
+   &__details-title
+         font-weight: 300
+         display: inline-block
+         padding-top: 1.5rem
+   &__details-description
+         font-size: 15px
+         padding-bottom: 1.3rem
+         display: inline-block
+   &__conditions
+         color: #232323
+         font-weight: bold
+         &:hover
+            color: #232323
+            text-decoration: none
+
+.reserve-page___stripe
+   padding: 0
+
+.reserve-page__checkbox-group
+   margin-top: 1rem
+   position: relative
+
+.reserve-page__checkbox
+   position: absolute
+   top: 17px
+   bottom: 0
+   left: 20px
+   display: flex
+   height: 20px
+
+.reserve-page__checkbox-confirm
+   height: 25px
+   padding-left: 25px
+   font-size: 15px
+
+.title-reserve-page
+   font-weight: bold
+
+.form-group-first
+   margin-bottom: 2.5rem
+
+#inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber, #cc-number, #cc-expiration, #cc-cvv
+   height: calc(1.5em + 1.53rem + 2px)
+   border-radius: 0
+   box-shadow: none
+
+#inputLastName::-webkit-input-placeholder
+   color: #232323
+   font-size: 16px
+
+#inputFirstName::-webkit-input-placeholder
+   color: #232323
+   font-size: 16px
+
+#inputEmailAddress::-webkit-input-placeholder
+   color: #232323
+   font-size: 16px
+
+#inputContactNumber::-webkit-input-placeholder
+   color: #232323
+   font-size: 16px
+
+#cc-number::-webkit-input-placeholder
+   color: #232323
+   font-size: 16px
+
+#cc-expiration::-webkit-input-placeholder
+   color: #232323
+   font-size: 16px
+
+#cc-cvv::-webkit-input-placeholder
+   color: #232323
+   font-size: 16px
+
+
+#inputLastName, #inputFirstName, #inputEmailAddress, #inputContactNumber
+   border-top: 0
+   border-right: 0
+   border-left: 0
+   border-bottom: 1px solid #707070
+   padding-left: 0
+   padding-bottom: 0
+   padding-top: 1.375rem
+   color: #232323
+
+#cc-number, #cc-expiration, #cc-cvv
+   border: 1px solid #707070
+   color: #232323
+
+.reserve-page__button-container
+   margin-left: 8rem
+
+@media only screen and (max-width: 991px)
+   .reserve-page__button-container
+      display: flex
+      justify-content: center
+      margin-left: 0
+
+@media only screen and (max-width: 767px)
+   .reserve-page__card-name
+      font-size: 20px
+      font-family: $secondary-font
+      font-weight: bold
+   .form-group-mobile
+      margin-bottom: 2rem
+   .form-group-mobile-last
+      margin-bottom: 0rem
+   .form-group-first
+      margin-bottom: 0
+   .reserve-page__checkbox-confirm
+      padding-bottom: 4rem
+   .reserve-page__button-container
+      display: flex
+      justify-content: center
+      margin: 1rem 0
+   .reserve-page__card-padding
+      padding-right: 0
+   .reserve-page__stripe-wrapper
+      display: flex
+      justify-content: center
+
+@media only screen and (max-width: 400px)
+   .reserve-page__card
+      padding: 0.5rem
+   .reserve-page__card__card-title
+      font-size: 20px
+   .reserve-page__card-top-container
+      padding-bottom: 0.5rem
+   .reserve-page__card-subtitle
+      font-size: 15px
+      text-align: left
+   .reserve-page__card-price
+      font-size: 1.2rem
+   .reserve-page__card-name
+      font-size: 1rem
+   .reserve-page__card-model
+      font-size: 15px
+
+//Reserve-vehicle- page
+

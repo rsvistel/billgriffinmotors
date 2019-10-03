@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3561/jquery.magnific-popup.min.js"></script>
+    <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+
+<body>
+    <section class="header topnav" id="myTopnav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 upper-half-header">
+                    <div class="titles-logo col-md-4">
+                        <h2 class="title-logo">bill griffin <span class="motors-title-logo">motors</span></h2>
+                        <h5 class="title-logo-bottom">Ireland's Biggest Car Dealer</h5>
+                    </div>
+                    <div class="mobile-open">
+                        <object data="img/header/hamburger/hamburger-icon.svg" type="image/svg+xml"></object>
+                        <object data="img/header/hamburger/cross-icon.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="title-address col-md-4">
+                        <embed src="img/header/location.svg">
+                        <h4 class="text-title-address">frank fahey centre, naas road<br> walkinstown, dublin 12, d12f5yw</h4>
+                    </div>
+                    <div class="title-contact col-md-2">
+                        <embed src="img/header/phone.svg">
+                        <div class="number-phone">
+                            <h4 class="sales-text">sales:</h4>
+                            <h6 class="sales-number">01-4569562</h6>
+                        </div>
+                    </div>
+                    <div class="social-icon col-md-2">
+                        <ul>
+                                <li>
+                                    <a href="#">
+                                        <object data="img/header/social-icons/facebook.svg"></object>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="#">
+                                        <object data="img/header/social-icons/instagram.svg"></object>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="#">
+                                        <object data="img/header/social-icons/mail.svg"></object>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 bottom-half-header">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">about</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">used cars</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">finance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">cash for cars</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">reviews</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">workshop</span>
+                        </a>
+                    </li>
+                    <li class="bottom-half-header__dropdown-link">
+                        <div class="dropdown">
+                            <a href="#" class="flex-dropdown">
+                                <div class="dropbtn">
+                                        <span class="h6-title">more</span>
+                                        <i class="fas fa-chevron-down flex-dropdown__chevron-dow"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#"><span class="h6-title h6-title-dropdown">valeting</span></a>
+                                <a href="#"><span class="h6-title h6-title-dropdown">value my car</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bottom-half-header__link-mobile">
+                            <a href="#">
+                                <span class="h6-title">valeting</span>
+                            </a>
+                        </li>
+                        <li class="bottom-half-header__link-mobile">
+                            <a href="#">
+                                <span class="h6-title">value my car</span>
+                            </a>
+                        </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">shortlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">faq</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h6-title">contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-section-under-header col-xs-12 col-md-12">
+            <embed src="img/header/white-phone.svg">
+            <div class="number-phone">
+                <h4 class="contact-text">Contact Us:</h4>
+                <h6 class="sales-number">01-4569562</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="reviews-page">
+         <div class="container">
+             <div class="heading-underlined-shortlist">
+                 <h3 class="title-about-us">Reviews <span class="motors-title-logo reviews-title-logo">from our</span> Customers</h3>
+                 <hr class="heading-underline heading-underline_long">
+                 <hr class="heading-underline">
+             </div>
+               <div class="reviews-list">
+                  <div class="reviews-card">
+                        <div class="feedback-item">
+                              <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                              <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                                  <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                              </div>
+                              <i class="fas fa-quote-right"></i>
+                              <div class="feedback-date">05/04/2019</div>
+                              <div class="feedback-company">Co.Wicklow</div>
+                              <div class="feedback-stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="reviews-card">
+                        <div class="feedback-item">
+                              <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                              <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                                  <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                              </div>
+                              <i class="fas fa-quote-right"></i>
+                              <div class="feedback-date">05/04/2019</div>
+                              <div class="feedback-company">Co.Wicklow</div>
+                              <div class="feedback-stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                          </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+                    <div class="reviews-card">
+                        <div class="feedback-item">
+                              <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                              <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                                  <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                              </div>
+                              <i class="fas fa-quote-right"></i>
+                              <div class="feedback-date">05/04/2019</div>
+                              <div class="feedback-company">Co.Wicklow</div>
+                              <div class="feedback-stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="reviews-card">
+                        <div class="feedback-item">
+                              <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                              <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                                  <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                              </div>
+                              <i class="fas fa-quote-right"></i>
+                              <div class="feedback-date">05/04/2019</div>
+                              <div class="feedback-company">Co.Wicklow</div>
+                              <div class="feedback-stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                          </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+               <div class="reviews-card">
+                     <div class="feedback-item">
+                           <div class="feedback-title"><h3>Jane Dennehy says</h3></div>
+                           <div class="feedback-body"><i class="fas fa-quote-left"></i>
+                               <span class="title-feedback-body">Have used this garage a lot recently. Service is second to none. Value incredible. The quality of cars is great. Asked them to source a specific car for my wife and they had it in stock very quick.</span>
+                           </div>
+                           <i class="fas fa-quote-right"></i>
+                           <div class="feedback-date">05/04/2019</div>
+                           <div class="feedback-company">Co.Wicklow</div>
+                           <div class="feedback-stars">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+                       </div>
+               </div>
+            </div>
+            <div class="reviews-button-container grid">
+                  <button class="reviews-button item">Load More</button>
+               </div>
+         </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-lg-5  order-1 order-sm-1  order-lg-1 footer-section__padding-top footer-section__row">
+                  <h2 class="text-sm-left text-uppercase font-weight-bold"><a class="footer-section__title" href="#">Bill Griffin
+                      <span class="footer-section__title-accent">Motors</span></a>
+                  </h2>
+                  <ul class="footer-section__soc-items">
+                      <li class="footer-section__soc-item">
+                          <a href="#">
+                              <img class="footer-section__soc-img img-fluid" src="./img/footer/facebook.svg" alt="Bill Griffin Motors">
+                          </a>
+                      </li>
+                      <li class="footer-section__soc-item">
+                          <a href="#">
+                              <img class="footer-section__soc-img img-fluid" src="./img/footer/twitter.svg" alt="Bill Griffin Motors">
+                          </a>
+                      </li>
+                      <li class="footer-section__soc-item">
+                          <a href="#">
+                              <img class="footer-section__soc-img img-fluid" src="./img/footer/youtube.svg" alt="Bill Griffin Motors">
+                          </a>
+                      </li>
+                      <li class="footer-section__soc-item">
+                          <a href="#">
+                              <img class="footer-section__soc-img img-fluid" src="./img/footer/instagram.svg" alt="Bill Griffin Motors">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-lg-3 order-3 order-sm-3 order-lg-2 footer-section__row justify-content-start">
+                  <h6 class="footer-section__links-title">Links</h6>
+                  <ul class="footer-section__links-items">
+                      <li class="footer-section__links-item">
+                          <a class="footer-section__link" href="#">Used Cars</a>
+                      </li>
+                      <li class="footer-section__links-item">
+                          <a class="footer-section__link" href="#">Apply for Finance</a>
+                      </li>
+                      <li class="footer-section__links-item">
+                          <a class="footer-section__link" href="#">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-xs-9 col-lg-4  order-2 order-xs-2 order-sm-2 order-lg-3 footer-section__row">
+                  <p class="footer-section__description">
+                      We pride ourselves on being family run for over thirty years and being one of Ireland's largest used car dealers with over 20,000 cars sold in that time, all from our three floor Naas road showroom. Each of our 300+ cars are in stock today and come fully inspected, history checked and warrantied.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
