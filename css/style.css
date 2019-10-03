@@ -1762,7 +1762,8 @@ input:checked + .slider:before {
             background: #005EAA;
             color: white;
             border: 1px solid #005EAA;
-            width: 25%; }
+            width: 25%;
+            font-size: 14px; }
           .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:last-child {
             margin-right: 0; }
     .block-used-cars .filter-navigation-menu .pagination-bottom {
@@ -1841,6 +1842,12 @@ input:checked + .slider:before {
     font-size: 12px; }
 
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
-    line-height: 25px; } }
+    line-height: 25px; }
+
+  .block-used-cars .filter-navigation-menu {
+    margin-bottom: 10%; }
+
+  .search-results-container {
+    margin-bottom: 5%; } }
 
 /*# sourceMappingURL=style.css.map */
