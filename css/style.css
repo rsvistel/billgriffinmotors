@@ -1823,7 +1823,7 @@ input:checked + .slider:before {
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
     line-height: 25px; } }
 #workshop-banner {
-  padding: 5% 0;
+  padding: 8% 0;
   background-image: url("../img/workshop/car-left.png"), url("../img/workshop/service.png");
   background-size: 50% 100%;
   background-position: left, right;
@@ -1834,22 +1834,44 @@ input:checked + .slider:before {
     justify-content: flex-end;
     align-items: flex-end;
     color: white; }
+    #workshop-banner .workshop-intro-text .text-banner-our-service {
+      font-family: "Montserrat", sans-serif; }
+      #workshop-banner .workshop-intro-text .text-banner-our-service p {
+        font-weight: 300; }
+    #workshop-banner .workshop-intro-text .title-our-service {
+      font-weight: 600;
+      margin-bottom: 15px; }
     #workshop-banner .workshop-intro-text div {
-      width: 50%; }
+      width: 70%;
+      padding-right: 15%; }
   #workshop-banner .workshop-steps-container {
     position: relative;
-    right: 10px;
+    right: 20px;
     background: white;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 3%; }
     #workshop-banner .workshop-steps-container .workshop-step div {
       display: flex;
       justify-content: space-between; }
+    #workshop-banner .workshop-steps-container .workshop-step object {
+      width: 17%;
+      max-height: 40px; }
+    #workshop-banner .workshop-steps-container .workshop-step-last {
+      margin-top: 40px; }
   #workshop-banner .car-overlap {
     position: absolute;
     bottom: -15%;
     right: 0;
     width: 40%; }
+  #workshop-banner .number-worshop {
+    color: #00C4FC;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: 27px; }
+  #workshop-banner .workshop-step p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #777777;
+    font-size: 14px; }
 
 #workshop-experts {
   padding: 10% 0; }
@@ -1857,20 +1879,56 @@ input:checked + .slider:before {
     text-align: center;
     width: 50%;
     margin: 0 auto; }
+    #workshop-experts .workshop-headings p {
+      font-family: "Source Sans Pro", sans-serif;
+      color: #777777;
+      font-size: 14px;
+      margin: 40px 0 30px 0; }
   #workshop-experts .service-container {
     padding: 0 5%; }
-  #workshop-experts .services-advanced .row {
-    align-items: center; }
-  #workshop-experts .services-advanced img {
-    width: 100%; }
+  #workshop-experts .services-advanced {
+    margin-top: 20px; }
+    #workshop-experts .services-advanced .title-top, #workshop-experts .services-advanced .title-medium {
+      font-family: "Poppins", sans-serif;
+      font-style: italic;
+      font-weight: 400; }
+    #workshop-experts .services-advanced .title-medium {
+      text-transform: uppercase;
+      font-size: 23px;
+      margin: 10px 0 25px 0; }
+    #workshop-experts .services-advanced .title-medium-under, #workshop-experts .services-advanced .check-block {
+      font-family: "Source Sans Pro", sans-serif; }
+    #workshop-experts .services-advanced .title-medium-under {
+      margin-bottom: 15px; }
+    #workshop-experts .services-advanced .check-block p {
+      margin-top: 5px; }
+    #workshop-experts .services-advanced .fas.fa-check {
+      color: #00C4FC;
+      margin-right: 3px; }
+    #workshop-experts .services-advanced .row {
+      align-items: center; }
+    #workshop-experts .services-advanced img {
+      width: 100%; }
   #workshop-experts .service-item {
-    background: #2922a1;
-    background: linear-gradient(90deg, #2922a1 0%, #00d4ff 100%);
+    background: linear-gradient(100deg, #1d93e8 0%, #1cc9dd 80%);
     color: white;
     max-width: 32%;
+    padding: 15px 30px;
     margin-bottom: 2%; }
+    #workshop-experts .service-item p {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 14px; }
+    #workshop-experts .service-item object {
+      width: 16%; }
     #workshop-experts .service-item:nth-child(3n + 2) {
       margin: 0 2% 2% 2%; }
+
+.title-workshop {
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 6px; }
 
 #workshop-prefooter {
   background: url("../img/workshop/Path 2506.png"); }
@@ -1887,3 +1945,5 @@ input:checked + .slider:before {
       width: 100%;
       height: 100%;
       left: 100%; }
+
+/*# sourceMappingURL=style.css.map */

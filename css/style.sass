@@ -2480,7 +2480,7 @@ input:checked + .slider:before
 
 //Workshop
 #workshop-banner
-   padding: 5% 0
+   padding: 8% 0
    background-image: url("../img/workshop/car-left.png"), url("../img/workshop/service.png")
    background-size: 50% 100%
    background-position: left, right
@@ -2491,44 +2491,104 @@ input:checked + .slider:before
       justify-content: flex-end
       align-items: flex-end
       color: white
+      .text-banner-our-service
+         font-family: $primary-font
+         p
+            font-weight: 300
+      .title-our-service
+         font-weight: 600
+         margin-bottom: 15px
       div
-         width: 50%
+         width: 70%
+         padding-right: 15%
    .workshop-steps-container
       position: relative
-      right: 10px
+      right: 20px
       background: white
-      border-radius: 10px
+      border-radius: 7px
       padding: 3%
       .workshop-step
          div
             display: flex
             justify-content: space-between
+         object
+            width: 17%
+            max-height: 40px
+      .workshop-step-last
+         margin-top: 40px
+
    .car-overlap
       position: absolute
       bottom: -15%
       right: 0
       width: 40%
+   .number-worshop
+      color: $light-blue
+      font-family: "Poppins", sans-serif
+      font-style: italic
+      font-size: 27px
+   .workshop-step p
+      font-family: "Source Sans Pro", sans-serif
+      color: $light-gray
+      font-size: 14px
 #workshop-experts
    padding: 10% 0
    .workshop-headings
       text-align: center
       width: 50%
       margin: 0 auto
+      p
+         font-family: "Source Sans Pro", sans-serif
+         color: #777777
+         font-size: 14px
+         margin: 40px 0 30px 0
    .service-container
       padding: 0 5%
    .services-advanced
+      margin-top: 20px
+      .title-top, .title-medium
+         font-family: "Poppins", sans-serif
+         font-style: italic
+         font-weight: 400
+      .title-medium
+         text-transform: uppercase
+         font-size: 23px
+         margin: 10px 0 25px 0
+      .title-medium-under, .check-block
+         font-family: "Source Sans Pro", sans-serif
+      .title-medium-under
+         margin-bottom: 15px
+      .check-block
+         p
+            margin-top: 5px
+      .fas.fa-check
+         color: $light-blue
+         margin-right: 3px
       .row
          align-items: center
       img
          width: 100%
    .service-item
-      background: rgb(41,34,161)
-      background: linear-gradient(90deg, rgba(41,34,161,1) 0%, rgba(0,212,255,1) 100%)
+      //background: rgb(41,34,161)
+      background: linear-gradient(100deg, rgba(29,147,232,1) 0%, rgba(28,201,221,1) 80%)
       color: white
       max-width: 32%
+      padding: 15px 30px
       margin-bottom: 2%
+      p
+         font-family: "Source Sans Pro", sans-serif
+         font-size: 14px
+      object
+         width: 16%
       &:nth-child(3n + 2)
          margin: 0 2% 2% 2%
+
+.title-workshop
+   font-style: italic
+   font-family: "Poppins", sans-serif
+   font-size: 18px
+   font-weight: 400
+   margin-bottom: 6px
 #workshop-prefooter
    background: url("../img/workshop/Path 2506.png")
    .col-md-6:last-child
