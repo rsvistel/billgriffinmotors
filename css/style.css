@@ -1431,8 +1431,7 @@ button:focus {
     #accordion.cards-serch-results .mobile-accordion-filter object {
       pointer-events: none; }
   #accordion.cards-serch-results .accordion-filters {
-    height: auto;
-    overflow: scroll; }
+    height: auto; }
   #accordion.cards-serch-results .card {
     border: 1px solid #CCCCCC;
     border-radius: 0;
