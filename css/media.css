@@ -33,6 +33,10 @@
           color: #363636;
           font-weight: 400;
           font-family: "Open Sans", sans-serif; }
+    .bottom-half-header .container .bottom-half-header__dropdown-link {
+      display: none; }
+    .bottom-half-header .container .bottom-half-header__link-mobile {
+      display: block; }
 
   .dropdown .dropbtn {
     padding: 0; }
@@ -212,6 +216,13 @@
 
   .title-logo-bottom {
     margin: 0; } }
+@media only screen and (max-width: 767px) {
+  #accordion.cards-serch-results.expanded #ShowMoreResults {
+    display: none; }
+  #accordion.cards-serch-results.expanded .card:nth-last-child(-n+3) {
+    display: block; }
+  #accordion.cards-serch-results .card:nth-last-child(-n+3) {
+    display: none; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .accordion-used-car__title {
     font-size: 20px; } }

@@ -106,6 +106,8 @@ body {
       transition: 0.4s; }
       .social-icon ul li:last-child {
         margin-right: 0px; }
+    .social-icon ul a {
+      display: flex; }
 
 .bottom-half-header {
   background-color: #ebedf0;
@@ -146,6 +148,8 @@ body {
             font-weight: 600;
             font-size: 0.9rem;
             color: #000000; }
+    .bottom-half-header .container .bottom-half-header__link-mobile {
+      display: none; }
 
 .bottom-half-header .container ul li:hover .h6-title-dropdown {
   color: #000000; }
@@ -650,7 +654,10 @@ body {
         #office .container .card:nth-child(2) {
           margin: 0 5px; }
       #office .container .card-finance {
-        display: none; } }
+        display: none; }
+
+  #office .card .card-title {
+    text-align: right; } }
 #cars-popup {
   order: 5;
   text-align: center;
@@ -1803,7 +1810,7 @@ input:checked + .slider:before {
         font-family: "Montserrat", sans-serif; }
 
   .col-md-9.col-12.block-used-cars .search-results-container .row {
-    padding: 0 5px; }
+    padding: 0 0; }
 
   .reset-block {
     display: flex;

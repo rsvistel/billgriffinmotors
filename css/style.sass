@@ -106,6 +106,8 @@ body
          transition: 0.4s
          &:last-child
             margin-right: 0px
+      a
+         display: flex
 .bottom-half-header
    background-color: #ebedf0
    height: 45px
@@ -145,6 +147,8 @@ body
                   font-weight: 600
                   font-size: 0.9rem
                   color: #000000
+      .bottom-half-header__link-mobile
+         display: none
 .bottom-half-header .container ul li:hover .h6-title-dropdown
    color: #000000
 
@@ -1144,6 +1148,9 @@ body
                margin: 0 5px
          .card-finance
             display: none
+
+   #office .card .card-title
+      text-align: right
 
 //Office
 
@@ -2464,7 +2471,7 @@ input:checked + .slider:before
             color: #BBBBBB
             font-family: $primary-font
    .col-md-9.col-12.block-used-cars .search-results-container .row
-      padding: 0 5px
+      padding: 0 0
    .reset-block
       display: flex
       align-items: center
