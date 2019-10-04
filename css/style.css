@@ -2438,3 +2438,13 @@ hr.heading-underline {
       margin: 5% 0; }
     #value-my-car-prefooter .col-md-6 h6, #value-my-car-prefooter .col-md-6 p {
       text-align: left; }
+
+@media only screen and (max-width: 768px) {
+  #value-my-car-prefooter .content {
+    width: 100%; }
+  #value-my-car-prefooter .car-image-sliding {
+    display: none; }
+  #value-my-car-prefooter .col-md-6 {
+    text-align: center; }
+    #value-my-car-prefooter .col-md-6 h6, #value-my-car-prefooter .col-md-6 p {
+      text-align: center; } }
