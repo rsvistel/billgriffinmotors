@@ -854,6 +854,32 @@ body {
   .footer-section__description {
     padding-top: 0;
     padding-bottom: 34px; } }
+.option-used-car {
+  display: flex; }
+  .option-used-car .car-data-field {
+    width: 14.285%;
+    padding: 1%;
+    text-align: center;
+    font-size: 12px; }
+    .option-used-car .car-data-field:first-child {
+      background: #C5E2F2; }
+    .option-used-car .car-data-field:nth-child(2) {
+      background: #FFD8C5; }
+    .option-used-car .car-data-field:nth-child(3) {
+      background: #FFE8D0; }
+    .option-used-car .car-data-field:nth-child(4) {
+      background: #F9CFCE; }
+    .option-used-car .car-data-field:nth-child(5) {
+      background: #C5EAD7; }
+    .option-used-car .car-data-field:nth-child(6) {
+      background: #E0DAF7; }
+    .option-used-car .car-data-field:last-child {
+      background: #F9D3DA; }
+    .option-used-car .car-data-field img {
+      width: 60%; }
+    .option-used-car .car-data-field p {
+      margin-top: 5%; }
+
 .no-gutters {
   margin-right: 3px;
   margin-left: 3px; }
@@ -2763,3 +2789,4 @@ hr.heading-underline {
         padding-bottom: 5%; } }
 
 /*# sourceMappingURL=style.css.map */
+
