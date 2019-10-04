@@ -737,6 +737,7 @@ body
             background-position: center right 10px
             background-size: 5%
             background-repeat: no-repeat
+            background-color: white
             border-radius: 0
             padding-left: 10px
             color: #555555
@@ -3328,6 +3329,43 @@ hr.heading-underline
 
 //Reserve-vehicle- page
 
+//Valeting Contact
+#valeting-banner
+   padding: 2% 0
+.valeting-item
+   display: flex
+   margin: 5% 0
+.mechanic-image
+   img
+      position: absolute
+#valeting-contact
+   padding: 5% 0
+   background-image: url("../img/valeting/banner.png")
+   background-size: cover
+   background-repeat: no-repeat
+   .col-md-8, .col-md-4
+      background: white
+   .col-md-4
+      max-width: 32.333333%
+      margin-left: 1%
+@media only screen and (max-width: 768px)
+   #valeting-banner
+      padding-bottom: 0
+      .row
+         .col-md-4
+            &:first-child
+               order: 1
+            &:nth-child(2)
+               order: 3
+               img
+                  position: static
+            &:last-child
+               order: 2
+   #valeting-contact
+      z-index: 101
+      .col-md-4
+         display: none
+//Valeting Contact
 
 
 //Contact-us
