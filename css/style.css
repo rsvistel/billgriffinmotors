@@ -267,6 +267,7 @@ body {
         background-position: center right 10px;
         background-size: 5%;
         background-repeat: no-repeat;
+        background-color: white;
         border-radius: 0;
         padding-left: 10px;
         color: #555555;
@@ -2654,7 +2655,6 @@ hr.heading-underline {
 
   .reserve-page__card-model {
     font-size: 15px; } }
-
 #valeting-banner {
   padding: 2% 0; }
 
@@ -2825,6 +2825,3 @@ hr.heading-underline {
         max-width: initial; }
       .contact-us-section.contact-us .block-right-location#office .working-hours {
         padding-bottom: 5%; } }
-
-/*# sourceMappingURL=style.css.map */
-
