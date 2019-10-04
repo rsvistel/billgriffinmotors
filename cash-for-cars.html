@@ -160,7 +160,7 @@
 </div>
 
 <div class="cash-for-car-application container">
-    <div class="cash-for-cars-block">
+    <!-- <div class="cash-for-cars-block">
         <b class="">Codeweavers Privacy Notice Summary</b>
         <p class="cash-for-cars__bold">Codeweavers Ltd (“we”, “us” or “our”), provides software services and websites for the automotive industry as a data processor.
         </p>
@@ -183,9 +183,9 @@
                 <input type="checkbox" id="agree" name="name">
             </span>
         </div>
-    </div>
-    <h3>Applicant</h3>
-    <div class="cash-for-cars-block">
+    </div> -->
+    <!-- <h3>Applicant</h3> -->
+    <!-- <div class="cash-for-cars-block">
         <h3>Your Personal Details</h3>
         <hr>
         <div>
@@ -269,8 +269,8 @@
             <input type="text" id="dependants" name="name">
         </div>
     </div>
-    <h3>Address History</h3>
-    <div class="cash-for-cars-block">
+    <h3>Address History</h3> -->
+    <!-- <div class="cash-for-cars-block">
         <h3>Current</h3>
         <hr>
         <div>
@@ -350,56 +350,100 @@
         <hr>
         <label for="bank">Who do you usually bank with?</label>
         <input type="text" id="bank" name="name">
-    </div>
+    </div> -->
     <div class="cash-for-cars-block">
         <h3>Loan Details</h3>
         <hr>
-        <label for="vehicle">Select Your Vehicle</label>
-        <select id="vehicle">
-            <option>Please Select</option>
-            <option>Make 1</option>
-            <option>Make 2</option>
-        </select>
-
         <div>
-            <label for="price">Car Price</label>
+            <label for="price">Name</label>
             <input type="text" id="price" name="name">
         </div>
 
         <div>
-            <label for="year">Year of Car</label>
+            <label for="year">Phone Number</label>
+            <input type="text" id="phone" name="name">
+        </div>
+
+        <div>
+            <label for="make">Email Address</label>
+            <input type="text" id="email" name="name">
+        </div>
+
+        <div>
+            <label for="variant">Car Registration </label>
+            <input type="text" id="registration" name="name">
+        </div>
+
+        <div>
+            <label for="mileage">Year</label>
             <input type="text" id="year" name="name">
         </div>
 
         <div>
-            <label for="make">Vehicle Make</label>
-            <input type="text" id="make" name="name">
+            <label for="make">Make</label>
+            <select id="make">
+                <option>Please Select</option>
+                <option>Make 1</option>
+                <option>Make 2</option>
+            </select>
         </div>
 
         <div>
-            <label for="variant">Vehicle Variant</label>
+            <label for="model">Model</label>
+            <select id="model">
+                <option>Please Select</option>
+                <option>Make 1</option>
+                <option>Make 2</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="variant">Variant</label>
             <input type="text" id="variant" name="name">
         </div>
 
         <div>
-            <label for="mileage">Vehicle Mileage</label>
+            <label for="mileage">Mileage</label>
             <input type="text" id="mileage" name="name">
         </div>
 
         <div>
-            <label for="deposit">Cash Deposit</label>
-            <input type="text" id="deposit" name="name">
+            <label for="еransmission">Transmission</label>
+            <select id="еransmission">
+                <option>Please Select</option>
+                <option>Make 1</option>
+                <option>Make 2</option>
+            </select>
+         </div>
+
+         <div>
+            <label for="fuel">Fuel</label>
+            <select id="fuel">
+                <option>Please Select</option>
+                <option>Make 1</option>
+                <option>Make 2</option>
+            </select>
         </div>
 
         <div>
-            <label for="trade-in-value">Estimated Value of Trade-In</label>
-            <input type="text" id="trade-in-value" name="name">
+            <label for="expiry">NCT Expiry Date</label>
+            <input type="text" id="expiry" name="name" value="DD / MM / YYYY">
         </div>
 
         <div>
-            <label for="trade-in-loan">Outstanding Loan on Trade-In</label>
-            <input type="text" id="trade-in-loan" name="name">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="name">
         </div>
+
+        <div>
+            <label for="сolour">Colour</label>
+            <input type="text" id="сolour" name="name">
+        </div>
+
+        <div>
+            <label for="faults" class="vertical-align">Damage or Faults</label>
+            <textarea id="faults" name="name" placeholder="Please list any damage, cosmetic or otherwise or any known faults"></textarea>
+         </div>
 
         <div class="image-input-container">
             <label for="photos">Vehicle Photos</label>
@@ -407,17 +451,17 @@
                    id="photos" name="name"
                    accept="image/png, image/jpeg">
             <div class="image-input">
-                <div>
+                <div class="drop-description">
                     <object type="image/svg+xml" data="img/cash-for-cars/img-attach.svg"></object>
                     Drag & drop to upload your images<br>
-                    or click <span>here</span> to browse youe device
+                    or click <a href="#" class="link-drop">here</a> to browse youe device
                 </div>
             </div>
         </div>
     </div>
     <div class="cash-for-cars-block cash-for-cars-block-button">
         <p class="cash-for-cars__button-subtitle">Excellent, you have reached the final section of your finance application. Before submitting, please double check that the information you have entered is correct.</p>
-        <button class="agree cash-for-cars__button">Submit Application</button>
+        <button class="cash-for-cars__button">Submit Application</button>
     </div>
 </div>
 
