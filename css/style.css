@@ -1775,7 +1775,8 @@ input:checked + .slider:before {
     .block-used-cars .filter-navigation-menu .filters, .block-used-cars .filter-navigation-menu .pagination {
       display: none; }
     .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child {
-      justify-content: center; }
+      justify-content: center;
+      height: auto; }
       .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child object {
         display: none; }
       .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul {
@@ -1788,7 +1789,7 @@ input:checked + .slider:before {
           margin-right: 1px;
           width: 10%;
           text-align: center;
-          padding: 2% 0 10%; }
+          padding: 2% 0; }
           .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:nth-child(-n+4), .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:nth-last-child(-n+3) {
             display: block; }
           .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:first-child, .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul li:last-child {
