@@ -1306,7 +1306,7 @@ body
 
    //change in faq
 
-.card-header  
+.card-header
    padding: 24px  40px
 
 .footer-section__title
@@ -1973,7 +1973,7 @@ button:focus
    margin-top: 18px
 
 .section__title-blue-container
-   padding-left: 60px
+   padding: 0 60px
 
 .title-blue
    font-weight: bold
@@ -3148,6 +3148,246 @@ hr.heading-underline
       padding: 0 15px
 //About
 
+//Cash for cars
+.cash-for-cars
+   .cash-for-car-application
+      font-size: 14px
+      padding: 0 76px
+      .cash-for-cars-block
+         margin: 2% 0
+         text-align: right
+         padding: 3% 15%
+         background: #F5F5F5
+         input:not([type='checkbox']), select
+            width: 50%
+            margin-left: 3%
+            border: 1px solid #CCCCCC
+            color: #525252
+            margin-bottom: 14px
+            height: 29px
+            padding-left: 10px
+         textarea
+            width: 50%
+            padding-left: 10px
+            margin-bottom: 14px
+            border: 1px solid #CCCCCC
+            margin-left: 3%
+            color: #525252
+         select
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            background-image: url('../img/cash-for-cars/arrow.png')
+            background-position: center right 10px
+            background-size: 3%
+            background-repeat: no-repeat
+            border-radius: 0
+            padding-left: 10px
+            height: 29px
+            color: #555555
+            font-family: "Open Sans", sans-serif
+            margin-bottom: 14px
+         input[type='file']
+            width: 0.1px
+            height: 0.1px
+            opacity: 0
+            overflow: hidden
+            position: absolute
+            z-index: -1
+         &:first-child
+            padding: 3%
+            text-align: left
+            div
+               text-align: right
+         &:last-child
+            padding: 3%
+            display: flex
+            justify-content: space-between
+      h3
+         text-align: left
+         font-size: 21px
+      .image-input-container
+         display: flex
+         justify-content: flex-end
+      .image-input
+         width: 50%
+         padding: 3%
+         text-align: center
+         margin-left: 4%
+         background: white
+         border: 1px solid #CCCCCC
+         div
+            border: 1px dashed #CCCCCC
+         object
+            display: block
+            margin: 0 auto
+            pointer-events: none
+      .agree
+         background: $dark-blue
+         color: white
+         padding: 1.4%
+
+.cash-for-cars
+      &__button
+         border: 0
+         background: $dark-blue
+         color: white
+      &__bold
+         padding: 1rem 0
+         display: inline-block
+      &__items-top
+         padding-left: 2rem
+.cash-for-cars__button-subtitle
+   text-align: left
+   display: inline-block
+   width: 80%
+
+.agree-block
+   display: inline-block
+   padding-bottom: 2rem
+
+.descripton-blue-items
+   padding: 0.5rem 0 0 2rem
+   font-weight: bold
+
+.cash-for-car-blue-title
+   font-size: 14px
+.cash-for-car-descripton-blue
+   padding-top: 0.4rem
+
+.agree-mobile-lable
+   text-transform: uppercase
+
+#dateFinance, #expiry
+   text-transform: uppercase
+   padding-left: 10px
+
+.disabled-vehicle
+   background: #CCCCCC
+   -webkit-text-fill-color: #525252
+   -webkit-opacity: 1
+   pointer-events: none
+   font-weight: 300
+.drop-description
+   text-align: center!important
+   cursor: pointer
+
+.vertical-align
+   vertical-align: top
+
+.link-drop
+   font-weight: bold
+   color: $dark-blue
+   &:hover
+      color: $dark-blue
+      text-decoration: none
+
+.cash-for-car
+   &__card
+      display: flex
+      justify-content: center
+   &__card-car
+      border: 1px solid #707070
+      padding: 1rem 0 1rem 2rem
+      max-width: 678px
+      display: flex
+      margin: 1rem 0 3rem 0
+   &__card-title
+      display: inline-block
+      font-size: 20px
+      font-weight: 500
+      padding-bottom: 10%
+   &__card-model
+      display: block
+      padding-bottom: 10%
+   &__card-price
+      font-size: 31px
+      font-weight: bold
+
+
+@media only screen and (max-width: 767px)
+   .agree-mobile-lable
+      display: inherit!important
+      text-transform: uppercase
+   .cash-for-car
+      &__card
+         display: block
+      &__card-car
+         padding: 0.5rem 0
+         display: flex
+         flex-direction: column
+      &__card-title
+         padding-bottom: 5%
+      &__card-model
+         display: block
+         padding-bottom: 5%
+
+   .cash-for-cars
+      .cash-for-car-application
+         padding: 0 10px
+         .cash-for-cars-block
+            padding: 3%
+            background: #F5F5F5
+            input:not([type='checkbox']), select
+               width: 100%
+               height: 32px
+               margin-left: 0
+            textarea
+               width: 100%
+               margin-left: 0
+            &:first-child
+               padding: 3%
+               text-align: left
+            &:last-child
+               padding: 3%
+               display: flex
+               flex-direction: column
+         h3
+            text-align: left
+            font-size: 21px
+         .image-input-container
+            justify-content: end
+            padding: 1rem 0
+         label
+            display: block
+            text-align: left
+            margin-bottom: 0
+            padding-top: 1rem
+         hr
+            margin: 0
+
+   .cash-for-cars__button
+      padding: 1rem 2rem
+
+   .cash-for-cars__items-top
+      list-style: none
+      padding-left: 0
+
+   .agree-center
+      text-align: center!important
+      margin-bottom: 1rem
+
+   .cash-for-cars__button-subtitle
+      padding-bottom: 0.5rem
+      text-align: left
+      display: block
+      width: 100%
+
+   .agree
+      width: 70%
+      margin: auto
+
+   .cash-for-cars .cash-for-car-application .agree
+      padding: 3%
+
+@media only screen and (max-width: 991px)
+   .cash-for-cars__button-subtitle
+      padding-bottom: 0.5rem
+      text-align: left
+      display: block
+      width: 100%
+//Cash for cars
+=======
 //Reserve-vehicle- page
 
 .reserve-page
@@ -3574,3 +3814,4 @@ hr.heading-underline
 
 
 //Contact-us
+
