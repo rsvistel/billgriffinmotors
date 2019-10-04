@@ -1108,7 +1108,7 @@ body {
 .accordion-used-car__form-button {
   width: 100%;
   border-radius: 0;
-  padding: 0.7rem;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   background: #005EAA; }
 
@@ -2654,3 +2654,139 @@ hr.heading-underline {
 
   .reserve-page__card-model {
     font-size: 15px; } }
+.contact-us-section.contact-us {
+  background-image: none; }
+  .contact-us-section.contact-us .form-group input::-webkit-input-placeholder, .contact-us-section.contact-us .form-group textarea::-webkit-input-placeholder {
+    font-size: 15px; }
+  .contact-us-section.contact-us .container {
+    padding: 0; }
+  .contact-us-section.contact-us #InputName, .contact-us-section.contact-us #InputPhone, .contact-us-section.contact-us #InputEmail {
+    height: calc(1.1em + 1.7rem + 2px); }
+  .contact-us-section.contact-us .accordion-used-car__form-check {
+    line-height: 1.5; }
+  .contact-us-section.contact-us .form-group-50 {
+    width: 48.5%;
+    float: left; }
+    .contact-us-section.contact-us .form-group-50:first-child {
+      margin-right: 3%; }
+  .contact-us-section.contact-us .block-right-location#office {
+    background: none;
+    display: flex;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
+    padding: 0.5rem 0; }
+    .contact-us-section.contact-us .block-right-location#office .input-search input::-webkit-input-placeholder {
+      font-size: 11px; }
+    .contact-us-section.contact-us .block-right-location#office .working-hours .card {
+      padding: 0 2.5%; }
+      .contact-us-section.contact-us .block-right-location#office .working-hours .card .title-address embed, .contact-us-section.contact-us .block-right-location#office .working-hours .card .title-contact embed {
+        margin-right: 20px; }
+    .contact-us-section.contact-us .block-right-location#office .title-address .text-title-address {
+      font-size: 0.8rem; }
+    .contact-us-section.contact-us .block-right-location#office .sales-number {
+      font-weight: 400; }
+    .contact-us-section.contact-us .block-right-location#office .card-body {
+      margin-top: 1rem; }
+    .contact-us-section.contact-us .block-right-location#office .card {
+      max-width: initial;
+      box-shadow: initial; }
+      .contact-us-section.contact-us .block-right-location#office .card .card-body #map {
+        border: 1px solid #707070; }
+      .contact-us-section.contact-us .block-right-location#office .card .card-body ul li {
+        font-size: 14px;
+        color: #525252;
+        margin-bottom: 10px; }
+      .contact-us-section.contact-us .block-right-location#office .card .card-title {
+        border-bottom: 0; }
+    .contact-us-section.contact-us .block-right-location#office .card-location .card-body {
+      height: 300px;
+      width: 100%; }
+    .contact-us-section.contact-us .block-right-location#office .input-search {
+      display: flex;
+      margin-top: 15px; }
+      .contact-us-section.contact-us .block-right-location#office .input-search #site-search {
+        width: 80%;
+        border: 1px solid #CCCCCC;
+        padding: 5px; }
+      .contact-us-section.contact-us .block-right-location#office .input-search .search-button {
+        width: 20%;
+        background-color: #005EAA;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        border: 0;
+        padding: 0.5rem; }
+    .contact-us-section.contact-us .block-right-location#office .working-hours {
+      padding: 7% 0 0 0; }
+    .contact-us-section.contact-us .block-right-location#office .title-address embed, .contact-us-section.contact-us .block-right-location#office .title-contact embed {
+      width: auto; }
+    .contact-us-section.contact-us .block-right-location#office .title-contact {
+      margin-top: 30px; }
+  .contact-us-section.contact-us .card-body.accordion-used-car__card-body {
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
+    margin-right: 10px; }
+
+.title-contact-us-card-body, .block-right-location#office .location-contact .title-contact-us-card-body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 5px;
+  font-size: 23px;
+  padding: 0;
+  line-height: 27px;
+  color: #212529; }
+
+@media (max-width: 768px) {
+  .contact-us-section.contact-us {
+    padding-top: 0;
+    margin: 8px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 5px; }
+    .contact-us-section.contact-us .container {
+      flex-direction: column; }
+    .contact-us-section.contact-us .form-group-50 {
+      width: auto;
+      float: none; }
+      .contact-us-section.contact-us .form-group-50:first-child {
+        margin-right: 0; }
+    .contact-us-section.contact-us .card-body.accordion-used-car__card-body {
+      padding: 0.5rem;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px; }
+    .contact-us-section.contact-us .block-right-location#office {
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column; }
+      .contact-us-section.contact-us .block-right-location#office .input-search input::-webkit-input-placeholder {
+        font-size: 15px; }
+      .contact-us-section.contact-us .block-right-location#office .search-button {
+        display: none; }
+      .contact-us-section.contact-us .block-right-location#office .input-search #site-search {
+        width: 90%;
+        padding: 0.7rem; }
+      .contact-us-section.contact-us .block-right-location#office .location-contact {
+        padding: 0; }
+        .contact-us-section.contact-us .block-right-location#office .location-contact .directions-buuton {
+          color: #fff;
+          background-color: #0062cc;
+          border: 0;
+          width: 100%;
+          padding: 0.7rem;
+          margin-top: 15px; }
+      .contact-us-section.contact-us .block-right-location#office .card .card-title {
+        text-align: left;
+        padding: 0 15px; }
+      .contact-us-section.contact-us .block-right-location#office .input-search {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .contact-us-section.contact-us .block-right-location#office .card-body.card-body-opening-hours {
+        display: none; }
+      .contact-us-section.contact-us .block-right-location#office .title-address, .contact-us-section.contact-us .block-right-location#office .title-contact {
+        display: flex;
+        max-width: initial; }
+      .contact-us-section.contact-us .block-right-location#office .working-hours {
+        padding-bottom: 5%; } }
+
+/*# sourceMappingURL=style.css.map */
+

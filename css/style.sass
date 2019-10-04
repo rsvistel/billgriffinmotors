@@ -1735,7 +1735,7 @@ body
 .accordion-used-car__form-button
    width: 100%
    border-radius: 0
-   padding: 0.7rem
+   padding: 0.5rem
    margin-bottom: 0.5rem
    background: $dark-blue
 //form USED CAR-page
@@ -3328,3 +3328,143 @@ hr.heading-underline
 
 //Reserve-vehicle- page
 
+
+
+//Contact-us
+.contact-us-section.contact-us
+   background-image: none
+   .form-group input::-webkit-input-placeholder, .form-group textarea::-webkit-input-placeholder
+      font-size: 15px
+   .container
+      padding: 0
+   #InputName, #InputPhone, #InputEmail
+      height: calc(1.1em + 1.7rem + 2px)
+   .accordion-used-car__form-check
+      line-height: 1.5
+   .form-group-50
+      width: 48.5%
+      float: left
+      &:first-child
+         margin-right: 3%
+   .block-right-location#office
+      background: none
+      display: flex
+      box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
+      padding: 0.5rem 0
+      .input-search input::-webkit-input-placeholder
+         font-size: 11px
+      .working-hours .card
+         padding: 0 2.5%
+         .title-address embed, .title-contact embed
+            margin-right: 20px
+      .title-address .text-title-address
+         font-size: 0.8rem
+      .sales-number
+         font-weight: 400
+      .card-body
+         margin-top: 1rem
+      .card
+         max-width: initial
+         box-shadow: initial
+         .card-body #map
+            border: 1px solid #707070
+         .card-body ul li
+            font-size: 14px
+            color: #525252
+            margin-bottom: 10px
+         .card-title
+            border-bottom: 0
+      .card-location .card-body
+         height: 300px
+         width: 100%
+      .input-search
+         display: flex
+         margin-top: 15px
+         #site-search
+            width: 80%
+            border: 1px solid #CCCCCC
+            padding: 5px
+         .search-button
+            width: 20%
+            background-color: $dark-blue
+            color: white
+            font-family: $primary-font
+            border: 0
+            padding: 0.5rem
+      .working-hours
+         padding: 7% 0 0 0
+      .title-address embed, .title-contact embed
+         width: auto
+      .title-contact
+         margin-top: 30px
+
+   .card-body.accordion-used-car__card-body
+      box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
+      margin-right: 10px
+
+.title-contact-us-card-body, .block-right-location#office .location-contact .title-contact-us-card-body
+   font-family: "Montserrat", sans-serif
+   font-weight: 700
+   margin-top: 5px
+   font-size: 23px
+   padding: 0
+   line-height: 27px
+   color: #212529
+
+@media (max-width: 768px)
+   .contact-us-section.contact-us
+      padding-top: 0
+      margin: 8px
+      border: 0
+      box-shadow: none
+      border-radius: 5px
+      .container
+         flex-direction: column
+      .form-group-50
+         width: auto
+         float: none
+         &:first-child
+            margin-right: 0
+      .card-body.accordion-used-car__card-body
+         padding: 0.5rem
+         border: 1px solid #CCCCCC
+         border-radius: 5px
+      .block-right-location#office
+         border: 1px solid #CCCCCC
+         border-radius: 5px
+         margin-top: 10px
+         display: flex
+         flex-direction: column
+         .input-search input::-webkit-input-placeholder
+            font-size: 15px
+         .search-button
+            display: none
+         .input-search #site-search
+            width: 90%
+            padding: 0.7rem
+         .location-contact
+            padding: 0
+            .directions-buuton
+               color: #fff
+               background-color: #0062cc
+               border: 0
+               width: 100%
+               padding: 0.7rem
+               margin-top: 15px
+         .card .card-title
+            text-align: left
+            padding: 0 15px
+         .input-search
+            display: flex
+            flex-direction: column
+            align-items: center
+         .card-body.card-body-opening-hours
+            display: none
+         .title-address, .title-contact
+            display: flex
+            max-width: initial
+         .working-hours
+            padding-bottom: 5%
+
+
+//Contact-us
