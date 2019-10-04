@@ -1848,7 +1848,262 @@ input:checked + .slider:before {
     font-size: 12px; }
 
   .search-block-used-cars .car-tile .car-price .col-6:last-child {
-    line-height: 25px; }
+    line-height: 25px; } }
+#workshop-banner {
+  padding: 8% 0;
+  background-image: url("../img/workshop/car-left-.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative; }
+  #workshop-banner .workshop-intro-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white; }
+    #workshop-banner .workshop-intro-text .text-banner-our-service {
+      font-family: "Montserrat", sans-serif; }
+      #workshop-banner .workshop-intro-text .text-banner-our-service p {
+        font-weight: 300; }
+    #workshop-banner .workshop-intro-text .title-our-service {
+      font-weight: 600;
+      margin-bottom: 15px; }
+    #workshop-banner .workshop-intro-text div {
+      width: 70%;
+      padding-right: 15%; }
+  #workshop-banner .workshop-steps-container {
+    position: relative;
+    right: 20px;
+    background: white;
+    border-radius: 7px;
+    padding: 3%; }
+    #workshop-banner .workshop-steps-container .workshop-step div {
+      display: flex;
+      justify-content: space-between; }
+    #workshop-banner .workshop-steps-container .workshop-step object {
+      width: 17%;
+      max-height: 40px; }
+    #workshop-banner .workshop-steps-container .workshop-step-last {
+      margin-top: 40px; }
+  #workshop-banner .car-overlap {
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    width: 40%; }
+  #workshop-banner .number-worshop {
+    color: #00C4FC;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: 27px; }
+  #workshop-banner .workshop-step p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #777777;
+    font-size: 14px; }
+
+#workshop-experts {
+  padding: 10% 0; }
+  #workshop-experts .workshop-headings {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto; }
+    #workshop-experts .workshop-headings p {
+      font-family: "Source Sans Pro", sans-serif;
+      color: #777777;
+      font-size: 14px;
+      margin: 40px 0 30px 0; }
+  #workshop-experts .service-container {
+    padding: 0 5%; }
+  #workshop-experts .services-advanced {
+    margin-top: 20px; }
+    #workshop-experts .services-advanced .title-top, #workshop-experts .services-advanced .title-medium {
+      font-family: "Poppins", sans-serif;
+      font-style: italic;
+      font-weight: 400; }
+    #workshop-experts .services-advanced .title-medium {
+      text-transform: uppercase;
+      font-size: 23px;
+      margin: 10px 0 25px 0; }
+    #workshop-experts .services-advanced .title-medium-under, #workshop-experts .services-advanced .check-block {
+      font-family: "Source Sans Pro", sans-serif; }
+    #workshop-experts .services-advanced .title-medium-under {
+      margin-bottom: 15px;
+      color: #323232;
+      font-size: 15px; }
+    #workshop-experts .services-advanced .check-block {
+      margin-bottom: 40px; }
+      #workshop-experts .services-advanced .check-block p {
+        margin-top: 5px; }
+    #workshop-experts .services-advanced .fas.fa-check {
+      color: #00C4FC;
+      margin-right: 3px; }
+    #workshop-experts .services-advanced .row {
+      align-items: center; }
+    #workshop-experts .services-advanced img {
+      width: 100%; }
+  #workshop-experts .service-item {
+    background: linear-gradient(100deg, #1d93e8 0%, #1cc9dd 80%);
+    color: white;
+    max-width: 32%;
+    padding: 15px 30px;
+    margin-bottom: 2%; }
+    #workshop-experts .service-item p {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 14px; }
+    #workshop-experts .service-item object {
+      width: 16%; }
+    #workshop-experts .service-item:nth-child(3n + 2) {
+      margin: 0 2% 2% 2%; }
+
+.title-top, .title-medium {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 400; }
+
+.title-medium {
+  text-transform: uppercase;
+  font-size: 23px;
+  margin: 10px 0 25px 0; }
+
+.title-medium-side-right {
+  text-transform: initial;
+  color: #005EAA; }
+
+.title-medium-under-side-right {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #323232; }
+
+.title-workshop {
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 6px; }
+
+#workshop-prefooter {
+  background: url("../img/workshop/Path 2506.png"); }
+  #workshop-prefooter .col-md-6:last-child img {
+    width: 100%; }
+  #workshop-prefooter .col-md-6:last-child div {
+    background: white;
+    position: relative; }
+    #workshop-prefooter .col-md-6:last-child div:after {
+      content: "";
+      position: absolute;
+      background: white;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      left: 100%; }
+
+.contact-us-section {
+  background-image: url("../img/workshop/contact.png");
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-position: center;
+  background-size: 150%;
+  overflow: hidden; }
+  .contact-us-section .container {
+    display: flex; }
+    .contact-us-section .container .title-contact-us {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      padding: 0 0.25rem;
+      margin-top: 5px; }
+    .contact-us-section .container .accordion-used-car__card-body {
+      background-color: white; }
+    .contact-us-section .container .side-right {
+      position: relative; }
+      .contact-us-section .container .side-right .background-right {
+        background-color: #F0F2F5;
+        position: absolute;
+        height: 46vh;
+        width: 200%;
+        padding: 80px 90px 90px 120px; }
+        .contact-us-section .container .side-right .background-right .car-overlap-side-right {
+          width: 50%;
+          position: absolute;
+          left: 0;
+          margin-top: 60px; }
+
+@media (max-width: 768px) {
+  #workshop-banner {
+    padding: 10% 0 15% 0;
+    background-image: url("../img/workshop/car-left.png");
+    background-size: cover;
+    overflow-wrap: hidden; }
+    #workshop-banner .workshop-intro-text {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #workshop-banner .workshop-intro-text div {
+        width: 93%;
+        padding-right: 0; }
+      #workshop-banner .workshop-intro-text .title-our-service {
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center; }
+      #workshop-banner .workshop-intro-text .text-banner-our-service p {
+        line-height: 29px; }
+    #workshop-banner .workshop-steps-container {
+      margin: 40px 8px 8px 8px;
+      right: 0;
+      padding: 0 6% 15% 6%; }
+      #workshop-banner .workshop-steps-container .workshop-step {
+        margin-top: 30px; }
+    #workshop-banner .car-overlap {
+      position: absolute;
+      bottom: -2%;
+      right: 0;
+      width: 100%; }
+
+  #workshop-experts {
+    margin-top: 10%; }
+    #workshop-experts .service-container {
+      display: flex;
+      flex-direction: column; }
+      #workshop-experts .service-container .service-item {
+        max-width: initial;
+        margin-bottom: 20px; }
+        #workshop-experts .service-container .service-item:nth-child(3n + 2) {
+          margin: 0 0 20px 0; }
+    #workshop-experts .services-advanced .title-top {
+      margin-top: 40px; }
+    #workshop-experts .services-advanced .title-medium {
+      margin: 10px 0 20px 0; }
+    #workshop-experts .services-advanced .check-block {
+      margin-bottom: 0; }
+    #workshop-experts .services-advanced .primary-button {
+      display: none; }
+    #workshop-experts .workshop-headings {
+      width: auto; }
+      #workshop-experts .workshop-headings .title-block-used-cars {
+        font-size: 1.4rem;
+        font-style: italic;
+        text-align: center; }
+      #workshop-experts .workshop-headings p {
+        font-size: 15px;
+        margin: 30px 0; }
+
+  .contact-us-section {
+    background-image: none;
+    box-shadow: 0px 6px 5px 0px #CCCCCC;
+    margin-bottom: 20px;
+    border-top: 1px solid #CCCCCC; }
+    .contact-us-section .accordion-used-car__card-body {
+      padding: 0; }
+    .contact-us-section .accordion-used-car__form-check {
+      line-height: 1.5; }
+    .contact-us-section .side-right {
+      display: none; } }
+.primary-button {
+  background: #005EAA;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 2.5% 11%;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 0; }
+  line-height: 25px; }
 
   .block-used-cars .filter-navigation-menu {
     margin-bottom: 10%; }
