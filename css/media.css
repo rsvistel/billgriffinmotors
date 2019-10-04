@@ -234,7 +234,10 @@
     font-size: 15px; } }
 @media (min-width: 768px) and (max-width: 1112px) {
   #valeting-contact .container {
-    padding: 0; } }
+    padding: 0; }
+
+  #value-my-car-prefooter .car-image-sliding {
+    width: 45%; } }
 @media (min-width: 1024px) and (max-width: 1024px) {
   .accordion-used-car__title {
     font-size: 22px; } }
@@ -444,7 +447,7 @@
     display: block;
     font-size: 18px; }
 
-  .detailse-used-car__none, .detailse-used-car__name-first, .detailse-used-car__name-adult {
+  .detailse-used-car__none, .detailse-used-car__name-first, .detailse-used-car__name-adult, #value-my-car-banner .find-car {
     display: none; } }
 @media (max-width: 768px) {
   .mobile-counter__block {
