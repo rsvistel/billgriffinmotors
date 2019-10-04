@@ -2851,12 +2851,12 @@ hr.heading-underline
             margin-left: 3%
             color: #525252
          select
-            // -webkit-appearance: none
-            // -moz-appearance: none
-            // appearance: none
-            //background-image: url(../img/home/arrow-down.svg)
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            background-image: url('../img/cash-for-cars/arrow.png')
             background-position: center right 10px
-            background-size: 5%
+            background-size: 3%
             background-repeat: no-repeat
             border-radius: 0
             padding-left: 10px
@@ -2892,12 +2892,13 @@ hr.heading-underline
          text-align: center
          margin-left: 4%
          background: white
-         border: 1px solid grey
+         border: 1px solid #CCCCCC
          div
-            border: 1px dashed grey
+            border: 1px dashed #CCCCCC
          object
             display: block
             margin: 0 auto
+            pointer-events: none
       .agree
          background: $dark-blue
          color: white
@@ -2939,16 +2940,21 @@ hr.heading-underline
    padding-left: 10px
 
 .disabled-vehicle
-   background: #EBEBE4
-
+   background: #CCCCCC
+   -webkit-text-fill-color: #525252
+   -webkit-opacity: 1
+   pointer-events: none
+   font-weight: 300
 .drop-description
    text-align: center!important
+   cursor: pointer
 
 .vertical-align
    vertical-align: top
 
 .link-drop
    font-weight: bold
+   color: $dark-blue
    &:hover
       color: $dark-blue
       text-decoration: none
@@ -3030,6 +3036,10 @@ hr.heading-underline
    .cash-for-cars__button
       padding: 1rem 2rem
 
+   .cash-for-cars__items-top
+      list-style: none
+      padding-left: 0
+
    .agree-center
       text-align: center!important
       margin-bottom: 1rem
@@ -3046,8 +3056,6 @@ hr.heading-underline
 
    .cash-for-cars .cash-for-car-application .agree
       padding: 3%
-
-
 
 @media only screen and (max-width: 991px)
    .cash-for-cars__button-subtitle
