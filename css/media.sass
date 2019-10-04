@@ -351,7 +351,7 @@ $light-blue: #00C4FC
 
 
 @media (min-width: 767px)
-  .hamburger-icon, .block-used-cars .filter-navigation-menu .filters-mobile, .show-more
+  .hamburger-icon, .block-used-cars .filter-navigation-menu .filters-mobile, .show-more, .title-mail, .directions-buuton
     display: none
 
 @media (min-width: 450px) and (max-width: 767px)
@@ -412,6 +412,7 @@ $light-blue: #00C4FC
   .accordion-used-car__title
     font-size: 20px
 
+
 //MODAL-window USED CAR-page
 
 @media (min-width: 768px) and (max-width: 1024px)
@@ -419,6 +420,10 @@ $light-blue: #00C4FC
     font-size: 14px
   .detailse-used-car__data
     font-size: 15px
+
+@media (min-width: 768px) and (max-width: 1112px)
+  #valeting-contact .container
+    padding: 0
 
 @media (min-width: 1024px) and (max-width: 1024px)
   .accordion-used-car__title
@@ -428,6 +433,8 @@ $light-blue: #00C4FC
   .carousel-item-modal-lg
     width: 100%!important
     height: 70vh
+
+
 
 @media (max-width: 991px)
   .carousel-mobile
@@ -617,7 +624,13 @@ $light-blue: #00C4FC
     font-size: 18px
   .used-car__name-bottom, .used-car__price-bottom
     font-size: 16px
+@media (max-width: 414px)
+  .contact-us-section.contact-us .block-right-location#office .title-address .text-title-address, .contact-us-section.contact-us .block-right-location#office .sales-number
+    font-size: 0.9rem
 
+  .contact-us-section.contact-us .block-right-location#office .working-hours
+    padding-left: 2%
+    padding-right: 2%
 @media (max-width: 320px)
   .used-car__name-top, .used-car__price-top
     font-size: 15px
@@ -635,6 +648,12 @@ $light-blue: #00C4FC
     max-width: 32%
   .mobile-counter__block
     padding-bottom: 0
+  .contact-us-section.contact-us .block-right-location#office .title-address .text-title-address
+    font-size: 0.7rem
+
+  .contact-us-section.contact-us .block-right-location#office .working-hours
+    padding-left: 0
+    padding-right: 0
 
 //MODAL-window USED CAR-page
 
@@ -690,6 +709,27 @@ $light-blue: #00C4FC
       max-width: 60%
       margin-bottom: 20px
 
+  #workshop-banner
+    .car-overlap
+      width: 55%
+    .workshop-steps-container
+      padding: 1.5%
+    .workshop-intro-text div
+      width: 75%
+      padding-right: 5%
+    .workshop-headings
+      width: 60%
+    .service-container
+      padding: 0
+  #workshop-experts .services-advanced .check-block p
+    font-size: 12px
+  .contact-us-section .container .side-right .background-right
+    width: 103%
+    padding: 80px 50px 90px 50px
+    .car-overlap-side-right
+      width: 100%
+  .contact-us-section .accordion-used-car__form-check
+    line-height: 1.5
   .first-section-about .half-first-section-about
     padding: 0 15px
 
@@ -707,6 +747,32 @@ $light-blue: #00C4FC
     padding-right: 13%
   .block-description-our-team p
     font-size: 15px
+
+  #valeting-contact .row
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+  #valeting-banner
+    .col-md-4.mechanic-image.wow.slideInUp
+      display: none
+    .col-md-4.valeting-items
+      flex: 0 0 48%!important
+      max-width: 48%!important
+  #valeting-contact .accordion-used-car__form .block-right-group, #valeting-contact .accordion-used-car__form .block-form-group
+    width: 100%
+    float: none
+
+  #valeting-contact
+    .col-md-4.valeting-items
+      display: none
+
+
+  #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8
+    max-width: 100%!important
+    flex: 0 0 100%!important
 
 @media (min-width: 2000px)
   #about-prefooter .container
@@ -738,3 +804,21 @@ $light-blue: #00C4FC
     padding: 0
     .title-special-offer
       padding: 5% 25px
+
+  #valeting-banner
+    .col-md-4.mechanic-image.wow.slideInUp
+      display: none
+    .col-md-4.valeting-items
+      flex: 0 0 48%!important
+      max-width: 48%!important
+  #valeting-contact .accordion-used-car__form .block-right-group, #valeting-contact .accordion-used-car__form .block-form-group
+    width: 100%
+    float: none
+
+  #valeting-contact .valeting-item
+    display: flex
+    flex-direction: column
+
+  #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8
+    max-width: 100%!important
+    flex: 0 0 100%!important

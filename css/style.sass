@@ -737,6 +737,7 @@ body
             background-position: center right 10px
             background-size: 5%
             background-repeat: no-repeat
+            background-color: white
             border-radius: 0
             padding-left: 10px
             color: #555555
@@ -1305,7 +1306,7 @@ body
 
    //change in faq
 
-.card-header  
+.card-header
    padding: 24px  40px
 
 .footer-section__title
@@ -1447,6 +1448,31 @@ body
 
 //USED CAR-page
 
+.option-used-car
+   display: flex
+   .car-data-field
+      width: 14.285%
+      padding: 1%
+      text-align: center
+      font-size: 12px
+      &:first-child
+         background: #C5E2F2
+      &:nth-child(2)
+         background: #FFD8C5
+      &:nth-child(3)
+         background: #FFE8D0
+      &:nth-child(4)
+         background: #F9CFCE
+      &:nth-child(5)
+         background: #C5EAD7
+      &:nth-child(6)
+         background: #E0DAF7
+      &:last-child
+         background: #F9D3DA
+      img
+         width: 60%
+      p
+         margin-top: 5%
 .no-gutters
    margin-right: 3px
    margin-left: 3px
@@ -1710,7 +1736,7 @@ body
 .accordion-used-car__form-button
    width: 100%
    border-radius: 0
-   padding: 0.7rem
+   padding: 0.5rem
    margin-bottom: 0.5rem
    background: $dark-blue
 //form USED CAR-page
@@ -1947,7 +1973,7 @@ button:focus
    margin-top: 18px
 
 .section__title-blue-container
-   padding-left: 60px
+   padding: 0 60px
 
 .title-blue
    font-weight: bold
@@ -2412,6 +2438,7 @@ input:checked + .slider:before
             display: none
          .pagination .col-md-6:last-child
             justify-content: center
+            height: auto
             object
                display: none
             ul
@@ -2424,7 +2451,7 @@ input:checked + .slider:before
                   margin-right: 1px
                   width: 10%
                   text-align: center
-                  padding: 2% 0 10%
+                  padding: 2% 0
                   &:nth-child(-n+4), &:nth-last-child(-n+3)
                      display: block
                   &:first-child, &:last-child
@@ -2507,6 +2534,271 @@ input:checked + .slider:before
 
    .search-block-used-cars .car-tile .car-price .col-6:last-child
       line-height: 25px
+
+
+//Search-results
+
+//Workshop
+#workshop-banner
+   padding: 8% 0
+   background-image: url("../img/workshop/car-left-.png")
+   //background-image: url("../img/workshop/car-left.png"), url("../img/workshop/service.png")
+   //background-size: 50% 100%
+   background-position: top center
+   background-repeat: no-repeat
+   position: relative
+   .workshop-intro-text
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      color: white
+      .text-banner-our-service
+         font-family: $primary-font
+         p
+            font-weight: 300
+      .title-our-service
+         font-weight: 600
+         margin-bottom: 15px
+      div
+         width: 70%
+         padding-right: 15%
+   .workshop-steps-container
+      position: relative
+      right: 20px
+      background: white
+      border-radius: 7px
+      padding: 3%
+      .workshop-step
+         div
+            display: flex
+            justify-content: space-between
+         object
+            width: 17%
+            max-height: 40px
+      .workshop-step-last
+         margin-top: 40px
+
+   .car-overlap
+      position: absolute
+      bottom: -15%
+      right: 0
+      width: 40%
+   .number-worshop
+      color: $light-blue
+      font-family: "Poppins", sans-serif
+      font-style: italic
+      font-size: 27px
+   .workshop-step p
+      font-family: "Source Sans Pro", sans-serif
+      color: $light-gray
+      font-size: 14px
+#workshop-experts
+   padding: 10% 0
+   .workshop-headings
+      text-align: center
+      width: 50%
+      margin: 0 auto
+      p
+         font-family: "Source Sans Pro", sans-serif
+         color: #777777
+         font-size: 14px
+         margin: 40px 0 30px 0
+   .service-container
+      padding: 0 5%
+   .services-advanced
+      margin-top: 20px
+      .title-top, .title-medium
+         font-family: "Poppins", sans-serif
+         font-style: italic
+         font-weight: 400
+      .title-medium
+         text-transform: uppercase
+         font-size: 23px
+         margin: 10px 0 25px 0
+      .title-medium-under, .check-block
+         font-family: "Source Sans Pro", sans-serif
+      .title-medium-under
+         margin-bottom: 15px
+         color: #323232
+         font-size: 15px
+      .check-block
+         margin-bottom: 40px
+         p
+            margin-top: 5px
+      .fas.fa-check
+         color: $light-blue
+         margin-right: 3px
+      .row
+         align-items: center
+      img
+         width: 100%
+   .service-item
+      //background: rgb(41,34,161)
+      background: linear-gradient(100deg, rgba(29,147,232,1) 0%, rgba(28,201,221,1) 80%)
+      color: white
+      max-width: 32%
+      padding: 15px 30px
+      margin-bottom: 2%
+      p
+         font-family: "Source Sans Pro", sans-serif
+         font-size: 14px
+      object
+         width: 16%
+      &:nth-child(3n + 2)
+         margin: 0 2% 2% 2%
+
+.title-top, .title-medium
+   font-family: "Poppins", sans-serif
+   font-style: italic
+   font-weight: 400
+.title-medium
+   text-transform: uppercase
+   font-size: 23px
+   margin: 10px 0 25px 0
+.title-medium-side-right
+   text-transform: initial
+   color: $dark-blue
+
+.title-medium-under-side-right
+   font-family: "Source Sans Pro", sans-serif
+   font-size: 14px
+   color: #323232
+.title-workshop
+   font-style: italic
+   font-family: "Poppins", sans-serif
+   font-size: 18px
+   font-weight: 400
+   margin-bottom: 6px
+#workshop-prefooter
+   background: url("../img/workshop/Path 2506.png")
+   .col-md-6:last-child
+      img
+         width: 100%
+      div
+         background: white
+         position: relative
+         &:after
+            content: ""
+            position: absolute
+            background: white
+            top: 0
+            width: 100%
+            height: 100%
+            left: 100%
+
+.contact-us-section
+   background-image: url("../img/workshop/contact.png")
+   padding-top: 3%
+   padding-bottom: 2%
+   background-position: center
+   background-size: 150%
+   overflow: hidden
+   .container
+      display: flex
+      .title-contact-us
+         font-family: $primary-font
+         font-weight: 700
+         padding: 0 0.25rem
+         margin-top: 5px
+      .accordion-used-car__card-body
+         background-color: white
+      .side-right
+         position: relative
+         .background-right
+            background-color: #F0F2F5
+            position: absolute
+            height: 46vh
+            width: 200%
+            padding: 80px 90px 90px 120px
+            .car-overlap-side-right
+               width: 50%
+               position: absolute
+               left: 0
+               margin-top: 60px
+
+@media (max-width: 768px)
+   #workshop-banner
+      padding: 10% 0 15% 0
+      background-image: url("../img/workshop/car-left.png")
+      background-size: cover
+      overflow-wrap: hidden
+      .workshop-intro-text
+         display: flex
+         justify-content: center
+         align-items: center
+         div
+            width: 93%
+            padding-right: 0
+         .title-our-service
+            font-weight: 700
+            font-size: 35px
+            text-align: center
+         .text-banner-our-service p
+            line-height: 29px
+      .workshop-steps-container
+         margin: 40px 8px 8px 8px
+         right: 0
+         padding: 0 6% 15% 6%
+         .workshop-step
+            margin-top: 30px
+      .car-overlap
+         position: absolute
+         bottom: -2%
+         right: 0
+         width: 100%
+   #workshop-experts
+      margin-top: 10%
+      .service-container
+         display: flex
+         flex-direction: column
+         .service-item
+            max-width: initial
+            margin-bottom: 20px
+            &:nth-child(3n + 2)
+               margin: 0 0 20px 0
+      .services-advanced
+         .title-top
+            margin-top: 40px
+         .title-medium
+            margin: 10px 0 20px 0
+         .check-block
+            margin-bottom: 0
+         .primary-button
+            display: none
+      .workshop-headings
+         width: auto
+         .title-block-used-cars
+            font-size: 1.4rem
+            font-style: italic
+            text-align: center
+         p
+            font-size: 15px
+            margin: 30px 0
+   .contact-us-section
+      background-image: none
+      box-shadow: 0px 6px 5px 0px #CCCCCC
+      margin-bottom: 20px
+      border-top: 1px solid #CCCCCC
+      .accordion-used-car__card-body
+         padding: 0
+      .accordion-used-car__form-check
+         line-height: 1.5
+      .side-right
+         display: none
+
+
+
+//Workshop
+
+
+.primary-button
+   background: $dark-blue
+   color: #ffffff
+   font-family: "Source Sans Pro", sans-serif
+   padding: 2.5% 11%
+   text-transform: uppercase
+   font-size: 15px
+   border: 0
 
    .block-used-cars .filter-navigation-menu
       margin-bottom: 10%
@@ -2678,9 +2970,8 @@ input:checked + .slider:before
       z-index: 100
 .title-about-us
    font-family: "Poppins", sans-serif
-   font-style: italic
    text-transform: uppercase
-   font-weight: 400
+   font-weight: 700
 .heading-underline.heading-underline_long, hr.heading-underline
    border-top: 1px solid #242424
 .text-about-us
@@ -2690,7 +2981,7 @@ input:checked + .slider:before
 .text-about-us-first
    margin-top: 40px
 hr.heading-underline
-   width: 100px
+   width: 60px
    margin: 0.5rem 0
    &.heading-underline_long
       width: 120px
@@ -2857,6 +3148,246 @@ hr.heading-underline
       padding: 0 15px
 //About
 
+//Cash for cars
+.cash-for-cars
+   .cash-for-car-application
+      font-size: 14px
+      padding: 0 76px
+      .cash-for-cars-block
+         margin: 2% 0
+         text-align: right
+         padding: 3% 15%
+         background: #F5F5F5
+         input:not([type='checkbox']), select
+            width: 50%
+            margin-left: 3%
+            border: 1px solid #CCCCCC
+            color: #525252
+            margin-bottom: 14px
+            height: 29px
+            padding-left: 10px
+         textarea
+            width: 50%
+            padding-left: 10px
+            margin-bottom: 14px
+            border: 1px solid #CCCCCC
+            margin-left: 3%
+            color: #525252
+         select
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            background-image: url('../img/cash-for-cars/arrow.png')
+            background-position: center right 10px
+            background-size: 3%
+            background-repeat: no-repeat
+            border-radius: 0
+            padding-left: 10px
+            height: 29px
+            color: #555555
+            font-family: "Open Sans", sans-serif
+            margin-bottom: 14px
+         input[type='file']
+            width: 0.1px
+            height: 0.1px
+            opacity: 0
+            overflow: hidden
+            position: absolute
+            z-index: -1
+         &:first-child
+            padding: 3%
+            text-align: left
+            div
+               text-align: right
+         &:last-child
+            padding: 3%
+            display: flex
+            justify-content: space-between
+      h3
+         text-align: left
+         font-size: 21px
+      .image-input-container
+         display: flex
+         justify-content: flex-end
+      .image-input
+         width: 50%
+         padding: 3%
+         text-align: center
+         margin-left: 4%
+         background: white
+         border: 1px solid #CCCCCC
+         div
+            border: 1px dashed #CCCCCC
+         object
+            display: block
+            margin: 0 auto
+            pointer-events: none
+      .agree
+         background: $dark-blue
+         color: white
+         padding: 1.4%
+
+.cash-for-cars
+      &__button
+         border: 0
+         background: $dark-blue
+         color: white
+      &__bold
+         padding: 1rem 0
+         display: inline-block
+      &__items-top
+         padding-left: 2rem
+.cash-for-cars__button-subtitle
+   text-align: left
+   display: inline-block
+   width: 80%
+
+.agree-block
+   display: inline-block
+   padding-bottom: 2rem
+
+.descripton-blue-items
+   padding: 0.5rem 0 0 2rem
+   font-weight: bold
+
+.cash-for-car-blue-title
+   font-size: 14px
+.cash-for-car-descripton-blue
+   padding-top: 0.4rem
+
+.agree-mobile-lable
+   text-transform: uppercase
+
+#dateFinance, #expiry
+   text-transform: uppercase
+   padding-left: 10px
+
+.disabled-vehicle
+   background: #CCCCCC
+   -webkit-text-fill-color: #525252
+   -webkit-opacity: 1
+   pointer-events: none
+   font-weight: 300
+.drop-description
+   text-align: center!important
+   cursor: pointer
+
+.vertical-align
+   vertical-align: top
+
+.link-drop
+   font-weight: bold
+   color: $dark-blue
+   &:hover
+      color: $dark-blue
+      text-decoration: none
+
+.cash-for-car
+   &__card
+      display: flex
+      justify-content: center
+   &__card-car
+      border: 1px solid #707070
+      padding: 1rem 0 1rem 2rem
+      max-width: 678px
+      display: flex
+      margin: 1rem 0 3rem 0
+   &__card-title
+      display: inline-block
+      font-size: 20px
+      font-weight: 500
+      padding-bottom: 10%
+   &__card-model
+      display: block
+      padding-bottom: 10%
+   &__card-price
+      font-size: 31px
+      font-weight: bold
+
+
+@media only screen and (max-width: 767px)
+   .agree-mobile-lable
+      display: inherit!important
+      text-transform: uppercase
+   .cash-for-car
+      &__card
+         display: block
+      &__card-car
+         padding: 0.5rem 0
+         display: flex
+         flex-direction: column
+      &__card-title
+         padding-bottom: 5%
+      &__card-model
+         display: block
+         padding-bottom: 5%
+
+   .cash-for-cars
+      .cash-for-car-application
+         padding: 0 10px
+         .cash-for-cars-block
+            padding: 3%
+            background: #F5F5F5
+            input:not([type='checkbox']), select
+               width: 100%
+               height: 32px
+               margin-left: 0
+            textarea
+               width: 100%
+               margin-left: 0
+            &:first-child
+               padding: 3%
+               text-align: left
+            &:last-child
+               padding: 3%
+               display: flex
+               flex-direction: column
+         h3
+            text-align: left
+            font-size: 21px
+         .image-input-container
+            justify-content: end
+            padding: 1rem 0
+         label
+            display: block
+            text-align: left
+            margin-bottom: 0
+            padding-top: 1rem
+         hr
+            margin: 0
+
+   .cash-for-cars__button
+      padding: 1rem 2rem
+
+   .cash-for-cars__items-top
+      list-style: none
+      padding-left: 0
+
+   .agree-center
+      text-align: center!important
+      margin-bottom: 1rem
+
+   .cash-for-cars__button-subtitle
+      padding-bottom: 0.5rem
+      text-align: left
+      display: block
+      width: 100%
+
+   .agree
+      width: 70%
+      margin: auto
+
+   .cash-for-cars .cash-for-car-application .agree
+      padding: 3%
+
+@media only screen and (max-width: 991px)
+   .cash-for-cars__button-subtitle
+      padding-bottom: 0.5rem
+      text-align: left
+      display: block
+      width: 100%
+//Cash for cars
+
 //Reserve-vehicle- page
 
 .reserve-page
@@ -2919,7 +3450,6 @@ hr.heading-underline
    padding: 0
 
 .reserve-page__checkbox-group
-   margin-top: 1rem
    position: relative
 
 .reserve-page__checkbox
@@ -3114,3 +3644,250 @@ hr.heading-underline
          h6, p
             text-align: center
 //Value My Car
+
+//Valeting Contact
+#valeting-banner
+   padding: 2% 0
+.valeting-item
+   display: flex
+   margin: 5% 0
+   h6
+      font-family: $primary-font
+      font-size: 18px
+      margin-bottom: 8px
+   p
+      font-family: "Source Sans Pro", sans-serif
+      color: $light-gray
+      font-size: 15px
+.mechanic-image
+   img
+      position: absolute
+
+#workshop-experts.workshop-experts-valetion
+   padding: 6% 0
+#valeting-contact
+   padding: 5% 0
+   background-image: url("../img/valeting/bn.png")
+   background-size: cover
+   background-repeat: no-repeat
+   .valeting-items
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+   .accordion-used-car__form
+      padding-left: 1.25rem
+      padding-right: 1.25rem
+      .block-form-group
+         width: 47%
+         float: left
+         margin-right: 3%
+      .block-right-group
+         width: 47%
+         float: left
+         .btn-submit
+            font-size: 20px
+            text-transform: uppercase
+      .form-group input, .form-group textarea
+         border-radius: 5px
+
+   label
+      font-family: "Source Sans Pro", sans-serif
+      font-size: 14px
+      margin-bottom: 1px
+   .accordion-used-car__form-check
+      font-size: 13px
+      padding-bottom: 0.5rem
+   .title-contact-us
+      background-color: #E5E5E5
+      text-align: center
+      padding: 3.5% 0
+      font-weight: 300
+   .card-body.accordion-used-car__card-body
+      padding: 0
+   .col-md-8, .col-md-4
+      background: white
+   .col-md-4
+      max-width: 32.333333%
+      margin-left: 1%
+@media only screen and (max-width: 768px)
+   #valeting-banner
+      padding: 6%
+      padding-bottom: 0
+      .row
+         .col-md-4
+            &:first-child
+               order: 1
+            &:nth-child(2)
+               order: 3
+               img
+                  position: static
+            &:last-child
+               order: 2
+   .none
+      display: none
+   #valeting-contact
+      z-index: 101
+      padding: 0 1.5%
+      background-image: none
+      .accordion-used-car__form
+         padding: 0 1rem 1rem 1rem
+         .form-group input
+            border-radius: 0
+      .card-body.accordion-used-car__card-body.col-md-8
+         border: 1px solid #CCCCCC
+         border-radius: 5px
+      .title-contact-us
+         font-weight: 600
+         background-color: initial
+         font-size: 20px
+         text-align: start
+         padding: 1rem 1rem 0 1rem
+      .col-md-4
+         display: none
+   #valeting-contact .accordion-used-car__form .block-right-group, #valeting-contact .accordion-used-car__form .block-form-group
+      width: 100%
+      float: none
+//Valeting Contact
+
+
+//Contact-us
+.form-group-50
+   width: 48.5%
+   float: left
+   &:first-child
+      margin-right: 3%
+.contact-us-section.contact-us
+   background-image: none
+   .form-group input::-webkit-input-placeholder, .form-group textarea::-webkit-input-placeholder
+      font-size: 15px
+   .container
+      padding: 0
+   #InputName, #InputPhone, #InputEmail
+      height: calc(1.1em + 1.7rem + 2px)
+   .accordion-used-car__form-check
+      line-height: 1.5
+   .block-right-location#office
+      background: none
+      display: flex
+      box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
+      padding: 0.5rem 0
+      .input-search input::-webkit-input-placeholder
+         font-size: 11px
+      .working-hours .card
+         padding: 0 2.5%
+         .title-address embed, .title-contact embed
+            margin-right: 20px
+      .title-address .text-title-address
+         font-size: 0.8rem
+      .sales-number
+         font-weight: 400
+      .card-body
+         margin-top: 1rem
+      .card
+         max-width: initial
+         box-shadow: initial
+         .card-body #map
+            border: 1px solid #707070
+         .card-body ul li
+            font-size: 14px
+            color: #525252
+            margin-bottom: 10px
+         .card-title
+            border-bottom: 0
+      .card-location .card-body
+         height: 300px
+         width: 100%
+      .input-search
+         display: flex
+         margin-top: 15px
+         #site-search
+            width: 80%
+            border: 1px solid #CCCCCC
+            padding: 5px
+         .search-button
+            width: 20%
+            background-color: $dark-blue
+            color: white
+            font-family: $primary-font
+            border: 0
+            padding: 0.5rem
+      .working-hours
+         padding: 7% 0 0 0
+      .title-address embed, .title-contact embed
+         width: auto
+      .title-contact
+         margin-top: 30px
+
+   .card-body.accordion-used-car__card-body
+      box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
+      margin-right: 10px
+
+.title-contact-us-card-body, .block-right-location#office .location-contact .title-contact-us-card-body
+   font-family: "Montserrat", sans-serif
+   font-weight: 700
+   margin-top: 5px
+   font-size: 23px
+   padding: 0
+   line-height: 27px
+   color: #212529
+
+@media (max-width: 768px)
+   .contact-us-section.contact-us
+      padding-top: 0
+      margin: 8px
+      border: 0
+      box-shadow: none
+      border-radius: 5px
+      .container
+         flex-direction: column
+      .form-group-50
+         width: auto
+         float: none
+         &:first-child
+            margin-right: 0
+      .card-body.accordion-used-car__card-body
+         padding: 0.5rem
+         border: 1px solid #CCCCCC
+         border-radius: 5px
+      .block-right-location#office
+         border: 1px solid #CCCCCC
+         border-radius: 5px
+         margin-top: 10px
+         display: flex
+         flex-direction: column
+         .input-search input::-webkit-input-placeholder
+            font-size: 15px
+         .search-button
+            display: none
+         .input-search #site-search
+            width: 90%
+            padding: 0.7rem
+         .location-contact
+            padding: 0
+            .directions-buuton
+               color: #fff
+               background-color: #0062cc
+               border: 0
+               width: 100%
+               padding: 0.7rem
+               margin-top: 15px
+         .card .card-title
+            text-align: left
+            padding: 0 15px
+         .input-search
+            display: flex
+            flex-direction: column
+            align-items: center
+         .card-body.card-body-opening-hours
+            display: none
+         .title-address, .title-contact
+            display: flex
+            max-width: initial
+         .working-hours
+            padding-bottom: 5%
+
+
+//Contact-us
+
+

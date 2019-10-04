@@ -93,6 +93,10 @@ $(document).ready(function(){
         $('.empty-shortlist-message').show()
     }
 
+    $('.image-input').click(function () {
+        $('.image-input-container input').click();
+    });
+
 });
 
 
