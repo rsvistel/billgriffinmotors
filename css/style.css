@@ -2654,22 +2654,66 @@ hr.heading-underline {
 
   .reserve-page__card-model {
     font-size: 15px; } }
-
 #valeting-banner {
   padding: 2% 0; }
 
 .valeting-item {
   display: flex;
   margin: 5% 0; }
+  .valeting-item h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px; }
+  .valeting-item p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #777777;
+    font-size: 15px; }
 
 .mechanic-image img {
   position: absolute; }
 
+#workshop-experts.workshop-experts-valetion {
+  padding: 6% 0; }
+
 #valeting-contact {
   padding: 5% 0;
-  background-image: url("../img/valeting/banner.png");
+  background-image: url("../img/valeting/bn.png");
   background-size: cover;
   background-repeat: no-repeat; }
+  #valeting-contact .valeting-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #valeting-contact .accordion-used-car__form {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+    #valeting-contact .accordion-used-car__form .block-form-group {
+      width: 47%;
+      float: left;
+      margin-right: 3%; }
+    #valeting-contact .accordion-used-car__form .block-right-group {
+      width: 47%;
+      float: left; }
+      #valeting-contact .accordion-used-car__form .block-right-group .btn-submit {
+        font-size: 20px;
+        text-transform: uppercase; }
+    #valeting-contact .accordion-used-car__form .form-group input, #valeting-contact .accordion-used-car__form .form-group textarea {
+      border-radius: 5px; }
+  #valeting-contact label {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    margin-bottom: 1px; }
+  #valeting-contact .accordion-used-car__form-check {
+    font-size: 13px;
+    padding-bottom: 0.5rem; }
+  #valeting-contact .title-contact-us {
+    background-color: #E5E5E5;
+    text-align: center;
+    padding: 3.5% 0;
+    font-weight: 300; }
+  #valeting-contact .card-body.accordion-used-car__card-body {
+    padding: 0; }
   #valeting-contact .col-md-8, #valeting-contact .col-md-4 {
     background: white; }
   #valeting-contact .col-md-4 {
@@ -2678,6 +2722,7 @@ hr.heading-underline {
 
 @media only screen and (max-width: 768px) {
   #valeting-banner {
+    padding: 6%;
     padding-bottom: 0; }
     #valeting-banner .row .col-md-4:first-child {
       order: 1; }
@@ -2692,6 +2737,12 @@ hr.heading-underline {
     z-index: 101; }
     #valeting-contact .col-md-4 {
       display: none; } }
+.form-group-50 {
+  width: 48.5%;
+  float: left; }
+  .form-group-50:first-child {
+    margin-right: 3%; }
+
 .contact-us-section.contact-us {
   background-image: none; }
   .contact-us-section.contact-us .form-group input::-webkit-input-placeholder, .contact-us-section.contact-us .form-group textarea::-webkit-input-placeholder {
@@ -2702,11 +2753,6 @@ hr.heading-underline {
     height: calc(1.1em + 1.7rem + 2px); }
   .contact-us-section.contact-us .accordion-used-car__form-check {
     line-height: 1.5; }
-  .contact-us-section.contact-us .form-group-50 {
-    width: 48.5%;
-    float: left; }
-    .contact-us-section.contact-us .form-group-50:first-child {
-      margin-right: 3%; }
   .contact-us-section.contact-us .block-right-location#office {
     background: none;
     display: flex;
@@ -2827,4 +2873,3 @@ hr.heading-underline {
         padding-bottom: 5%; } }
 
 /*# sourceMappingURL=style.css.map */
-
