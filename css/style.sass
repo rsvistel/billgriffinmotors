@@ -3571,42 +3571,95 @@ hr.heading-underline
 //Reserve-vehicle- page
 
 //Value My Car
+
+.text-top-primary
+   font-family: "Poppins", sans-serif
+   font-style: italic
+   font-weight: 400
+
+.text-medium-primary
+   text-transform: uppercase
+   font-size: 23px
+   margin: 10px 0 25px 0
+   font-family: "Poppins", sans-serif
+   font-weight: 700
+
+.text-bottom-primary
+   margin-bottom: 15px
+   color: #323232
+   font-size: 15px
+   font-family: "Source Sans Pro", sans-serif
+
+#value-my-car-prefooter .six-blocks-img .valeting-item
+   display: flex
+   flex-direction: column-reverse
+   align-items: flex-start
+
 #value-my-car-banner 
-   background-image: url("../img/value/banner.png")
+   background-image: url("../img/value/banner1.png")
    background-size: cover
    background-repeat: no-repeat
+   background-position: bottom
    text-align: center
+   .find-car
+      margin-left: 1%
+      background: #005EAA
+      font-family: "Montserrat", sans-serif
+      color: white
+      border: none
+      font-size: 25px
+      padding: 0 45px
+      border-radius: 4px
+      height: 68px
+      width: 100%
    h1
       color: white
       padding: 5% 0
-      text-shadow: 3px 4px 3px rgba(355,355,355,.3)
+      text-shadow: 3px 4px 0 rgba(355,355,355,.3)
       font-size: 50px
+      font-family: "Poppins", sans-serif
+      font-weight: 800
    img.wow
       width: 100%
+   .number-car
+      width: auto
+      height: 68px
    form
       display: flex
       justify-content: center
       margin-bottom: 10%
       ::placeholder
-         font-size: 50px
+         font-size: 40px
+         font-family: Arial, sans-serif
+         font-weight: 700
+         margin: 0
+         color: #CCCCCC
       :-ms-input-placeholder
          font-size: 50px
+         font-family: "Open Sans", sans-serif
       ::-ms-input-placeholder
          font-size: 50px
+         font-family: "Open Sans", sans-serif
       img
          position: relative
          left: 5px
       input
-         width: 30%
+         width: 25%
          height: 100%
-         border: 3px solid blue
-         font-size: 50px
+         border: 3px solid $dark-blue
+         border-radius: 4px
+         font-size: 40px
          text-transform: uppercase
+         text-align: center
       button
          margin-left: 1%
-         background: blue
+         background: $dark-blue
+         font-family: $primary-font
          color: white
          border: none
+         font-size: 25px
+         padding: 0 45px
+         border-radius: 4px
 #value-my-car-prefooter
    padding: 5% 0
    position: relative
@@ -3635,6 +3688,8 @@ hr.heading-underline
 
 @media only screen and (max-width: 768px)
    #value-my-car-prefooter
+      .six-blocks-img .valeting-item
+         align-items: center
       .content
          width: 100%
       .car-image-sliding
@@ -3643,6 +3698,17 @@ hr.heading-underline
          text-align: center
          h6, p
             text-align: center
+   #value-my-car-banner
+      .dsp-none
+         display: none
+      form input
+         width: 100%
+      h1
+         font-size: 1.5rem
+         padding: 15% 0 10% 0
+      .wow.zoomIn
+         margin-top: 35px
+
 //Value My Car
 
 //Valeting Contact
@@ -3887,7 +3953,36 @@ hr.heading-underline
          .working-hours
             padding-bottom: 5%
 
+   #office.office-homepage
+      .card-location .card-title
+         display: none
+      .card-body-opening-hours
+         padding-top: 10px
+      .card-hour-block
+         .col-6
+            font-size: 20px
+         .card-title
+            border-bottom: 0
+            font-size: 22px
+            font-weight: 600
+            text-align: start
+            padding: 3% 4% 0 4%
+            color: black
+      .card-location
+         order: 1
+         margin-top: 10px
+         margin-bottom: 20px
+         border: 1px solid #CCCCCC
+         border-radius: 4px
+         .card-body
+            height: 300px
+            width: 100%
+
 
 //Contact-us
 
 
+#value-my-car-prefooter .valeting-item.col-md-6
+   margin: 3% 0
+   h6
+      margin-bottom: 12px
