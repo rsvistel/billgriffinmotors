@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Finance Application</title>
+    <title>Finance Application Car</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -355,40 +355,40 @@
         <h3>Loan Details</h3>
         <hr>
         <label for="vehicle">Select Your Vehicle</label>
-        <select id="vehicle">
-            <option>Please Select</option>
+        <select id="vehicle" class="disabled-vehicle" disabled>
+            <option>2012 Ford Fiesta 1.4 Zetec 3DR</option>
             <option>Make 1</option>
             <option>Make 2</option>
         </select>
 
         <div>
             <label for="price">Car Price</label>
-            <input type="text" id="price" name="name">
+            <input type="text" id="price" name="name" disabled placeholder="€6,900">
         </div>
 
         <div>
             <label for="year">Year of Car</label>
-            <input type="text" id="year" name="name">
+            <input type="text" id="year" name="name" disabled placeholder="2012">
         </div>
 
         <div>
             <label for="make">Vehicle Make</label>
-            <input type="text" id="make" name="name">
+            <input type="text" id="make" name="name" disabled placeholder="Ford">
         </div>
 
         <div>
             <label for="make">Vehicle Model</label>
-            <input type="text" id="make" name="name">
-         </div>
+            <input type="text" id="make" name="name" disabled placeholder="Fiesta">
+       </div>
 
         <div>
             <label for="variant">Vehicle Variant</label>
-            <input type="text" id="variant" name="name">
+            <input type="text" id="variant" name="name" disabled placeholder="1.4 Zetec 3DR">
         </div>
 
         <div>
             <label for="mileage">Vehicle Mileage</label>
-            <input type="text" id="mileage" name="name">
+            <input type="text" id="mileage" name="name" disabled placeholder="45,827 miles">
         </div>
 
         <div>
