@@ -1190,13 +1190,13 @@ button:focus {
     font-size: 30px; }
 
   .used-car__modal-price-top {
-    font-size: 30px; }
+    font-size: 40px; }
 
   .used-car__modal-name-bottom {
     font-size: 20px; }
 
   .used-car__modal-price-bottom {
-    font-size: 25px; }
+    font-size: 30px; }
 
   .accordion-used-car__mobile-padding {
     position: absolute;
@@ -1229,13 +1229,6 @@ button:focus {
     top: 100%;
     left: 25%; }
 
-  .used-car__modal-carousel-caption {
-    position: absolute;
-    top: 100%;
-    width: 25%;
-    background-color: rgba(0, 0, 0, 0.55);
-    left: 0; }
-
   .used-car__modal-close {
     outline: 0;
     right: 25px;
@@ -1246,11 +1239,17 @@ button:focus {
 
   .used-car__modal-footer {
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.33);
+    position: fixed;
+    bottom: 0;
+    z-index: 100000;
+    width: 20%;
+    height: 20vh;
+    pointer-events: none; }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
-    width: 70px;
-    height: 70px;
+    width: 109px;
+    height: 109px;
     opacity: 1; }
 
   .used-car__modal__control-prev {
@@ -1264,11 +1263,22 @@ button:focus {
     background-position: center center; }
 
   .used-car__modal-title, .used-car__modal-header {
-    width: 75%;
     height: 20vh;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.33);
-    right: 0; }
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 100000;
+    width: 80%;
+    pointer-events: none; }
+
+  .used-car__modal-title {
+    padding-right: 3rem; }
+
+  .carousel-inner__modal {
+    padding-bottom: 20vh;
+    background: #898989; }
 
   .carousel-card-items {
     margin-bottom: 0.7rem;
@@ -1281,31 +1291,15 @@ button:focus {
     padding-left: 3px; }
 
   .counter__icon-modal-lg {
-    width: 60px;
-    margin-right: 1rem; }
+    width: 61px;
+    margin-right: 8px; }
 
   .counter__value {
-    font-size: 33px;
-    vertical-align: bottom;
-    padding-top: 1rem; }
-
-  .counter__block {
-    display: flex;
-    height: 20vh;
-    align-items: center;
-    left: 0;
-    padding-left: 10%; }
-
-  .carousel-item-modal-lg {
-    width: auto !important;
-    margin: auto;
-    height: 100vh; }
-
-  .used-car__modal-modal-body {
-    height: 80vh; }
+    font-size: 51px;
+    white-space: nowrap;
+    font-weight: 200; }
 
   .carousel__modal {
-    height: 100vh;
     display: flex; } }
 .section__title-blue {
   font-family: "Montserrat", sans-serif;
@@ -2470,7 +2464,6 @@ hr.heading-underline {
 
   #our-team .container {
     padding: 0 15px; } }
-
 .cash-for-cars .cash-for-car-application {
   font-size: 14px;
   padding: 0 76px; }
@@ -2705,7 +2698,6 @@ hr.heading-underline {
     text-align: left;
     display: block;
     width: 100%; } }
-
 .reserve-page__title-block {
   align-items: flex-start;
   margin: 10px 0 15px 0; }
@@ -2852,7 +2844,6 @@ hr.heading-underline {
 
   .form-group-mobile-last {
     margin-bottom: 0rem; }
-
 
   .form-group-first {
     margin-bottom: 0; }
@@ -3204,5 +3195,3 @@ hr.heading-underline {
         max-width: initial; }
       .contact-us-section.contact-us .block-right-location#office .working-hours {
         padding-bottom: 5%; } }
-
-
