@@ -3596,9 +3596,10 @@ hr.heading-underline
    align-items: flex-start
 
 #value-my-car-banner 
-   background-image: url("../img/value/banner.png")
+   background-image: url("../img/value/banner1.png")
    background-size: cover
    background-repeat: no-repeat
+   background-position: bottom
    text-align: center
    .find-car
       margin-left: 1%
@@ -3628,11 +3629,17 @@ hr.heading-underline
       justify-content: center
       margin-bottom: 10%
       ::placeholder
-         font-size: 50px
+         font-size: 40px
+         font-family: Arial, sans-serif
+         font-weight: 700
+         margin: 0
+         color: #CCCCCC
       :-ms-input-placeholder
          font-size: 50px
+         font-family: "Open Sans", sans-serif
       ::-ms-input-placeholder
          font-size: 50px
+         font-family: "Open Sans", sans-serif
       img
          position: relative
          left: 5px
@@ -3643,6 +3650,7 @@ hr.heading-underline
          border-radius: 4px
          font-size: 40px
          text-transform: uppercase
+         text-align: center
       button
          margin-left: 1%
          background: $dark-blue
@@ -3944,6 +3952,31 @@ hr.heading-underline
             max-width: initial
          .working-hours
             padding-bottom: 5%
+
+   #office.office-homepage
+      .card-location .card-title
+         display: none
+      .card-body-opening-hours
+         padding-top: 10px
+      .card-hour-block
+         .col-6
+            font-size: 20px
+         .card-title
+            border-bottom: 0
+            font-size: 22px
+            font-weight: 600
+            text-align: start
+            padding: 3% 4% 0 4%
+            color: black
+      .card-location
+         order: 1
+         margin-top: 10px
+         margin-bottom: 20px
+         border: 1px solid #CCCCCC
+         border-radius: 4px
+         .card-body
+            height: 300px
+            width: 100%
 
 
 //Contact-us

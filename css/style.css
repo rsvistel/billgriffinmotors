@@ -2914,9 +2914,10 @@ hr.heading-underline {
   align-items: flex-start; }
 
 #value-my-car-banner {
-  background-image: url("../img/value/banner.png");
+  background-image: url("../img/value/banner1.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   text-align: center; }
   #value-my-car-banner .find-car {
     margin-left: 1%;
@@ -2945,11 +2946,17 @@ hr.heading-underline {
     display: flex;
     justify-content: center;
     margin-bottom: 10%;
-    -ms-input-placeholder-font-size: 50px; }
+    -ms-input-placeholder-font-size: 50px;
+    -ms-input-placeholder-font-family: "Open Sans", sans-serif; }
     #value-my-car-banner form ::placeholder {
-      font-size: 50px; }
+      font-size: 40px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      margin: 0;
+      color: #CCCCCC; }
     #value-my-car-banner form ::-ms-input-placeholder {
-      font-size: 50px; }
+      font-size: 50px;
+      font-family: "Open Sans", sans-serif; }
     #value-my-car-banner form img {
       position: relative;
       left: 5px; }
@@ -2959,7 +2966,8 @@ hr.heading-underline {
       border: 3px solid #005EAA;
       border-radius: 4px;
       font-size: 40px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: center; }
     #value-my-car-banner form button {
       margin-left: 1%;
       background: #005EAA;
@@ -3255,7 +3263,30 @@ hr.heading-underline {
         display: flex;
         max-width: initial; }
       .contact-us-section.contact-us .block-right-location#office .working-hours {
-        padding-bottom: 5%; } }
+        padding-bottom: 5%; }
+
+  #office.office-homepage .card-location .card-title {
+    display: none; }
+  #office.office-homepage .card-body-opening-hours {
+    padding-top: 10px; }
+  #office.office-homepage .card-hour-block .col-6 {
+    font-size: 20px; }
+  #office.office-homepage .card-hour-block .card-title {
+    border-bottom: 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: start;
+    padding: 3% 4% 0 4%;
+    color: black; }
+  #office.office-homepage .card-location {
+    order: 1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px; }
+    #office.office-homepage .card-location .card-body {
+      height: 300px;
+      width: 100%; } }
 #value-my-car-prefooter .valeting-item.col-md-6 {
   margin: 3% 0; }
   #value-my-car-prefooter .valeting-item.col-md-6 h6 {
