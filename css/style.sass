@@ -2828,16 +2828,18 @@ hr.heading-underline
 //Cash for cars
 .cash-for-cars
    .cash-for-car-application
+      font-size: 14px
       padding: 0 76px
       .cash-for-cars-block
          margin: 2% 0
          text-align: right
          padding: 3% 15%
-         background: lightgrey
+         background: #F5F5F5
          input:not([type='checkbox']), select
             width: 50%
             margin-left: 3%
-            border: 1px solid gray
+            border: 1px solid #CCCCCC
+            color: #525252
          select
             -webkit-appearance: none
             -moz-appearance: none
@@ -2866,25 +2868,34 @@ hr.heading-underline
             padding: 3%
             display: flex
             justify-content: space-between
-         h3
-            text-align: left
-         .image-input-container
-            display: flex
-            justify-content: flex-end
-         .image-input
-            width: 50%
-            padding: 3%
-            text-align: center
-            margin-left: 4%
-            background: white
-            border: 1px solid grey
-            div
-               border: 1px dashed grey
-            object
-               display: block
-               margin: 0 auto
-         .agree
-            background: blue
-            color: white
-            padding: 1%
+      h3
+         text-align: left
+         font-size: 21px
+      .image-input-container
+         display: flex
+         justify-content: flex-end
+      .image-input
+         width: 50%
+         padding: 3%
+         text-align: center
+         margin-left: 4%
+         background: white
+         border: 1px solid grey
+         div
+            border: 1px dashed grey
+         object
+            display: block
+            margin: 0 auto
+      .agree
+         background: blue
+         color: white
+         padding: 1%
+
+.cash-for-cars
+      &__button
+         border: 0
+.cash-for-cars__button-subtitle
+   text-align: left
+   display: inline-block
+   width: 70%
 //Cash for cars
