@@ -2840,18 +2840,23 @@ hr.heading-underline
             margin-left: 3%
             border: 1px solid #CCCCCC
             color: #525252
+            margin-bottom: 14px
+            height: 29px
+            padding-left: 10px
          select
-            -webkit-appearance: none
-            -moz-appearance: none
-            appearance: none
-            background-image: url(../img/home/arrow-down.svg)
+            // -webkit-appearance: none
+            // -moz-appearance: none
+            // appearance: none
+            //background-image: url(../img/home/arrow-down.svg)
             background-position: center right 10px
             background-size: 5%
             background-repeat: no-repeat
             border-radius: 0
             padding-left: 10px
+            height: 29px
             color: #555555
             font-family: "Open Sans", sans-serif
+            margin-bottom: 14px
          input[type='file']
             width: 0.1px
             height: 0.1px
@@ -2889,6 +2894,7 @@ hr.heading-underline
       .agree
          background: $dark-blue
          color: white
+         padding: 1%
 
 .cash-for-cars
       &__button
@@ -2916,10 +2922,17 @@ hr.heading-underline
 .cash-for-car-descripton-blue
    padding-top: 0.4rem
 
+.agree-mobile-lable
+   text-transform: uppercase
+
+#dateFinance
+   text-transform: uppercase
+   padding-left: 10px
 
 @media only screen and (max-width: 767px)
    .agree-mobile-lable
       display: inherit!important
+      text-transform: uppercase
 
    .cash-for-cars
       .cash-for-car-application
@@ -2968,6 +2981,7 @@ hr.heading-underline
       padding: 4% 2%
       width: 70%
       margin: auto
+
 
 @media only screen and (max-width: 991px)
    .cash-for-cars__button-subtitle
