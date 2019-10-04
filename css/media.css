@@ -173,7 +173,7 @@
     #feedback .fas.fa-star {
       font-size: 1.5rem; } }
 @media (min-width: 767px) {
-  .hamburger-icon, .block-used-cars .filter-navigation-menu .filters-mobile, .show-more {
+  .hamburger-icon, .block-used-cars .filter-navigation-menu .filters-mobile, .show-more, .title-mail, .directions-buuton {
     display: none; } }
 @media (min-width: 450px) and (max-width: 767px) {
   .mobile-section-under-header embed {
@@ -472,6 +472,13 @@
 
   .used-car__name-bottom, .used-car__price-bottom {
     font-size: 16px; } }
+@media (max-width: 414px) {
+  .contact-us-section.contact-us .block-right-location#office .title-address .text-title-address, .contact-us-section.contact-us .block-right-location#office .sales-number {
+    font-size: 0.9rem; }
+
+  .contact-us-section.contact-us .block-right-location#office .working-hours {
+    padding-left: 2%;
+    padding-right: 2%; } }
 @media (max-width: 320px) {
   .used-car__name-top, .used-car__price-top {
     font-size: 15px; }
@@ -495,7 +502,14 @@
     max-width: 32%; }
 
   .mobile-counter__block {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+
+  .contact-us-section.contact-us .block-right-location#office .title-address .text-title-address {
+    font-size: 0.7rem; }
+
+  .contact-us-section.contact-us .block-right-location#office .working-hours {
+    padding-left: 0;
+    padding-right: 0; } }
 @media (min-width: 768px) and (max-width: 1000px) {
   .container {
     padding: 0; }
@@ -581,7 +595,8 @@
       width: 100%; }
 
   .contact-us-section .accordion-used-car__form-check {
-    line-height: 1.5; } }
+    line-height: 1.5; }
+
   .first-section-about .half-first-section-about {
     padding: 0 15px; }
 
