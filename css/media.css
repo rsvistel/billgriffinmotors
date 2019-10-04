@@ -615,7 +615,22 @@
     padding-right: 13%; }
 
   .block-description-our-team p {
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  #valeting-banner .col-md-4.mechanic-image.wow.slideInUp {
+    position: absolute;
+    z-index: -1; }
+  #valeting-banner .col-md-4.valeting-items {
+    flex: 0 0 48% !important;
+    max-width: 48% !important; }
+
+  #valeting-contact .accordion-used-car__form .block-right-group, #valeting-contact .accordion-used-car__form .block-form-group {
+    width: 100%;
+    float: none; }
+
+  #valeting-contact .valeting-item {
+    display: flex;
+    flex-direction: column; } }
 @media (min-width: 2000px) {
   #about-prefooter .container {
     min-height: 700px; } }

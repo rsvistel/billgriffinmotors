@@ -2733,10 +2733,32 @@ hr.heading-underline {
     #valeting-banner .row .col-md-4:last-child {
       order: 2; }
 
+  .none {
+    display: none; }
+
   #valeting-contact {
-    z-index: 101; }
+    z-index: 101;
+    padding: 0 1.5%;
+    background-image: none; }
+    #valeting-contact .accordion-used-car__form {
+      padding: 0 1rem 1rem 1rem; }
+      #valeting-contact .accordion-used-car__form .form-group input {
+        border-radius: 0; }
+    #valeting-contact .card-body.accordion-used-car__card-body.col-md-8 {
+      border: 1px solid #CCCCCC;
+      border-radius: 5px; }
+    #valeting-contact .title-contact-us {
+      font-weight: 600;
+      background-color: initial;
+      font-size: 20px;
+      text-align: start;
+      padding: 1rem 1rem 0 1rem; }
     #valeting-contact .col-md-4 {
-      display: none; } }
+      display: none; }
+
+  #valeting-contact .accordion-used-car__form .block-right-group, #valeting-contact .accordion-used-car__form .block-form-group {
+    width: 100%;
+    float: none; } }
 .form-group-50 {
   width: 48.5%;
   float: left; }
