@@ -2375,5 +2375,40 @@ hr.heading-underline {
 
   .reserve-page__card-model {
     font-size: 15px; } }
+#valeting-banner {
+  padding: 2% 0; }
 
-/*# sourceMappingURL=style.css.map */
+.valeting-item {
+  display: flex;
+  margin: 5% 0; }
+
+.mechanic-image img {
+  position: absolute; }
+
+#valeting-contact {
+  padding: 5% 0;
+  background-image: url("../img/valeting/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #valeting-contact .col-md-8, #valeting-contact .col-md-4 {
+    background: white; }
+  #valeting-contact .col-md-4 {
+    max-width: 32.333333%;
+    margin-left: 1%; }
+
+@media only screen and (max-width: 768px) {
+  #valeting-banner {
+    padding-bottom: 0; }
+    #valeting-banner .row .col-md-4:first-child {
+      order: 1; }
+    #valeting-banner .row .col-md-4:nth-child(2) {
+      order: 3; }
+      #valeting-banner .row .col-md-4:nth-child(2) img {
+        position: static; }
+    #valeting-banner .row .col-md-4:last-child {
+      order: 2; }
+
+  #valeting-contact {
+    z-index: 101; }
+    #valeting-contact .col-md-4 {
+      display: none; } }
