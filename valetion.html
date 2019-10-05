@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="owl-carousel/dist/assets/owl.carousel.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
@@ -159,53 +159,53 @@
     <hr class="heading-underline heading-underline_long">
     <hr class="heading-underline">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 valeting-items">
             <div class="valeting-item">
                 <div>
                     <h6>Full Inspection</h6>
                     <p>Our expert team will run through all the diagnostics your engine could</p>
                 </div>
-                <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                <object data="img/valeting/icons/car-wash.svg" type="image/svg+xml"></object>
             </div>
             <div class="valeting-item">
                 <div>
                     <h6>Full Inspection</h6>
                     <p>Our expert team will run through all the diagnostics your engine could</p>
                 </div>
-                <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                <object data="img/valeting/icons/car-up.svg" type="image/svg+xml"></object>
             </div>
             <div class="valeting-item">
                 <div>
                     <h6>Full Inspection</h6>
                     <p>Our expert team will run through all the diagnostics your engine could</p>
                 </div>
-                <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                <object data="img/valeting/icons/tire.svg" type="image/svg+xml"></object>
             </div>
         </div>
         <div class="col-md-4 mechanic-image wow slideInUp">
             <img src="img/valeting/mechanic1-2.png" alt="">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 valeting-items">
             <div class="valeting-item">
                 <div>
                     <h6>Full Inspection</h6>
                     <p>Our expert team will run through all the diagnostics your engine could</p>
                 </div>
-                <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                <object data="img/valeting/icons/seat.svg" type="image/svg+xml"></object>
             </div>
             <div class="valeting-item">
                 <div>
                     <h6>Full Inspection</h6>
                     <p>Our expert team will run through all the diagnostics your engine could</p>
                 </div>
-                <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                <object data="img/valeting/icons/car-hand.svg" type="image/svg+xml"></object>
             </div>
             <div class="valeting-item">
                 <div>
                     <h6>Full Inspection</h6>
                     <p>Our expert team will run through all the diagnostics your engine could</p>
                 </div>
-                <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                <object data="img/valeting/icons/ddddd.svg" type="image/svg+xml"></object>
             </div>
         </div>
     </div>
@@ -214,24 +214,58 @@
 <div id="valeting-contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-12"></div>
-            <div class="col-md-4">
+            <div class="card-body accordion-used-car__card-body col-md-8">
+                <h3 class="title-contact-us">Contact Us About Our Valeting Services</h3>
+                <div class="form-container">
+                    <form action="#" method="post" class="accordion-used-car__form">
+                        <div class="block-form-group">
+                            <div class="form-group">
+                                <label>Your Name*</label>
+                                <input type="text" class="form-control accordion-used-car__form-control" id="InputName">
+                            </div>
+                            <div class="form-group">
+                                <label>Your Email Address*</label>
+                                <input type="text" class="form-control accordion-used-car__form-control" id="InputPhone">
+                            </div>
+                            <div class="form-group">
+                                <label>Your Phone Number*</label>
+                                <input type="text" class="form-control accordion-used-car__form-control" id="InputEmail">
+                            </div>
+
+                        </div>
+
+                        <div class="block-right-group">
+                            <div class="form-group">
+                                <label>Enquiry*</label>
+                                <textarea class="form-control rounded-0 accordion-used-car__form-control accordion-used-car__textarea"  id="FormControlTextarea" rows="5" placeholder="I would like to enquire about booking a full valet service"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label accordion-used-car__form-check" for="exampleCheck1">I agree that Bill Griffin Motors may store the information submitted
+                                    here in order for them to reply to my query.</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary accordion-used-car__form-button btn-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 valeting-items">
                 <div class="valeting-item">
-                    <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                    <object data="img/valeting/icons/car-wash.svg" type="image/svg+xml"></object>
                     <div>
                         <h6>Full Inspection</h6>
                         <p>Our expert team will run through all the diagnostics your engine could</p>
                     </div>
                 </div>
                 <div class="valeting-item">
-                    <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                    <object data="img/valeting/icons/car-hand.svg" type="image/svg+xml"></object>
                     <div>
                         <h6>Full Inspection</h6>
                         <p>Our expert team will run through all the diagnostics your engine could</p>
                     </div>
                 </div>
                 <div class="valeting-item">
-                    <object data="img/header/social-icons/facebook.svg" type="image/svg+xml"></object>
+                    <object data="img/valeting/icons/ddddd.svg" type="image/svg+xml"></object>
                     <div>
                         <h6>Full Inspection</h6>
                         <p>Our expert team will run through all the diagnostics your engine could</p>
@@ -240,6 +274,44 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="workshop-experts" class="workshop-experts-valetion">
+     <div class="services-advanced">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-6">
+                     <img class="wow bounceIn" src="img/valeting/mers.png" alt="">
+                 </div>
+                 <div class="col-md-6">
+                     <p class="title-top">How's your car?</p>
+                     <h3 class="title-medium">We are experts in vehicle servicing</h3>
+                     <p class="title-medium-under">With years of experience servicing automobiles, we know exactly how to access your vehicle and carry out the work it needs.</p>
+                     <div class="row">
+                         <div class="col-md-4 check-block">
+                             <p><i class="fas fa-check"></i> Transmission</p>
+                             <p><i class="fas fa-check"></i> Tyres</p>
+                             <p><i class="fas fa-check"></i> Suspension</p>
+                             <p><i class="fas fa-check"></i> Air Conditioning</p>
+                         </div>
+                         <div class="col-md-4 check-block">
+                             <p><i class="fas fa-check"></i> Steering</p>
+                             <p><i class="fas fa-check"></i> Electronics</p>
+                             <p><i class="fas fa-check"></i> Bodywork</p>
+                             <p><i class="fas fa-check"></i> Engine Diagnostics</p>
+                         </div>
+                         <div class="col-md-4 check-block">
+                             <p><i class="fas fa-check"></i> Interior</p>
+                             <p><i class="fas fa-check"></i> Engine</p>
+                             <p><i class="fas fa-check"></i> Brakes</p>
+                             <p><i class="fas fa-check"></i> Wheel Alignment</p>
+                         </div>
+                     </div>
+                     <button class="primary-button">Schedule inspection  ></button>
+                 </div>
+             </div>
+         </div>
+     </div>
 </div>
 
 <script src="js/wow.min.js"></script>

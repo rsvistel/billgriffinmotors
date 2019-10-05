@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c637af8942.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="owl-carousel/dist/assets/owl.carousel.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
@@ -462,7 +462,7 @@
             </div>
         </div>
 
-        <div id="office">
+        <div id="office" class="office-homepage">
             <div class="container">
                 <div class="row row-office">
                     <div class="col-md-4 card card-finance">
@@ -472,7 +472,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-12 card">
+                    <div class="col-md-4 col-12 card card-hour-block">
                         <div class="card-title">Opening Hours</div>
                         <div class="card-body card-body-opening-hours">
                             <ul>
@@ -577,87 +577,6 @@
         </div>
     </div>
 
-    <script src="owl-carousel/dist/owl-carousel.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        $('.owl-special-offers').owlCarousel({
-            loop:true,
-            margin:30,
-            nav:true,
-            dots: false,
-            navText: ["<object type=\"image/svg+xml\" data=\"img/home/arrow-left.svg\"></object>","<object type=\"image/svg+xml\" data=\"img/home/arrow-right.svg\"></object>"],
-            responsive:{
-                0:{
-                    items:1
-                },
-                768:{
-                    items:1
-                },
-                1000:{
-                    items:4
-                }
-            }
-        });
-        if ($(window).width() > 768) {
-            $('.owl-feedback').owlCarousel({
-                loop: false,
-                margin: 30,
-                nav: false,
-                responsive: {
-                    0: {
-                        items: 3
-                    }
-                }
-            });
-        } else {
-            $('.owl-feedback').addClass('off')
-        }
-        function initMap() {
-            var uluru = {lat: -25.344, lng: 131.036};
-            var map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 4, center: uluru});
-            var marker = new google.maps.Marker({position: uluru, map: map});
-        }
-
-        var a = 0;
-        $(window).scroll(function() {
-
-            var oTop = $('#counter').offset().top - window.innerHeight;
-            if (a == 0 && $(window).scrollTop() > oTop) {
-                $('.counter-value').each(function() {
-                    console.log($(this));
-                    var $this = $(this),
-                        countTo = $this.attr('data-count');
-                    $({
-                        countNum: $this.text()
-                    }).animate({
-                            countNum: countTo
-                        },
-
-                        {
-
-                            duration: 2000,
-                            easing: 'swing',
-                            step: function() {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function() {
-                                $this.text(this.countNum);
-                                //alert('finished');
-                            }
-
-                        });
-                });
-                a = 1;
-            }
-
-        });
-    </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA600MJdEttlxgiW2dIW8Or85ISckrYSSE&callback=initMap">
-    </script>
-
 
     <footer class="footer-section">
         <div class="container">
@@ -711,6 +630,86 @@
             </div>
         </div>
     </footer>
+<script src="owl-carousel/dist/owl-carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+    $('.owl-special-offers').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:true,
+        dots: false,
+        navText: ["<object type=\"image/svg+xml\" data=\"img/home/arrow-left.svg\"></object>","<object type=\"image/svg+xml\" data=\"img/home/arrow-right.svg\"></object>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:1
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+    if ($(window).width() > 768) {
+        $('.owl-feedback').owlCarousel({
+            loop: false,
+            margin: 30,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 3
+                }
+            }
+        });
+    } else {
+        $('.owl-feedback').addClass('off')
+    }
+    function initMap() {
+        var uluru = {lat: -25.344, lng: 131.036};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+
+    var a = 0;
+    $(window).scroll(function() {
+
+        var oTop = $('#counter').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counter-value').each(function() {
+                console.log($(this));
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                        countNum: countTo
+                    },
+
+                    {
+
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+
+                    });
+            });
+            a = 1;
+        }
+
+    });
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA600MJdEttlxgiW2dIW8Or85ISckrYSSE&callback=initMap">
+</script>
 <script src="./js/script.js"></script>
 </body>
 </html>
