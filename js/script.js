@@ -1,21 +1,17 @@
-    $(document).ready(function () {
-        $('.mobile-open').click(function () {
-            $(this).find('object').toggle();
-            $('.bottom-half-header').toggle();
-        });
-       
+$(document).ready(function () {
+    $('.mobile-open').click(function () {
+        $(this).find('object').toggle();
+        $('.bottom-half-header').toggle();
     });
 
-$(document).ready(function(){
-
-   $(".collapse.show").each(function(){
-   $(this).prev(".card-header").find(".unactive").addClass("accordion__up-icon").removeClass("accordion__down-icon");
-   });
-   $(".collapse").on('show.bs.collapse', function(){
-   $(this).prev(".card-header").find(".unactive").removeClass("accordion__down-icon").addClass("accordion__up-icon");
-   }).on('hide.bs.collapse', function(){
-   $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
-   });
+    $(".collapse.show").each(function () {
+        $(this).prev(".card-header").find(".unactive").addClass("accordion__up-icon").removeClass("accordion__down-icon");
+    });
+    $(".collapse").on('show.bs.collapse', function () {
+        $(this).prev(".card-header").find(".unactive").removeClass("accordion__down-icon").addClass("accordion__up-icon");
+    }).on('hide.bs.collapse', function () {
+        $(this).prev(".card-header").find(".unactive").removeClass("accordion__up-icon").addClass("accordion__down-icon");
+    });
 
     $('#collapseThree .switch .slider').click(function () {
         $('.total-price, .monthly-price').toggle()
@@ -76,7 +72,7 @@ $(document).ready(function(){
         interval: false
     });
 
-    $(".more").click(function() {
+    $(".more").click(function () {
         var elem = $(".more").text();
         if (elem == "more") {
             $(".more").text("less");
@@ -96,8 +92,4 @@ $(document).ready(function(){
     $('.image-input').click(function () {
         $('.image-input-container input').click();
     });
-
 });
-
-
-

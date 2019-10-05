@@ -18,6 +18,9 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif; }
 
+object, embed {
+  pointer-events: none; }
+
 .m-top-10 {
   margin-top: 10px; }
 
@@ -91,7 +94,8 @@ body {
 
 .social-icon object {
   pointer-events: none;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 100%; }
 
 .social-icon {
   display: flex;
@@ -352,7 +356,14 @@ body {
       #special-offers .owl-carousel .owl-nav.disabled button {
         pointer-events: auto; }
         #special-offers .owl-carousel .owl-nav.disabled button object {
-          pointer-events: none; }
+          pointer-events: none;
+          width: 100%; }
+
+.mobile-counter__icon {
+  width: 29%; }
+
+.valeting-item object {
+  width: 38%; }
 
 .fas.fa-star {
   color: #FFC207; }
@@ -2015,6 +2026,9 @@ input:checked + .slider:before {
       height: 100%;
       left: 100%; }
 
+.contact-us-page #banner {
+  overflow: hidden; }
+
 .contact-us-section {
   background-image: url("../img/workshop/contact.png");
   padding-top: 3%;
@@ -2535,7 +2549,8 @@ h5.title-about-us.title-about-us-bottom {
     .cash-for-cars .cash-for-car-application .image-input object {
       display: block;
       margin: 0 auto;
-      pointer-events: none; }
+      pointer-events: none;
+      width: 10%; }
   .cash-for-cars .cash-for-car-application .agree {
     background: #005EAA;
     color: white;
@@ -2635,6 +2650,9 @@ h5.title-about-us.title-about-us-bottom {
   .cash-for-car__card-model {
     display: block;
     padding-bottom: 5%; }
+
+  .cash-for-cars .cash-for-car-application .image-input object {
+    width: 20%; }
 
   .cash-for-cars .cash-for-car-application {
     padding: 0 10px; }
@@ -2884,41 +2902,94 @@ h5.title-about-us.title-about-us-bottom {
 
   .reserve-page__card-model {
     font-size: 15px; } }
+
+.text-top-primary {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 400; }
+
+.text-medium-primary {
+  text-transform: uppercase;
+  font-size: 23px;
+  margin: 10px 0 25px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; }
+
+.text-bottom-primary {
+  margin-bottom: 15px;
+  color: #323232;
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif; }
+
+#value-my-car-prefooter .six-blocks-img .valeting-item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start; }
+
 #value-my-car-banner {
-  background-image: url("../img/value/banner.png");
+  background-image: url("../img/value/banner1.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   text-align: center; }
+  #value-my-car-banner .find-car {
+    margin-left: 1%;
+    background: #005EAA;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 0 45px;
+    border-radius: 4px;
+    height: 68px;
+    width: 100%; }
   #value-my-car-banner h1 {
     color: white;
     padding: 5% 0;
-    text-shadow: 3px 4px 3px rgba(255, 255, 255, 0.3);
-    font-size: 50px; }
+    text-shadow: 3px 4px 0 rgba(255, 255, 255, 0.3);
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800; }
   #value-my-car-banner img.wow {
     width: 100%; }
+  #value-my-car-banner .number-car {
+    width: auto;
+    height: 68px; }
   #value-my-car-banner form {
     display: flex;
     justify-content: center;
     margin-bottom: 10%;
-    -ms-input-placeholder-font-size: 50px; }
+    -ms-input-placeholder-font-size: 50px;
+    -ms-input-placeholder-font-family: "Open Sans", sans-serif; }
     #value-my-car-banner form ::placeholder {
-      font-size: 50px; }
+      font-size: 40px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      margin: 0;
+      color: #CCCCCC; }
     #value-my-car-banner form ::-ms-input-placeholder {
-      font-size: 50px; }
+      font-size: 50px;
+      font-family: "Open Sans", sans-serif; }
     #value-my-car-banner form img {
       position: relative;
       left: 5px; }
     #value-my-car-banner form input {
-      width: 30%;
+      width: 25%;
       height: 100%;
-      border: 3px solid blue;
-      font-size: 50px;
-      text-transform: uppercase; }
+      border: 3px solid #005EAA;
+      border-radius: 4px;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-align: center; }
     #value-my-car-banner form button {
       margin-left: 1%;
-      background: blue;
+      background: #005EAA;
+      font-family: "Montserrat", sans-serif;
       color: white;
-      border: none; }
+      border: none;
+      font-size: 25px;
+      padding: 0 45px;
+      border-radius: 4px; }
 
 #value-my-car-prefooter {
   padding: 5% 0;
@@ -2947,6 +3018,8 @@ h5.title-about-us.title-about-us-bottom {
       text-align: left; }
 
 @media only screen and (max-width: 768px) {
+  #value-my-car-prefooter .six-blocks-img .valeting-item {
+    align-items: center; }
   #value-my-car-prefooter .content {
     width: 100%; }
   #value-my-car-prefooter .car-image-sliding {
@@ -2954,7 +3027,17 @@ h5.title-about-us.title-about-us-bottom {
   #value-my-car-prefooter .col-md-6 {
     text-align: center; }
     #value-my-car-prefooter .col-md-6 h6, #value-my-car-prefooter .col-md-6 p {
-      text-align: center; } }
+      text-align: center; }
+
+  #value-my-car-banner .dsp-none {
+    display: none; }
+  #value-my-car-banner form input {
+    width: 100%; }
+  #value-my-car-banner h1 {
+    font-size: 1.5rem;
+    padding: 15% 0 10% 0; }
+  #value-my-car-banner .wow.zoomIn {
+    margin-top: 35px; } }
 #valeting-banner {
   padding: 2% 0; }
 
@@ -2971,13 +3054,14 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 15px; }
 
 .mechanic-image img {
-  position: absolute; }
+  position: absolute;
+  top: 10%; }
 
 #workshop-experts.workshop-experts-valetion {
   padding: 6% 0; }
 
 #valeting-contact {
-  padding: 5% 0;
+  padding: 4% 0;
   background-image: url("../img/valeting/bn.png");
   background-size: cover;
   background-repeat: no-repeat; }
@@ -3123,8 +3207,8 @@ h5.title-about-us.title-about-us-bottom {
         padding: 0.5rem; }
     .contact-us-section.contact-us .block-right-location#office .working-hours {
       padding: 7% 0 0 0; }
-    .contact-us-section.contact-us .block-right-location#office .title-address embed, .contact-us-section.contact-us .block-right-location#office .title-contact embed {
-      width: auto; }
+    .contact-us-section.contact-us .block-right-location#office .title-address embed, .contact-us-section.contact-us .block-right-location#office .title-contact embed, .contact-us-section.contact-us .block-right-location#office .card-body.card-body-opening-hours embed {
+      width: 7%; }
     .contact-us-section.contact-us .block-right-location#office .title-contact {
       margin-top: 30px; }
   .contact-us-section.contact-us .card-body.accordion-used-car__card-body {
@@ -3194,5 +3278,33 @@ h5.title-about-us.title-about-us-bottom {
         max-width: initial; }
       .contact-us-section.contact-us .block-right-location#office .working-hours {
         padding-bottom: 5%; } }
+        padding-bottom: 5%; }
+
+  #office.office-homepage .card-location .card-title {
+    display: none; }
+  #office.office-homepage .card-body-opening-hours {
+    padding-top: 10px; }
+  #office.office-homepage .card-hour-block .col-6 {
+    font-size: 20px; }
+  #office.office-homepage .card-hour-block .card-title {
+    border-bottom: 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: start;
+    padding: 3% 4% 0 4%;
+    color: black; }
+  #office.office-homepage .card-location {
+    order: 1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px; }
+    #office.office-homepage .card-location .card-body {
+      height: 300px;
+      width: 100%; } }
+#value-my-car-prefooter .valeting-item.col-md-6 {
+  margin: 3% 0; }
+  #value-my-car-prefooter .valeting-item.col-md-6 h6 {
+    margin-bottom: 12px; }
 
 /*# sourceMappingURL=style.css.map */
