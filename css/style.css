@@ -3053,7 +3053,8 @@ hr.heading-underline {
     font-size: 15px; }
 
 .mechanic-image img {
-  position: absolute; }
+  position: absolute;
+  top: 10%; }
 
 #workshop-experts.workshop-experts-valetion {
   padding: 6% 0; }
