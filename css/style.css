@@ -360,7 +360,7 @@ object, embed {
           width: 100%; }
 
 .mobile-counter__icon {
-  width: 29%; }
+  height: 25px; }
 
 .valeting-item object {
   width: 38%; }
@@ -1061,6 +1061,17 @@ object, embed {
 .accordion-used-car__card-header:first-child {
   border-radius: 0; }
 
+#accordion-used-car-modal .finance-icon {
+  background-image: url("../img/used-car-page/finance-icon.svg"); }
+
+#accordion-used-car-modal .finance-icon {
+  background-repeat: no-repeat;
+  background-position: 1.6rem center; }
+
+#accordion-used-car-modal .accordion-used-car__card-header {
+  padding: 0;
+  border-bottom: 0; }
+
 .description-used-car__title {
   font-size: 20px;
   font-weight: bold;
@@ -1224,7 +1235,7 @@ button:focus {
     margin: auto; }
 
   .used-car__modal-close {
-    position: absolute;
+    position: fixed;
     z-index: 10; }
 
   .used-car__modal-close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
@@ -1262,12 +1273,16 @@ button:focus {
   .used-car__modal__control-prev {
     background-image: url("../img/used-car-page/gallery/arrow-prev-lg.svg");
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    position: fixed;
+    top: calc(50vh - 117.5px); }
 
   .used-car__modal__control-next {
     background-image: url("../img/used-car-page/gallery/arrow-next-lg.svg");
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    position: fixed;
+    top: calc(50vh - 117.5px); }
 
   .used-car__modal-title, .used-car__modal-header {
     height: 20vh;
@@ -3379,14 +3394,23 @@ h5.title-about-us.title-about-us-bottom {
 .modal-used-cars__value {
   font-size: 50px; }
 .modal-used-cars__finance {
-  font-size: 20px; }
+  font-size: 16px; }
+
+.car-modal-close {
+  cursor: pointer; }
 
 @media (min-width: 2000px) {
   .modal-used-cars .modal-used-cars-container {
     width: 60%; } }
 @media (max-width: 768px) {
   .modal-used-cars .modal-used-cars-container {
-    width: 100%; }
+    width: 100%;
+    margin-top: 0; }
+
+  .modal-used-cars {
+    overflow: scroll; }
+    .modal-used-cars .col-md-4 {
+      padding: 15px 10px; }
 
   .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
     font-size: 15px; } }
