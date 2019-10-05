@@ -25,16 +25,14 @@ body
    min-height: 100vh
    font-family: $primary-font
 
-
+object, embed
+   pointer-events: none
 .m-top-10
    margin-top: 10px
 //Header
-//.header.topnav .row
-//   padding: 0px 15px
 .upper-half-header
    padding: 0.5% 0 1% 0
    display: flex
-   //justify-content: flex-start
    align-items: center
 .title-logo
    text-transform: uppercase
@@ -46,8 +44,6 @@ body
 .titles-logo
    padding-left: 0
    padding-right: 6%
-//float: left
-//width: auto
 .motors-title-logo
    color: $dark-blue
 .title-address
@@ -93,6 +89,7 @@ body
 .social-icon object
    pointer-events: none
    cursor: pointer
+   width: 100%
 .social-icon
    display: flex
    flex-direction: row
@@ -214,484 +211,6 @@ body
    .flex-dropdown__chevron-dow
       padding-top: 6px
 //Header
-
-
-//.header
-//   background: #ffffff
-//
-//.upper-half-header
-//   padding: 0.5% 0 1% 0
-//   white-space: nowrap
-//
-//.title-contact, .title-address
-//   display: flex
-//
-//.social-icon__items
-//   display: flex
-//   justify-content: space-around
-//   list-style: none
-//
-//.bottom-half-header__color
-//   background: #EAEDF0
-//
-//.title-logo
-//   text-transform: uppercase
-//   font-size: 1.625rem
-//   //line-height: 2vw
-//   letter-spacing: 1px
-//   font-weight: 700
-//   font-family: $secondary-font
-//
-//.motors-title-logo
-//   color: $dark-blue
-//
-//.text-title-address
-//   text-transform: uppercase
-//   font-size: 1rem
-//   font-weight: 400
-//   margin-bottom: 0
-//   font-family: $primary-font
-//   line-height: 1.1rem
-//
-//.mobile-open
-//   display: none
-//
-//.number-phone
-//   margin-bottom: 0
-//
-//.title-address, .title-contact
-//   display: flex
-//   align-items: center
-//   float: left
-//   padding-left: 0
-//
-//.title-address embed, .title-contact embed
-//   margin-right: 8px
-//
-//.title-logo-bottom
-//   margin: 0 1.5rem
-//   font-family: $secondary-font
-//   font-size: 1.188rem
-//   font-weight: 600
-//
-//.number-phone
-//   display: flex
-//   flex-direction: column
-//
-//.sales-text
-//   font-weight: 400
-//   font-size: 0.95rem
-//   font-family: $primary-font
-//   text-transform: uppercase
-//   line-height: 0.7rem
-//
-//.sales-number
-//   font-family: $secondary-font
-//   font-weight: 700
-
-// .nav
-//    // min-height: 43px
-//    margin-bottom: 2rem
-
-//.navbar
-//   padding: 0
-//
-//.bottom-half-header__items
-//   display: flex
-//   white-space: nowrap
-//   justify-content: space-between
-//   width: 87%
-//   list-style: none
-//   text-transform: uppercase
-//   font-family: 'Montserrat', sans-serif
-//   font-weight: 600
-//   font-size: 0.9rem
-//
-//.bottom-half-header__item
-//   display: flex
-//   padding: 1% 1.5%
-//
-//.bottom-half-header-menu-color
-//   padding: 0 8px
-//
-//.bottom-half-header__item:hover
-//   background-color: $dark-blue
-//   cursor: pointer
-//   text-decoration: none
-//   color: #ffffff
-//
-//
-//.bottom-half-header__item:hover
-//   background-color: $dark-blue
-//   cursor: pointer
-//   .bottom-half-header__link, .fa-chevron-down
-//      color: #ffffff
-//   &.active
-//      background-color: $dark-blue
-//      .bottom-half-header__link
-//         color: #ffffff
-//   .bottom-half-header__link
-//      // text-decoration: none
-//      // color: #000000
-//      .bottom-half-header__link
-//         text-transform: uppercase
-//         font-family: 'Montserrat', sans-serif
-//         font-weight: 600
-//         font-size: 0.9rem
-//
-//.bottom-half-header__link:hover
-//   text-decoration: none
-//   color: #ffffff
-//
-//.bottom-half-header__link
-//   display: flex
-//   justify-content: center
-//   align-items: center
-//   text-align: center
-//   width: 100%
-//   text-decoration: none
-//   color: #000000
-//
-//.fa-chevron-down.flex-dropdown__chevron-dow
-//   margin-left: 5px
-//
-//.dropdown.bottom-half-header__item:hover .bottom-half-header__dropdown-menu
-//   display: block
-//.dropdown.bottom-half-header__item .bottom-half-header__dropdown-menu
-//   background: #EAEDF0
-//   margin-top: -2px
-//   border: 1px solid $dark-blue
-//   border-radius: 0
-//
-//.dropdown-item:focus, .dropdown-item:hover
-//   background-color: $dark-blue
-//   color: #ffffff
-//
-//.dropdown-menu a
-//   font-weight: 600
-//
-//// .bottom-half-header__link:hover
-////    text-decoration: none
-////    color: #000000
-//
-//
-//.mobile-section-under-header
-//   display: none
-//
-//@media (min-width: 1000px) and (max-width: 1250px)
-//   .upper-half-header
-//      padding: 10px 15px
-//
-//   .title-logo
-//      font-size: 1.3rem
-//
-//   .titles-logo
-//      padding-right: 5%
-//      width: 52%
-//
-//   .title-logo-bottom
-//      font-size: 1rem
-//
-//   .title-logo-bottom
-//      margin: 0 1rem
-//
-//   .title-address, .title-contact
-//      max-width: 32%
-//
-//   .flex-dropdown__chevron-dow
-//      padding-top: 0.2rem
-//      padding-left: 0.2rem
-//
-//@media (min-width: 768px) and (max-width: 1000px)
-//
-//   .bottom-half-header__link
-//      font-size: 1.1vw
-//      text-align: center
-
-   // .bottom-half-header .container ul li .dropdown-content h6
-   //    text-align: start
-
-   .title-address .text-title-address, .number-phone h4
-      font-size: 0.6rem
-
-   .upper-half-header, .footer-section
-      padding: 10px 0
-
-   .title-logo
-      font-size: 1.2rem
-
-   .titles-logo
-      padding-right: 2%
-      max-width: 33%
-
-   .title-logo-bottom, .sales-number
-      font-size: 0.7rem
-
-   .title-logo-bottom
-      margin: 0 0.3rem
-
-   .title-address
-      margin: 0
-
-   .social-icon
-      justify-content: flex-start
-      padding-left: 2%
-      ul a
-         margin-right: 5px
-      .flex-dropdown__chevron-dow
-         padding-top: 6px
-//
-//@media (min-width: 900px) and (max-width: 1000px)
-//   .bottom-half-header__link
-//      font-size: 1vw
-//
-//@media (min-width: 1000px) and (max-width: 1112px)
-//   .bottom-half-header__link, .title-address .text-title-address, .number-phone h4
-//      font-size: 0.75rem
-//
-//
-//@media (max-width: 767px)
-//   .bottom-half-header__color
-//      background: #ffffff
-//
-//   .upper-half-header
-//      padding: 0
-//      padding-top: 2%
-//
-//   .title-address, .title-contact, .social-icon
-//      display: none
-//
-//   .titles-logo
-//      padding-right: 0
-//      white-space: nowrap
-//
-//   .title-logo
-//      font-size: 27px
-//      line-height: 21px
-//
-//   .title-logo-bottom
-//      margin: 0
-//      font-size: 19px
-//   .mobile-open
-//      display: block
-//      padding-top: 0.4rem
-//      object
-//         pointer-events: none
-//         cursor: pointer
-//         &:last-child
-//            width: 30px
-//            display: none
-//   .mobile-section-under-header
-//      display: flex
-//      align-items: center
-//      background: black
-//      min-height: 65px
-//      .contact-text
-//         font-size: 18px
-//         line-height: 28px
-//         font-weight: 300
-//         font-family: $secondary-font
-//      .sales-number, .contact-text
-//         color: #ffffff
-//         margin-left: 8px
-//      .sales-number
-//         font-size: 1.1rem
-//      embed
-//         width: 9%
-//
-//   .bottom-half-header
-//      height: auto
-//      display: none
-//      background: #ffffff
-//
-//   .bottom-half-header-menu-color
-//      background: #ffffff
-//
-//   .bottom-half-header__items
-//      display: flex
-//      flex-direction: column
-//      align-items: flex-start
-//   .bottom-half-header__item
-//      height: auto
-//      padding: 6px
-//      &:first-child
-//         margin-left: 0
-//   .bottom-half-header__link
-//      font-size: 21px
-//      text-transform: capitalize
-//      color: #363636
-//      font-weight: 500
-//      font-family: $secondary-font
-//
-//   .flex-dropdown__chevron-dow
-//      padding: 0.6rem 0 0 0.4rem
-//
-//   .bottom-half-header__item:last-child
-//      margin-bottom: 0.5rem
-//
-//
-//@media only screen and  (max-width: 410px)
-//   .title-logo
-//      font-size: 23px
-//   .title-logo-bottom
-//      font-size: 18px
-//
-//@media only screen and  (max-width: 320px)
-//   .upper-half-header
-//      padding: 0
-//      padding-top: 4%
-//   .title-logo
-//      font-size: 19px
-//   .title-logo-bottom
-//      font-size: 15px
-//   .bottom-half-header__items
-//      padding-left: 0.4rem
-//   .mobile-section-under-header embed
-//      width: 11%
-//
-//@media (min-width: 768px) and  (max-width: 1000px)
-
-
-//Header
-//.header.topnav .row
-//   padding: 0px 15px
-// .upper-half-header
-//    padding: 0.5% 0 1% 0
-//    display: flex
-//    //justify-content: flex-start
-//    align-items: center
-// .title-logo
-//    text-transform: uppercase
-//    font-size: 1.625rem
-//    //line-height: 2vw
-//    letter-spacing: 1px
-//    font-weight: 700
-//    font-family: $secondary-font
-
-
-// .titles-logo
-//    padding-left: 0
-//    padding-right: 6%
-//    //float: left
-//    //width: auto
-
-// .motors-title-logo
-//    color: $dark-blue
-
-// .title-address
-//    margin-right: 2.5%
-//    .text-title-address
-//       text-transform: uppercase
-//       font-size: 1rem
-//       font-weight: 400
-//       margin-bottom: 0
-//       font-family: $primary-font
-//       line-height: 1.1rem
-
-// .title-address embed, .title-contact embed
-//    margin-right: 8px
-
-// .title-address embed
-//    width: 9%
-
-// .title-contact embed
-//    width: 19%
-
-// .number-phone
-//    h4
-//       margin-bottom: 0
-
-// .title-address, .title-contact
-//    display: flex
-//    align-items: center
-//    float: left
-//    padding-left: 0
-
-// .title-logo-bottom
-//    margin: 0 1.5rem
-//    font-family: $secondary-font
-//    font-size: 1.188rem
-//    font-weight: 600
-
-// .number-phone
-//    display: flex
-//    flex-direction: column
-
-// .sales-text
-//    font-weight: 400
-//    font-size: 0.95rem
-//    font-family: $primary-font
-//    text-transform: uppercase
-//    line-height: 0.7rem
-
-// .sales-number
-//    font-family: $secondary-font
-//    font-weight: 700
-
-// .social-icon img
-//    pointer-events: none
-//    cursor: pointer
-
-
-// .social-icon
-//    display: flex
-//    flex-direction: row
-//    align-items: center
-//    justify-content: center
-//    ul
-//       display: flex
-//       list-style-type: none
-//       a
-//          //margin-right: 17px
-//          transition: 0.4s
-//          //&:hover
-//          //   transform: scale(1.3)
-//          &:last-child
-//             margin-right: 0px
-// .bottom-half-header
-//    background-color: #ebedf0
-//    height: 45px
-//    padding: 0 2.7%
-//    .container
-//       padding-left: 0
-//       ul
-//          display: flex
-//          align-items: center
-//          list-style-type: none
-//          margin-bottom: 0
-//          li
-//             padding: 0 1.3%
-//             height: 45px
-//             display: flex
-//             align-items: center
-//             transition: 0.5s
-//             &:hover
-//                background-color: $dark-blue
-//                cursor: pointer
-//                h6, .fa-chevron-down
-//                   color: #ffffff
-//             &.active
-//                background-color: $dark-blue
-//                h6
-//                   color: #ffffff
-//             a
-//                text-decoration: none
-//                color: #000000
-//                h6
-//                   text-transform: uppercase
-//                   font-family: 'Montserrat', sans-serif
-//                   font-weight: 600
-//                   font-size: 0.9rem
-
-// .social-icon ul li
-//    padding: 0.6rem
-
-// .bottom-half-header .container ul li:first-child
-//    margin-left: -7px
-
-// .mobile-open
-//    display: none
-
 
 //Homepage
 @media only screen and (max-width: 768px)
@@ -828,8 +347,14 @@ body
             pointer-events: auto
             object
                pointer-events: none
+               width: 100%
 
 
+.mobile-counter__icon
+   width: 29%
+
+.valeting-item object
+   width: 50%
 
 //Special Offers
 
@@ -1213,81 +738,6 @@ body
    overflow: hidden
 //Homepage
 
-// .mobile-section-under-header
-//    display: none
-
-// .navbar
-//    overflow: hidden
-//    background-color: #333
-
-// .navbar a
-//    float: left
-//    font-size: 16px
-//    color: white
-//    text-align: center
-//    padding: 14px 16px
-//    text-decoration: none
-
-// .flex-dropdown
-//    display: flex
-
-
-// .flex-dropdown h6
-//    display: flex
-//    margin-right: 5px
-
-// .dropdown
-//    float: left
-//    overflow: initial
-
-// .dropdown .dropbtn
-//    font-size: 16px
-//    border: none
-//    outline: none
-//    color: white
-//    //padding: 10px 0
-//    background-color: inherit
-//    font-family: inherit
-//    margin: 0
-
-// .dropdown-content
-//    display: none
-//    position: absolute
-//    background-color: #ebedf0
-//    min-width: 160px
-//    z-index: 1
-//    border: 1px solid $dark-blue
-//    margin-top: 4px
-//    margin-left: -14.5px
-
-
-// .dropdown-content a
-//    float: none
-//    color: black
-//    padding: 14px 16px
-//    text-decoration: none
-//    display: block
-//    text-align: left
-
-
-// .dropdown-content a:hover
-//    background-color: #ddd
-
-// .bottom-half-header .container ul li
-//    .dropdown-content h6
-//       color: #000000
-//    &:hover .dropdown-content
-//       display: block
-// .flex-dropdown__chevron-dow
-//    line-height: 1.1
-
-// @media (max-width: 768px)
-//    .flex-dropdown__chevron-dow
-//       padding-top: 6px
-//    .dropdown .dropbtn
-//       padding: 0px
-
-//Header
 
 
 //Footer
@@ -1375,11 +825,6 @@ body
    .footer-section__description
       padding-top: 24px
       padding-bottom: 44px
-
-//.footer-section__soc-items li a img
-//   transition: 0.4s
-//   &:hover
-//      transform: scale(1.3)
 
 @media (max-width: 768px)
    .footer-section
@@ -1525,45 +970,6 @@ body
    .fas.fa-star
       font-size: 1.5rem
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   //h3.feedback-rating, h4.feedback-title
-   //   display: block
-   //h4.feedback-title
-   //   text-align: left
-   //   border-bottom: 1px solid lightgrey
-   //   text-align: left
-   //   font-family: $primary-font
-   //   font-size: 18px
-   //   padding: 10px 5px 10px 3%
-   //h3.feedback-rating
-   //   border-bottom: 1px solid lightgrey
-   //   padding: 20px 0
-   //   display: flex
-   //   justify-content: center
-   //   align-items: center
-
-
 .used-car-section
       width: 100%
       margin-top: 1rem
@@ -1584,7 +990,6 @@ body
 
 .used-car__name-bottom
       font-size: 25px
-      //padding-top: 0.5rem
 
 .used-car__price
       display: flex
@@ -1747,53 +1152,6 @@ body
       -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
       -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
       box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
-
-//#feedback
-//   background: none
-//   padding: 2% 0 0 0
-//   .container
-//      padding: 0 1px
-//   h3.feedback-rating, h4.feedback-title
-//      display: block
-//   h4.feedback-title
-//      border: 1px solid lightgrey
-//      text-align: left
-//      font-family: $primary-font
-//      font-size: 18px
-//      padding: 10px 5px 10px 3%
-//   h3.feedback-rating
-//      border-right: 1px solid lightgrey
-//      border-left: 1px solid lightgrey
-//      padding: 20px 0
-//      display: flex
-//      justify-content: center
-//      align-items: center
-//   .owl-feedback
-//      border: 1px solid lightgrey
-//      border-top: none
-//      padding:  0 3.5% 3% 3.5%
-//      display: block
-//      .feedback-item
-//         border-top: 1px solid lightgrey
-//         padding: 10px 0
-//         .fas.fa-star
-//            font-size: 1rem
-//         .feedback-title h3
-//            font-size: 22px
-//         .feedback-author h3
-//            font-size: 17px
-//   button
-//      display: none
-//   .five-stars
-//      margin: 0 15px 0 10px
-//      font-size: 35px
-//      font-family: "Poppins", sans-serif
-//      font-weight: 400
-//      font-style: italic
-//   .fas.fa-star
-//      font-size: 1.5rem
-//Feedback USED CAR-page
-
 //MODAL USED CAR-page
 
 #modalUsedCar
@@ -2685,6 +2043,8 @@ input:checked + .slider:before
             width: 100%
             height: 100%
             left: 100%
+.contact-us-page #banner
+   overflow: hidden
 
 .contact-us-section
    background-image: url("../img/workshop/contact.png")
@@ -3222,6 +2582,7 @@ hr.heading-underline
             display: block
             margin: 0 auto
             pointer-events: none
+            width: 10%
       .agree
          background: $dark-blue
          color: white
@@ -3321,6 +2682,8 @@ hr.heading-underline
       &__card-model
          display: block
          padding-bottom: 5%
+   .cash-for-cars .cash-for-car-application .image-input object
+      width: 20%
 
    .cash-for-cars
       .cash-for-car-application
@@ -3732,7 +3095,7 @@ hr.heading-underline
 #workshop-experts.workshop-experts-valetion
    padding: 6% 0
 #valeting-contact
-   padding: 5% 0
+   padding: 4% 0
    background-image: url("../img/valeting/bn.png")
    background-size: cover
    background-repeat: no-repeat
@@ -3880,8 +3243,8 @@ hr.heading-underline
             padding: 0.5rem
       .working-hours
          padding: 7% 0 0 0
-      .title-address embed, .title-contact embed
-         width: auto
+      .title-address embed, .title-contact embed, .card-body.card-body-opening-hours embed
+         width: 7%
       .title-contact
          margin-top: 30px
 

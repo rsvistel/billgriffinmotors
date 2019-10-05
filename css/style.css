@@ -18,6 +18,9 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif; }
 
+object, embed {
+  pointer-events: none; }
+
 .m-top-10 {
   margin-top: 10px; }
 
@@ -91,7 +94,8 @@ body {
 
 .social-icon object {
   pointer-events: none;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 100%; }
 
 .social-icon {
   display: flex;
@@ -352,7 +356,14 @@ body {
       #special-offers .owl-carousel .owl-nav.disabled button {
         pointer-events: auto; }
         #special-offers .owl-carousel .owl-nav.disabled button object {
-          pointer-events: none; }
+          pointer-events: none;
+          width: 100%; }
+
+.mobile-counter__icon {
+  width: 29%; }
+
+.valeting-item object {
+  width: 50%; }
 
 .fas.fa-star {
   color: #FFC207; }
@@ -2017,6 +2028,9 @@ input:checked + .slider:before {
       height: 100%;
       left: 100%; }
 
+.contact-us-page #banner {
+  overflow: hidden; }
+
 .contact-us-section {
   background-image: url("../img/workshop/contact.png");
   padding-top: 3%;
@@ -2535,7 +2549,8 @@ hr.heading-underline {
     .cash-for-cars .cash-for-car-application .image-input object {
       display: block;
       margin: 0 auto;
-      pointer-events: none; }
+      pointer-events: none;
+      width: 10%; }
   .cash-for-cars .cash-for-car-application .agree {
     background: #005EAA;
     color: white;
@@ -2635,6 +2650,9 @@ hr.heading-underline {
   .cash-for-car__card-model {
     display: block;
     padding-bottom: 5%; }
+
+  .cash-for-cars .cash-for-car-application .image-input object {
+    width: 20%; }
 
   .cash-for-cars .cash-for-car-application {
     padding: 0 10px; }
@@ -3041,7 +3059,7 @@ hr.heading-underline {
   padding: 6% 0; }
 
 #valeting-contact {
-  padding: 5% 0;
+  padding: 4% 0;
   background-image: url("../img/valeting/bn.png");
   background-size: cover;
   background-repeat: no-repeat; }
@@ -3187,8 +3205,8 @@ hr.heading-underline {
         padding: 0.5rem; }
     .contact-us-section.contact-us .block-right-location#office .working-hours {
       padding: 7% 0 0 0; }
-    .contact-us-section.contact-us .block-right-location#office .title-address embed, .contact-us-section.contact-us .block-right-location#office .title-contact embed {
-      width: auto; }
+    .contact-us-section.contact-us .block-right-location#office .title-address embed, .contact-us-section.contact-us .block-right-location#office .title-contact embed, .contact-us-section.contact-us .block-right-location#office .card-body.card-body-opening-hours embed {
+      width: 7%; }
     .contact-us-section.contact-us .block-right-location#office .title-contact {
       margin-top: 30px; }
   .contact-us-section.contact-us .card-body.accordion-used-car__card-body {
@@ -3285,5 +3303,5 @@ hr.heading-underline {
   margin: 3% 0; }
   #value-my-car-prefooter .valeting-item.col-md-6 h6 {
     margin-bottom: 12px; }
-    padding-bottom: 5%; } }
 
+/*# sourceMappingURL=style.css.map */
