@@ -490,8 +490,6 @@ object, embed {
       color: #333333;
       font-weight: 400;
       font-size: 20px; }
-    #feedback .feedback-item .feedback-author h3 {
-      font-style: italic; }
     #feedback .feedback-item .feedback-date, #feedback .feedback-item .feedback-body, #feedback .feedback-item .feedback-company {
       color: #777777;
       font-family: "Source Sans Pro", sans-serif; }
@@ -567,8 +565,7 @@ object, embed {
       margin: 0 15px 0 10px;
       font-size: 35px;
       font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: italic; }
+      font-weight: 400; }
     #feedback .fas.fa-star {
       font-size: 1.5rem; } }
 #youtube-video {
@@ -701,7 +698,6 @@ object, embed {
     margin-top: -5px; }
   #statistics p, #about-statistics p {
     font-family: "Poppins", sans-serif;
-    font-style: oblique;
     font-size: 18px;
     margin-top: 5px; }
     #statistics p span, #about-statistics p span {
@@ -1899,7 +1895,8 @@ input:checked + .slider:before {
         font-weight: 300; }
     #workshop-banner .workshop-intro-text .title-our-service {
       font-weight: 600;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      font-size: 2rem; }
     #workshop-banner .workshop-intro-text div {
       width: 70%;
       padding-right: 15%; }
@@ -1947,10 +1944,12 @@ input:checked + .slider:before {
     padding: 0 5%; }
   #workshop-experts .services-advanced {
     margin-top: 20px; }
-    #workshop-experts .services-advanced .title-top, #workshop-experts .services-advanced .title-medium {
+    #workshop-experts .services-advanced .title-top {
       font-family: "Poppins", sans-serif;
-      font-style: italic;
       font-weight: 400; }
+    #workshop-experts .services-advanced .title-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold; }
     #workshop-experts .services-advanced .title-medium {
       text-transform: uppercase;
       font-size: 23px;
@@ -1986,7 +1985,7 @@ input:checked + .slider:before {
     #workshop-experts .service-item:nth-child(3n + 2) {
       margin: 0 2% 2% 2%; }
 
-.title-top, .title-medium {
+.title-top {
   font-family: "Poppins", sans-serif;
   font-style: italic;
   font-weight: 400; }
@@ -2006,7 +2005,6 @@ input:checked + .slider:before {
   color: #323232; }
 
 .title-workshop {
-  font-style: italic;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -2291,7 +2289,7 @@ input:checked + .slider:before {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
     width: 25%; } }
 .title-block-used-cars {
-  font-weight: 500; }
+  font-weight: 700; }
 
 .first-section-about {
   padding: 6% 0 5% 0; }
@@ -2360,10 +2358,13 @@ hr.heading-underline {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
-  font-style: italic;
   color: #323232;
   margin-bottom: 6px;
   margin-top: 5px; }
+
+h5.title-about-us.title-about-us-bottom {
+  font-weight: 400;
+  text-transform: capitalize; }
 
 .title-name-our-team-bottom {
   text-transform: capitalize; }
@@ -2381,8 +2382,7 @@ hr.heading-underline {
     font-size: 24px;
     text-transform: uppercase;
     padding-bottom: 10px;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: bold;
     margin-top: 5px; }
   .block-description-our-team p {
     font-size: 16px;
@@ -2902,6 +2902,7 @@ hr.heading-underline {
 
   .reserve-page__card-model {
     font-size: 15px; } }
+
 .text-top-primary {
   font-family: "Poppins", sans-serif;
   font-style: italic;
@@ -3276,6 +3277,7 @@ hr.heading-underline {
         display: flex;
         max-width: initial; }
       .contact-us-section.contact-us .block-right-location#office .working-hours {
+        padding-bottom: 5%; } }
         padding-bottom: 5%; }
 
   #office.office-homepage .card-location .card-title {
