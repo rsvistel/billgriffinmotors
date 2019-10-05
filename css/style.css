@@ -3306,8 +3306,11 @@ h5.title-about-us.title-about-us-bottom {
     margin-bottom: 12px; }
 
 .modal-used-cars {
+  position: fixed;
+  top: 0;
+  z-index: 101;
   background: rgba(0, 0, 0, 0.7);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: flex-start;
   height: 100vh; }
@@ -3387,5 +3390,3 @@ h5.title-about-us.title-about-us-bottom {
 
   .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance {
     font-size: 15px; } }
-
-/*# sourceMappingURL=style.css.map */

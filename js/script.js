@@ -27,6 +27,14 @@ $(document).ready(function () {
         });
     });
 
+    $('.car-modal-open').click(function () {
+        $('.modal-used-cars').css('display', 'flex')
+    });
+
+    $('.car-modal-close').click(function () {
+        $('.modal-used-cars').css('display', 'none')
+    });
+
     $('#accordion .card .card-body button').click(function () {
         $(this).closest('.card-body').find('.checkbox-container').toggleClass('opened');
         if ($(this).html().indexOf("Show") >= 0) {
