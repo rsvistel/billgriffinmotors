@@ -351,7 +351,7 @@ object, embed
 
 
 .mobile-counter__icon
-   width: 29%
+   height: 25px
 
 .valeting-item object
    width: 38%
@@ -1083,6 +1083,18 @@ object, embed
 .accordion-used-car__card-header:first-child
       border-radius: 0
 
+#accordion-used-car-modal .finance-icon
+      background-image: url("../img/used-car-page/finance-icon.svg")
+
+
+#accordion-used-car-modal .finance-icon
+      background-repeat: no-repeat
+      background-position: 1.6rem center
+
+#accordion-used-car-modal .accordion-used-car__card-header
+      padding: 0
+      border-bottom: 0
+      
 .description-used-car__title
       font-size: 20px
       font-weight: bold
@@ -1242,7 +1254,7 @@ button:focus
       max-width: 100%
       margin: auto
    .used-car__modal-close
-      position: absolute
+      position: fixed
       z-index: 10
    .used-car__modal-close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover
       opacity: 1
@@ -1280,10 +1292,14 @@ button:focus
       background-image: url('../img/used-car-page/gallery/arrow-prev-lg.svg')
       background-repeat: no-repeat
       background-position: center center
+      position: fixed
+      top: calc(50vh - 117.5px)
    .used-car__modal__control-next
       background-image: url('../img/used-car-page/gallery/arrow-next-lg.svg')
       background-repeat: no-repeat
       background-position: center center
+      position: fixed
+      top: calc(50vh - 117.5px)
    .used-car__modal-title,.used-car__modal-header
       height: 20vh
       align-items: center
