@@ -3350,3 +3350,86 @@ hr.heading-underline
    margin: 3% 0
    h6
       margin-bottom: 12px
+
+
+//Modal
+.modal-used-cars
+   background: rgba(0, 0, 0, 0.7)
+   display: flex
+   justify-content: center
+   align-items: flex-start
+   height: 100vh
+   .col-md-4
+      float: left
+      padding: 35px 20px
+      overflow: hidden
+   .modal-used-cars-container
+      width: 75%
+      background: white
+      margin-top: 4%
+      .block-ul-modal
+         color: #666666
+      .title-modal-used-cars
+         background: $dark-blue
+         color: white
+         font-family: "Open Sans", sans-serif
+         padding: 20px
+      h6
+         font-family: $primary-font
+         font-size: 18px
+      .first-title-modal
+         margin-bottom: 15px
+      .second-title-modal
+         text-transform: uppercase
+      p
+         margin-bottom: 15px
+      ul
+         list-style-type: none
+         li
+            border-top: 1px solid #D4D4D4
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 9px 0
+            &:last-child
+               border-bottom: 1px solid #D4D4D4
+            h6
+               font-size: 15px
+               text-transform: capitalize
+               font-weight: 400
+               font-family: "Source Sans Pro", sans-serif
+
+.modal-used-cars
+   &__title
+      font-size: 20px
+      color: #666666
+      display: inline-block
+      padding-bottom: 0.8rem
+   &__description
+      font-size: 14px
+      color: #666666
+   &__payments
+      padding: 1rem 1rem
+      display: flex
+      flex-direction: column
+      align-items: center
+      color: $dark-blue
+      font-weight: bold
+   &__value-text
+      font-size: 20px
+   &__value
+      font-size: 50px
+   &__finance
+      font-size: 20px
+
+@media (min-width: 2000px)
+   .modal-used-cars .modal-used-cars-container
+      width: 60%
+
+@media (max-width: 768px)
+   .modal-used-cars .modal-used-cars-container
+      width: 100%
+
+   .btn.shadow-none.accordion-used-car__title.modal-used-cars__finance
+      font-size: 15px
+//Modal
