@@ -2902,7 +2902,6 @@ h5.title-about-us.title-about-us-bottom {
 
   .reserve-page__card-model {
     font-size: 15px; } }
-
 .text-top-primary {
   font-family: "Poppins", sans-serif;
   font-style: italic;
@@ -3277,7 +3276,6 @@ h5.title-about-us.title-about-us-bottom {
         display: flex;
         max-width: initial; }
       .contact-us-section.contact-us .block-right-location#office .working-hours {
-        padding-bottom: 5%; } }
         padding-bottom: 5%; }
 
   #office.office-homepage .card-location .card-title {
@@ -3323,11 +3321,16 @@ h5.title-about-us.title-about-us-bottom {
     margin-top: 4%; }
     .modal-used-cars .modal-used-cars-container .block-ul-modal {
       color: #666666; }
-    .modal-used-cars .modal-used-cars-container .title-modal-used-cars {
-      background: #005EAA;
-      color: white;
-      font-family: "Open Sans", sans-serif;
+    .modal-used-cars .modal-used-cars-container .title-cross-block {
+      background-color: #005EAA;
+      display: flex;
+      justify-content: space-between;
       padding: 20px; }
+      .modal-used-cars .modal-used-cars-container .title-cross-block embed {
+        width: 25px; }
+    .modal-used-cars .modal-used-cars-container .title-modal-used-cars {
+      color: white;
+      font-family: "Open Sans", sans-serif; }
     .modal-used-cars .modal-used-cars-container h6 {
       font-family: "Montserrat", sans-serif;
       font-size: 18px; }
