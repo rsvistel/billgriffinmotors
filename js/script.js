@@ -100,4 +100,30 @@ $(document).ready(function () {
     $('.image-input').click(function () {
         $('.image-input-container input').click();
     });
+
+    if ($('body').hasClass('car-page')) {
+        var activeItem = 1;
+        var carouselItems = [];
+        $('#carouselExampleControls .carousel-item').each(function () {
+            carouselItems.push($(this));
+        });
+        $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
+        $('.carousel-control-next').click(function () {
+            if (activeItem < carouselItems.length) {
+                activeItem++
+            } else {
+                activeItem = 1
+            }
+            $('.num.mobile-counter__value.counter__value').html(activeItem + ' of ' + carouselItems.length);
+        });
+        $('.carousel-control-prev').click(function () {
+            if (activeItem > 1) {
+                activeItem--
+            } else {
+                activeItem = carouselItems.length
+            }
+            $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
+        });
+    }
+    // $(
 });
