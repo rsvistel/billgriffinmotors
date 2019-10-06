@@ -32,7 +32,11 @@ object, embed
 //Header
 .upper-half-header
    padding: 0.5% 0 1% 0
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-align: center
+   -ms-flex-align: center
    align-items: center
 .title-logo
    text-transform: uppercase
@@ -65,7 +69,11 @@ object, embed
    h4
       margin-bottom: 0
 .title-address, .title-contact
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-align: center
+   -ms-flex-align: center
    align-items: center
    float: left
    padding-left: 0
@@ -75,7 +83,12 @@ object, embed
    font-size: 1.188rem
    font-weight: 600
 .number-phone
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-orient: vertical
+   -webkit-box-direction: normal
+   -ms-flex-direction: column
    flex-direction: column
 .sales-text
    font-weight: 400
@@ -91,11 +104,22 @@ object, embed
    cursor: pointer
    width: 100%
 .social-icon
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-orient: horizontal
+   -webkit-box-direction: normal
+   -ms-flex-direction: row
    flex-direction: row
+   -webkit-box-align: center
+   -ms-flex-align: center
    align-items: center
+   -webkit-box-pack: center
+   -ms-flex-pack: center
    justify-content: center
    ul
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
       list-style-type: none
       li
@@ -104,6 +128,8 @@ object, embed
          &:last-child
             margin-right: 0px
       a
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
 .bottom-half-header
    background-color: #ebedf0
@@ -112,14 +138,22 @@ object, embed
    .container
       padding-left: 0
       ul
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
          list-style-type: none
          margin-bottom: 0
          li
             padding: 0 1.3%
             height: 45px
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-align: center
+            -ms-flex-align: center
             align-items: center
             transition: 0.5s
             .fa-chevron-down
@@ -169,8 +203,12 @@ object, embed
    padding: 14px 16px
    text-decoration: none
 .flex-dropdown
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
 .flex-dropdown h6
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
    margin-right: 5px
 .dropdown
@@ -215,7 +253,12 @@ object, embed
 //Homepage
 @media only screen and (max-width: 768px)
    #homepage
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
 
 
@@ -282,7 +325,11 @@ object, embed
 @media only screen and (max-width: 768px)
    #banner
       #banner-image
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: center
+         -ms-flex-pack: center
          justify-content: center
          img
             height: 200px
@@ -297,7 +344,11 @@ object, embed
                font-weight: 400
                font-size: 22px
                margin-bottom: 13px
+               display: -webkit-box
+               display: -ms-flexbox
                display: flex
+               -webkit-box-align: center
+               -ms-flex-align: center
                align-items: center
                object
                   margin-right: 9px
@@ -309,7 +360,11 @@ object, embed
                   font-size: 12.5px
                   height: 43px
                button
+                  display: -webkit-box
+                  display: -ms-flexbox
                   display: flex
+                  -webkit-box-pack: center
+                  -ms-flex-pack: center
                   justify-content: center
                   text-transform: uppercase
                   font-weight: 600
@@ -335,6 +390,8 @@ object, embed
    .owl-carousel
       padding: 0 3%
       .owl-nav.disabled
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
          position: absolute
          top: 0
@@ -351,7 +408,7 @@ object, embed
 
 
 .mobile-counter__icon
-   height: 25px
+   width: 40px
 
 .valeting-item object
    width: 38%
@@ -403,9 +460,18 @@ object, embed
          margin: 0
       .col-6
          background: #ECEBE9
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: center
+         -ms-flex-pack: center
          justify-content: center
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
+         -webkit-box-orient: vertical
+         -webkit-box-direction: normal
+         -ms-flex-direction: column
          flex-direction: column
          padding: 8% 0
          &:first-child
@@ -428,7 +494,11 @@ object, embed
       .col-6
          margin: 3% 0
          padding: 0 8%
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
          object
             width: 21%
@@ -446,7 +516,11 @@ object, embed
       bottom: 0
       right: 0
       left: 0
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
       pointer-events: none
       button
@@ -498,9 +572,13 @@ object, embed
          color: #D2D5DA
          font-size: 28px
       .feedback-stars
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
          margin-top: 5px
       .fas.fa-quote-right
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
          justify-content: flex-end
          position: absolute
@@ -541,8 +619,14 @@ object, embed
          border-right: 1px solid lightgrey
          border-left: 1px solid lightgrey
          padding: 20px 0
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: center
+         -ms-flex-pack: center
          justify-content: center
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
       .owl-feedback
          border: 1px solid lightgrey
@@ -645,10 +729,19 @@ object, embed
       .container
          padding: 0 5px
          .row
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-pack: center
+            -ms-flex-pack: center
             justify-content: center
          .owl-carousel .owl-stage
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-orient: vertical
+            -webkit-box-direction: normal
+            -ms-flex-direction: column
             flex-direction: column
          .card
             flex: 0 0 100%
@@ -778,6 +871,8 @@ object, embed
 
 .footer-section__soc-items
    list-style: none
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
    padding-top: 1rem
 
@@ -892,6 +987,8 @@ object, embed
 //USED CAR-page
 
 .option-used-car
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
    .car-data-field
       width: 14.285%
@@ -940,8 +1037,14 @@ object, embed
       border-right: 1px solid lightgrey
       border-left: 1px solid lightgrey
       padding: 20px 0
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
    .owl-feedback
       border: 1px solid lightgrey
@@ -974,11 +1077,20 @@ object, embed
       margin-bottom: 1rem
 
 .used-car__title
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
 
 .used-car__name
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
       padding-left: 8px
 
@@ -990,7 +1102,12 @@ object, embed
       font-size: 25px
 
 .used-car__price
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
       text-align: right
       padding-right: 8px
@@ -1010,14 +1127,25 @@ object, embed
       padding-bottom: 1.5rem
 
 .detailse-used-car__title
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
       padding-left: 0
       padding-right: 0
 
 .detailse-used-car__value
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
 
 .detailse-used-car__data
@@ -1223,6 +1351,8 @@ button:focus
    padding-bottom: 0
 
 .accordion-used-car__h5
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
 
 .used-car__modal-footer
@@ -1331,6 +1461,8 @@ button:focus
       white-space: nowrap
       font-weight: 200
    .carousel__modal
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
 
 //MODAL USED CAR-page
@@ -1379,7 +1511,11 @@ button:focus
 .accordion__title
    position: relative
    color: #000000
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-pack: justify
+   -ms-flex-pack: justify
    justify-content: space-between
 
 .accordion__icon-wrapper
@@ -1387,6 +1523,8 @@ button:focus
    top: 0
    bottom: 0
    right: 1.25rem
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
    pointer-events: none
 
@@ -1481,6 +1619,8 @@ button:focus
    margin-top: 30px
    .mobile-accordion-filter
       display: none
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
       *
          cursor: pointer
@@ -1498,6 +1638,8 @@ button:focus
       .card-header
          padding: 0
          background-color: #fff
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
          justify-content: space-between
          background-image: url("../img/search-results/arrow-down-blue.svg")
@@ -1523,10 +1665,19 @@ button:focus
          padding: 1rem 4% 1.5rem 4%
          .switcher
             font-size: 12px
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
-            flex-direction: row
-            justify-content: center
-            align-items: center
+            -webkit-box-orient: horizontal
+            -webkit-box-direction: normal
+            -ms-flex-direction: row
+               flex-direction: row
+            -webkit-box-pack: center
+            -ms-flex-pack: center
+               justify-content: center
+            -webkit-box-align: center
+            -ms-flex-align: center
+               align-items: center
             margin-bottom: 5%
    .monthly-price
       display: none
@@ -1539,7 +1690,11 @@ button:focus
       padding: 5px 15px
       overflow: auto
       .text-checkbox
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
          font-size: 14px
          font-weight: 400
@@ -1671,8 +1826,14 @@ input:checked + .slider:before
    font-size: 14px
 
 #collapseThree .total-price div
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-align: center
+   -ms-flex-align: center
    align-items: center
+   -webkit-box-pack: space-evenly
+   -ms-flex-pack: space-evenly
    justify-content: space-evenly
    margin-top: 22px
    label
@@ -1725,12 +1886,20 @@ input:checked + .slider:before
          .col-md-6
             &:last-child
                height: 26px
+               display: -webkit-box
+               display: -ms-flexbox
                display: flex
+               -webkit-box-pack: end
+               -ms-flex-pack: end
                justify-content: flex-end
             object
                height: 26px
             ul
+               display: -webkit-box
+               display: -ms-flexbox
                display: flex
+               -webkit-box-pack: end
+               -ms-flex-pack: end
                justify-content: flex-end
                li
                   border: 1px solid #C0C0C0
@@ -1740,8 +1909,14 @@ input:checked + .slider:before
                   &:last-child
                      border-right: none
       .filters-mobile
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: justify
+         -ms-flex-pack: justify
          justify-content: space-between
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
          margin: 0 15px
          font-size: 13px
@@ -1778,8 +1953,14 @@ input:checked + .slider:before
    color: $dark-blue
    font-family: "Open Sans", sans-serif
    padding: 20px 10px
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-pack: center
+   -ms-flex-pack: center
    justify-content: center
+   -webkit-box-align: center
+   -ms-flex-align: center
    align-items: center
    border-bottom: 1px solid #CCCCCC
    text-transform: capitalize
@@ -1862,6 +2043,8 @@ input:checked + .slider:before
             to
                left: 0
       .mobile-accordion-filter
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
          margin: 15px 0
       .card .card-header
@@ -1873,6 +2056,8 @@ input:checked + .slider:before
             position: absolute
             right: 10px
             top: 13px
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
             align-items: center
             color: #BBBBBB
@@ -1880,7 +2065,11 @@ input:checked + .slider:before
    .col-md-9.col-12.block-used-cars .search-results-container .row
       padding: 0 0
    .reset-block
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
       object
          margin-right: 5px
@@ -1920,8 +2109,14 @@ input:checked + .slider:before
    position: relative
    background-size: cover
    .workshop-intro-text
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: end
+      -ms-flex-pack: end
       justify-content: flex-end
+      -webkit-box-align: end
+      -ms-flex-align: end
       align-items: flex-end
       color: white
       .text-banner-our-service
@@ -1943,7 +2138,11 @@ input:checked + .slider:before
       padding: 3%
       .workshop-step
          div
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-pack: justify
+            -ms-flex-pack: justify
             justify-content: space-between
          object
             width: 17%
@@ -2070,6 +2269,8 @@ input:checked + .slider:before
    background-size: 150%
    overflow: hidden
    .container
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
       .title-contact-us
          font-family: $primary-font
@@ -2099,8 +2300,14 @@ input:checked + .slider:before
       background-size: cover
       overflow-wrap: hidden
       .workshop-intro-text
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: center
+         -ms-flex-pack: center
          justify-content: center
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
          div
             width: 93%
@@ -2125,7 +2332,12 @@ input:checked + .slider:before
    #workshop-experts
       margin-top: 10%
       .service-container
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-orient: vertical
+         -webkit-box-direction: normal
+         -ms-flex-direction: column
          flex-direction: column
          .service-item
             max-width: initial
@@ -2189,8 +2401,15 @@ input:checked + .slider:before
 //Shortlist
 
 .heading-underlined-shortlist
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-orient: vertical
+   -webkit-box-direction: normal
+   -ms-flex-direction: column
    flex-direction: column
+   -webkit-box-align: center
+   -ms-flex-align: center
    align-items: center
    margin: 30px 0
    .title-about-us
@@ -2246,8 +2465,15 @@ input:checked + .slider:before
    margin-bottom: 2rem
 
 .reviews-page-title
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-orient: horizontal
+   -webkit-box-direction: normal
+   -ms-flex-direction: row
    flex-direction: row
+   -webkit-box-pack: center
+   -ms-flex-pack: center
    justify-content: center
    width: 100%
    padding: 2rem 0
@@ -2279,8 +2505,12 @@ input:checked + .slider:before
 
 .reviews-button-container
    margin: 2rem auto
+   display: -ms-grid
    display: grid
+   grid-template-columns: repeat(auto-fit, minmax(100px, -webkit-max-content))
    grid-template-columns: repeat(auto-fit, minmax(100px, max-content))
+   -webkit-box-pack: center
+   -ms-flex-pack: center
    justify-content: center
    grid-gap: 1rem
 
@@ -2294,13 +2524,17 @@ input:checked + .slider:before
 
 @media (min-width: 320px)
    .reviews-list
+      display: -ms-grid
       display: grid
+      -ms-grid-columns: 1fr
       grid-template-columns: 1fr
       grid-gap: 30px
 
 @media (min-width: 640px)
    .reviews-list
+      display: -ms-grid
       display: grid
+      -ms-grid-columns: 1fr 30px 1fr
       grid-template-columns: 1fr 1fr
       grid-gap: 30px
 
@@ -2316,6 +2550,7 @@ input:checked + .slider:before
 
 @media only screen and (max-width: 768px)
    #feedback.reviews-page button
+      display: -ms-grid
       display: grid
    #feedback.reviews-page .feedback-item
       padding: 14px 5px 7px 5px
@@ -2387,6 +2622,8 @@ hr.heading-underline
       max-width: 48%
       padding: 3% 2.5%
       .member-image
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
          img
             margin-right: 20px
@@ -2584,13 +2821,21 @@ h5.title-about-us.title-about-us-bottom
                text-align: right
          &:last-child
             padding: 3%
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-pack: justify
+            -ms-flex-pack: justify
             justify-content: space-between
       h3
          text-align: left
          font-size: 21px
       .image-input-container
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: end
+         -ms-flex-pack: end
          justify-content: flex-end
       .image-input
          width: 50%
@@ -2601,6 +2846,7 @@ h5.title-about-us.title-about-us-bottom
          border: 1px solid #CCCCCC
          div
             border: 1px dashed #CCCCCC
+            padding: 1rem 0
          object
             display: block
             margin: 0 auto
@@ -2626,6 +2872,9 @@ h5.title-about-us.title-about-us-bottom
    display: inline-block
    width: 80%
 
+.cash-for-cars__button
+   padding: 7px 52px
+
 .agree-block
    display: inline-block
    padding-bottom: 2rem
@@ -2636,6 +2885,7 @@ h5.title-about-us.title-about-us-bottom
 
 .cash-for-car-blue-title
    font-size: 14px
+   padding-bottom: 1rem
 .cash-for-car-descripton-blue
    padding-top: 0.4rem
 
@@ -2666,14 +2916,27 @@ h5.title-about-us.title-about-us-bottom
       color: $dark-blue
       text-decoration: none
 
+.image-input-description-mobile
+   display: none
+   color: $dark-blue
+
+.cash-for-car-blue-title .descripton-blue
+   font-size: 14px
+
 .cash-for-car
    &__card
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
    &__card-car
       border: 1px solid #707070
       padding: 1rem 0 1rem 2rem
       max-width: 678px
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
       margin: 1rem 0 3rem 0
    &__card-title
@@ -2688,8 +2951,14 @@ h5.title-about-us.title-about-us-bottom
       font-size: 31px
       font-weight: bold
 
+@media (min-width: 768px) and (max-width: 900px)
+   .image-input-description-lg
+      font-size: 12px
 
 @media only screen and (max-width: 767px)
+   .cash-for-car-blue-title
+      padding: 0 15px 0 0
+      padding-bottom: 0
    .agree-mobile-lable
       display: inherit!important
       text-transform: uppercase
@@ -2698,15 +2967,18 @@ h5.title-about-us.title-about-us-bottom
          display: block
       &__card-car
          padding: 0.5rem 0
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-orient: vertical
+         -webkit-box-direction: normal
+         -ms-flex-direction: column
          flex-direction: column
       &__card-title
          padding-bottom: 5%
       &__card-model
          display: block
          padding-bottom: 5%
-   .cash-for-cars .cash-for-car-application .image-input object
-      width: 20%
 
    .cash-for-cars
       .cash-for-car-application
@@ -2726,7 +2998,12 @@ h5.title-about-us.title-about-us-bottom
                text-align: left
             &:last-child
                padding: 3%
+               display: -webkit-box
+               display: -ms-flexbox
                display: flex
+               -webkit-box-orient: vertical
+               -webkit-box-direction: normal
+               -ms-flex-direction: column
                flex-direction: column
          h3
             text-align: left
@@ -2734,6 +3011,13 @@ h5.title-about-us.title-about-us-bottom
          .image-input-container
             justify-content: end
             padding: 1rem 0
+         .image-input
+            width: 100%
+            margin-left: 0
+            margin-top: 1.4rem
+            div
+               padding-top: 1rem
+               border: 3px dashed #CCCCCC
          label
             display: block
             text-align: left
@@ -2742,8 +3026,13 @@ h5.title-about-us.title-about-us-bottom
          hr
             margin: 0
 
+   // .cash-for-cars__button
+   //    padding: 1rem 2rem
+
    .cash-for-cars__button
-      padding: 1rem 2rem
+      padding: 12px 80px
+      font-size: 1.2rem
+      margin: 1rem auto 3rem auto
 
    .cash-for-cars__items-top
       list-style: none
@@ -2765,6 +3054,25 @@ h5.title-about-us.title-about-us-bottom
 
    .cash-for-cars .cash-for-car-application .agree
       padding: 3%
+
+   .image-input-container
+      position: relative
+
+   .image-input-title
+      position: absolute
+      top: 0
+
+   .image-input-description-mobile
+      display: block
+      padding: 1rem 0
+   .image-input-description-lg
+      display: none
+
+@media only screen and (max-width: 320px)
+   .descripton-blue-items
+      font-size: 12px
+   .image-input-description-mobile
+      font-size: 13px
 
 @media only screen and (max-width: 991px)
    .cash-for-cars__button-subtitle
@@ -2843,6 +3151,8 @@ h5.title-about-us.title-about-us-bottom
    top: 17px
    bottom: 0
    left: 20px
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
    height: 20px
 
@@ -2910,7 +3220,11 @@ h5.title-about-us.title-about-us-bottom
 
 @media only screen and (max-width: 991px)
    .reserve-page__button-container
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       margin-left: 0
 
@@ -2928,13 +3242,21 @@ h5.title-about-us.title-about-us-bottom
    .reserve-page__checkbox-confirm
       padding-bottom: 4rem
    .reserve-page__button-container
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       margin: 1rem 0
    .reserve-page__card-padding
       padding-right: 0
    .reserve-page__stripe-wrapper
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
 
 @media only screen and (max-width: 400px)
@@ -2977,8 +3299,15 @@ h5.title-about-us.title-about-us-bottom
    font-family: "Source Sans Pro", sans-serif
 
 #value-my-car-prefooter .six-blocks-img .valeting-item
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
+   -webkit-box-orient: vertical
+   -webkit-box-direction: reverse
+   -ms-flex-direction: column-reverse
    flex-direction: column-reverse
+   -webkit-box-align: start
+   -ms-flex-align: start
    align-items: flex-start
 
 #value-my-car-banner 
@@ -3011,7 +3340,11 @@ h5.title-about-us.title-about-us-bottom
       width: auto
       height: 68px
    form
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       margin-bottom: 10%
       ::placeholder
@@ -3056,14 +3389,22 @@ h5.title-about-us.title-about-us-bottom
       left: 0
       top: 0
       bottom: 0
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
       img
          width: 100%
    .content
       width: 50%
    .container
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: end
+      -ms-flex-pack: end
       justify-content: flex-end
    .col-md-6
       margin: 5% 0
@@ -3102,6 +3443,8 @@ h5.title-about-us.title-about-us-bottom
 #valeting-banner
    padding: 2% 0
 .valeting-item
+   display: -webkit-box
+   display: -ms-flexbox
    display: flex
    margin: 5% 0
    h6
@@ -3125,9 +3468,18 @@ h5.title-about-us.title-about-us-bottom
    background-size: cover
    background-repeat: no-repeat
    .valeting-items
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
    .accordion-used-car__form
       padding-left: 1.25rem
@@ -3223,6 +3575,8 @@ h5.title-about-us.title-about-us-bottom
       line-height: 1.5
    .block-right-location#office
       background: none
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
       box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
       padding: 0.5rem 0
@@ -3253,6 +3607,8 @@ h5.title-about-us.title-about-us-bottom
          height: 300px
          width: 100%
       .input-search
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
          margin-top: 15px
          #site-search
@@ -3308,7 +3664,12 @@ h5.title-about-us.title-about-us-bottom
          border: 1px solid #CCCCCC
          border-radius: 5px
          margin-top: 10px
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-orient: vertical
+         -webkit-box-direction: normal
+         -ms-flex-direction: column
          flex-direction: column
          .input-search input::-webkit-input-placeholder
             font-size: 15px
@@ -3330,12 +3691,21 @@ h5.title-about-us.title-about-us-bottom
             text-align: left
             padding: 0 15px
          .input-search
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-orient: vertical
+            -webkit-box-direction: normal
+            -ms-flex-direction: column
             flex-direction: column
+            -webkit-box-align: center
+            -ms-flex-align: center
             align-items: center
          .card-body.card-body-opening-hours
             display: none
          .title-address, .title-contact
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
             max-width: initial
          .working-hours
@@ -3399,7 +3769,11 @@ h5.title-about-us.title-about-us-bottom
          color: #666666
       .title-cross-block
          background-color: $dark-blue
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: justify
+         -ms-flex-pack: justify
          justify-content: space-between
          padding: 20px
          embed
@@ -3420,8 +3794,14 @@ h5.title-about-us.title-about-us-bottom
          list-style-type: none
          li
             border-top: 1px solid #D4D4D4
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-pack: justify
+            -ms-flex-pack: justify
             justify-content: space-between
+            -webkit-box-align: center
+            -ms-flex-align: center
             align-items: center
             padding: 9px 0
             &:last-child
@@ -3443,8 +3823,15 @@ h5.title-about-us.title-about-us-bottom
       color: #666666
    &__payments
       padding: 1rem 1rem
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
       color: $dark-blue
       font-weight: bold
@@ -3500,8 +3887,15 @@ $light-blue: #00C4FC
       padding: 3% 5% 4% 5%
       .container
          ul
+            display: -webkit-box
+            display: -ms-flexbox
             display: flex
+            -webkit-box-orient: vertical
+            -webkit-box-direction: normal
+            -ms-flex-direction: column
             flex-direction: column
+            -webkit-box-align: start
+            -ms-flex-align: start
             align-items: flex-start
             li
                height: auto
@@ -3525,15 +3919,28 @@ $light-blue: #00C4FC
    .bottom-half-header .container ul li .dropdown-content
       min-width: 200px
    .bottom-half-header .container ul
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
+      -webkit-box-align: start
+      -ms-flex-align: start
       align-items: flex-start
       li:first-child
          margin-left: 0
    .upper-half-header
       padding: 2% 4% 1% 4%
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
    .mobile-open
       position: absolute
@@ -3550,7 +3957,11 @@ $light-blue: #00C4FC
             width: 30px
             display: none
    .mobile-section-under-header
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
       background: black
       height: 65px
@@ -3573,14 +3984,26 @@ $light-blue: #00C4FC
       margin-top: 0
 
    .contact-section-header
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
+      -webkit-box-pack: end
+      -ms-flex-pack: end
       justify-content: flex-end
       embed
          width: 13%
    .mobile-section-under-header-search-results
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
 
    .accordion-tumbler, #mobile-filter
@@ -3588,9 +4011,18 @@ $light-blue: #00C4FC
       cursor: pointer
 
    .accordion-tumbler
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
       color: white
       font-family: "Source Sans Pro", sans-serif
@@ -3626,8 +4058,14 @@ $light-blue: #00C4FC
          border-right: 1px solid lightgrey
          border-left: 1px solid lightgrey
          padding: 20px 0
+         display: -webkit-box
+         display: -ms-flexbox
          display: flex
+         -webkit-box-pack: center
+         -ms-flex-pack: center
          justify-content: center
+         -webkit-box-align: center
+         -ms-flex-align: center
          align-items: center
       .owl-feedback
          border: 1px solid lightgrey
@@ -3800,6 +4238,8 @@ $light-blue: #00C4FC
       bottom: 0
       left: 3%
    .mobile-counter__block
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
       background: transparent
       color: #fff
@@ -3825,8 +4265,14 @@ $light-blue: #00C4FC
    .complete
       display: none
    .btn-more-block
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: end
+      -ms-flex-pack: end
       justify-content: flex-end
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
       color: $dark-blue
       padding-right: 1rem
@@ -3856,7 +4302,11 @@ $light-blue: #00C4FC
       color: #ffffff
    .used-car__modal-footer
       border: none
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       margin: auto
    .modal-header button .close
@@ -4025,8 +4475,15 @@ $light-blue: #00C4FC
       height: 520px
 
    #office .row.row-office
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
       .card
          max-width: 60%
@@ -4072,9 +4529,18 @@ $light-blue: #00C4FC
       font-size: 15px
 
    #valeting-contact .row
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
 
 
@@ -4139,7 +4605,12 @@ $light-blue: #00C4FC
       float: none
 
    #valeting-contact .valeting-item
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
       flex-direction: column
 
    #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8
