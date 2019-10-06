@@ -434,6 +434,9 @@ object, embed {
   border-radius: 5px;
   box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.1);
   padding: 0; }
+  .car-tile a, .car-tile a:hover {
+    color: black;
+    text-decoration: initial; }
   .car-tile .car-title {
     margin: 8px 3px; }
     .car-tile .car-title .titles-car-card {
@@ -1643,12 +1646,12 @@ button:focus {
       display: -ms-flexbox;
       display: flex;
       justify-content: space-between;
-      background-image: url("../img/search-results/arrow-down-blue.svg");
+      background-image: url("../img/search-results/arrow-down-blue.png");
       background-position: center right 10px;
       background-repeat: no-repeat;
       background-size: 13px; }
       #accordion.cards-serch-results .card .card-header.opened {
-        background-image: url("../img/search-results/arrow-up-blue.svg"); }
+        background-image: url("../img/search-results/arrow-up-blue.png"); }
       #accordion.cards-serch-results .card .card-header h5 {
         width: 100%; }
         #accordion.cards-serch-results .card .card-header h5 .btn {
@@ -3725,13 +3728,14 @@ h5.title-about-us.title-about-us-bottom {
     float: left;
     padding: 35px 20px;
     overflow: hidden; }
-  .modal-used-cars .modal-used-cars-container {
+  .modal-used-cars .modal-used-cars-container.container {
     width: 75%;
     background: white;
-    margin-top: 4%; }
-    .modal-used-cars .modal-used-cars-container .block-ul-modal {
+    margin-top: 4%;
+    padding: 0; }
+    .modal-used-cars .modal-used-cars-container.container .block-ul-modal {
       color: #666666; }
-    .modal-used-cars .modal-used-cars-container .title-cross-block {
+    .modal-used-cars .modal-used-cars-container.container .title-cross-block {
       background-color: #005EAA;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3740,23 +3744,23 @@ h5.title-about-us.title-about-us-bottom {
       -ms-flex-pack: justify;
       justify-content: space-between;
       padding: 20px; }
-      .modal-used-cars .modal-used-cars-container .title-cross-block embed {
+      .modal-used-cars .modal-used-cars-container.container .title-cross-block embed {
         width: 25px; }
-    .modal-used-cars .modal-used-cars-container .title-modal-used-cars {
+    .modal-used-cars .modal-used-cars-container.container .title-modal-used-cars {
       color: white;
       font-family: "Open Sans", sans-serif; }
-    .modal-used-cars .modal-used-cars-container h6 {
+    .modal-used-cars .modal-used-cars-container.container h6 {
       font-family: "Montserrat", sans-serif;
       font-size: 18px; }
-    .modal-used-cars .modal-used-cars-container .first-title-modal {
+    .modal-used-cars .modal-used-cars-container.container .first-title-modal {
       margin-bottom: 15px; }
-    .modal-used-cars .modal-used-cars-container .second-title-modal {
+    .modal-used-cars .modal-used-cars-container.container .second-title-modal {
       text-transform: uppercase; }
-    .modal-used-cars .modal-used-cars-container p {
+    .modal-used-cars .modal-used-cars-container.container p {
       margin-bottom: 15px; }
-    .modal-used-cars .modal-used-cars-container ul {
+    .modal-used-cars .modal-used-cars-container.container ul {
       list-style-type: none; }
-      .modal-used-cars .modal-used-cars-container ul li {
+      .modal-used-cars .modal-used-cars-container.container ul li {
         border-top: 1px solid #D4D4D4;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3768,9 +3772,9 @@ h5.title-about-us.title-about-us-bottom {
         -ms-flex-align: center;
         align-items: center;
         padding: 9px 0; }
-        .modal-used-cars .modal-used-cars-container ul li:last-child {
+        .modal-used-cars .modal-used-cars-container.container ul li:last-child {
           border-bottom: 1px solid #D4D4D4; }
-        .modal-used-cars .modal-used-cars-container ul li h6 {
+        .modal-used-cars .modal-used-cars-container.container ul li h6 {
           font-size: 15px;
           text-transform: capitalize;
           font-weight: 400;
@@ -4077,6 +4081,15 @@ h5.title-about-us.title-about-us-bottom {
       .block-search-results .container #accordion.cards-serch-results .card .card-header h5 .btn {
         font-size: 0.8rem; }
 
+  .modal-used-cars .modal-used-cars-container.container {
+    width: 95%;
+    max-width: 740px; }
+    .modal-used-cars .modal-used-cars-container.container .modal-used-cars__value-text {
+      font-size: 16px; }
+    .modal-used-cars .modal-used-cars-container.container .modal-used-cars__finance {
+      font-size: 13px;
+      padding-left: 70px; }
+
   .block-used-cars .filter-navigation-menu .filters .col-md-6 ul li {
     font-size: 0.7rem; } }
 @media (min-width: 1000px) and (max-width: 1112px) {
@@ -4336,6 +4349,9 @@ h5.title-about-us.title-about-us-bottom {
     position: absolute;
     right: 0; } }
 @media (max-width: 768px) {
+  .modal-used-cars .modal-used-cars-container.container {
+    width: 100%; }
+
   .detailse-used-car__block, .detailse-used-car__name-chnge {
     display: none; }
 
