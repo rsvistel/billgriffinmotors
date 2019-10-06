@@ -1645,17 +1645,18 @@ input:checked + .slider:before {
 #make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model {
   width: 100%;
   height: 35px;
+  background-color: white;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url(../img/home/arrow-down.svg);
+  background-image: url(../img/home/arrow-down.png);
   background-position: center right 10px;
   background-size: 6.5%;
   background-repeat: no-repeat;
   border-radius: 5px;
   padding-left: 10px;
   border: 1.5px solid #dedede;
-  color: #d6d6d6;
+  color: black;
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
 
@@ -1898,7 +1899,8 @@ input:checked + .slider:before {
   background-image: url("../img/workshop/car-left-.png");
   background-position: top center;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  background-size: cover; }
   #workshop-banner .workshop-intro-text {
     display: flex;
     justify-content: flex-end;
@@ -2344,7 +2346,7 @@ hr.heading-underline {
     width: 100%; }
 
 #our-team {
-  background: #EAEDF0;
+  background: #F6F6F6;
   padding: 6% 0 5% 0; }
   #our-team .title-about-us {
     text-transform: capitalize; }
@@ -2446,10 +2448,23 @@ h5.title-about-us.title-about-us-bottom {
 .img-border {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -0.1%;
   width: 10%; }
 
+.img-border-mobile {
+  position: absolute;
+  top: -0.5%;
+  right: -0.5%;
+  width: 10%;
+  display: none; }
+
 @media only screen and (max-width: 768px) {
+  .img-border-mobile {
+    display: block; }
+
+  .img-border {
+    display: none; }
+
   #brakes-image {
     display: none; }
 
@@ -2989,7 +3004,7 @@ h5.title-about-us.title-about-us-bottom {
       left: 5px; }
     #value-my-car-banner form input {
       width: 25%;
-      height: 100%;
+      height: 68px;
       border: 3px solid #005EAA;
       border-radius: 4px;
       font-size: 40px;
@@ -3328,7 +3343,8 @@ h5.title-about-us.title-about-us-bottom {
   display: none;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh; }
+  min-height: 100vh;
+  width: 100%; }
   .modal-used-cars .col-md-4 {
     float: left;
     padding: 35px 20px;
@@ -3474,7 +3490,13 @@ h5.title-about-us.title-about-us-bottom {
     align-items: center; }
 
   .mobile-open {
-    display: block; }
+    position: absolute;
+    right: 0;
+    width: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .mobile-open object {
       pointer-events: none;
       cursor: pointer; }
