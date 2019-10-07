@@ -1983,6 +1983,9 @@ input:checked + .slider:before {
   text-transform: capitalize;
   font-weight: 300; }
 
+.mobile-accordion-filter-value {
+  display: none; }
+
 .search-block-used-cars .car-tile .car-desc .col-6 h6 {
   font-size: 13px; }
 
@@ -2067,8 +2070,7 @@ input:checked + .slider:before {
       background-position: center left 10px; }
       #accordion.cards-serch-results .card .card-header h5 .btn {
         padding-left: 30px; }
-      #accordion.cards-serch-results .card .card-header:after {
-        content: "Any";
+      #accordion.cards-serch-results .card .card-header .mobile-accordion-filter-value {
         position: absolute;
         right: 10px;
         top: 13px;
@@ -4683,3 +4685,5 @@ h5.title-about-us.title-about-us-bottom {
   #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8 {
     max-width: 100% !important;
     flex: 0 0 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */
