@@ -831,6 +831,10 @@ object, embed
 @media only screen and (max-width: 768px)
    #statistics
       display: none
+
+   #about-statistics
+      .statistic-block-first
+         margin-bottom: 25px
 //Statistics
 #homepage
    overflow: hidden
@@ -1820,7 +1824,7 @@ input:checked + .slider:before
       color: $dark-gray
       margin-bottom: 3px
 
-#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model
+#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model, #deposit-amount-select, #price-from-monthly-select, #price-to-monthly-select
    width: 100%
    height: 35px
    background-color: white
@@ -1837,6 +1841,24 @@ input:checked + .slider:before
    color: black
    font-family: "Open Sans", sans-serif
    font-size: 14px
+
+#collapseThree .monthly-price
+   h6
+      color: black
+      font-family: "Open Sans", sans-serif
+      font-size: 14px
+      margin-top: 8px
+      margin-bottom: 13px
+   #deposit-amount-select, #price-from-monthly-select, #price-to-monthly-select
+      width: 75%
+      margin-top: 5px
+   #deposit-amount-select
+      margin-left: 23%
+   #price-to-monthly-select
+      margin-left: 14%
+   #price-from-monthly-select
+      margin-left: 6%
+
 
 #collapseThree .total-price div
    display: -webkit-box
@@ -3549,6 +3571,7 @@ h5.title-about-us.title-about-us-bottom
                order: 3
                img
                   position: static
+                  width: 100%
             &:last-child
                order: 2
    .none
@@ -3870,14 +3893,17 @@ h5.title-about-us.title-about-us-bottom
 @media (min-width: 2000px)
    .modal-used-cars .modal-used-cars-container
       width: 60%
-      
 
+@media (min-width: 2100px)
+   .mechanic-image img
+      top: 20%
 @media (max-width: 768px)
    .modal-used-cars .modal-used-cars-container
       width: 100%
       margin-top: 0
    .modal-used-cars
       overflow: scroll
+      height: 100vh
       .col-md-4
          padding: 15px 10px
 
@@ -4165,6 +4191,11 @@ $light-blue: #00C4FC
       font-size: 1rem
    .title-logo-bottom
       margin: 0
+
+@media (min-width: 1000px) and (max-width: 1200px)
+   #collapseThree .monthly-price #price-from-monthly-select
+      margin-left: 4%
+
 
 //Search-results mobile-menu
 @media only screen and (max-width: 767px)
@@ -4598,9 +4629,17 @@ $light-blue: #00C4FC
       max-width: 100%!important
       flex: 0 0 100%!important
 
+   #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select
+      width: 100%
+      margin: 0
+
+
 @media (min-width: 2000px)
    #about-prefooter .container
-      min-height: 700px
+      min-height: 900px
+      .block-description-our-team
+         padding-top: 15rem
+
 
 @media (min-width: 900px) and (max-width: 1000px)
    .bottom-half-header .container ul li a .h6-title
@@ -4615,6 +4654,9 @@ $light-blue: #00C4FC
 @media (max-width: 320px)
    #accordion.cards-serch-results .card .card-header h5 .btn, #accordion.cards-serch-results .card .card-header:after
       font-size: 0.75rem
+
+   .block-search-results .accordion-filters .card-body label, .block-search-results #accordion.cards-serch-results .card .card-body .switcher
+      font-size: 13px
 
 @media (max-width: 768px) and (orientation: landscape)
    #banner #search-box .col-md-3 select

@@ -815,7 +815,10 @@ object, embed {
 
 @media only screen and (max-width: 768px) {
   #statistics {
-    display: none; } }
+    display: none; }
+
+  #about-statistics .statistic-block-first {
+    margin-bottom: 25px; } }
 #homepage {
   overflow: hidden; }
 
@@ -1811,7 +1814,7 @@ input:checked + .slider:before {
     color: #333333;
     margin-bottom: 3px; }
 
-#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model {
+#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model, #deposit-amount-select, #price-from-monthly-select, #price-to-monthly-select {
   width: 100%;
   height: 35px;
   background-color: white;
@@ -1828,6 +1831,22 @@ input:checked + .slider:before {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
+
+#collapseThree .monthly-price h6 {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 13px; }
+#collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select {
+  width: 75%;
+  margin-top: 5px; }
+#collapseThree .monthly-price #deposit-amount-select {
+  margin-left: 23%; }
+#collapseThree .monthly-price #price-to-monthly-select {
+  margin-left: 14%; }
+#collapseThree .monthly-price #price-from-monthly-select {
+  margin-left: 6%; }
 
 #collapseThree .total-price div {
   display: -webkit-box;
@@ -3511,7 +3530,8 @@ h5.title-about-us.title-about-us-bottom {
     #valeting-banner .row .col-md-4:nth-child(2) {
       order: 3; }
       #valeting-banner .row .col-md-4:nth-child(2) img {
-        position: static; }
+        position: static;
+        width: 100%; }
     #valeting-banner .row .col-md-4:last-child {
       order: 2; }
 
@@ -3822,13 +3842,17 @@ h5.title-about-us.title-about-us-bottom {
 @media (min-width: 2000px) {
   .modal-used-cars .modal-used-cars-container {
     width: 60%; } }
+@media (min-width: 2100px) {
+  .mechanic-image img {
+    top: 20%; } }
 @media (max-width: 768px) {
   .modal-used-cars .modal-used-cars-container {
     width: 100%;
     margin-top: 0; }
 
   .modal-used-cars {
-    overflow: scroll; }
+    overflow: scroll;
+    height: 100vh; }
     .modal-used-cars .col-md-4 {
       padding: 15px 10px; }
 
@@ -4118,6 +4142,9 @@ h5.title-about-us.title-about-us-bottom {
 
   .title-logo-bottom {
     margin: 0; } }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #collapseThree .monthly-price #price-from-monthly-select {
+    margin-left: 4%; } }
 @media only screen and (max-width: 767px) {
   #accordion.cards-serch-results.expanded #ShowMoreResults {
     display: none; }
@@ -4597,10 +4624,16 @@ h5.title-about-us.title-about-us-bottom {
 
   #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8 {
     max-width: 100% !important;
-    flex: 0 0 100% !important; } }
+    flex: 0 0 100% !important; }
+
+  #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select {
+    width: 100%;
+    margin: 0; } }
 @media (min-width: 2000px) {
   #about-prefooter .container {
-    min-height: 700px; } }
+    min-height: 900px; }
+    #about-prefooter .container .block-description-our-team {
+      padding-top: 15rem; } }
 @media (min-width: 900px) and (max-width: 1000px) {
   .bottom-half-header .container ul li a .h6-title {
     font-size: 1vw; } }
@@ -4612,7 +4645,10 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 0.7rem; } }
 @media (max-width: 320px) {
   #accordion.cards-serch-results .card .card-header h5 .btn, #accordion.cards-serch-results .card .card-header:after {
-    font-size: 0.75rem; } }
+    font-size: 0.75rem; }
+
+  .block-search-results .accordion-filters .card-body label, .block-search-results #accordion.cards-serch-results .card .card-body .switcher {
+    font-size: 13px; } }
 @media (max-width: 768px) and (orientation: landscape) {
   #banner #search-box .col-md-3 select {
     background-size: 2%; } }
