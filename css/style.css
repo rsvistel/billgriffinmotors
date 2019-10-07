@@ -18,6 +18,9 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif; }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1340px; } }
 object, embed {
   pointer-events: none; }
 
@@ -2149,7 +2152,6 @@ input:checked + .slider:before {
   #workshop-banner .number-worshop {
     color: #00C4FC;
     font-family: "Poppins", sans-serif;
-    font-style: italic;
     font-size: 27px; }
   #workshop-banner .workshop-step p {
     font-family: "Source Sans Pro", sans-serif;
@@ -2224,6 +2226,7 @@ input:checked + .slider:before {
 
 .title-medium-side-right {
   text-transform: initial;
+  font-family: "Poppins", sans-serif;
   color: #005EAA; }
 
 .title-medium-under-side-right {
@@ -2352,7 +2355,6 @@ input:checked + .slider:before {
       width: auto; }
       #workshop-experts .workshop-headings .title-block-used-cars {
         font-size: 1.4rem;
-        font-style: italic;
         text-align: center; }
       #workshop-experts .workshop-headings p {
         font-size: 15px;
@@ -2529,11 +2531,8 @@ input:checked + .slider:before {
   #feedback.reviews-page .container {
     padding: 0 7px; }
 
-  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
-    width: 90%; } }
-@media (max-width: 320px) {
-  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
-    width: 65%; } }
+  #feedback.reviews-page .title-feedback-body {
+    font-size: 15px; } }
 @media only screen and (max-width: 768px) {
   #feedback.reviews-page button {
     display: -ms-grid;
@@ -2550,7 +2549,7 @@ input:checked + .slider:before {
     grid-gap: 30px; } }
 @media (min-width: 1024px) and (max-width: 1024px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
-    width: 25%; } }
+    width: 95%; } }
 .title-block-used-cars {
   font-weight: 700; }
 
@@ -2858,7 +2857,7 @@ h5.title-about-us.title-about-us-bottom {
   display: inline-block;
   width: 80%; }
 
-.cash-for-cars__button {
+.cash-for-cars__button-car {
   padding: 7px 52px; }
 
 .agree-block {
@@ -3000,7 +2999,8 @@ h5.title-about-us.title-about-us-bottom {
     .cash-for-cars .cash-for-car-application .image-input {
       width: 100%;
       margin-left: 0;
-      margin-top: 1.4rem; }
+      margin-top: 1.4rem;
+      padding: 5%; }
       .cash-for-cars .cash-for-car-application .image-input div {
         padding-top: 1rem;
         border: 3px dashed #CCCCCC; }
@@ -3193,8 +3193,11 @@ h5.title-about-us.title-about-us-bottom {
   color: #232323; }
 
 .reserve-page__button-container {
-  margin-left: 8rem; }
+  margin-left: 22.3%; }
 
+@media only screen and (max-width: 1024px) {
+  .reserve-page__button-container {
+    margin-left: 11%; } }
 @media only screen and (max-width: 991px) {
   .reserve-page__button-container {
     display: -webkit-box;
@@ -3413,10 +3416,13 @@ h5.title-about-us.title-about-us-bottom {
   #value-my-car-banner form input {
     width: 100%; }
   #value-my-car-banner h1 {
-    font-size: 1.5rem;
+    font-size: 3.1rem;
     padding: 15% 0 10% 0; }
   #value-my-car-banner .wow.zoomIn {
     margin-top: 35px; } }
+@media only screen and (max-width: 320px) {
+  #value-my-car-banner h1 {
+    font-size: 2.4rem; } }
 #valeting-banner {
   padding: 2% 0; }
 
