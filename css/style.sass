@@ -16,7 +16,9 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
    margin: 0
    padding: 0
 
-html
+html, body
+   max-width: 100%
+   overflow-x: hidden
    font-size: 16px
 
 body
@@ -231,7 +233,7 @@ object, embed
    position: absolute
    background-color: #ebedf0
    min-width: 160px
-   z-index: 1
+   z-index: 1000
    border: 1px solid $dark-blue
    margin-left: -14.5px
    margin-top: 10px
@@ -659,8 +661,13 @@ object, embed
       .fas.fa-star
          font-size: 1.5rem
 
-
-
+// @media screen and (max-width: 1150px) and (min-width: 992px)
+//    #feedback .feedback-item
+//       padding: 7px
+//    #feedback .feedback-item .fas.fa-quote-right
+//       width: 97%
+//    #feedback .feedback-item .feedback-body
+//       font-size: 13px
 //Feedback
 
 //Youtube
