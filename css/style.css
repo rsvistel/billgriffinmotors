@@ -2825,7 +2825,7 @@ h5.title-about-us.title-about-us-bottom {
     justify-content: flex-end; }
   .cash-for-cars .cash-for-car-application .image-input {
     width: 50%;
-    padding: 3%;
+    padding: 2.8%;
     text-align: center;
     margin-left: 4%;
     background: white;
@@ -4640,5 +4640,3 @@ h5.title-about-us.title-about-us-bottom {
   #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8 {
     max-width: 100% !important;
     flex: 0 0 100% !important; } }
-
-/*# sourceMappingURL=style.css.map */
