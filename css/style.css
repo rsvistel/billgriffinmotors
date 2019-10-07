@@ -429,7 +429,7 @@ object, embed {
   color: #FFC207; }
 
 #special-offers .owl-carousel .owl-stage-outer {
-  height: 420px;
+  height: 480px;
   width: 102%; }
 
 .car-tile {
@@ -601,7 +601,7 @@ object, embed {
     color: white;
     border: none;
     text-transform: uppercase;
-    margin: 5% 0 4% 0;
+    margin: 2% 0 4% 0;
     background: #005EAA;
     padding: 1% 5%;
     font-family: "Source Sans Pro", sans-serif; }
@@ -1844,9 +1844,9 @@ input:checked + .slider:before {
 #collapseThree .monthly-price #deposit-amount-select {
   margin-left: 23%; }
 #collapseThree .monthly-price #price-to-monthly-select {
-  margin-left: 14%; }
+  margin-left: 15.5%; }
 #collapseThree .monthly-price #price-from-monthly-select {
-  margin-left: 6%; }
+  margin-left: 9%; }
 
 #collapseThree .total-price div {
   display: -webkit-box;
@@ -4144,7 +4144,10 @@ h5.title-about-us.title-about-us-bottom {
     margin: 0; } }
 @media (min-width: 1000px) and (max-width: 1200px) {
   #collapseThree .monthly-price #price-from-monthly-select {
-    margin-left: 4%; } }
+    margin-left: 4%; }
+
+  #collapseThree .monthly-price #price-to-monthly-select {
+    margin-left: 14%; } }
 @media only screen and (max-width: 767px) {
   #accordion.cards-serch-results.expanded #ShowMoreResults {
     display: none; }
@@ -4421,7 +4424,13 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 18px; }
 
   .mobile-counter__icon {
-    width: 30px; } }
+    width: 30px; }
+
+  #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select {
+    width: 100%; }
+
+  #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-to-monthly-select {
+    margin-left: 0; } }
 @media (max-width: 800px) {
   .detailse-used-car__title-header, .description-used-car__title {
     padding: 0.8rem 0;
@@ -4683,3 +4692,5 @@ h5.title-about-us.title-about-us-bottom {
   #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8 {
     max-width: 100% !important;
     flex: 0 0 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */
