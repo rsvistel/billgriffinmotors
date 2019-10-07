@@ -2297,7 +2297,8 @@ input:checked + .slider:before {
       padding: 0 0.25rem;
       margin-top: 5px; }
     .contact-us-section .container .accordion-used-car__card-body {
-      background-color: white; }
+      background-color: white;
+      border-radius: 5px; }
     .contact-us-section .container .side-right {
       position: relative; }
       .contact-us-section .container .side-right .background-right {
