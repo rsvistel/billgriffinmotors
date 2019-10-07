@@ -9,7 +9,9 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
   margin: 0;
   padding: 0; }
 
-html {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-size: 16px; }
 
 body {
@@ -18,6 +20,9 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif; }
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px; } }
 object, embed {
   pointer-events: none; }
 
@@ -245,7 +250,7 @@ object, embed {
   position: absolute;
   background-color: #ebedf0;
   min-width: 160px;
-  z-index: 1;
+  z-index: 1000;
   border: 1px solid #005EAA;
   margin-left: -14.5px;
   margin-top: 10px; }
@@ -426,7 +431,7 @@ object, embed {
   color: #FFC207; }
 
 #special-offers .owl-carousel .owl-stage-outer {
-  height: 420px;
+  height: 480px;
   width: 102%; }
 
 .car-tile {
@@ -598,7 +603,7 @@ object, embed {
     color: white;
     border: none;
     text-transform: uppercase;
-    margin: 5% 0 4% 0;
+    margin: 2% 0 4% 0;
     background: #005EAA;
     padding: 1% 5%;
     font-family: "Source Sans Pro", sans-serif; }
@@ -812,7 +817,10 @@ object, embed {
 
 @media only screen and (max-width: 768px) {
   #statistics {
-    display: none; } }
+    display: none; }
+
+  #about-statistics .statistic-block-first {
+    margin-bottom: 25px; } }
 #homepage {
   overflow: hidden; }
 
@@ -1808,7 +1816,7 @@ input:checked + .slider:before {
     color: #333333;
     margin-bottom: 3px; }
 
-#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model {
+#make-select, #make-model, #year-from-select, #year-to-model, #price-from-select, #price-to-model, #mileage-select, #capacity-from-select, #capacity-to-model, #mpg-from-select, #mpg-to-model, #deposit-amount-select, #price-from-monthly-select, #price-to-monthly-select {
   width: 100%;
   height: 35px;
   background-color: white;
@@ -1825,6 +1833,22 @@ input:checked + .slider:before {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
+
+#collapseThree .monthly-price h6 {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 13px; }
+#collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select {
+  width: 75%;
+  margin-top: 5px; }
+#collapseThree .monthly-price #deposit-amount-select {
+  margin-left: 23%; }
+#collapseThree .monthly-price #price-to-monthly-select {
+  margin-left: 15.5%; }
+#collapseThree .monthly-price #price-from-monthly-select {
+  margin-left: 9%; }
 
 #collapseThree .total-price div {
   display: -webkit-box;
@@ -1961,6 +1985,9 @@ input:checked + .slider:before {
   text-transform: capitalize;
   font-weight: 300; }
 
+.mobile-accordion-filter-value {
+  display: none; }
+
 .search-block-used-cars .car-tile .car-desc .col-6 h6 {
   font-size: 13px; }
 
@@ -2045,8 +2072,7 @@ input:checked + .slider:before {
       background-position: center left 10px; }
       #accordion.cards-serch-results .card .card-header h5 .btn {
         padding-left: 30px; }
-      #accordion.cards-serch-results .card .card-header:after {
-        content: "Any";
+      #accordion.cards-serch-results .card .card-header .mobile-accordion-filter-value {
         position: absolute;
         right: 10px;
         top: 13px;
@@ -2149,7 +2175,6 @@ input:checked + .slider:before {
   #workshop-banner .number-worshop {
     color: #00C4FC;
     font-family: "Poppins", sans-serif;
-    font-style: italic;
     font-size: 27px; }
   #workshop-banner .workshop-step p {
     font-family: "Source Sans Pro", sans-serif;
@@ -2224,6 +2249,7 @@ input:checked + .slider:before {
 
 .title-medium-side-right {
   text-transform: initial;
+  font-family: "Poppins", sans-serif;
   color: #005EAA; }
 
 .title-medium-under-side-right {
@@ -2273,7 +2299,8 @@ input:checked + .slider:before {
       padding: 0 0.25rem;
       margin-top: 5px; }
     .contact-us-section .container .accordion-used-car__card-body {
-      background-color: white; }
+      background-color: white;
+      border-radius: 5px; }
     .contact-us-section .container .side-right {
       position: relative; }
       .contact-us-section .container .side-right .background-right {
@@ -2352,7 +2379,6 @@ input:checked + .slider:before {
       width: auto; }
       #workshop-experts .workshop-headings .title-block-used-cars {
         font-size: 1.4rem;
-        font-style: italic;
         text-align: center; }
       #workshop-experts .workshop-headings p {
         font-size: 15px;
@@ -2529,11 +2555,8 @@ input:checked + .slider:before {
   #feedback.reviews-page .container {
     padding: 0 7px; }
 
-  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
-    width: 90%; } }
-@media (max-width: 320px) {
-  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
-    width: 65%; } }
+  #feedback.reviews-page .title-feedback-body {
+    font-size: 15px; } }
 @media only screen and (max-width: 768px) {
   #feedback.reviews-page button {
     display: -ms-grid;
@@ -2550,7 +2573,7 @@ input:checked + .slider:before {
     grid-gap: 30px; } }
 @media (min-width: 1024px) and (max-width: 1024px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
-    width: 25%; } }
+    width: 95%; } }
 .title-block-used-cars {
   font-weight: 700; }
 
@@ -2859,7 +2882,7 @@ h5.title-about-us.title-about-us-bottom {
   display: inline-block;
   width: 80%; }
 
-.cash-for-cars__button {
+.cash-for-cars__button-car {
   padding: 7px 52px; }
 
 .agree-block {
@@ -3001,7 +3024,8 @@ h5.title-about-us.title-about-us-bottom {
     .cash-for-cars .cash-for-car-application .image-input {
       width: 100%;
       margin-left: 0;
-      margin-top: 1.4rem; }
+      margin-top: 1.4rem;
+      padding: 3%; }
       .cash-for-cars .cash-for-car-application .image-input div {
         padding-top: 1rem;
         border: 3px dashed #CCCCCC; }
@@ -3194,8 +3218,11 @@ h5.title-about-us.title-about-us-bottom {
   color: #232323; }
 
 .reserve-page__button-container {
-  margin-left: 8rem; }
+  margin-left: 22.3%; }
 
+@media only screen and (max-width: 1024px) {
+  .reserve-page__button-container {
+    margin-left: 11%; } }
 @media only screen and (max-width: 991px) {
   .reserve-page__button-container {
     display: -webkit-box;
@@ -3414,10 +3441,13 @@ h5.title-about-us.title-about-us-bottom {
   #value-my-car-banner form input {
     width: 100%; }
   #value-my-car-banner h1 {
-    font-size: 1.5rem;
+    font-size: 3.1rem;
     padding: 15% 0 10% 0; }
   #value-my-car-banner .wow.zoomIn {
     margin-top: 35px; } }
+@media only screen and (max-width: 320px) {
+  #value-my-car-banner h1 {
+    font-size: 2.4rem; } }
 #valeting-banner {
   padding: 2% 0; }
 
@@ -3505,7 +3535,8 @@ h5.title-about-us.title-about-us-bottom {
     #valeting-banner .row .col-md-4:nth-child(2) {
       order: 3; }
       #valeting-banner .row .col-md-4:nth-child(2) img {
-        position: static; }
+        position: static;
+        width: 100%; }
     #valeting-banner .row .col-md-4:last-child {
       order: 2; }
 
@@ -3816,13 +3847,17 @@ h5.title-about-us.title-about-us-bottom {
 @media (min-width: 2000px) {
   .modal-used-cars .modal-used-cars-container {
     width: 60%; } }
+@media (min-width: 2100px) {
+  .mechanic-image img {
+    top: 20%; } }
 @media (max-width: 768px) {
   .modal-used-cars .modal-used-cars-container {
     width: 100%;
     margin-top: 0; }
 
   .modal-used-cars {
-    overflow: scroll; }
+    overflow: scroll;
+    height: 100vh; }
     .modal-used-cars .col-md-4 {
       padding: 15px 10px; }
 
@@ -4112,6 +4147,12 @@ h5.title-about-us.title-about-us-bottom {
 
   .title-logo-bottom {
     margin: 0; } }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #collapseThree .monthly-price #price-from-monthly-select {
+    margin-left: 4%; }
+
+  #collapseThree .monthly-price #price-to-monthly-select {
+    margin-left: 14%; } }
 @media only screen and (max-width: 767px) {
   #accordion.cards-serch-results.expanded #ShowMoreResults {
     display: none; }
@@ -4388,7 +4429,13 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 18px; }
 
   .mobile-counter__icon {
-    width: 30px; } }
+    width: 30px; }
+
+  #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select {
+    width: 100%; }
+
+  #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-to-monthly-select {
+    margin-left: 0; } }
 @media (max-width: 800px) {
   .detailse-used-car__title-header, .description-used-car__title {
     padding: 0.8rem 0;
@@ -4591,10 +4638,16 @@ h5.title-about-us.title-about-us-bottom {
 
   #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8 {
     max-width: 100% !important;
-    flex: 0 0 100% !important; } }
+    flex: 0 0 100% !important; }
+
+  #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select {
+    width: 100%;
+    margin: 0; } }
 @media (min-width: 2000px) {
   #about-prefooter .container {
-    min-height: 700px; } }
+    min-height: 900px; }
+    #about-prefooter .container .block-description-our-team {
+      padding-top: 15rem; } }
 @media (min-width: 900px) and (max-width: 1000px) {
   .bottom-half-header .container ul li a .h6-title {
     font-size: 1vw; } }
@@ -4606,7 +4659,10 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 0.7rem; } }
 @media (max-width: 320px) {
   #accordion.cards-serch-results .card .card-header h5 .btn, #accordion.cards-serch-results .card .card-header:after {
-    font-size: 0.75rem; } }
+    font-size: 0.75rem; }
+
+  .block-search-results .accordion-filters .card-body label, .block-search-results #accordion.cards-serch-results .card .card-body .switcher {
+    font-size: 13px; } }
 @media (max-width: 768px) and (orientation: landscape) {
   #banner #search-box .col-md-3 select {
     background-size: 2%; } }
@@ -4641,3 +4697,5 @@ h5.title-about-us.title-about-us-bottom {
   #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8 {
     max-width: 100% !important;
     flex: 0 0 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */
