@@ -4424,7 +4424,13 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 18px; }
 
   .mobile-counter__icon {
-    width: 30px; } }
+    width: 30px; }
+
+  #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #price-to-monthly-select {
+    width: 100%; }
+
+  #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-to-monthly-select {
+    margin-left: 0; } }
 @media (max-width: 800px) {
   .detailse-used-car__title-header, .description-used-car__title {
     padding: 0.8rem 0;
