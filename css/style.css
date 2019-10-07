@@ -3835,6 +3835,9 @@ h5.title-about-us.title-about-us-bottom {
 @media (min-width: 2000px) {
   .modal-used-cars .modal-used-cars-container {
     width: 60%; } }
+@media (min-width: 2100px) {
+  .mechanic-image img {
+    top: 20%; } }
 @media (max-width: 768px) {
   .modal-used-cars .modal-used-cars-container {
     width: 100%;
