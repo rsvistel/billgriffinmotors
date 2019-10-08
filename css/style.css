@@ -592,8 +592,7 @@ object, embed {
       display: flex;
       justify-content: flex-end;
       position: absolute;
-      width: 90%;
-      margin-top: -17px; }
+      width: 90%; }
     #feedback .feedback-item .fas.fa-quote-left {
       margin-right: 5px; }
     #feedback .feedback-item .feedback-author {
@@ -4724,6 +4723,8 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 14px; }
   .car-tile .car-price .col-6:first-child, .car-tile .car-price .col-6:last-child {
     font-size: 25px; }
+  .car-tile .car-price .col-6:last-child {
+    line-height: 17px; }
   .car-tile .car-price .col-6:last-child p {
     font-size: 11px;
     font-weight: 400; }
