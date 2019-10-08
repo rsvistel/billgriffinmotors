@@ -22,7 +22,45 @@ body {
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1340px; } }
+    max-width: 1340px; }
+
+  .car-tile .car-price .col-md-6 h6 {
+    font-size: 14px; }
+  .car-tile .car-price .col-md-6:first-child, .car-tile .car-price .col-md-6:last-child {
+    font-size: 25px; }
+  .car-tile .car-price .col-md-6:last-child p {
+    font-size: 11px;
+    font-weight: 400; }
+
+  #feedback .feedback-item .feedback-title h3 {
+    font-size: 25px; }
+
+  #feedback .feedback-item .feedback-date {
+    font-size: 19px; }
+
+  #feedback .feedback-item .feedback-body {
+    font-size: 16px; }
+
+  #feedback .feedback-item .feedback-author h3 {
+    font-size: 21px; }
+
+  #feedback .feedback-item .feedback-company {
+    font-size: 21px; }
+
+  #office .card .card-title, #office .card .card-body ul li {
+    font-size: 24px; }
+
+  .contact-us-section .container .title-contact-us {
+    font-size: 1.2rem; }
+
+  .title-top {
+    font-size: 18px; }
+
+  .title-medium-side-right {
+    font-size: 24px; }
+
+  .title-medium-under-side-right {
+    font-size: 16px; } }
 object, embed {
   pointer-events: none; }
 
@@ -293,7 +331,7 @@ object, embed {
       width: 120%; }
   #banner #search-box {
     width: 100%;
-    height: 50%;
+    height: 40%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -502,7 +540,8 @@ object, embed {
         line-height: 15px; }
         .car-tile .car-price .col-6:last-child p {
           font-size: 9px;
-          font-weight: 500; }
+          font-weight: 400;
+          font-family: Arial; }
   .car-tile .car-desc {
     padding: 6% 0; }
     .car-tile .car-desc .row {
@@ -578,7 +617,8 @@ object, embed {
     #feedback .feedback-item .feedback-body {
       font-size: 14px;
       margin-top: 10px;
-      padding-left: 5px; }
+      padding-left: 5px;
+      font-weight: 600; }
     #feedback .feedback-item .fas.fa-quote-left, #feedback .feedback-item .fas.fa-quote-right {
       color: #D2D5DA;
       font-size: 28px; }
@@ -660,6 +700,15 @@ object, embed {
       font-weight: 400; }
     #feedback .fas.fa-star {
       font-size: 1.5rem; } }
+@media screen and (max-width: 767px) and (min-width: 558px) {
+  #feedback .feedback-item .fas.fa-quote-right {
+    width: 95%; } }
+@media screen and (max-width: 360px) {
+  #feedback .feedback-item .fas.fa-quote-right {
+    width: 96%; } }
+@media screen and (max-width: 424px) and (min-width: 374px) {
+  #feedback .feedback-item .feedback-body {
+    font-size: 13px; } }
 #youtube-video {
   padding: 3% 0;
   text-align: center; }
@@ -1050,8 +1099,7 @@ object, embed {
     margin: 0 15px 0 10px;
     font-size: 35px;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic; }
+    font-weight: 400; }
   #feedback.feedback-used-car .fas.fa-star {
     font-size: 1.5rem; }
 
@@ -2571,6 +2619,12 @@ input:checked + .slider:before {
   .reviews-list {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px; } }
+@media (min-width: 960px) and (max-width: 992px) {
+  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
+    width: 95%; } }
+@media (max-width: 360px) {
+  #feedback.reviews-page .feedback-item .fas.fa-quote-right {
+    width: 97%; } }
 @media (min-width: 1024px) and (max-width: 1024px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
     width: 95%; } }
@@ -3319,7 +3373,8 @@ h5.title-about-us.title-about-us-bottom {
   flex-direction: column-reverse;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  justify-content: flex-end; }
 
 #value-my-car-banner {
   background-image: url("../img/value/banner1.png");
@@ -3847,7 +3902,13 @@ h5.title-about-us.title-about-us-bottom {
 @media (min-width: 2000px) {
   .modal-used-cars .modal-used-cars-container {
     width: 60%; } }
-@media (min-width: 2100px) {
+@media (min-width: 1650px) {
+  .mechanic-image img {
+    top: 20%; } }
+@media (min-width: 2320px) {
+  .mechanic-image img {
+    top: 27%; } }
+@media (min-width: 1650px) {
   .mechanic-image img {
     top: 20%; } }
 @media (max-width: 768px) {
@@ -4090,8 +4151,7 @@ h5.title-about-us.title-about-us-bottom {
       margin: 0 15px 0 10px;
       font-size: 35px;
       font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: italic; }
+      font-weight: 400; }
     #feedback .fas.fa-star {
       font-size: 1.5rem; } }
 @media (min-width: 767px) {
@@ -4697,5 +4757,3 @@ h5.title-about-us.title-about-us-bottom {
   #valeting-contact .container .row .card-body.accordion-used-car__card-body.col-md-8 {
     max-width: 100% !important;
     flex: 0 0 100% !important; } }
-
-/*# sourceMappingURL=style.css.map */
