@@ -125,5 +125,12 @@ $(document).ready(function () {
             $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
         });
     }
-    // $(
+    $(".car-like").click(function () {
+        $(this).toggleClass('liked');
+        if ($(this).hasClass('liked')) {
+            $(this).find('object').attr('data', 'img/home/heart-red.svg')
+        } else {
+            $(this).find('object').attr('data', 'img/home/Group%20373.svg')
+        }
+    });
 });

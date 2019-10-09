@@ -464,7 +464,12 @@ object, embed {
       text-align: center;
       right: 0;
       bottom: -22.5px;
-      z-index: 101; }
+      z-index: 101;
+      cursor: pointer;
+      width: 20%;
+      margin: 0 auto; }
+      .car-tile .car-image .car-like object {
+        width: 80%; }
     .car-tile .car-image .car-image-counter {
       color: #fff;
       padding: 7px 12px; }
