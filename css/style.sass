@@ -438,11 +438,12 @@ object, embed
       h2, p
          font-size: 16px
       h2
-         font-weight: bold
+         font-weight: 700
          text-align: start
       p
          font-family: $secondary-font
          line-height: 21px
+         font-weight: 400
    .car-image
       position: relative
       img
@@ -478,7 +479,7 @@ object, embed
          -webkit-box-direction: normal
          -ms-flex-direction: column
          flex-direction: column
-         padding: 8% 0
+         padding: 4% 0
          &:first-child
             border-right: 1px solid #fff
             font-weight: 600
@@ -492,7 +493,7 @@ object, embed
             p
                font-size: 9px
                font-weight: 400
-               font-family: Arial
+               font-family: Arial, sans-serif
    .car-desc
       padding: 6% 0
       .row
@@ -4480,6 +4481,24 @@ $light-blue: #00C4FC
    #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-to-monthly-select
       margin-left: 0
 
+   #special-offers h2
+      font-size: 19px
+   #homepage .car-tile .car-desc .col-6, .shortlist .car-tile .car-desc .col-6
+      padding: 0 7%
+      h6
+         font-size: 14px
+   .car-tile .car-title h2
+      font-size: 19px
+
+   .car-tile .car-price .col-6:last-child p
+      font-size: 13px
+      line-height: 18px
+
+   .block-search-results, .shortlist, #homepage
+      .car-tile .car-desc .col-6 h6
+         font-size: 15px
+
+
 @media (max-width: 800px)
    .detailse-used-car__title-header,.description-used-car__title
       padding: 0.8rem 0
@@ -4737,7 +4756,7 @@ $light-blue: #00C4FC
             h6
                font-size: 14px
             &:first-child, &:last-child
-               font-size: 25px
+               font-size: 27px
             &:last-child
                line-height: 17px
             &:last-child p
@@ -4763,3 +4782,22 @@ $light-blue: #00C4FC
       font-size: 24px
    .title-medium-under-side-right
       font-size: 16px
+
+   #special-offers h2
+      font-size: 19px
+   #homepage .car-tile .car-desc .col-6, .shortlist .car-tile .car-desc .col-6
+      padding: 0 7%
+      h6
+         font-size: 14px
+   .car-tile .car-title h2
+      font-size: 19px
+
+   .car-tile .car-price .col-6:last-child p
+      font-size: 13px
+
+   .block-search-results, .shortlist
+      .car-tile .car-desc .col-6 h6
+         font-size: 15px
+
+
+
