@@ -113,7 +113,8 @@ select::-ms-expand {
 .social-icon object {
   pointer-events: none;
   cursor: pointer;
-  width: 100%; }
+  width: 31px;
+  height: 31px; }
 
 .social-icon {
   display: -webkit-box;
@@ -419,7 +420,8 @@ select::-ms-expand {
         pointer-events: auto; }
         #special-offers .owl-carousel .owl-nav.disabled button object {
           pointer-events: none;
-          width: 100%; }
+          width: 65px;
+          height: 65px; }
 
 .mobile-counter__icon {
   width: 40px; }
@@ -888,7 +890,8 @@ select::-ms-expand {
   padding-right: 0; }
 
 .footer-section__soc-img {
-  height: 100%; }
+  width: 70px;
+  height: 70px; }
 
 .footer-section__links-items {
   list-style: none; }
@@ -1549,6 +1552,9 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   pointer-events: none; }
+  .accordion__icon-wrapper img {
+    width: 23px;
+    height: 23px; }
 
 .accordion__down-icon {
   transform: rotate(0deg); }
