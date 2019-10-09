@@ -446,11 +446,12 @@ object, embed {
     .car-tile .car-title h2, .car-tile .car-title p {
       font-size: 16px; }
     .car-tile .car-title h2 {
-      font-weight: bold;
+      font-weight: 700;
       text-align: start; }
     .car-tile .car-title p {
       font-family: "Open Sans", sans-serif;
-      line-height: 21px; }
+      line-height: 21px;
+      font-weight: 400; }
   .car-tile .car-image {
     position: relative; }
     .car-tile .car-image img {
@@ -463,7 +464,12 @@ object, embed {
       text-align: center;
       right: 0;
       bottom: -22.5px;
-      z-index: 101; }
+      z-index: 101;
+      cursor: pointer;
+      width: 20%;
+      margin: 0 auto; }
+      .car-tile .car-image .car-like object {
+        width: 80%; }
     .car-tile .car-image .car-image-counter {
       color: #fff;
       padding: 7px 12px; }
@@ -486,7 +492,7 @@ object, embed {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 8% 0; }
+      padding: 4% 0; }
       .car-tile .car-price .col-6:first-child {
         border-right: 1px solid #fff;
         font-weight: 600;
@@ -500,7 +506,7 @@ object, embed {
         .car-tile .car-price .col-6:last-child p {
           font-size: 9px;
           font-weight: 400;
-          font-family: Arial; }
+          font-family: Arial, sans-serif; }
   .car-tile .car-desc {
     padding: 6% 0; }
     .car-tile .car-desc .row {
@@ -4453,7 +4459,25 @@ h5.title-about-us.title-about-us-bottom {
     width: 100%; }
 
   #collapseThree .monthly-price #price-from-monthly-select, #collapseThree .monthly-price #deposit-amount-select, #collapseThree .monthly-price #price-to-monthly-select {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  #special-offers h2 {
+    font-size: 19px; }
+
+  #homepage .car-tile .car-desc .col-6, .shortlist .car-tile .car-desc .col-6 {
+    padding: 0 7%; }
+    #homepage .car-tile .car-desc .col-6 h6, .shortlist .car-tile .car-desc .col-6 h6 {
+      font-size: 14px; }
+
+  .car-tile .car-title h2 {
+    font-size: 19px; }
+
+  .car-tile .car-price .col-6:last-child p {
+    font-size: 13px;
+    line-height: 18px; }
+
+  .block-search-results .car-tile .car-desc .col-6 h6, .shortlist .car-tile .car-desc .col-6 h6, #homepage .car-tile .car-desc .col-6 h6 {
+    font-size: 15px; } }
 @media (max-width: 800px) {
   .detailse-used-car__title-header, .description-used-car__title {
     padding: 0.8rem 0;
@@ -4722,7 +4746,7 @@ h5.title-about-us.title-about-us-bottom {
   .car-tile .car-price .col-6 h6 {
     font-size: 14px; }
   .car-tile .car-price .col-6:first-child, .car-tile .car-price .col-6:last-child {
-    font-size: 25px; }
+    font-size: 27px; }
   .car-tile .car-price .col-6:last-child {
     line-height: 17px; }
   .car-tile .car-price .col-6:last-child p {
@@ -4757,4 +4781,23 @@ h5.title-about-us.title-about-us-bottom {
     font-size: 24px; }
 
   .title-medium-under-side-right {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  #special-offers h2 {
+    font-size: 19px; }
+
+  #homepage .car-tile .car-desc .col-6, .shortlist .car-tile .car-desc .col-6 {
+    padding: 0 7%; }
+    #homepage .car-tile .car-desc .col-6 h6, .shortlist .car-tile .car-desc .col-6 h6 {
+      font-size: 14px; }
+
+  .car-tile .car-title h2 {
+    font-size: 19px; }
+
+  .car-tile .car-price .col-6:last-child p {
+    font-size: 13px; }
+
+  .block-search-results .car-tile .car-desc .col-6 h6, .shortlist .car-tile .car-desc .col-6 h6 {
+    font-size: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
