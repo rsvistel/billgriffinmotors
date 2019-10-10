@@ -60,7 +60,8 @@ select::-ms-expand {
     font-weight: 400;
     margin-bottom: 0;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.1rem; }
+    line-height: 1.1rem;
+    margin-left: 2px; }
 
 .title-address img, .title-contact img {
   margin-right: 8px; }
@@ -97,7 +98,8 @@ select::-ms-expand {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-left: 2px; }
 
 .sales-text {
   font-weight: 400;
@@ -426,14 +428,10 @@ select::-ms-expand {
 .mobile-counter__icon {
   width: 40px; }
 
-.valeting-item img {
-  width: 38%; }
-
 .fas.fa-star {
   color: #FFC207; }
 
 #special-offers .owl-carousel .owl-stage-outer {
-  height: 480px;
   width: 102%; }
 
 .car-tile {
@@ -1557,6 +1555,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   pointer-events: none; }
   .accordion__icon-wrapper img {
     width: 23px;
@@ -3517,7 +3516,8 @@ h5.title-about-us.title-about-us-bottom {
   .valeting-item p {
     font-family: "Source Sans Pro", sans-serif;
     color: #777777;
-    font-size: 15px; }
+    font-size: 15px;
+    display: inline-block; }
 
 .mechanic-image img {
   position: absolute;
@@ -3531,20 +3531,6 @@ h5.title-about-us.title-about-us-bottom {
   background-image: url("../img/valeting/bn.png");
   background-size: cover;
   background-repeat: no-repeat; }
-  #valeting-contact .valeting-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
   #valeting-contact .accordion-used-car__form {
     padding-left: 1.25rem;
     padding-right: 1.25rem; }
