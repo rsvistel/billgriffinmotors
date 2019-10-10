@@ -477,7 +477,13 @@ select::-ms-expand {
         width: 80%; }
     .car-tile .car-image .car-image-counter {
       color: #fff;
-      padding: 7px 12px; }
+      padding: 7px 12px;
+      display: flex;
+      align-items: flex-start; }
+      .car-tile .car-image .car-image-counter img {
+        margin-right: 3px;
+        width: 24px;
+        height: 16.84px; }
   .car-tile .car-price {
     font-size: 22px; }
     .car-tile .car-price .row {
