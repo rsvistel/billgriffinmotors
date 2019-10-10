@@ -128,9 +128,9 @@ $(document).ready(function () {
     $(".car-like").click(function () {
         $(this).toggleClass('liked');
         if ($(this).hasClass('liked')) {
-            $(this).find('object').attr('data', 'img/home/heart-red.svg')
+            $(this).find('img').attr('src', 'img/home/heart-red.png')
         } else {
-            $(this).find('object').attr('data', 'img/home/Group%20373.svg')
+            $(this).find('img').attr('src', 'img/home/Group%20373.svg')
         }
     });
 });
