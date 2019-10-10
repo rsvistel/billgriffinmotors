@@ -62,13 +62,13 @@ select::-ms-expand {
     font-family: "Montserrat", sans-serif;
     line-height: 1.1rem; }
 
-.title-address embed, .title-contact embed {
+.title-address img, .title-contact img {
   margin-right: 8px; }
 
-.title-address embed {
+.title-address img {
   width: 9%; }
 
-.title-contact embed {
+.title-contact img {
   width: 19%; }
 
 .number-phone h4 {
@@ -819,7 +819,7 @@ select::-ms-expand {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
     font-size: 35px; }
-  #statistics .statistic-block-earth object, #about-statistics .statistic-block-earth object {
+  #statistics .statistic-block-earth img, #about-statistics .statistic-block-earth img {
     max-height: 56px;
     margin-top: -5px; }
   #statistics p, #about-statistics p {
@@ -1938,7 +1938,7 @@ input:checked + .slider:before {
         -webkit-box-pack: end;
         -ms-flex-pack: end;
         justify-content: flex-end; }
-      .block-used-cars .filter-navigation-menu .pagination .col-md-6 object {
+      .block-used-cars .filter-navigation-menu .pagination .col-md-6 img {
         height: 26px; }
       .block-used-cars .filter-navigation-menu .pagination .col-md-6 ul {
         display: -webkit-box;
@@ -2041,7 +2041,7 @@ input:checked + .slider:before {
     .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child {
       justify-content: center;
       height: auto; }
-      .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child object {
+      .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child img {
         display: none; }
       .block-used-cars .filter-navigation-menu .pagination .col-md-6:last-child ul {
         width: 100%;
@@ -2121,7 +2121,7 @@ input:checked + .slider:before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .reset-block object {
+    .reset-block img {
       margin-right: 5px; }
 
   .button-done-block {
@@ -2131,7 +2131,7 @@ input:checked + .slider:before {
     border: 0;
     padding: 6px 27px; }
 
-  #accordion .accordion-tumbler object {
+  #accordion .accordion-tumbler img {
     max-height: 14px; }
 
   .search-block-used-cars .car-tile .car-desc .col-6 object {
@@ -2260,7 +2260,7 @@ input:checked + .slider:before {
     #workshop-experts .service-item p {
       font-family: "Source Sans Pro", sans-serif;
       font-size: 14px; }
-    #workshop-experts .service-item object {
+    #workshop-experts .service-item img {
       width: 16%; }
     #workshop-experts .service-item:nth-child(3n + 2) {
       margin: 0 2% 2% 2%; }
@@ -2475,7 +2475,7 @@ input:checked + .slider:before {
     padding: 3%;
     cursor: pointer;
     z-index: 10; }
-    .shortlist .car-tile button object {
+    .shortlist .car-tile button img {
       pointer-events: none; }
   .shortlist .car-tile:nth-child(3n + 2) {
     margin: 0 2% 2% 2%; }
@@ -2911,7 +2911,7 @@ h5.title-about-us.title-about-us-bottom {
     .cash-for-cars .cash-for-car-application .image-input div {
       border: 1px dashed #CCCCCC;
       padding: 1rem 0; }
-    .cash-for-cars .cash-for-car-application .image-input object {
+    .cash-for-cars .cash-for-car-application .image-input img {
       display: block;
       margin: 0 auto;
       pointer-events: none;
@@ -3648,7 +3648,7 @@ h5.title-about-us.title-about-us-bottom {
       font-size: 11px; }
     .contact-us-section.contact-us .block-right-location#office .working-hours .card {
       padding: 0 2.5%; }
-      .contact-us-section.contact-us .block-right-location#office .working-hours .card .title-address embed, .contact-us-section.contact-us .block-right-location#office .working-hours .card .title-contact embed {
+      .contact-us-section.contact-us .block-right-location#office .working-hours .card .title-address img, .contact-us-section.contact-us .block-right-location#office .working-hours .card .title-contact img {
         margin-right: 20px; }
     .contact-us-section.contact-us .block-right-location#office .title-address .text-title-address {
       font-size: 0.8rem; }
@@ -3688,7 +3688,7 @@ h5.title-about-us.title-about-us-bottom {
         padding: 0.5rem; }
     .contact-us-section.contact-us .block-right-location#office .working-hours {
       padding: 7% 0 0 0; }
-    .contact-us-section.contact-us .block-right-location#office .title-address embed, .contact-us-section.contact-us .block-right-location#office .title-contact embed, .contact-us-section.contact-us .block-right-location#office .card-body.card-body-opening-hours embed {
+    .contact-us-section.contact-us .block-right-location#office .title-address img, .contact-us-section.contact-us .block-right-location#office .title-contact img, .contact-us-section.contact-us .block-right-location#office .card-body.card-body-opening-hours img {
       width: 7%; }
     .contact-us-section.contact-us .block-right-location#office .title-contact {
       margin-top: 30px; }
@@ -4091,7 +4091,7 @@ h5.title-about-us.title-about-us-bottom {
     align-items: center;
     color: white;
     font-family: "Source Sans Pro", sans-serif; }
-    .accordion-tumbler object {
+    .accordion-tumbler img {
       pointer-events: none; }
 
   .mobile-accordion-filter {
