@@ -307,7 +307,7 @@ select::-ms-expand {
       margin: 13px 0 7px 0;
       font-size: 1.5rem;
       font-family: "Montserrat", sans-serif; }
-      #banner #search-box h3 object {
+      #banner #search-box h3 img {
         height: 20px; }
     #banner #search-box .col-md-3 {
       text-align: center;
@@ -331,10 +331,10 @@ select::-ms-expand {
         border-radius: 4px;
         color: white;
         font-family: "Montserrat", sans-serif; }
-        #banner #search-box .col-md-3 button object {
+        #banner #search-box .col-md-3 button img {
           width: 15px;
           position: relative;
-          top: 1px; }
+          top: -1px; }
       #banner #search-box .col-md-3 button, #banner #search-box .col-md-3 select {
         width: 100%;
         height: 40px;
@@ -369,7 +369,7 @@ select::-ms-expand {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
-        #banner #search-box .container h3 object {
+        #banner #search-box .container h3 img {
           margin-right: 9px; }
       #banner #search-box .container form {
         padding: 0 7px; }
@@ -390,7 +390,7 @@ select::-ms-expand {
           #banner #search-box .container .col-md-3 button .mobile-word {
             display: block;
             margin-left: 5px; }
-          #banner #search-box .container .col-md-3 button object {
+          #banner #search-box .container .col-md-3 button img {
             display: none; } }
 #special-offers {
   order: 3;
@@ -418,7 +418,7 @@ select::-ms-expand {
       pointer-events: none; }
       #special-offers .owl-carousel .owl-nav.disabled button {
         pointer-events: auto; }
-        #special-offers .owl-carousel .owl-nav.disabled button object {
+        #special-offers .owl-carousel .owl-nav.disabled button img {
           pointer-events: none;
           width: 65px;
           height: 65px; }
@@ -473,7 +473,7 @@ select::-ms-expand {
       cursor: pointer;
       width: 20%;
       margin: 0 auto; }
-      .car-tile .car-image .car-like object {
+      .car-tile .car-image .car-like img {
         width: 80%; }
     .car-tile .car-image .car-image-counter {
       color: #fff;
@@ -551,7 +551,7 @@ select::-ms-expand {
     pointer-events: none; }
     .owl-nav button {
       pointer-events: auto; }
-      .owl-nav button object {
+      .owl-nav button img {
         pointer-events: none; }
 
   #special-offers {
@@ -803,7 +803,7 @@ select::-ms-expand {
 #statistics, #about-statistics {
   text-align: center;
   padding: 5% 0; }
-  #statistics .statistic-block object, #about-statistics .statistic-block object {
+  #statistics .statistic-block img, #about-statistics .statistic-block img {
     width: auto;
     max-height: 51px; }
   #statistics .statistic-block .img-statistic, #about-statistics .statistic-block .img-statistic {
