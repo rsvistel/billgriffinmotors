@@ -426,7 +426,7 @@ select::-ms-expand {
 .mobile-counter__icon {
   width: 40px; }
 
-.valeting-item object {
+.valeting-item img {
   width: 38%; }
 
 .fas.fa-star {
@@ -1665,7 +1665,7 @@ button:focus {
     justify-content: space-between; }
     #accordion.cards-serch-results .mobile-accordion-filter * {
       cursor: pointer; }
-    #accordion.cards-serch-results .mobile-accordion-filter object {
+    #accordion.cards-serch-results .mobile-accordion-filter img {
       pointer-events: none; }
   #accordion.cards-serch-results .accordion-filters {
     height: auto; }
@@ -2134,7 +2134,7 @@ input:checked + .slider:before {
   #accordion .accordion-tumbler img {
     max-height: 14px; }
 
-  .search-block-used-cars .car-tile .car-desc .col-6 object {
+  .search-block-used-cars .car-tile .car-desc .col-6 img {
     max-height: 26px; }
 
   .search-block-used-cars .car-tile .car-desc .col-6 h6 {
@@ -2190,7 +2190,7 @@ input:checked + .slider:before {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-    #workshop-banner .workshop-steps-container .workshop-step object {
+    #workshop-banner .workshop-steps-container .workshop-step img {
       width: 17%;
       max-height: 40px; }
     #workshop-banner .workshop-steps-container .workshop-step-last {
@@ -2453,7 +2453,7 @@ input:checked + .slider:before {
   .heading-underlined-shortlist hr.heading-underline {
     margin: 0.2rem 0; }
 
-.shortlist .car-like object {
+.shortlist .car-like img {
   width: 14%; }
 .shortlist .footer-section {
   margin-top: 25px; }
@@ -3474,7 +3474,7 @@ h5.title-about-us.title-about-us-bottom {
   #value-my-car-prefooter .col-md-6 {
     margin: 5% 0;
     text-align: center; }
-    #value-my-car-prefooter .col-md-6 object {
+    #value-my-car-prefooter .col-md-6 img {
       margin: 5% 0; }
     #value-my-car-prefooter .col-md-6 h6, #value-my-car-prefooter .col-md-6 p {
       text-align: left; }
