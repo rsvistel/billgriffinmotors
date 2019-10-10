@@ -2993,9 +2993,11 @@ h5.title-about-us.title-about-us-bottom {
   border: 1px solid #707070;
   padding: 1rem 0 1rem 2rem;
   max-width: 678px;
+  width: 678px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-grow: 1;
   margin: 1rem 0 3rem 0; }
 .cash-for-car__card-title {
   display: inline-block;
@@ -3022,12 +3024,10 @@ h5.title-about-us.title-about-us-bottom {
     text-transform: uppercase; }
 
   .cash-for-car__card {
-    display: block; }
+    padding-left: 0; }
   .cash-for-car__card-car {
     padding: 0.5rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
