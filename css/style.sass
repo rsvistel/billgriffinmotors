@@ -292,7 +292,7 @@ select::-ms-expand
          margin: 13px 0 7px 0
          font-size: 1.5rem
          font-family: $primary-font
-         object
+         img
             height: 20px
       .col-md-3
          text-align: center
@@ -316,10 +316,10 @@ select::-ms-expand
             border-radius: 4px
             color: white
             font-family: $primary-font
-            object
+            img
                width: 15px
                position: relative
-               top: 1px
+               top: -1px
          button, select
             width: 100%
             height: 40px
@@ -356,7 +356,7 @@ select::-ms-expand
                -webkit-box-align: center
                -ms-flex-align: center
                align-items: center
-               object
+               img
                   margin-right: 9px
             form
                padding: 0 7px
@@ -377,7 +377,7 @@ select::-ms-expand
                   .mobile-word
                      display: block
                      margin-left: 5px
-                  object
+                  img
                      display: none
 //Banner&Search
 
@@ -408,7 +408,7 @@ select::-ms-expand
          pointer-events: none
          button
             pointer-events: auto
-            object
+            img
                pointer-events: none
                width: 65px
                height: 65px
@@ -465,7 +465,7 @@ select::-ms-expand
          cursor: pointer
          width: 20%
          margin: 0 auto
-         object
+         img
             width: 80%
       .car-image-counter
          color: #fff
@@ -542,7 +542,7 @@ select::-ms-expand
       pointer-events: none
       button
          pointer-events: auto
-         object
+         img
             pointer-events: none
 
    #special-offers
@@ -818,7 +818,7 @@ select::-ms-expand
    text-align: center
    padding: 5% 0
    .statistic-block
-      object
+      img
          width: auto
          max-height: 51px
       .img-statistic
@@ -2563,14 +2563,7 @@ input:checked + .slider:before
 
 .reviews-button-container
    margin: 2rem auto
-   display: -ms-grid
-   display: grid
-   grid-template-columns: repeat(auto-fit, minmax(100px, -webkit-max-content))
-   grid-template-columns: repeat(auto-fit, minmax(100px, max-content))
-   -webkit-box-pack: center
-   -ms-flex-pack: center
-   justify-content: center
-   grid-gap: 1rem
+   text-align: center
 
 .reviews-button
    background: $dark-blue
@@ -2587,7 +2580,11 @@ input:checked + .slider:before
       -ms-grid-columns: 1fr
       grid-template-columns: 1fr
       grid-gap: 30px
-
+      display: table-cell
+   .reviews-card
+      float: left
+      width: 98%
+      margin: 2%
 
 @media (min-width: 640px)
    .reviews-list
@@ -2596,27 +2593,35 @@ input:checked + .slider:before
       -ms-grid-columns: 1fr 30px 1fr
       grid-template-columns: 1fr 1fr
       grid-gap: 30px
+      display: table-cell
+   .reviews-card
+      float: left
+      width: 98%
+      margin: 1%
 
 @media (max-width: 767px)
    #feedback.reviews-page .container
-      padding: 0 7px
+      padding: 0 7px 0 0
    #feedback.reviews-page .title-feedback-body
       font-size: 15px
 
 @media only screen and (max-width: 768px)
    #feedback.reviews-page button
-      display: -ms-grid
-      display: grid
+      display: block
+      margin: 0 auto
    #feedback.reviews-page .feedback-item
       padding: 14px 5px 7px 5px
 
-@media (min-width: 960px)
+@media (min-width: 980px)
    .reviews-list
+      -ms-grid-columns: 1fr 1fr 1fr
       grid-template-columns: 1fr 1fr 1fr
+      grid-gap: 30px
 
 @media (min-width: 980px)
    .reviews-list
-      grid-template-columns: repeat(3, 1fr)
+      -ms-grid-columns: 1fr 1fr 1fr
+      grid-template-columns: 1fr 1fr 1fr
       grid-gap: 30px
 
 @media (min-width: 960px)  and (max-width: 992px)
@@ -2630,6 +2635,18 @@ input:checked + .slider:before
 @media (min-width: 1024px) and (max-width: 1024px)
    #feedback.reviews-page .feedback-item .fas.fa-quote-right
       width: 95%
+
+@media (min-width: 960px)
+   .reviews-list
+      display: grid
+      grid-gap: 20px
+      -ms-grid-columns: 1fr 1fr 1fr
+      grid-template-columns: 1fr 1fr 1fr
+      display: table-cell
+   .reviews-card
+      float: left
+      width: 31%
+      margin: 1%
 
 //Reviews
 .title-block-used-cars
@@ -2999,9 +3016,11 @@ h5.title-about-us.title-about-us-bottom
       border: 1px solid #707070
       padding: 1rem 0 1rem 2rem
       max-width: 678px
+      width: 678px
       display: -webkit-box
       display: -ms-flexbox
       display: flex
+      flex-grow: 1
       margin: 1rem 0 3rem 0
    &__card-title
       display: inline-block
@@ -3028,12 +3047,10 @@ h5.title-about-us.title-about-us-bottom
       text-transform: uppercase
    .cash-for-car
       &__card
-         display: block
+         padding-left: 0
       &__card-car
          padding: 0.5rem 0
-         display: -webkit-box
-         display: -ms-flexbox
-         display: flex
+         display: block
          -webkit-box-orient: vertical
          -webkit-box-direction: normal
          -ms-flex-direction: column
