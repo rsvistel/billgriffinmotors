@@ -307,7 +307,7 @@ select::-ms-expand {
       margin: 13px 0 7px 0;
       font-size: 1.5rem;
       font-family: "Montserrat", sans-serif; }
-      #banner #search-box h3 object {
+      #banner #search-box h3 img {
         height: 20px; }
     #banner #search-box .col-md-3 {
       text-align: center;
@@ -331,10 +331,10 @@ select::-ms-expand {
         border-radius: 4px;
         color: white;
         font-family: "Montserrat", sans-serif; }
-        #banner #search-box .col-md-3 button object {
+        #banner #search-box .col-md-3 button img {
           width: 15px;
           position: relative;
-          top: 1px; }
+          top: -1px; }
       #banner #search-box .col-md-3 button, #banner #search-box .col-md-3 select {
         width: 100%;
         height: 40px;
@@ -369,7 +369,7 @@ select::-ms-expand {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
-        #banner #search-box .container h3 object {
+        #banner #search-box .container h3 img {
           margin-right: 9px; }
       #banner #search-box .container form {
         padding: 0 7px; }
@@ -390,7 +390,7 @@ select::-ms-expand {
           #banner #search-box .container .col-md-3 button .mobile-word {
             display: block;
             margin-left: 5px; }
-          #banner #search-box .container .col-md-3 button object {
+          #banner #search-box .container .col-md-3 button img {
             display: none; } }
 #special-offers {
   order: 3;
@@ -418,7 +418,7 @@ select::-ms-expand {
       pointer-events: none; }
       #special-offers .owl-carousel .owl-nav.disabled button {
         pointer-events: auto; }
-        #special-offers .owl-carousel .owl-nav.disabled button object {
+        #special-offers .owl-carousel .owl-nav.disabled button img {
           pointer-events: none;
           width: 65px;
           height: 65px; }
@@ -473,7 +473,7 @@ select::-ms-expand {
       cursor: pointer;
       width: 20%;
       margin: 0 auto; }
-      .car-tile .car-image .car-like object {
+      .car-tile .car-image .car-like img {
         width: 80%; }
     .car-tile .car-image .car-image-counter {
       color: #fff;
@@ -551,7 +551,7 @@ select::-ms-expand {
     pointer-events: none; }
     .owl-nav button {
       pointer-events: auto; }
-      .owl-nav button object {
+      .owl-nav button img {
         pointer-events: none; }
 
   #special-offers {
@@ -803,7 +803,7 @@ select::-ms-expand {
 #statistics, #about-statistics {
   text-align: center;
   padding: 5% 0; }
-  #statistics .statistic-block object, #about-statistics .statistic-block object {
+  #statistics .statistic-block img, #about-statistics .statistic-block img {
     width: auto;
     max-height: 51px; }
   #statistics .statistic-block .img-statistic, #about-statistics .statistic-block .img-statistic {
@@ -2541,14 +2541,7 @@ input:checked + .slider:before {
 
 .reviews-button-container {
   margin: 2rem auto;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, -webkit-max-content));
-  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  grid-gap: 1rem; }
+  text-align: center; }
 
 .reviews-button {
   background: #005EAA;
@@ -2564,33 +2557,48 @@ input:checked + .slider:before {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-gap: 30px; } }
+    grid-gap: 30px;
+    display: table-cell; }
+
+  .reviews-card {
+    float: left;
+    width: 98%;
+    margin: 2%; } }
 @media (min-width: 640px) {
   .reviews-list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px; } }
+    grid-gap: 30px;
+    display: table-cell; }
+
+  .reviews-card {
+    float: left;
+    width: 98%;
+    margin: 1%; } }
 @media (max-width: 767px) {
   #feedback.reviews-page .container {
-    padding: 0 7px; }
+    padding: 0 7px 0 0; }
 
   #feedback.reviews-page .title-feedback-body {
     font-size: 15px; } }
 @media only screen and (max-width: 768px) {
   #feedback.reviews-page button {
-    display: -ms-grid;
-    display: grid; }
+    display: block;
+    margin: 0 auto; }
 
   #feedback.reviews-page .feedback-item {
     padding: 14px 5px 7px 5px; } }
-@media (min-width: 960px) {
-  .reviews-list {
-    grid-template-columns: 1fr 1fr 1fr; } }
 @media (min-width: 980px) {
   .reviews-list {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px; } }
+@media (min-width: 980px) {
+  .reviews-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px; } }
 @media (min-width: 960px) and (max-width: 992px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
@@ -2601,6 +2609,18 @@ input:checked + .slider:before {
 @media (min-width: 1024px) and (max-width: 1024px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
     width: 95%; } }
+@media (min-width: 960px) {
+  .reviews-list {
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: table-cell; }
+
+  .reviews-card {
+    float: left;
+    width: 31%;
+    margin: 1%; } }
 .title-block-used-cars {
   font-weight: 700; }
 
@@ -2973,9 +2993,11 @@ h5.title-about-us.title-about-us-bottom {
   border: 1px solid #707070;
   padding: 1rem 0 1rem 2rem;
   max-width: 678px;
+  width: 678px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-grow: 1;
   margin: 1rem 0 3rem 0; }
 .cash-for-car__card-title {
   display: inline-block;
@@ -3002,12 +3024,10 @@ h5.title-about-us.title-about-us-bottom {
     text-transform: uppercase; }
 
   .cash-for-car__card {
-    display: block; }
+    padding-left: 0; }
   .cash-for-car__card-car {
     padding: 0.5rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4808,3 +4828,5 @@ h5.title-about-us.title-about-us-bottom {
 
   .block-search-results .car-tile .car-desc .col-6 h6, .shortlist .car-tile .car-desc .col-6 h6 {
     font-size: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
