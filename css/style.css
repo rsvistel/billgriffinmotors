@@ -477,10 +477,11 @@ select::-ms-expand {
         width: 80%; }
     .car-tile .car-image .car-image-counter {
       color: #fff;
-      padding: 7px 12px;
+      padding: 7px 12px; }
+    .car-tile .car-image .car-image-counter-home {
       display: flex;
       align-items: flex-start; }
-      .car-tile .car-image .car-image-counter img {
+      .car-tile .car-image .car-image-counter-home img {
         margin-right: 3px;
         width: 24px;
         height: 16.84px; }
