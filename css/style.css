@@ -702,7 +702,6 @@ select::-ms-expand {
   #office .card {
     padding: 0;
     flex: 0 0 31%;
-    max-width: 31%;
     box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.35);
     border-radius: 0;
     border: 0; }
