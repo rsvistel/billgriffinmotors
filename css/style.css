@@ -532,7 +532,7 @@ select::-ms-expand {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .car-tile .car-desc .col-6 object {
+      .car-tile .car-desc .col-6 img {
         width: 21%;
         max-height: 18px; }
       .car-tile .car-desc .col-6 h6 {
