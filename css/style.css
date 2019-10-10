@@ -2541,14 +2541,7 @@ input:checked + .slider:before {
 
 .reviews-button-container {
   margin: 2rem auto;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, -webkit-max-content));
-  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  grid-gap: 1rem; }
+  text-align: center; }
 
 .reviews-button {
   background: #005EAA;
@@ -2564,33 +2557,48 @@ input:checked + .slider:before {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-gap: 30px; } }
+    grid-gap: 30px;
+    display: table-cell; }
+
+  .reviews-card {
+    float: left;
+    width: 98%;
+    margin: 2%; } }
 @media (min-width: 640px) {
   .reviews-list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px; } }
+    grid-gap: 30px;
+    display: table-cell; }
+
+  .reviews-card {
+    float: left;
+    width: 98%;
+    margin: 1%; } }
 @media (max-width: 767px) {
   #feedback.reviews-page .container {
-    padding: 0 7px; }
+    padding: 0 7px 0 0; }
 
   #feedback.reviews-page .title-feedback-body {
     font-size: 15px; } }
 @media only screen and (max-width: 768px) {
   #feedback.reviews-page button {
-    display: -ms-grid;
-    display: grid; }
+    display: block;
+    margin: 0 auto; }
 
   #feedback.reviews-page .feedback-item {
     padding: 14px 5px 7px 5px; } }
-@media (min-width: 960px) {
-  .reviews-list {
-    grid-template-columns: 1fr 1fr 1fr; } }
 @media (min-width: 980px) {
   .reviews-list {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px; } }
+@media (min-width: 980px) {
+  .reviews-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px; } }
 @media (min-width: 960px) and (max-width: 992px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
@@ -2601,6 +2609,18 @@ input:checked + .slider:before {
 @media (min-width: 1024px) and (max-width: 1024px) {
   #feedback.reviews-page .feedback-item .fas.fa-quote-right {
     width: 95%; } }
+@media (min-width: 960px) {
+  .reviews-list {
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: table-cell; }
+
+  .reviews-card {
+    float: left;
+    width: 31%;
+    margin: 1%; } }
 .title-block-used-cars {
   font-weight: 700; }
 
@@ -4808,3 +4828,5 @@ h5.title-about-us.title-about-us-bottom {
 
   .block-search-results .car-tile .car-desc .col-6 h6, .shortlist .car-tile .car-desc .col-6 h6 {
     font-size: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
