@@ -23,6 +23,9 @@ body {
 object, embed {
   pointer-events: none; }
 
+a:hover {
+  text-decoration: none; }
+
 select::-ms-expand {
   display: none; }
 
@@ -2667,7 +2670,7 @@ hr.heading-underline {
     width: 100%; }
 
 #our-team {
-  background: #F6F6F6;
+  background: #f9f8f8;
   padding: 6% 0 5% 0; }
   #our-team .title-about-us {
     text-transform: capitalize; }
@@ -4820,5 +4823,3 @@ h5.title-about-us.title-about-us-bottom {
 
   .block-search-results .car-tile .car-desc .col-6 h6, .shortlist .car-tile .car-desc .col-6 h6 {
     font-size: 15px; } }
-
-/*# sourceMappingURL=style.css.map */
