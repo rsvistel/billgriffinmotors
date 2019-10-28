@@ -80,6 +80,12 @@ $(document).ready(function () {
         interval: false
     });
 
+    $('#modalUsedCar').on('show.bs.modal', function (e) {
+        var image = $(e.relatedTarget).attr('src');
+        $(".carousel-item-modal-lg").attr("src", image);
+        alert(image)
+    });
+
     $(".more").click(function () {
         var elem = $(".more").text();
         if (elem == "more") {
