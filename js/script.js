@@ -80,12 +80,6 @@ $(document).ready(function () {
         interval: false
     });
 
-    $('#modalUsedCar').on('show.bs.modal', function (e) {
-        var image = $(e.relatedTarget).attr('src');
-        $(".carousel-item-modal-lg").attr("src", image);
-        alert(image)
-    });
-
     $(".more").click(function () {
         var elem = $(".more").text();
         if (elem == "more") {
@@ -108,28 +102,41 @@ $(document).ready(function () {
     });
 
     if ($('body').hasClass('car-page')) {
-        var activeItem = 1;
         var carouselItems = [];
         $('#carouselExampleControls .carousel-item').each(function () {
             carouselItems.push($(this));
         });
-        $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
-        $('.carousel-control-next').click(function () {
-            if (activeItem < carouselItems.length) {
-                activeItem++
-            } else {
-                activeItem = 1
-            }
-            $('.num.mobile-counter__value.counter__value').html(activeItem + ' of ' + carouselItems.length);
+        $('.num.mobile-counter__value').html($('#carouselExampleControls .carousel-item.active').index() + 1 + ' of ' + carouselItems.length);
+
+        var images = [];
+        var activeNumber;
+        $('.gellery__cars img.d-block').each(function () {
+            images.push($(this));
         });
-        $('.carousel-control-prev').click(function () {
-            if (activeItem > 1) {
-                activeItem--
-            } else {
-                activeItem = carouselItems.length
-            }
-            $('.num.mobile-counter__value').html(activeItem + ' of ' + carouselItems.length);
+        $('#carouselUsedCar img.d-block').click(function () {
+            $('#carouselExampleControls').carousel(0);
         });
+        $('.gellery__cars .carousel-card-items .carousel-card-item').click(function () {
+            var temp = $(this);
+            for (var i = 0; i < images.length; i++) {
+                if (temp.find('img').attr('src') === images[i].attr('src')) {
+                    activeNumber = i;
+                }
+            }
+            $('#carouselExampleControls').carousel(activeNumber);
+            setTimeout(function () {
+                $('.num.mobile-counter__value').html(activeNumber + 1 + ' of ' + carouselItems.length);
+            },100);
+        });
+
+        $('#carouselExampleControls').bind('slide.bs.carousel', function (e) {
+            setTimeout(function () {
+                $('.num.mobile-counter__value.counter__value').html($('#carouselExampleControls .carousel-item.active').index() + 1 + ' of ' + carouselItems.length);
+            },650);
+        });
+        $('.close.used-car__modal-close.used-car__modal-close-col-sm').click(function () {
+            $('.num.mobile-counter__value').html('1 of ' + carouselItems.length);
+        })
     }
     $(".car-like").click(function () {
         $(this).toggleClass('liked');
