@@ -454,21 +454,6 @@ select::-ms-expand
       position: relative
       img
          width: 100%
-      .img-shadow
-         position: absolute
-         width: 225%
-         height: 190%
-         bottom: 0
-         left: 0
-         right: 0
-         background-image: url("../img/shadow.png")
-         background-size: contain
-         background-repeat: no-repeat
-         opacity: 0.95
-      .photo-16
-         z-index: 1
-         display: flex
-         //background-position: top right
       .car-like, .car-image-counter
          position: absolute
          bottom: 0
@@ -551,6 +536,30 @@ select::-ms-expand
             font-family: Arial, sans-serif
             color: $light-gray
             text-transform: capitalize
+
+.img-shadow
+   position: absolute
+   width: 225%
+   height: 190%
+   bottom: 0
+   left: 0
+   right: 0
+   background-image: url("../img/shadow.png")
+   background-size: contain
+   background-repeat: no-repeat
+   opacity: 0.95
+.photo-16
+   z-index: 1
+   display: flex
+
+.img-shadow.img-shadow-used
+   height: 225%
+   bottom: initial
+   left: -25px
+   background-size: cover
+   opacity: initial
+   background-position: bottom
+
 @media only screen and (max-width: 768px)
    .owl-nav
       position: absolute
