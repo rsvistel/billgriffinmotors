@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
 
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
   font-size: 16px; }
 
 body {
@@ -1326,29 +1325,18 @@ select::-ms-expand {
   -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16); }
 
+body.modal-open {
+  overflow: hidden; }
+
 #modalUsedCar {
-  padding-right: 0 !important; }
-  #modalUsedCar::-webkit-scrollbar-thumb:hover, #modalUsedCar::-webkit-scrollbar:hover, #modalUsedCar::-webkit-scrollbar-track:hover, #modalUsedCar::-webkit-scrollbar:hover, #modalUsedCar::-webkit-scrollbar-thumb:hover, #modalUsedCar::-webkit-scrollbar-track-piece:hover, #modalUsedCar::-webkit-scrollbar-corner:hover, #modalUsedCar::-webkit-resizer:hover, #modalUsedCar::-webkit-scrollbar-thumb:vertical, #modalUsedCar::-webkit-scrollbar-thumb, #modalUsedCar::-webkit-scrollbar, #modalUsedCar::-webkit-scrollbar-track, #modalUsedCar::-webkit-scrollbar, #modalUsedCar::-webkit-scrollbar-thumb, #modalUsedCar::-webkit-scrollbar-track-piece, #modalUsedCar::-webkit-scrollbar-corner, #modalUsedCar::-webkit-resizer, #modalUsedCar::-webkit-scrollbar-thumb:vertical, #modalUsedCar::-moz-scrolled-content {
-    display: none !important;
-    opacity: 0; }
-
-.used-car-section::-webkit-scrollbar-thumb:hover, .used-car-section::-webkit-scrollbar:hover, .used-car-section::-webkit-scrollbar-track:hover, .used-car-section::-webkit-scrollbar:hover, .used-car-section::-webkit-scrollbar-thumb:hover, .used-car-section::-webkit-scrollbar-track-piece:hover, .used-car-section::-webkit-scrollbar-corner:hover, .used-car-section::-webkit-resizer:hover, .used-car-section::-webkit-scrollbar-thumb:vertical, .used-car-section::-webkit-scrollbar-thumb, .used-car-section::-webkit-scrollbar, .used-car-section::-webkit-scrollbar-track, .used-car-section::-webkit-scrollbar, .used-car-section::-webkit-scrollbar-thumb, .used-car-section::-webkit-scrollbar-track-piece, .used-car-section::-webkit-scrollbar-corner, .used-car-section::-webkit-resizer, .used-car-section::-webkit-scrollbar-thumb:vertical, .used-car-section::-moz-scrolled-content {
-  display: none !important;
-  opacity: 0; }
-
-#modalUsedCar .used-car__modal {
-  padding-right: 0; }
-  #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb:hover, #modalUsedCar .used-car__modal::-webkit-scrollbar:hover, #modalUsedCar .used-car__modal::-webkit-scrollbar-track:hover, #modalUsedCar .used-car__modal::-webkit-scrollbar:hover, #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb:hover, #modalUsedCar .used-car__modal::-webkit-scrollbar-track-piece:hover, #modalUsedCar .used-car__modal::-webkit-scrollbar-corner:hover, #modalUsedCar .used-car__modal::-webkit-resizer:hover, #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb:vertical, #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal::-webkit-scrollbar, #modalUsedCar .used-car__modal::-webkit-scrollbar-track, #modalUsedCar .used-car__modal::-webkit-scrollbar, #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal::-webkit-scrollbar-track-piece, #modalUsedCar .used-car__modal::-webkit-scrollbar-corner, #modalUsedCar .used-car__modal::-webkit-resizer, #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb:vertical, #modalUsedCar .used-car__modal::-moz-scrolled-content {
-    display: none !important;
-    opacity: 0; }
-
-#modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb:hover, #modalUsedCar .used-car__modal-content::-webkit-scrollbar:hover, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-track:hover, #modalUsedCar .used-car__modal-content::-webkit-scrollbar:hover, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb:hover, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-track-piece:hover, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-corner:hover, #modalUsedCar .used-car__modal-content::-webkit-resizer:hover, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb:vertical, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal-content::-webkit-scrollbar, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-track, #modalUsedCar .used-car__modal-content::-webkit-scrollbar, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-track-piece, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-corner, #modalUsedCar .used-car__modal-content::-webkit-resizer, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb:vertical, #modalUsedCar .used-car__modal-content::-moz-scrolled-content {
-  display: none !important;
-  opacity: 0; }
-
-.car-page.modal-open::-webkit-scrollbar-thumb:hover, .car-page.modal-open::-webkit-scrollbar:hover, .car-page.modal-open::-webkit-scrollbar-track:hover, .car-page.modal-open::-webkit-scrollbar:hover, .car-page.modal-open::-webkit-scrollbar-thumb:hover, .car-page.modal-open::-webkit-scrollbar-track-piece:hover, .car-page.modal-open::-webkit-scrollbar-corner:hover, .car-page.modal-open::-webkit-resizer:hover, .car-page.modal-open::-webkit-scrollbar-thumb:vertical, .car-page.modal-open::-webkit-scrollbar-thumb, .car-page.modal-open::-webkit-scrollbar, .car-page.modal-open::-webkit-scrollbar-track, .car-page.modal-open::-webkit-scrollbar, .car-page.modal-open::-webkit-scrollbar-thumb, .car-page.modal-open::-webkit-scrollbar-track-piece, .car-page.modal-open::-webkit-scrollbar-corner, .car-page.modal-open::-webkit-resizer, .car-page.modal-open::-webkit-scrollbar-thumb:vertical, .car-page.modal-open::-moz-scrolled-content {
-  display: none !important;
-  opacity: 0; }
+  padding-right: 0 !important;
+  -webkit-appearance: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  #modalUsedCar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; }
 
 .used-car__modal-header {
   padding: 0;
@@ -4318,10 +4306,10 @@ h5.title-about-us.title-about-us-bottom {
     opacity: 1 !important; }
 
   .carousel-control-next {
-    right: -2%; }
+    right: 0%; }
 
   .carousel-control-prev {
-    left: -2%; }
+    left: 0%; }
 
   .carousel-control-next-icon {
     background-image: url("../img/used-car-page/gallery/arrow-next.svg"); }

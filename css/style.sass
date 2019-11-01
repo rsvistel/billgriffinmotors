@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
 
 html, body
    max-width: 100%
-   overflow-x: hidden
+   //overflow-x: hidden
    font-size: 16px
 
 body
@@ -1355,31 +1355,19 @@ select::-ms-expand
       box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16)
 //MODAL USED CAR-page
 
+body.modal-open
+   overflow: hidden
+
 #modalUsedCar
    padding-right: 0!important
-   &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-track:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar-track-piece:hover, &::-webkit-scrollbar-corner:hover, &::-webkit-resizer:hover, &::-webkit-scrollbar-thumb:vertical,    &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical, &::-moz-scrolled-content
-      display: none!important
-      opacity: 0
+   &::-webkit-scrollbar
+      width: 0px
+      background: transparent
+   -webkit-appearance: none
+   -ms-overflow-style: -ms-autohiding-scrollbar
+   -ms-overflow-style: none
+   scrollbar-width: none
 
-.used-car-section
-   &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-track:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar-track-piece:hover, &::-webkit-scrollbar-corner:hover, &::-webkit-resizer:hover, &::-webkit-scrollbar-thumb:vertical,    &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical, &::-moz-scrolled-content
-      display: none!important
-      opacity: 0
-
-#modalUsedCar .used-car__modal
-   padding-right: 0
-   &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-track:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar-track-piece:hover, &::-webkit-scrollbar-corner:hover, &::-webkit-resizer:hover, &::-webkit-scrollbar-thumb:vertical,    &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical, &::-moz-scrolled-content
-      display: none!important
-      opacity: 0
-
-#modalUsedCar .used-car__modal-content
-   &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-track:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar-track-piece:hover, &::-webkit-scrollbar-corner:hover, &::-webkit-resizer:hover, &::-webkit-scrollbar-thumb:vertical,    &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical, &::-moz-scrolled-content
-      display: none!important
-      opacity: 0
-.car-page.modal-open
-   &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-track:hover, &::-webkit-scrollbar:hover, &::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar-track-piece:hover, &::-webkit-scrollbar-corner:hover, &::-webkit-resizer:hover, &::-webkit-scrollbar-thumb:vertical,    &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical, &::-moz-scrolled-content
-      display: none!important
-      opacity: 0
 .used-car__modal-header
    padding: 0
    border-bottom: 0
@@ -4382,9 +4370,9 @@ $light-blue: #00C4FC
    .carousel-control-next, .carousel-control-prev
       opacity: 1!important
    .carousel-control-next
-      right: -2%
+      right: 0%
    .carousel-control-prev
-      left: -2%
+      left: 0%
    .carousel-control-next-icon
       background-image: url('../img/used-car-page/gallery/arrow-next.svg')
    .carousel-control-prev-icon
