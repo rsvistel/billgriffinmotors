@@ -146,4 +146,12 @@ $(document).ready(function () {
             $(this).find('img').attr('src', 'img/home/Group%20373.svg')
         }
     });
+
+
+    $('#modalUsedCar').on('shown.bs.modal', function () {
+        var outerContent = $('#modalUsedCar');
+        var innerContent = $('#modalUsedCar > div');
+
+        outerContent.scrollTop( (innerContent.height() - outerContent.height()) / 2);
+      });
 });
