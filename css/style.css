@@ -1328,9 +1328,19 @@ select::-ms-expand {
 
 #modalUsedCar {
   padding-right: 0 !important; }
+  #modalUsedCar::-webkit-scrollbar-thumb, #modalUsedCar::-webkit-scrollbar, #modalUsedCar::-webkit-scrollbar-track, #modalUsedCar::-webkit-scrollbar, #modalUsedCar::-webkit-scrollbar-thumb, #modalUsedCar::-webkit-scrollbar-track-piece, #modalUsedCar::-webkit-scrollbar-corner, #modalUsedCar::-webkit-resizer, #modalUsedCar::-webkit-scrollbar-thumb:vertical {
+    display: none; }
 
 #modalUsedCar .used-car__modal {
   padding-right: 0; }
+  #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal::-webkit-scrollbar, #modalUsedCar .used-car__modal::-webkit-scrollbar-track, #modalUsedCar .used-car__modal::-webkit-scrollbar, #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal::-webkit-scrollbar-track-piece, #modalUsedCar .used-car__modal::-webkit-scrollbar-corner, #modalUsedCar .used-car__modal::-webkit-resizer, #modalUsedCar .used-car__modal::-webkit-scrollbar-thumb:vertical {
+    display: none; }
+
+#modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal-content::-webkit-scrollbar, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-track, #modalUsedCar .used-car__modal-content::-webkit-scrollbar, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-track-piece, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-corner, #modalUsedCar .used-car__modal-content::-webkit-resizer, #modalUsedCar .used-car__modal-content::-webkit-scrollbar-thumb:vertical {
+  display: none; }
+
+.car-page.modal-open::-webkit-scrollbar-thumb, .car-page.modal-open::-webkit-scrollbar, .car-page.modal-open::-webkit-scrollbar-track, .car-page.modal-open::-webkit-scrollbar, .car-page.modal-open::-webkit-scrollbar-thumb, .car-page.modal-open::-webkit-scrollbar-track-piece, .car-page.modal-open::-webkit-scrollbar-corner, .car-page.modal-open::-webkit-resizer, .car-page.modal-open::-webkit-scrollbar-thumb:vertical {
+  display: none; }
 
 .used-car__modal-header {
   padding: 0;

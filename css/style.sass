@@ -1357,10 +1357,20 @@ select::-ms-expand
 
 #modalUsedCar
    padding-right: 0!important
+   &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical
+      display: none
 
 #modalUsedCar .used-car__modal
    padding-right: 0
+   &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical
+      display: none
 
+#modalUsedCar .used-car__modal-content
+   &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical
+      display: none
+.car-page.modal-open
+   &::-webkit-scrollbar-thumb, &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner, &::-webkit-resizer, &::-webkit-scrollbar-thumb:vertical
+      display: none
 .used-car__modal-header
    padding: 0
    border-bottom: 0
