@@ -77,13 +77,8 @@ $(document).ready(function () {
     });
 
     $('#carouselExampleControls').carousel({
-        pause: true,
-        interval: false
-    });
-
-    $('#carouselUsedCar').carousel({
-        pause: true,
-        interval: false
+        interval: 3000,
+        pause: "false"
     });
 
     $(".more").click(function () {
