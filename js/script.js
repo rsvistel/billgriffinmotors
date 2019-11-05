@@ -77,7 +77,7 @@ $(document).ready(function () {
     });
 
     $('#carouselExampleControls').carousel({
-        interval: false
+        interval: 3000
     });
 
     $(".more").click(function () {
@@ -150,7 +150,7 @@ $(document).ready(function () {
 
     $('#modalUsedCar').on('shown.bs.modal', function () {
         var outerContent = $('#modalUsedCar');
-        var innerContent = $('#modalUsedCar > div');
+        var innerContent = $('#modalUsedCar .carousel-item-modal-lg');
 
         outerContent.scrollTop( (innerContent.height() - outerContent.height()) / 2);
       });
