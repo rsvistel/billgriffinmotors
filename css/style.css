@@ -3653,7 +3653,9 @@ h5.title-about-us.title-about-us-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0; }
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    padding: 0.5rem 0; }
     .contact-us-section.contact-us .block-right-location#office .input-search input::-webkit-input-placeholder {
       font-size: 11px; }
     .contact-us-section.contact-us .block-right-location#office .working-hours .card {
@@ -3714,15 +3716,6 @@ h5.title-about-us.title-about-us-bottom {
   padding: 0;
   line-height: 27px;
   color: #212529; }
-
-.location-contact {
-  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
-  margin-right: 10px;
-  border-radius: 5px; }
-
-.working-hours {
-  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
-  border-radius: 5px; }
 
 @media (max-width: 768px) {
   .contact-us-section.contact-us {
